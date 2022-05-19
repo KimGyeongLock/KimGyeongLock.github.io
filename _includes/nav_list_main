@@ -26,7 +26,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "SwiftUI" %}
-                        <li><a href="/categories/SwiftUI" class="">SwiftUI({{category[1].size}})</a></li>
+                        <li><a href="/categories/swiftui" class="">SwiftUI({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
