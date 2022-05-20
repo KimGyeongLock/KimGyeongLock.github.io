@@ -1,7 +1,7 @@
 ---
 title: "SwiftUI"
 layout: archive
-permalink: categories/swfitui
+permalink: categories/swiftui
 author_profile: true
 sidebar_main: true
 ---
