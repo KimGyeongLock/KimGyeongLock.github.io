@@ -38,16 +38,16 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Basic" %}
-                        <li><a href="/categories/basic" class="">Basic({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Intermediate" %}
                         <li><a href="/categories/intermediate" class="">Intermediate({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            
+                {% for category in site.categories %}
+                    {% if category[0] == "Basic" %}
+                        <li><a href="/categories/basic" class="">Basic({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
