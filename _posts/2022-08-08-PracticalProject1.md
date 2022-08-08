@@ -54,21 +54,81 @@ Full Stack
     - &#60;script&#62;
     - &#60;noscript&#62;
   * &#60;body&#62;: The visible part of the HTML document
+  ```
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Page Title</title>
+  </head>
+  <body>
+
+  <h1>This is a Heading</h1>
+  <p>This is a paragraph.</p>
+
+  </body>
+  </html>
+  ```
 * **HTML Headings**
   * &#60;h1&#62; &#60;h2&#60; ⋅⋅⋅ &#60;h6&#62;
   * &#60;h1&#62; defines the most important heading. 
   * &#60;h6&#62; defines the least important heading: 
+  ```
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  ```
 * **HTML Paragraph**
   * &#60;p&#62;: Paragraph
+  ```
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  ```
   * &#60;br&#62;: Line Break
+  ```
+  <p>This is<br>a paragraph<br>with line breaks.</p>
+  ```
   * &#60;pre&#62;: Preformatted Text
+  ```
+  <pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+  </pre>
+  ```
 * **HTML Block**
   * &#60;div&#62;: Division or Section
+  ```
+  <div>Hello World</div>
+  ```
   * &#60;ul&#62;: Unordered List
+  ```
+  <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+  </ul>
+  ```
   * &#60;ol&#62;: Ordered List
+  ```
+  <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+  </ol>
+  ```
   * &#60;li&#62;: List Item
 * **HTML Links**
   * &#60;a&#62;: Hyperlink
+  ```
+  <a href="url">link text</a>
+  ```
 
 HTML Tutorial: <https://www.w3schools.com/html/default.asp><br/>
 HTML Simulator: <https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default>
