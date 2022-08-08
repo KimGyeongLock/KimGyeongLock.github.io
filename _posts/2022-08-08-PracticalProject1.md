@@ -46,18 +46,18 @@ Full Stack
 * **HTML Basic**
   * &#60;html&#62;: HTML document's Start and End
   * &#60;head&#62;: 해당 문서에 대한 정보인 메타데이터(metadata)의 집합을 정의
-    - &#60title&#62
-    - &#60style&#62
-    - &#60base&#62
-    - &#60link&#62
-    - &#60meta&#62
-    - &#60script&#62
-    - &#60noscript&#62
+    - &#60;title&#62;
+    - &#60;style&#62;
+    - &#60;base&#62;
+    - &#60;link&#62;
+    - &#60;meta&#62;
+    - &#60;script&#62;
+    - &#60;noscript&#62;
   * &#60;body&#62;: The visible part of the HTML document
 * **HTML Headings**
   * &#60;h1&#62; &#60;h2&#60; ⋅⋅⋅ &#60;h6&#62;
-  * &#60h1&#62 defines the most important heading. 
-  * &#60h6&#62 defines the least important heading: 
+  * &#60;h1&#62; defines the most important heading. 
+  * &#60;h6&#62; defines the least important heading: 
 * **HTML Paragraph**
   * &#60;p&#62;: Paragraph
   * &#60;br&#62;: Line Break
