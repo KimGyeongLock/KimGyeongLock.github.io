@@ -1,6 +1,6 @@
 ---
 layout: single
-title: &[&예습&\&웹 서비스 개발
+title: \[\예습\]\웹 서비스 개발
 toc: true
 toc_sticky: true
 categories: practical
