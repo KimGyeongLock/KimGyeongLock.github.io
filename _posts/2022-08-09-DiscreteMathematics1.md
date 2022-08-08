@@ -29,31 +29,31 @@ statement
 **Compound Proposition**: one or more propositions + logical operators
 - **Logical Operator**
   - **Negation**(NOT)
-    - ¬𝑝
-    - |p|¬𝑝|
+    - ¬𝑝<br/>
+      |p|¬𝑝|
       |:---:|:---:|
       |T|F|
       |F|T|
   
   - **Conjunction**(AND)
-    - p ∧ q
-    - |p|q|p ∧ q|
+    - p ∧ q<br/>
+      |p|q|p ∧ q|
       |:---:|:---:||:---:|
       |T|T|T|
       |T|F|F|
       |F|T|F|
       |F|F|F|
   - **Disjunction**(OR)
-    - p ∨ q
-    - |p|q|p ∨ q|
+    - p ∨ q<br/>
+      |p|q|p ∨ q|
       |:---:|:---:||:---:|
       |T|T|T|
       |T|F|T|
       |F|T|T|
       |F|F|F|
   - **Exclusive-Or**(XOR)
-    - p ⊕ q
-    - |p|q|p ⊕ q|
+    - p ⊕ q<br/>
+      |p|q|p ⊕ q|
       |:---:|:---:||:---:|
       |T|T|F|
       |T|F|T|
@@ -61,8 +61,8 @@ statement
       |F|F|F|
   - **Implication**(IMPLIES)
     - (Conditional Statement) 
-    - p → q = ¬𝑝 ∨ q
-    - |p|q|p → q|
+    - p → q = ¬𝑝 ∨ q<br/>
+      |p|q|p → q|
       |:---:|:---:||:---:|
       |T|T|T|
       |T|F|F|
@@ -72,16 +72,16 @@ statement
     - **Inverse**(이): ¬𝑝 → ¬𝑞
     - **Contrapositive**(대우): ¬𝑞 → ¬𝑝
   - **Biconditional**(IFF)
-    - p ↔ q  
-    - |p|q|p ↔ q|
+    - p ↔ q<br/>
+      |p|q|p ↔ q|
       |:---:|:---:||:---:|
       |T|T|T|
       |T|F|F|
       |F|T|F|
       |F|F|T|
       
- # Propositional Satisfiability
- * **Satisfiable** Proposition: propositional variable에 하나라도 true를 넣었을때 결과로 True가 나오는 것
- * **Unsatisfiable** Proposition: Not Satisfiable -> **Contradiction**
- * **Valid** Proposition: 모든 결과가 True -> **Tautology**
+# Propositional Satisfiability
+* **Satisfiable** Proposition: propositional variable에 하나라도 true를 넣었을때 결과로 True가 나오는 것
+* **Unsatisfiable** Proposition: Not Satisfiable -> **Contradiction**
+* **Valid** Proposition: 모든 결과가 True -> **Tautology**
   
