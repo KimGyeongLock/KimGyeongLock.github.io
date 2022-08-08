@@ -61,16 +61,16 @@ statement
       |F|F|F|
   - **Implication**(IMPLIES)
     - (Conditional Statement) 
-    - p → q = ¬𝑝 ∨ q
+    - p → q = ¬p ∨ q
     - |p|q|p → q|
       |:---:|:---:||:---:|
       |T|T|T|
       |T|F|F|
       |F|T|T|
       |F|F|T| 
-      <br/> p(가설)가 거짓이면 q(결론)를 판단 할 수 없기 때문에 True
-      <br/>q는 p의 필요조건 
-      <br/>p는 q의 충분조건
+    - p(가설)가 거짓이면 q(결론)를 판단 할 수 없기 때문에 True
+    - q는 p의 필요조건 
+    - p는 q의 충분조건
     - **Converse**(역): q → p
     - **Inverse**(이): ¬p → ¬q
     - **Contrapositive**(대우): ¬q → ¬p
@@ -82,7 +82,8 @@ statement
       |T|F|F|
       |F|T|F|
       |F|F|T|
-      <br/>필요 충분 조건
+    
+    - 필요 충분 조건
       
 * Equivalence<br/>
 ![propositional+logic](https://user-images.githubusercontent.com/63464299/183473997-f5504f2a-f873-4377-bd89-c77699ad6086.jpg)<br/>
