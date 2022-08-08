@@ -34,8 +34,10 @@ Full Stack
 5. 각 영역에 컨텐츠 배치<br/>
 <img width="402" alt="스크린샷 2022-08-08 오후 2 35 42" src="https://user-images.githubusercontent.com/63464299/183352407-ee6e87a9-d464-4443-849b-f4f6f27d104b.png">
 7. CSS: 스타일<br/>
-<img width="405" alt="스크린샷 2022-08-08 오후 2 54 20" src="https://user-images.githubusercontent.com/63464299/183352462-78207836-b9a0-4585-90f2-1d4baec0a36d.png"><br/>
-<img width="384" alt="스크린샷 2022-08-08 오후 2 52 36" src="https://user-images.githubusercontent.com/63464299/183352476-9ed5e71e-863d-4f40-8a5f-f103a0b93ba8.png">
+ * 변경 전<br/>
+   <img width="384" alt="스크린샷 2022-08-08 오후 2 54 20" src="https://user-images.githubusercontent.com/63464299/183356859-36dc8b12-74a5-433e-b2d5-abc28fe1b6f8.png">
+ * 변경 후<br/>
+  <img width="384" alt="스크린샷 2022-08-08 오후 2 52 36" src="https://user-images.githubusercontent.com/63464299/183352476-9ed5e71e-863d-4f40-8a5f-f103a0b93ba8.png">
 9. Javascript: 동적 페이지 구성
 10. 웹페이지 완성
 
