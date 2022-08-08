@@ -29,8 +29,8 @@ statement
 **Compound Proposition**: one or more propositions + logical operators
 - **Logical Operator**
   - **Negation**(NOT)
-    - ¬𝑝
-    - |p|¬𝑝|
+    - ¬p
+    - |p|¬p|
       |:---:|:---:|
       |T|F|
       |F|T|
@@ -68,9 +68,12 @@ statement
       |T|F|F|
       |F|T|T|
       |F|F|T| 
+      <br/> p(가설)가 거짓이면 q(결론)를 판단 할 수 없기 때문에 True
+      <br/>q는 p의 필요조건 
+      <br/>p는 q의 충분조건
     - **Converse**(역): q → p
-    - **Inverse**(이): ¬𝑝 → ¬𝑞
-    - **Contrapositive**(대우): ¬𝑞 → ¬𝑝
+    - **Inverse**(이): ¬p → ¬q
+    - **Contrapositive**(대우): ¬q → ¬p
   - **Biconditional**(IFF)
     - p ↔ q
     - |p|q|p ↔ q|
@@ -79,7 +82,14 @@ statement
       |T|F|F|
       |F|T|F|
       |F|F|T|
+      <br/>필요 충분 조건
       
+* Equivalence<br/>
+[propositional+logic.pdf](https://github.com/KimGyeongLock/KimGyeongLock.github.io/files/9283668/propositional%2Blogic.pdf)<br/>
+De Morgan's law: ¬p ∧ q ↔ ¬p ∨ ¬q, <br/>
+                 ¬p ∨ q ↔ ¬p ∧ ¬q
+ 
+ 
 # Propositional Satisfiability
 * **Satisfiable** Proposition: propositional variable에 하나라도 true를 넣었을때 결과로 True가 나오는 것
 * **Unsatisfiable** Proposition: Not Satisfiable -> **Contradiction**
