@@ -54,6 +54,7 @@ Full Stack
     - &#60;script&#62;
     - &#60;noscript&#62;
   * &#60;body&#62;: The visible part of the HTML document
+  * &#60;!DOCTYPE html&#62;: Document Type Declaration
   ```
   <!DOCTYPE html>
   <html>
@@ -101,6 +102,15 @@ Full Stack
 
   Oh, bring back my Bonnie to me.
   </pre>
+  ```
+  * &#60;hr&#62;: Thematic Break in the Content
+  ```
+  <h1>This is heading 1</h1>
+  <p>This is some text.</p>
+  <hr>
+  <h2>This is heading 2</h2>
+  <p>This is some other text.</p>
+  <hr>
   ```
 * **HTML Block**
   * &#60;div&#62;: Division or Section
