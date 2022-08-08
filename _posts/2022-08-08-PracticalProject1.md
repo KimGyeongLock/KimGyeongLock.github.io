@@ -1,6 +1,6 @@
 ---
 layout: single
-title: \[ 예습]웹 서비스 개발
+title: \[예습] 웹 서비스 개발
 toc: true
 toc_sticky: true
 categories: practical
@@ -27,14 +27,14 @@ Full Stack
   * Programming Language(Java)
 
 ## Front-end
-1. 컨텐츠 작성
+1. 컨텐츠 작성<br/>
 <img width="483" alt="스크린샷 2022-08-08 오후 2 29 25" src="https://user-images.githubusercontent.com/63464299/183352377-724456ad-4eb0-4587-a966-509368614f12.png">
-3. HTML: 레이아웃 배치
+3. HTML: 레이아웃 배치<br/>
 <img width="408" alt="스크린샷 2022-08-08 오후 2 32 17" src="https://user-images.githubusercontent.com/63464299/183352392-c766da34-40c1-4e2a-a707-1c808f524f34.png">
-5. 각 영역에 컨텐츠 배치
+5. 각 영역에 컨텐츠 배치<br/>
 <img width="402" alt="스크린샷 2022-08-08 오후 2 35 42" src="https://user-images.githubusercontent.com/63464299/183352407-ee6e87a9-d464-4443-849b-f4f6f27d104b.png">
-7. CSS: 스타일
-<img width="405" alt="스크린샷 2022-08-08 오후 2 54 20" src="https://user-images.githubusercontent.com/63464299/183352462-78207836-b9a0-4585-90f2-1d4baec0a36d.png">
+7. CSS: 스타일<br/>
+<img width="405" alt="스크린샷 2022-08-08 오후 2 54 20" src="https://user-images.githubusercontent.com/63464299/183352462-78207836-b9a0-4585-90f2-1d4baec0a36d.png"><br/>
 <img width="384" alt="스크린샷 2022-08-08 오후 2 52 36" src="https://user-images.githubusercontent.com/63464299/183352476-9ed5e71e-863d-4f40-8a5f-f103a0b93ba8.png">
 9. Javascript: 동적 페이지 구성
 10. 웹페이지 완성
@@ -59,7 +59,7 @@ Full Stack
 * **HTML Links**
   * &#60;a&#62;  
 
-HTML Tutorial: <https://www.w3schools.com/html/default.asp>
+HTML Tutorial: <https://www.w3schools.com/html/default.asp><br/>
 HTML Simulator: <https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default>
 
 # CSS Tutorials
@@ -69,8 +69,8 @@ p {
   text-align: center;
 }
 ```
-> p: Selector
-> color, text-align: Property
+> p: Selector<br/>
+> color, text-align: Property<br/>
 > red, center: Value
 
 **CSS Simple selectors**
