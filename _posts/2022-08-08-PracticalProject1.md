@@ -44,22 +44,31 @@ Full Stack
 
 # HTML tags
 * **HTML Basic**
-  * &#60;html&#62; 
-  * &#60;head&#62; 
-  * &#60;body&#62;
+  * &#60;html&#62;: HTML document's Start and End
+  * &#60;head&#62;: 해당 문서에 대한 정보인 메타데이터(metadata)의 집합을 정의
+    - &#60title&#62
+    - &#60style&#62
+    - &#60base&#62
+    - &#60link&#62
+    - &#60meta&#62
+    - &#60script&#62
+    - &#60noscript&#62
+  * &#60;body&#62;: The visible part of the HTML document
 * **HTML Headings**
   * &#60;h1&#62; &#60;h2&#60; ⋅⋅⋅ &#60;h6&#62;
+  * &#60h1&#62 defines the most important heading. 
+  * &#60h6&#62 defines the least important heading: 
 * **HTML Paragraph**
-  * &#60;p&#62; 
-  * &#60;br&#62; 
-  * &#60;pre&#62;
+  * &#60;p&#62;: Paragraph
+  * &#60;br&#62;: Line Break
+  * &#60;pre&#62;: Preformatted Text
 * **HTML Block**
-  * &#60;div&#62; 
+  * &#60;div&#62; Division or Section
   * &#60;ul&#62;: Unordered List
   * &#60;ol&#62;: Ordered List
   * &#60;li&#62;: List Item
 * **HTML Links**
-  * &#60;a&#62;  
+  * &#60;a&#62;: Hyperlink
 
 HTML Tutorial: <https://www.w3schools.com/html/default.asp><br/>
 HTML Simulator: <https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default>
