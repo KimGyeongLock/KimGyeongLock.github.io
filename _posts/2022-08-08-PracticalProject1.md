@@ -55,84 +55,84 @@ Full Stack
     - &#60;noscript&#62;
   * &#60;body&#62;: The visible part of the HTML document
   * &#60;!DOCTYPE html&#62;: Document Type Declaration
-  ```
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <title>Page Title</title>
-  </head>
-  <body>
+    ```
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Page Title</title>
+    </head>
+    <body>
 
-  <h1>This is a Heading</h1>
-  <p>This is a paragraph.</p>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
 
-  </body>
-  </html>
-  ```
+    </body>
+    </html>
+    ```
 * **HTML Headings**
   * &#60;h1&#62; &#60;h2&#60; ⋅⋅⋅ &#60;h6&#62;
   * &#60;h1&#62; defines the most important heading. 
   * &#60;h6&#62; defines the least important heading: 
-  ```
-  <h1>Heading 1</h1>
-  <h2>Heading 2</h2>
-  <h3>Heading 3</h3>
-  <h4>Heading 4</h4>
-  <h5>Heading 5</h5>
-  <h6>Heading 6</h6>
-  ```
+    ```
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    ```
 * **HTML Paragraph**
   * &#60;p&#62;: Paragraph
-  ```
-  <p>This is a paragraph.</p>
-  <p>This is another paragraph.</p>
-  ```
+    ```
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    ```
   * &#60;br&#62;: Line Break
-  ```
-  <p>This is<br>a paragraph<br>with line breaks.</p>
-  ```
+    ```
+    <p>This is<br>a paragraph<br>with line breaks.</p>
+    ```
   * &#60;pre&#62;: Preformatted Text
-  ```
-  <pre>
-  My Bonnie lies over the ocean.
+    ```
+    <pre>
+    My Bonnie lies over the ocean.
 
-  My Bonnie lies over the sea.
+    My Bonnie lies over the sea.
 
-  My Bonnie lies over the ocean.
+    My Bonnie lies over the ocean.
 
-  Oh, bring back my Bonnie to me.
-  </pre>
-  ```
+    Oh, bring back my Bonnie to me.
+    </pre>
+    ```
   * &#60;hr&#62;: Thematic Break in the Content
-  ```
-  <h1>This is heading 1</h1>
-  <p>This is some text.</p>
-  <hr>
-  <h2>This is heading 2</h2>
-  <p>This is some other text.</p>
-  <hr>
-  ```
+    ```
+    <h1>This is heading 1</h1>
+    <p>This is some text.</p>
+    <hr>
+    <h2>This is heading 2</h2>
+    <p>This is some other text.</p>
+    <hr>
+    ```
 * **HTML Block**
   * &#60;div&#62;: Division or Section
-  ```
-  <div>Hello World</div>
-  ```
+    ```
+    <div>Hello World</div>
+    ```
   * &#60;ul&#62;: Unordered List
-  ```
-  <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-  </ul>
-  ```
+    ```
+    <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ul>
+    ```
   * &#60;ol&#62;: Ordered List
-  ```
-  <ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-  </ol>
-  ```
+    ```
+    <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ol>
+    ```
   * &#60;li&#62;: List Item
 * **HTML Links**
   * &#60;a&#62;: Hyperlink
@@ -150,9 +150,9 @@ p {
   text-align: center;
 }
 ```
-> p: Selector<br/>
-> color, text-align: Property<br/>
-> red, center: Value
+> **p**: Selector<br/>
+> **color, text-align**: Property<br/>
+> **red, center**: Value
 
 **CSS Simple selectors**
 * **element**
