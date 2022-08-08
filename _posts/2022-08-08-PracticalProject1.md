@@ -150,9 +150,9 @@ p {
   text-align: center;
 }
 ```
-> **p**: Selector<br/>
-> **color, text-align**: Property<br/>
-> **red, center**: Value
+> p: **Selector**<br/>
+> color, text-align: **Property**<br/>
+> red, center: **Value**
 
 **CSS Simple selectors**
 * **element**
