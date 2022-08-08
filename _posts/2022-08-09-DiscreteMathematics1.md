@@ -85,9 +85,8 @@ statement
       <br/>필요 충분 조건
       
 * Equivalence<br/>
-[propositional+logic.pdf](https://github.com/KimGyeongLock/KimGyeongLock.github.io/files/9283668/propositional%2Blogic.pdf)<br/>
-De Morgan's law: ¬p ∧ q ↔ ¬p ∨ ¬q, <br/>
-                 ¬p ∨ q ↔ ¬p ∧ ¬q
+![propositional+logic](https://user-images.githubusercontent.com/63464299/183473997-f5504f2a-f873-4377-bd89-c77699ad6086.jpg)<br/>
+De Morgan's law: ¬p ∧ q ↔ ¬p ∨ ¬q, ¬p ∨ q ↔ ¬p ∧ ¬q
  
  
 # Propositional Satisfiability
