@@ -63,7 +63,7 @@ Full Stack
   * &#60;br&#62;: Line Break
   * &#60;pre&#62;: Preformatted Text
 * **HTML Block**
-  * &#60;div&#62; Division or Section
+  * &#60;div&#62;: Division or Section
   * &#60;ul&#62;: Unordered List
   * &#60;ol&#62;: Ordered List
   * &#60;li&#62;: List Item
