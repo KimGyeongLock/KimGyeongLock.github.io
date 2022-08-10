@@ -1,5 +1,5 @@
 ---
-title: "Discrete"
+title: "이산 수학"
 layout: archive
 permalink: categories/discrete
 author_profile: true
