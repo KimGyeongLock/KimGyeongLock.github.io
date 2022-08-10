@@ -1,5 +1,5 @@
 ---
-title: "Practical"
+title: "실전 프로젝트"
 layout: archive
 permalink: categories/practical
 author_profile: true
