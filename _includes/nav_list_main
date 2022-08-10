@@ -70,7 +70,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Vision" %}
-                        <li><a href="/categories/vision" class="">컴퓨터 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/vision" class="">컴퓨터 비전({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul> 
