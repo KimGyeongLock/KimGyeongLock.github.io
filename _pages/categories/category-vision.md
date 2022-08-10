@@ -1,5 +1,5 @@
 ---
-title: "Vision"
+title: "컴퓨터비전"
 layout: archive
 permalink: categories/vision
 author_profile: true
