@@ -15,12 +15,15 @@ published: true
     - 픽셀의 위치는 2차원 좌표로 표현
     - 컬러영상의 경우, 빛의 3원색(RGB)으로 색상을 표현 -> 하나의 픽셀이 3개의 값을 가짐 (흑백은 하나의 값)
 
+------------
+
 # Digital Video
 - made up of **images**
 - 짧은 간격으로 영상을 촬영(보통 33ms)
 - **Frame rate**
     - 1초간 촬영된 images(frames)의 수(단위: **fps**)
 
+------------
 
 # Intensity Level
 - 하나의 픽셀이 표현할 수 있는 값의 개수
@@ -28,11 +31,13 @@ published: true
 - 하나의 픽셀에 해당하는 intensity level은 보통 256, 2의 8승
 - 크면 클수록 촬영하는 피사체를 더 정교하게 표현
 
+------------
+
 # Pixel Resolution (해상도)
 - 하나의 영상을 구상하는데 사용되는 픽셀의 개수
 - 물체의 디테일을 표현하기 위해서는 해상도가 높아야함
 - |해상도|픽셀|축약|
-  |---|---|---|
+  |:---:|:---:|:---:|
   |VGA|640X480||
   |HD|1920X1080|1k|
   |FHD|1920X1080|2k|
@@ -41,11 +46,15 @@ published: true
 - 해상도와 PPI(Pixels Per Inch)가 영상 전체의 퀄리티를 좌우한다
     - 해상도가 같더라도 PPI가 작으면(TV vs Phone) 퀄리티가 올라간다
 
+------------
+
 # Total number of bits to store a digital image
 M: 세로 방향 픽셀 수<br/>
 N: 가로 방향 픽셀 수<br/>
 k: 하나의 픽셀에 대한 데이터를 표현하기 위해 필요한 비트 수<br/>
 bits = M X N X k
+
+------------
 
 # Assignment
 Assume that you have a video that is
@@ -55,4 +64,10 @@ Assume that you have a video that is
 * 30 fps
 * What is the total amount of bits?
 
-Color video -> 컬러이미지 구상 -> 하나의 픽셀당 RGB 세개의 값 -> 각각의 RGB의 intensity level = 256 -> bit = 8 -> RGB => 3byte = 24bit
+**Solution**)
+* Color video: 하나의 픽셀당 RGB 세개의 값 -> 각각의 RGB의 intensity level = 256 -> bit = 8<br/>
+-> RGB => 3byte = 24bit: k
+* FHD: 1920X1080 -> M: 1080, N: 1920
+* 1 Hour: 30fps X 3600 = 108000
+
+=> 1080 X 1920 X 24 X 108000
