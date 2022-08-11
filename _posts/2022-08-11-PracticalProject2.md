@@ -69,16 +69,17 @@ placeholder=‘이름을 입력’><br>
 * **&#60;fieldset&#62; &#60;legend&#62;** tag
     * **fieldset**: 폼 엘리먼트 그룹화
     * **legend**: 그룹화한 폼 엘리먼트의 이름지정
-     ```
-	<form action=“save_ok.php” name=“person” method=“post”>
-	     <fieldset style=‘width:200px;margin:5px’>
-		<legend>개인 정보 입력</legend>	
-		이름 : <input type = “text” name = “name” /><br><br>
-		이메일 : <input type = “text” name = “email” /><br><br>
-	     </fieldset>
-	     <input type=‘submit’ value=‘저장’> <input type=‘reset’ value=‘취소>
-	</form>
-     ```
+    
+```
+<form action=“save_ok.php” name=“person” method=“post”>
+    <fieldset style=‘width:200px;margin:5px’>
+	<legend>개인 정보 입력</legend>	
+	이름 : <input type = “text” name = “name” /><br><br>
+	이메일 : <input type = “text” name = “email” /><br><br>
+    </fieldset>
+    <input type=‘submit’ value=‘저장’> <input type=‘reset’ value=‘취소>
+</form>
+```
 * **&#60;input&#62;** tag
     * 폼 태그 내에 다양한 모양으로 입력할 수 있는 엘리먼트 제공
     * type 속성
@@ -103,30 +104,34 @@ placeholder=‘이름을 입력’><br>
         * **pattern**(정규표현식 사용)
 * **&#60;select&#62;, &#60;optgroup&#62;, &#60;option&#62;** tag
     * 목록 중의 항목을 선택
-    * **multiple(다중선택)**, **selected(선택된 항목)** 속성 제공<br/>
-     	```
-   	지역선택 :
-	<select name=“city”>
-	    <optgroup label=“서울”>
+    * **multiple(다중선택)**, **selected(선택된 항목)** 속성 제공
+    
+```
+지역선택 :
+<select name=“city”>
+	<optgroup label=“서울”>
 		<option value=“1”>강남구</option>
 		<option value=“2”>서초구</option>
 		<option value=“3”>송파구</option>
-	    </optgroup>
-	    <optgroup label=“경기도”>
+	</optgroup>
+	<optgroup label=“경기도”>
 		<option value=“11”>성남시</option>
 		<option value=“12”>수원시</option>
 		<option value=“13”>용인시</option>
-	    </optgroup>
-	</select>
-	```
+	</optgroup>
+</select>
+```
+
 * **&#60;textarea&#62; contents &#60;/textarea&#62;** tag
     * 여러 줄의 텍스트를 입력
     * **rows**, **cols** 속성 제공
-    	```
-    	제목 : <input type=‘text’ name=‘subject’><br>
-	내용 :<br>
-	<textarea name=‘content’ cols=40 rows=5></textarea>
-	```
+    
+```
+제목 : <input type=‘text’ name=‘subject’><br>
+내용 :<br>
+<textarea name=‘content’ cols=40 rows=5></textarea>
+```
+
 * **html5** 추가
     * **&#60;datalist&#62;** tag
         * 텍스트 입력 엘리먼트 
