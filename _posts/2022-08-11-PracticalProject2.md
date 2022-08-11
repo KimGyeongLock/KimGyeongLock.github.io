@@ -16,7 +16,7 @@ published: true
 ## Form 동작원리
 
 Form
-Webpage <-> Web Server <-> Web program <-> DB
+Webpage <-> Web Server <-> Web program <-> DB<br/>
 **Submit**
 
 ## Form 기본구조
