@@ -53,13 +53,13 @@ placeholder=‘이름을 입력’><br>
     * ```enctype=“multipart/form-data”```
 
 ### Form method: Get/Post
-* GET
+* **GET**
     * Default
     * URL에 폼 데이터가 포함되어 전송<br/>
       <img width="380" alt="스크린샷 2022-08-11 오전 2 57 42" src="https://user-images.githubusercontent.com/63464299/184079899-d330de13-5471-4f27-97f8-16952dd7db95.png">
     * 전송할 수 있는 정보 길이가 제한
     * 퍼머링크(permalink, 고유한 주소체계)로 사용가능
-* POST
+* **POST**
     * 폼 데이터는 header의 body에 담겨 전송
     * URL에 정보가 표시되지 않음
     * 전송할 수 있는 데이터 길이 제한이 없음(장문의 데이터)
