@@ -71,7 +71,6 @@ placeholder=‘이름을 입력’><br>
     * **legend**: 그룹화한 폼 엘리먼트의 이름지정
     ```
     <form action=“save_ok.php” name=“person” method=“post”>
-
       <fieldset style=‘width:200px;margin:5px’>
   		  <legend>개인 정보 입력</legend>
 		    이름 : <input type = “text” name = “name” /><br><br>
@@ -79,7 +78,6 @@ placeholder=‘이름을 입력’><br>
       </fieldset>
     
       <input type=‘submit’ value=‘저장’> <input type=‘reset’ value=‘취소>
-
      </form>
      ```
 * **&#60;input&#62;** tag
