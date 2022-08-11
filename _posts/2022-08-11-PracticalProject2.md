@@ -67,15 +67,15 @@ placeholder=‘이름을 입력’><br>
 
 ## Form Elements
 * **&#60;fieldset&#62; &#60;legend&#62;** tag
-    * fieldset: 폼 엘리먼트 그룹화
-    * legend: 그룹화한 폼 엘리먼트의 이름지정
+    * **fieldset**: 폼 엘리먼트 그룹화
+    * **legend**: 그룹화한 폼 엘리먼트의 이름지정
 * **&#60;input&#62;** tag
     * 폼 태그 내에 다양한 모양으로 입력할 수 있는 엘리먼트 제공
     * type 속성
         * **text, password, button, hidden, file, checkbox**
         * **radio**
-            * php의 경우, name을 다르게. 같게할 수 있지만 jsp나 spring의 가공 필요
-            * 한 그룹으로 묶이는 엘리먼트들에 한해 name을 동일, value는 다르게
+            * <u>php의 경우, name을 다르게</u>. 같게할 수 있지만 jsp나 spring의 가공 필요
+            * <u>한 그룹으로 묶이는 엘리먼트들에 한해 name을 동일</u>, value는 다르게
         * **submit**
             * 폼에 입력한 데이터를 서버로 전송
             * ```<input type= ‘submit’ value=‘저장’>```
@@ -87,10 +87,10 @@ placeholder=‘이름을 입력’><br>
     * readonly: 읽기 전용
     * maxlength=10: 입력 글자수 개수 지정
     * html5에 추가된 속성
-        * required(필수입력)
-        * autofocus(첫 포커스)
-        * placeholder(입력 엘리먼트 힌트)
-        * pattern(정규표현식 사용)
+        * **required**(필수입력)
+        * **autofocus**(첫 포커스)
+        * **placeholder**(입력 엘리먼트 힌트)
+        * **pattern**(정규표현식 사용)
 * **&#60;select&#62;, &#60;optgroup&#62;, &#60;option&#62;** tag
     * 목록 중의 항목을 선택
     * **multiple(다중선택)**, **selected(선택된 항목)** 속성 제공
