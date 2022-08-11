@@ -68,7 +68,7 @@ placeholder=‘이름을 입력’><br>
 ## Form Elements
 * **&#60;fieldset&#62; &#60;legend&#62;** tag
     * **fieldset**: 폼 엘리먼트 그룹화
-    * **legend**: 그룹화한 폼 엘리먼트의 이름지정<br/>
+    * **legend**: 그룹화한 폼 엘리먼트의 이름지정
      ```
 	<form action=“save_ok.php” name=“person” method=“post”>
 	     <fieldset style=‘width:200px;margin:5px’>
