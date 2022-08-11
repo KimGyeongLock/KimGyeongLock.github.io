@@ -52,7 +52,7 @@ published: true
   * HSI = HSV (Value)
 
 <img width="265" alt="스크린샷 2022-08-11 오후 9 35 00" src="https://user-images.githubusercontent.com/63464299/184143031-7813824a-e967-4c8c-b41c-43ce2e80f642.png">
-> Achromatic color: 도형의 심 
+> **Achromatic color**: 도형의 심 
 >
 |Channel|Model|Range|OpenCV|
 |:---:|:---:|:---:|:---:|
