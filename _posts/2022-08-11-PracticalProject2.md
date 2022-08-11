@@ -35,8 +35,8 @@ placeholder=‘이름을 입력’><br>
    <input type=“submit” value=“Submit”>
 </form>
 ```
-> 반드시 input에는 **name**을 지정
-> **placeholder**: 텍스트 input에 나오는 힌트글
+> 반드시 input에는 **name**을 지정<br/>
+> **placeholder**: 텍스트 input에 나오는 힌트글<br/>
 > **submit**: 데이터를 서버로 전송
 
 ## Form 태그 속성
