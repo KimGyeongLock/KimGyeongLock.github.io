@@ -69,16 +69,16 @@ placeholder=‘이름을 입력’><br>
 * **&#60;fieldset&#62; &#60;legend&#62;** tag
     * **fieldset**: 폼 엘리먼트 그룹화
     * **legend**: 그룹화한 폼 엘리먼트의 이름지정<br/>
-```
-<form action=“save_ok.php” name=“person” method=“post”>
-     <fieldset style=‘width:200px;margin:5px’>
-  	<legend>개인 정보 입력</legend>	
-	이름 : <input type = “text” name = “name” /><br><br>
-	이메일 : <input type = “text” name = “email” /><br><br>
-     </fieldset>
-     <input type=‘submit’ value=‘저장’> <input type=‘reset’ value=‘취소>
-</form>
-```
+     ```
+	<form action=“save_ok.php” name=“person” method=“post”>
+	     <fieldset style=‘width:200px;margin:5px’>
+		<legend>개인 정보 입력</legend>	
+		이름 : <input type = “text” name = “name” /><br><br>
+		이메일 : <input type = “text” name = “email” /><br><br>
+	     </fieldset>
+	     <input type=‘submit’ value=‘저장’> <input type=‘reset’ value=‘취소>
+	</form>
+     ```
 * **&#60;input&#62;** tag
     * 폼 태그 내에 다양한 모양으로 입력할 수 있는 엘리먼트 제공
     * type 속성
