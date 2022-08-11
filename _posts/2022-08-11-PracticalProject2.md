@@ -68,18 +68,17 @@ placeholder=‘이름을 입력’><br>
 ## Form Elements
 * **&#60;fieldset&#62; &#60;legend&#62;** tag
     * **fieldset**: 폼 엘리먼트 그룹화
-    * **legend**: 그룹화한 폼 엘리먼트의 이름지정
-    ```
-    <form action=“save_ok.php” name=“person” method=“post”>
-      <fieldset style=‘width:200px;margin:5px’>
+    * **legend**: 그룹화한 폼 엘리먼트의 이름지정<br/>
+    	```
+    	<form action=“save_ok.php” name=“person” method=“post”>
+      	    <fieldset style=‘width:200px;margin:5px’>
   		  <legend>개인 정보 입력</legend>
 		    이름 : <input type = “text” name = “name” /><br><br>
 		    이메일 : <input type = “text” name = “email” /><br><br>
-      </fieldset>
-    
-      <input type=‘submit’ value=‘저장’> <input type=‘reset’ value=‘취소>
-     </form>
-     ```
+            </fieldset>
+    	    <input type=‘submit’ value=‘저장’> <input type=‘reset’ value=‘취소>
+     	</form>
+    	```
 * **&#60;input&#62;** tag
     * 폼 태그 내에 다양한 모양으로 입력할 수 있는 엘리먼트 제공
     * type 속성
@@ -104,7 +103,7 @@ placeholder=‘이름을 입력’><br>
         * **pattern**(정규표현식 사용)
 * **&#60;select&#62;, &#60;optgroup&#62;, &#60;option&#62;** tag
     * 목록 중의 항목을 선택
-    * **multiple(다중선택)**, **selected(선택된 항목)** 속성 제공
+    * **multiple(다중선택)**, **selected(선택된 항목)** 속성 제공<br/>
      	```
    	지역선택 :
 	<select name=“city”>
