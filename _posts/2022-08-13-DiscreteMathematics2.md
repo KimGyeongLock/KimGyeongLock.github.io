@@ -11,7 +11,7 @@ published: true
 : 변수에 대한 **propositional function(명제함수)**
 * P(x): x(변수)에 대한 propositional function(P)의 값
 * 값은 **True** or **False**으로 평가
-* Example) x + y = z : R(x, y, z)
+* Ex) x + y = z : R(x, y, z)
   * R(2, -1, 5) = **F**, R(3, 4, 7) = **T**, R(x, 3, z) = **Not a Propostion**
 
 # Compound Expressions
