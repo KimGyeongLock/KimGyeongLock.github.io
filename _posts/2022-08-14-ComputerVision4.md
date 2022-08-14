@@ -90,7 +90,8 @@ int main() {
 
 
 ## VideoCapture Class
-* Method **GET** 비디오에 대한 상세한 정보를 확인
+* Method **GET**<br>
+  비디오에 대한 상세한 정보를 확인
     * CAP_PROP_POS_MSEC: 현재 비디오 파일의 재생 위치
     * CAP_PROP_POS_FRAMES: 현재 영상의 프레임 순서
     * CAP_PROP_FRAME_WIDTH: 프레임의 가로
