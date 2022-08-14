@@ -57,6 +57,7 @@ input[name=input3]:focus {
 > Focus 후<br/>
 > <img width="704" alt="스크린샷 2022-08-14 오후 6 14 33" src="https://user-images.githubusercontent.com/63464299/184535722-660c3b5c-5a8c-4b72-857f-cc64de3e0947.png">
 
+--------
 
 # JavaScript Forms
 * 인터프리터(interpreter) 언어로 웹 브라우저에 의해 해석되고 실행
@@ -72,23 +73,23 @@ input[name=input3]:focus {
 JavaScript Tutorial: <https://www.w3schools.com/js/default.asp>
 
 ## Ex) 덧셈 계산기
-<img width="150" alt="스크린샷 2022-08-14 오후 6 49 28" src="https://user-images.githubusercontent.com/63464299/184536053-f56cf6ba-3e78-475d-8202-86e4c90bab73.png">
+<img width="150" alt="스크린샷 2022-08-14 오후 6 49 28" src="https://user-images.githubusercontent.com/63464299/184537245-2db6d112-cc82-45d3-b2a8-a159faa7e910.png">
 <br/>
 * **HTML**
-```
-<h4>덧셈 계산기</h4>
-<form>
-	<input type="text" size=2 name="num1" id="num1" pattern="\d*"> 
-    	+
-    	<input type="text" size=2 name="num2" id="num2" pattern="\d*">
-   	<button onclick="add()" type="button"> = </button>
-    	<input type="text" size=2 name="result" id="result" readonly>
-    	<br><br>
-    	<input type="reset" value="초기화">
-</form>
-```
-> pattern=**“\d*”**: 숫자로 입력
-> add() 함수를 Javascript로 구현
+	```
+	<h4>덧셈 계산기</h4>
+	<form>
+		<input type="text" size=2 name="num1" id="num1" pattern="\d*"> 
+		+
+		<input type="text" size=2 name="num2" id="num2" pattern="\d*">
+		<button onclick="add()" type="button"> = </button>
+		<input type="text" size=2 name="result" id="result" readonly>
+		<br><br>
+		<input type="reset" value="초기화">
+	</form>
+	```
+	> pattern=**“\d*”**: 숫자로 입력
+	> add() 함수를 Javascript로 구현
 
 * **JavaScript**
 	&#60;**script**&#62; 태그 사용
