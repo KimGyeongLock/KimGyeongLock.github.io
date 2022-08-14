@@ -163,9 +163,9 @@ JavaScript Tutorial: <https://www.w3schools.com/js/default.asp>
 	</script>
 	```
 	> Requirement: <br/>
- 	> - 제목을 반드시 입력<br/>
- 	> - 이름을 반드시 입력<br/>
- 	> - 이름은 2글자 이상 입력
+ 	 - 제목을 반드시 입력<br/>
+ 	 - 이름을 반드시 입력<br/>
+ 	 - 이름은 2글자 이상 입력
 
 ---------
 
