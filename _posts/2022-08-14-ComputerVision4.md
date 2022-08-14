@@ -33,10 +33,11 @@ published: true
 
 **CV**: **C**omputer **V**ision
 
+------------
 
 # Read an image in openCV
 * Display an image<br/>
-  Mat imread(const string& filename, int flags=1)
+  Mat **imread**(const string& filename, int flags=1)
     * Flag 1: Color image (Default)
     * Flag 2 or 0: Gray scale image
     
@@ -48,6 +49,8 @@ int main() {
 	waitKey(0);
 }
 ```
+
+------------
 
 # Read a video in openCV
 
@@ -77,7 +80,7 @@ int main() {
       ```
       * 영상의 한 frame씩 frame변수로 이동 (첫번째 frame부터)
       * 영상이 끝날때까지 출력
-      * waitKey: 사용자의 키를 기다림(frame Interval)
+      * **waitKey**: 사용자의 키를 기다림(frame Interval)
           * 0 = Forever
 * Read a video from a **webcam**
     * ```VideoCapture cap(0);```
