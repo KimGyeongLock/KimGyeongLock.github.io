@@ -193,7 +193,7 @@ JavaScript Tutorial: <https://www.w3schools.com/js/default.asp>
 	</body>
 	</html>
 	```
-  > 폼에서 만든 **name**과 php에서 받아온 **name**은 동일<br/>
-  > php에서 변수를 만들 때 맨 앞에 **$**를 추가<br/>
-  > 화면에 출력을 할 때 **<?=** $subject**?>**
+  > ⋅ 폼에서 만든 **name**과 php에서 받아온 **name**은 동일<br/>
+  > ⋅ php에서 변수를 만들 때 맨 앞에 **$**를 추가<br/>
+  > ⋅ 화면에 출력을 할 때 **<?=** $subject**?>**
 
