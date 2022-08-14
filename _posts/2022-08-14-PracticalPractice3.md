@@ -88,10 +88,10 @@ JavaScript Tutorial: <https://www.w3schools.com/js/default.asp>
 		<input type="reset" value="초기화">
 	</form>
 	```
-	> pattern=**“\d*”**: 숫자로 입력
+	> pattern=**“\d*”**: 숫자로 입력<br/>
 	> add() 함수를 Javascript로 구현
 
-* **JavaScript**
+* **JavaScript**<br/>
 	&#60;**script**&#62; 태그 사용
 	```
 	<script>
@@ -106,9 +106,11 @@ JavaScript Tutorial: <https://www.w3schools.com/js/default.asp>
   	 	}
 	</script>
 	```
-	> **document**: body안에 있는 모든 Elements
-	> **.getElementByID**: ID로 Element를 찾아서 가져오기
+	> **document**: body안에 있는 모든 Elements<br/>
+	> **.getElementByID**: ID로 Element를 찾아서 가져오기<br/>
 	> **parseInt()**: 정수형 변환
+
+---------
 
 # JavaScript Events
 ```<element event=‘javascript codes’ />```
@@ -120,6 +122,8 @@ JavaScript Tutorial: <https://www.w3schools.com/js/default.asp>
     * **onkeydown**: 키보드 입력할 때
     * **onload**: 웹페이지 로딩 완료될 때
     * …
+
+---------
 
 # JS Form Validation
 * **HTML**
@@ -158,11 +162,12 @@ JavaScript Tutorial: <https://www.w3schools.com/js/default.asp>
     	}
 	</script>
 	```
-	> Requirement: 
-  > 제목을 반드시 입력<br/>
-  > 이름을 반드시 입력<br/>
-  > 이름은 2글자 이상 입력
+	> Requirement: <br/>
+ 	> - 제목을 반드시 입력<br/>
+ 	> - 이름을 반드시 입력<br/>
+ 	> - 이름은 2글자 이상 입력
 
+---------
 
 # 전송 데이터 처리
 
@@ -188,7 +193,7 @@ JavaScript Tutorial: <https://www.w3schools.com/js/default.asp>
 	</body>
 	</html>
 	```
-  > 폼에서 만든 **name**과 php에서 받아온 **name**은 동일
-  > php에서 변수를 만들 때 맨 앞에 **$**를 추가
+  > 폼에서 만든 **name**과 php에서 받아온 **name**은 동일<br/>
+  > php에서 변수를 만들 때 맨 앞에 **$**를 추가<br/>
   > 화면에 출력을 할 때 **<?=** $subject**?>**
 
