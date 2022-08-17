@@ -111,6 +111,6 @@ inRange(image, Scalar(0, 133,77), Scalar(255, 173, 127), image);
     * 특정한 메트릭스에 대해서 각각의 메트릭스의 픽셀 값들을 value로 치환
     * Mask: 특정한 ROI에 대해서 수행
 * Void **convertScaleAbs**(InputArray src, OutputArray dst, double alpha=1, double beta=0)
-    * Dst(l) = saturate_cast<**uchar**> (|src(l)| * alpha + beta)
+    * Dst(l) = saturate_cast<**uchar**> (&#124;src(l)&#124; * alpha + beta)
     * 항상 type은 unsigned character
  
