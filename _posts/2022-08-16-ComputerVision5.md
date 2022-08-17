@@ -70,7 +70,9 @@ published: true
 # Threshold operation
 * double **threshold** (Mat src, Mat dst, double thresh, double maxval, int type)
     * 입력영상의 특정한 픽셀 값이 threshold 값 이상 혹은 이하의 경우, 해당 픽셀을 특정한 값으로 변환
-        * **Maxval**: IF) src(l) > thresh,<br/> dst(l) = maximal if not) 0 When type = THRESH_BINARY
+        * **Maxval**: IF) src(l) > thresh dst(l) = maximal,<br/>
+                      IF NOT) 0<br/>
+                      When type = THRESH_BINARY
         * **Type**: 
             * **THRESH_BINARY**
             * **THRESH_BINARY_INV** :  THRESH_BINARY 반대
