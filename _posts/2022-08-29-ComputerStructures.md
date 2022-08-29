@@ -8,15 +8,18 @@ published: true
 ---
 
 # Implication of Computer (Network) Technology
-Computer revolution	
-* 3차 산업혁명을 이끌었다.
+**Computer revolution**	
+* 3차 산업혁명
 * 경제적으로 실행 불가능한 응용 프로그램 실용화<br/>
-  (World Wide Web, Computers in automobiles, Robot, Cell phone, Human genome project, peer- to-peer computing, Cloud computing, Smart home/factory/farm/city, Telecommuting, IoT, Big data, AI, Blockchain, IT convergence etc. )
+  (World Wide Web, Computers in automobiles, Robot, Cell phone,<br/>
+   Human genome project, peer- to-peer computing, Cloud computing,<br/>
+   Smart home/factory/farm/city, Telecommuting, IoT, Big data, AI,<br/>
+   Blockchain, IT convergence etc. )
 
 ------------
 
 # Overview of Physical Implementations 
-* Integrated Circuits (ICs): 직접회로
+* Integrated Circuits (**IC**s): 직접회로
 * Printed Circuits (PC) boards: 인쇄 회로 기판
 * Power Supplies: 전원 공급기
 * Chassis (rack, card case, …): 프레임
@@ -25,15 +28,15 @@ Computer revolution
 ------------
 
 # Classes of Computing Applications
-* Desktop computers
+* **Desktop computers**
    * 개인용 컴퓨터
    * 그래픽 디스플레이, 키보드, 마우스 통합
    * 데스크탑, 노트북
-* Servers
+* **Servers**
    * 여러 사용자들을 위해 큰 프로그램 실행
    * 네트워크를 통해서만 access
    * 메인 프레임, 미니컴퓨터, 슈퍼 컴퓨터
-* Embedded Computers
+* **Embedded Computers**
    * 미리 정해진 응용 프로그램이나 소프트웨어를 실행
    * 다른 장치 내부에 있는 컴퓨터
    * 세탁기, 자동차, 휴대폰, 비디오게임, 프린터⋅⋅⋅
@@ -41,21 +44,32 @@ Computer revolution
 ------------
 
 # What are “Machine Structures”?
-* Software: Application(ex: browser), Operating System(Windows, Unix), Compiler, Assembler
-* Hardware: Processor, Memory, I/O system, Datapath & Control, Digital Design, Circuit Design, transistors
+* Software: 
+  * Application(ex: browser) 
+  * Operating System(Windows, Unix) 
+  * Compiler 
+  * Assembler
+* Hardware: 
+  * Processor
+  * Memory
+  * I/O system 
+  * Datapath & Control 
+  * Digital Design 
+  * Circuit Design 
+  * Transistors
 
 ------------
 
 # Below Your Program
-* Application Software
+* **Application Software**
    * 고급언어
-* System software
-   * Compiler: 고급언어를 기계언어로 변환
-   * Operating System: 서비스 코드
+* **System software**
+   * **Compiler**: 고급언어를 기계언어로 변환
+   * **Operating System**: 서비스 코드
         * 처리 입력/출력
         * 메모리 및 스토리지 관리
         * 스케줄링 작업 및 공유 자원
-* Hardware
+* **Hardware**
    * Processor
    * Memory
    * I/O controllers
@@ -64,25 +78,25 @@ Computer revolution
 
 # Levels of Representation
 * High Level Language Program
-    * [Compiler]
+    * [**Compiler**]
 * Assembly Language Program
-    * [Assembler]
+    * [**Assembler**]
 * Machine Language Program
-    * [Machine Interpretation]
+    * [**Machine Interpretation**]
 * Control Signal Specification
 
 ------------
 
 # Computer System Organization
-* CPU
-    * Control
-    * Datapath
+* **CPU**
+    * **Control**
+    * **Datapath**
     * 수만개의 트랜지스터를 사용하여 구현
-* I/O
-    * Input (mouse, keyboard)
-    * Output (display, printer)
-* Memory(disk drives, DRAM, SRAM, CD)
-* SoC (System on Chip)
+* **I/O**
+    * **Input** (mouse, keyboard)
+    * **Output** (display, printer)
+* **Memory**(disk drives, DRAM, SRAM, CD)
+* **SoC** (System on Chip)
     * 한 개의 칩에 완전 구동이 가능한 제품과 시스템이 들어 있는 것
 
 ------------
