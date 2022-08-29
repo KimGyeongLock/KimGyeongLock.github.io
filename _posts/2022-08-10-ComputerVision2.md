@@ -23,6 +23,7 @@ published: true
 - 짧은 간격으로 영상을 촬영(보통 33ms)
 - **Frame rate**
     - 1초간 촬영된 images(frames)의 수(단위: **fps**)
+    - High frame rate일 때 더 보기가 편하고 자연스럽
 
 ------------
 
