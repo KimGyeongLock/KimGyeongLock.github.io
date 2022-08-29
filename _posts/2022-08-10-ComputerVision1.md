@@ -18,6 +18,7 @@ published: true
     - 밝기 변환
     - 잡음 제거
 - **엣지 검출 및 선 검출(Edge extraction/Line detection)**
+    - 물체의 boundry 추출
 - **영상, 비디오 분할(Image/Video segmentation)**
     - 각각의 영역을 분할
     - 움직이는 물체 추출
