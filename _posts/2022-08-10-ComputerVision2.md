@@ -74,4 +74,4 @@ Assume that you have a video that is
 * FHD: 1920X1080 -> M: 1080, N: 1920
 * 1 Hour: 30fps X 3600 = 108000
 
-=> 1080 X 1920 X 24 X 108000
+=> 1080 X 1920 X 24 X 108000 = 5,374,771,200,000 bits = 625.70GB
