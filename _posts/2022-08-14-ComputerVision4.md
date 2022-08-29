@@ -19,7 +19,7 @@ published: true
     * Mat (const Mat & m)
     * Mat (Size size, int type, const Scalar& s)
         * Mat img(h, w, CV_8UC1, Scalar(255))
-        * multi-channel image: Scalar(255,0,0) (B,G,R)
+        * multi-channel image: Scalar(255,0,0) **(B,G,R)**
 
 ## Pixel **type**
 * **CV_8U: 8-bit unsigned integer: uchar ( 0~255 )**
