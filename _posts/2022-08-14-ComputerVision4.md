@@ -13,9 +13,9 @@ published: true
 * Declaration
     * Mat (int rows, int cols, int **type**)
         * Mat mtx(3, 3, CV_32F): 3x3 floating-point matrix
-        * Mat img(1080, 1920, CV 8UC3): 3-channel (color) image of 1920 columns and 1080 rows
+        * Mat img(**1080, 1920**, CV 8UC3): 3-channel (color) image of 1920 columns and 1080 rows
     * Mat (Size size, int type)
-        * Mat img(Size(1920, 1080), CV 8UC3)
+        * Mat img(**Size(1920, 1080)**, CV 8UC3)
     * Mat (const Mat & m)
     * Mat (Size size, int type, const Scalar& s)
         * Mat img(h, w, CV_8UC1, Scalar(255))
