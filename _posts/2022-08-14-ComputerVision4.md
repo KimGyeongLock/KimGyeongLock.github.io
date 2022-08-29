@@ -82,6 +82,7 @@ int main() {
       * 영상이 끝날때까지 출력
       * **waitKey**: 사용자의 키를 기다림(frame Interval)
           * 0 = Forever
+	  * speed를 increase or decrease
 * Read a video from a **webcam**
     * ```VideoCapture cap(0);```
         * webcam device number = 0
