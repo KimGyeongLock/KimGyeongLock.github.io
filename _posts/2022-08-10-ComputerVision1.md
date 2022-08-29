@@ -26,5 +26,6 @@ published: true
     - 얼굴 검출
     - 보행자 검출
     - 사물 검출,추적
+    - Deep Learning 기술 활용
 - **영상 변환(Image Transformation)**
     - 사진 시점 변경
