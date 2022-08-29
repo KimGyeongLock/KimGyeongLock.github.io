@@ -179,10 +179,10 @@ published: true
 
 **양적변수(quantitative variable)**
 * 숫자로 표현될 수 있는 변수<br/>
-   1) 이산형(discrete type)<br/>
+   1. 이산형(discrete type)<br/>
       * 헤아릴 수 있는 값을 가지는 양적 변수, 주로 정수값
       * ex) 가구당 자동차 보유 대수, 일 주일 교통 사고건수
-   2) 연속형(continuous type)<br/>
+   2. 연속형(continuous type)<br/>
       * 주어진 구간에서 임의의 값을 가지는 변수, 주로 실수값
       * ex) 사람의 키, 몸무게
 
