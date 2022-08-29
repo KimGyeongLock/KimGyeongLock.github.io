@@ -42,11 +42,11 @@ published: true
 - |해상도|픽셀|축약|
   |:---:|:---:|:---:|
   |VGA|640X480||
-  |HD|1920X1080|1k|
+  |HD|1280X720|1k|
   |FHD|1920X1080|2k|
   |QHD|2560X1440||
   |UHD|3840X2160|4k|
-- 3840(가로방향,column), 2160(세로방향, row)
+- 3840(width, column), 2160(hight, row)
 - 해상도와 PPI(Pixels Per Inch)가 영상 전체의 퀄리티를 좌우한다
     - 해상도가 같더라도 PPI가 작으면(TV vs Phone) 퀄리티가 올라간다
 
