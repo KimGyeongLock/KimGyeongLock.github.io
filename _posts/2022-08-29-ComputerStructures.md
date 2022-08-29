@@ -7,11 +7,11 @@ categories: Structure
 published: true
 ---
 
-* Implication of Computer (Network) Technology
+* Implication of Computer (Network) Technology<br/>
   Computer revolution	
-		* 3차 산업혁명을 이끌었다.
-		* 경제적으로 실행 불가능한 응용 프로그램 실용화
-      * (World Wide Web, Computers in automobiles, Robot, Cell phone, Human genome project, peer- to-peer computing, Cloud computing, Smart home/factory/farm/city, Telecommuting, IoT, Big data, AI, Blockchain, IT convergence etc. )
+	* 3차 산업혁명을 이끌었다.
+	* 경제적으로 실행 불가능한 응용 프로그램 실용화
+      		* (World Wide Web, Computers in automobiles, Robot, Cell phone, Human genome project, peer- to-peer computing, Cloud computing, Smart home/factory/farm/city, Telecommuting, IoT, Big data, AI, Blockchain, IT convergence etc. )
 
 
 * Overview of Physical Implementations 
