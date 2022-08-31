@@ -59,6 +59,7 @@ published: true
 * Word class
     * toString() : overriding
 <br/>
+<br/>
 
 * 데이터 조회
     * WordManager class
