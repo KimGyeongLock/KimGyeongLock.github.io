@@ -26,7 +26,8 @@ published: true
     * 영어단어 데이터
     * 데이터를 다루기 위해서 만드는 클래스
     * 기본적으로 데이터가 가지고 있는 데이터 구조의 변수 내포
-        * **private**으로 하게 되면은 같은 클래스 내부에서만 접근이 가능하고 외부에서는 접근이 불가능
+        * **private**(접근자 설정): 멤버변수를 집적 접근하지 않게 하기 위해<br/>
+            클래스 내부에서만 접근이 가능하고 외부에서는 접근이 불가능
         * 외부에서 변경할 수 있도록 **getter**와 **setter**를 추가
     * 데이터를 사용하기 위해서 **getter**와 **setter**가 필요
     * 데이터를 초기화하기 위해서 생성자인 **constructor**가 필요
@@ -38,14 +39,14 @@ published: true
     
 <br/>
 <span style="color: red">구현체는 하나인데 굳이 interface를 만들 필요가 있을까?</span><br/>
-➔ 이 프로그램은 단어를 관리하는 프로그램이지만 다른 기능들을 넣을 수 있을 때를 대비해서 확장 가능성을 생각하여 interface로 구현<br/>
+➔ 이 프로그램은 단어를 관리하는 프로그램이지만 다른 기능들을 넣을 수 있을 때를 대비해서<br/>확장 가능성을 생각하여 interface로 구현<br/>
 <br/>
 
 * **WordManager class**: <span style="color: blue">**wordCRUD를 사용한 실제 관리**</span>
     * WordCRUD라는 클래스를 이용해서 실제 전체 프로그램 Managing
     * 사용자에게 보여주는 UI 담당
 * **Main class**: <span style="color: blue">**static main 함수, starter class**</span>
-    * 자바 프로젝트를 처음으로 구동하기 위해서 main이라는 함수가 실제 실행이 되는데, main 함수를 가지고 있는 클래스
+    * 자바 프로젝트를 처음으로 구동하기 위해서 main이라는 함수가 실제 실행이 되는데,<br/>main 함수를 가지고 있는 클래스
     * Main 클래스에서 WordManager를 호출함으로써 프로그램이 시작
 
 -----------
