@@ -16,9 +16,11 @@ published: true
         * Mat img(**1080, 1920**, CV 8UC3): 3-channel (color) image of 1920 columns and 1080 rows
     * Mat (Size size, int type)
         * Mat img(**Size(1920, 1080)**, CV 8UC3)
-    * Mat (const Mat & m) copy matrix
+    * Mat (const Mat & m) 
+    	* copy matrix
     * Mat (Size size, int type, const Scalar& s)
-        * Mat img(h, w, CV_8UC1, Scalar(255)) Scalar 픽셀의 특정한 값 
+    	* Scalar: 픽셀의 특정한 값
+        * Mat img(h, w, CV_8UC1, Scalar(255))  
         * multi-channel image: Scalar(255,0,0) **(B,G,R)**
 
 ## Pixel **type**
