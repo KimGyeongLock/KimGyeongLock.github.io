@@ -88,6 +88,13 @@
                     {% endif %}
                 {% endfor %}
             </ul> 
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Physics" %}
+                        <li><a href="/categories/physics" class="">물리학실험({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
         <span class="nav__sub-title">네트워크관리사 실기</span>
             <ul>
                 {% for category in site.categories %}
