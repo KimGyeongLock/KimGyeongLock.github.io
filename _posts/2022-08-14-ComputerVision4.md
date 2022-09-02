@@ -82,8 +82,13 @@ int main() {
       ```
       * 영상의 한 frame씩 frame변수로 이동 (첫번째 frame부터)
       * 영상이 끝날때까지 출력
-      * **waitKey**: 사용자의 키를 기다림(frame Interval)
+      * **waitKey**: 사용자의 키를 기다림(frame Interval) 영상간의 간격
           * 0 = Forever
+	  * 공식: **1000/fps**
+	  	* 1초 = 1000ms
+		* 2배 faster -> 1000/2fps = 500/fps
+	  	
+	  * **milliseconds**(단위)
 	  * speed를 increase or decrease
 * Read a video from a **webcam**
     * ```VideoCapture cap(0);```
