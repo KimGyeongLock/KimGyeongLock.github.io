@@ -38,7 +38,10 @@ published: true
 * CV_64F: 64-bit floating-point number: double ( -DBL_MAX~DBL_MAX, INF, NAN )
 * Multi-channel array: **CV_8UC3**(Color Image: 3-Channel), CV_8U(3), CV_64FC4, CV64FC(4)
 
-**CV**: **C**omputer **V**ision
+**CV**: **C**omputer **V**ision<br/>
+Normally Intensity Level = 256<br/>
+-> intensity level을 표현하기 위해(하나의 픽셀의 값을 표현하기 위해) **8bit**가 필요<br/>
+Mat이라는 데이터타입은 영상을 표현하는 것뿐만 아니라 행렬 영상, 전처리과정, 엣지검출과정에서 픽셀값을 **signed**값이나 **floating**값을 가지는 경우 발생
 
 ------------
 
