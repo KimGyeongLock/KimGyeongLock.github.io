@@ -72,7 +72,7 @@ Assume that you have a video that is
 * What is the total amount of bits?
 
 **Solution**)
-* Color video: 하나의 픽셀당 RGB 세개의 값 -> 각각의 RGB의 intensity level = 256 -> bit = 8<br/>
+* Color video: 하나의 픽셀당 RGB 세개의 값 -> 각각의 RGB의 <span style="color: red">**intensity level**</span> = 256 -> bit = 8<br/>
 -> RGB => 3byte = 24bit: k
 * FHD: 1920X1080 -> M: 1080, N: 1920
 * 1 Hour: 30fps X 3600 = 108000
