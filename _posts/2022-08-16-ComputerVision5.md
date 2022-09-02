@@ -110,6 +110,10 @@ inRange(image, Scalar(0, 133,77), Scalar(255, 173, 127), image);
     * **rtype**: desired output matrix
     * **alpha, beta**: 픽셀의 값을 변환 시켜주고 싶을 때 사용
     * m(x, y) = saturate_cast<rType> (alpha * (*this)(x,y) + beta)
+         * **saturate** 함수: 결과가 표현할 수 있는 범위에 오도록 설정
+            * IF) src1, src2: 0-255 (8-bit single channel array)
+             <br/>src1(255) + src2(255) = dst(255)
+             <br/>src1(0) - src2(0) = dst(0)
 * Mat **setTo**(InputArray value, InputArray mask=noArray()
     * 특정한 메트릭스에 대해서 각각의 메트릭스의 픽셀 값들을 value로 치환
     * **Mask**: 특정한 ROI에 대해서 수행
