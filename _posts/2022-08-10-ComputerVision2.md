@@ -13,6 +13,7 @@ published: true
     - 영상(image)에 대한 정보를 담고 있는 가장 작은 단위
     - 여러 개의 값 때로는 하나의 값을 가질 수 있음
     - 픽셀의 위치는 2차원 좌표로 표현
+        <img width="366" alt="스크린샷 2022-09-02 오후 5 35 23" src="https://user-images.githubusercontent.com/63464299/188099483-ba64fa5d-0745-460d-9823-0e09d004236f.png">
     - 컬러영상의 경우, 빛의 3원색(RGB)으로 색상을 표현<br/>-> 하나의 픽셀이 3개의 값을 가짐 (흑백은 하나의 값)
     - alpha blending - 4가지의값
 
