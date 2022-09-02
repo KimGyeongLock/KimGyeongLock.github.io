@@ -139,5 +139,5 @@ inRange(image, Scalar(0, 133,77), Scalar(255, 173, 127), image);
 * Void **convertScaleAbs**(InputArray src, OutputArray dst, double alpha=1, double beta=0)
     * Dst(l) = saturate_cast<**uchar**> (&#124;src(l)&#124; * alpha + beta)
     * 항상 type은 unsigned character
-    * convertTo와 매우 유사하나, 차이점: **&#60;uchar&#62;, &#124;src(l)&#124**
+    * convertTo와 매우 유사하나, 차이점: **&#60;uchar&#62;, &#124;src(l)&#124;**
  
