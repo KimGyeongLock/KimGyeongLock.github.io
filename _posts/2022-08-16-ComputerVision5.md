@@ -106,18 +106,38 @@ inRange(image, Scalar(0, 133,77), Scalar(255, 173, 127), image);
 
 # Others
 
-* Mat **convertTo**(Output Array m, int rtype, double alpha=1, double beta=0)
-    * **rtype**: desired output matrix
+## Mat Copy
+* **Shallow copy**
+    * Mat data structure consists of header and data
+    * the **address** is copied (포인터, 주소 공유)
+    * Use '**=**' 
+         * Mat m_shallow **=** m1;
+* **Deep copy**
+    * Use **clone()** 
+    * 새로운 Matrix 생성과 copyTo() 수행 
+         * Mat m_deep = m1**.clone()**;
+* **copyTo** (another way of copying matrix)
+    * void copyTo(OutputArray m, InputArray mask)
+        * m: 복사본이 저장될 행렬.<br/>만약 *this 행렬과 크기 및 타입이 다르면 메모리를 새로 할당한 후 픽셀 값을 복사
+        * mask: *this와 같은 크기의 작업 마스크.<br/> CV_8U 유형
+			마스크 행렬의 원소 값이 0이 아닌 좌표에서만 행렬 원소를 복사합니다
+
+## Mat Conversion
+* Mat **convertTo**(OutputArray m, int rtype, double alpha=1, double beta=0)
+    * 입력 Array의 데이터 타입을 변환 
+    * **rtype**: 변환시킬 type
     * **alpha, beta**: 픽셀의 값을 변환 시켜주고 싶을 때 사용
     * m(x, y) = saturate_cast<rType> (alpha * (*this)(x,y) + beta)
+         * (*this)(x,y): 원래 픽셀값
          * **saturate** 함수: 결과가 표현할 수 있는 범위에 오도록 설정
             * IF) src1, src2: 0-255 (8-bit single channel array)
              <br/>src1(255) + src2(255) = dst(255)
              <br/>src1(0) - src2(0) = dst(0)
 * Mat **setTo**(InputArray value, InputArray mask=noArray()
     * 특정한 메트릭스에 대해서 각각의 메트릭스의 픽셀 값들을 value로 치환
-    * **Mask**: 특정한 ROI에 대해서 수행
+    * **Mask**: 특정한 ROI에 대해서 수행, 설정이 없으면 default **All**
 * Void **convertScaleAbs**(InputArray src, OutputArray dst, double alpha=1, double beta=0)
     * Dst(l) = saturate_cast<**uchar**> (&#124;src(l)&#124; * alpha + beta)
     * 항상 type은 unsigned character
+    * convertTo와 매우 유사하나, 차이점: **<uchar>, &#124;src(l)&#124**
  
