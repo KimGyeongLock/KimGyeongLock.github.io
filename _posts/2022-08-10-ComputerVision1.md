@@ -22,6 +22,7 @@ published: true
 - **영상, 비디오 분할(Image/Video segmentation)**
     - 각각의 영역을 분할
     - 움직이는 물체 추출
+    - 인물을 detect하여 virtual background 생성 (Zoom)
 - **객체 검출 및 추척(Object Detection/Tracking)**
     - 얼굴 검출
     - 보행자 검출
@@ -29,3 +30,5 @@ published: true
     - Deep Learning 기술 활용
 - **영상 변환(Image Transformation)**
     - 사진 시점 변경
+
+image compression: 데이터가 큰 영상을 작게 압축(Movie)
