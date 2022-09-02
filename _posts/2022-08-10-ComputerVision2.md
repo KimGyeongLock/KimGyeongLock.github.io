@@ -21,7 +21,8 @@ published: true
 # Digital Video
 - made up of **images**
 - 짧은 간격으로 영상을 촬영
-- Normally 비디오를 구성하는 영상들 간의 간격 **33ms** -> 대략 1초에 **30**개의 영상 존재(fps)
+- Normally 비디오를 구성하는 영상들 간의 간격 **33ms**<br/>
+    -> 1초/33ms = 30.30303.., 대략 1초에 **30**개의 영상 존재(fps)
 - **Frame rate**
     - 1초간 촬영된 images(frames)의 수(단위: **fps** Frame Per Second)
     - High frame rate일 때 더 보기가 편하고 자연스럽, 하지만 데이터의 양이 많아짐
