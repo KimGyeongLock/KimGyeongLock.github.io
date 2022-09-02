@@ -48,6 +48,7 @@ Mat이라는 데이터타입은 영상을 표현하는 것뿐만 아니라 행�
 # Read an image in openCV
 * Display an image<br/>
   Mat **imread**(const string& filename, int flags=1)
+    * Load Image
     * Flag 1: Color image (Default)
     * Flag 2 or 0: Gray scale image
     
@@ -59,6 +60,18 @@ int main() {
 	waitKey(0);
 }
 ```
+
+* void imshow(const string &winname, InputArray mat)
+    * Display Image
+    * winname: Name of the window
+    * mat: image to be shown
+    
+## Resize an image in openCV
+* resize(Mat src, Mat dst, Size(cols, rows))
+    * src: input image
+    * dst: output image
+    * Size(cols, rows): Size of image to convert
+
 
 ------------
 
