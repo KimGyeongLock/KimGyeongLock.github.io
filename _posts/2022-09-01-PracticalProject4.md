@@ -52,13 +52,14 @@ published: true
 -----------
 
 # CRUD 작성 및 테스트
-* WordManager class
-    * selectMenu 함수 
-* WordCRUD class
-    * Create : Word 추가
-    * Read : Word 조회
-* Word class
-    * toString() : overriding
+* 데이터 추가
+   * WordManager class
+       * selectMenu 함수 
+   * WordCRUD class
+       * Create : Word 추가
+       * Read : Word 조회
+   * Word class
+       * toString() : overriding
 <br/>
 <br/>
 
