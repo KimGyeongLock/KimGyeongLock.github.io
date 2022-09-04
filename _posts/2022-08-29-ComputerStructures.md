@@ -96,6 +96,7 @@ published: true
 ------------
 
 # Instruction Set Architecture (ISA)
+
 C + A + B; (High Level Language)<br/>
 -> ISA1 push A; push B; add; pop C;<br/>
 -> ISA2 load A; add B; store C;<br/>
