@@ -50,11 +50,11 @@ published: true
   * Compiler 
   * Assembler
 * Hardware: 
-  * Processor
+  * **Processor**
   * Memory
   * I/O system 
-  * Datapath & Control 
-  * Digital Design 
+  * **Datapath & Control(CPU)**
+  * **Digital Design** 
   * Circuit Design 
   * Transistors
 
