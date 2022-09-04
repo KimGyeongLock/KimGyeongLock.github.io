@@ -35,9 +35,9 @@ Instructions:
 * 단점: **비쌈**
     * 메모리도 많이 필요하기 때문에 cpu안에 많이 집어넣진 못함 -> register로 모든 메모리 기능을 대체X
 * Types of Register
-    * **General** purpose register: 어떤 목적이든지 사용 가능
-    * **Special** purpose register
-          * **PC** (Program Counter): 다음 실행될 instruction 주소를 기록
+   * **General** purpose register: 어떤 목적이든지 사용 가능
+   * **Special** purpose register
+         * **PC** (Program Counter): 다음 실행될 instruction 주소를 기록
                * instruction이 꼭 순서대로 실행X
                * EX) if문의 경우, false일 경우 다음 instruction을 뛰어넘고 그 다음 instruction을 실행
         * **AC** (Accumulator): 계산결과를 잠시 보관(축적)
@@ -73,17 +73,17 @@ same Instruction Set Architecture (I3, I5, I7)
 
 ## Levels of Programming Languages
 
-High Level Languages
+**High Level Languages**
 * 인간에게 더 가까운 (C, Python)
 * Machine **independent** (어떤 Machine이라도 관계없음 -> complier가 machine에 따라 번역)
 
-Assembly Languages
+**Assembly Languages**
 * Machine Languge를 **기호화**시킨것 (mnemonic)
 * 각각의 프로세스는 고유의 assembly language를 가짐(Machine language가 다르기 때문)
 * Assembly Languages 한줄(instruction)은 machine language 한줄(instruction)과 대응
 * 프로세서 안에 있는 components (register) 에 저장된 데이터를 직접 조종가능
 
-Machine Languages: Instruction(language of machine)
+**Machine Languages**: Instruction(language of machine)
 * 프로세서에 Binary code(0/1)을 전달해야 특정한 operation을 수행
 * native language of processor
 * Machine **dependent**
