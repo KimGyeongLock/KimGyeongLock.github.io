@@ -35,12 +35,11 @@ Instructions:
 * 단점: **비쌈**
     * 메모리도 많이 필요하기 때문에 cpu안에 많이 집어넣진 못함 -> register로 모든 메모리 기능을 대체X
 * Types of Register
-   * **General** purpose register: 어떤 목적이든지 사용 가능
-   * **Special** purpose register
-   
-         * **PC** (Program Counter): 다음 실행될 instruction 주소를 기록
-               * instruction이 꼭 순서대로 실행X
-               * EX) if문의 경우, false일 경우 다음 instruction을 뛰어넘고 그 다음 instruction을 실행
+    * **General** purpose register: 어떤 목적이든지 사용 가능
+    * **Special** purpose register
+        * **PC** (Program Counter): 다음 실행될 instruction 주소를 기록
+            * instruction이 꼭 순서대로 실행X
+            * EX) if문의 경우, false일 경우 다음 instruction을 뛰어넘고 그 다음 instruction을 실행
         * **AC** (Accumulator): 계산결과를 잠시 보관(축적)
               * ALU(Arithmetic Logic Unit): 사칙연산, 논리연산을 수행할 수 있는 unit(In CPU)<br/>
                       ![image](https://user-images.githubusercontent.com/63464299/188318525-00673319-a2f0-4b72-ae2d-243a0fd0ed9f.png)
