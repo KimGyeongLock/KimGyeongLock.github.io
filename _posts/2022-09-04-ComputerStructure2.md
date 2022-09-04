@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Ch 2. Instructions&#58; Language of the Computer
+title: Ch 2. Instructions&#58; Language of the Computer -(1)
 toc: true
 toc_sticky: true
 categories: Structure
