@@ -120,7 +120,7 @@ Assembly Language Program **for SPARC**(source code)
 ## Instruction Format
 
 * Assembly Language -> (convert) -> Machine code (0/1) : Specific format
-* Instruction length: 8, 16, **32(MIPS)**, **64bits**… (word size 기준)
+* **Instruction length**: 8, 16, **32(MIPS)**, **64bits**… (word size 기준)
     * **fixed size**: 요즘엔 32, 64bits으로 충분
     * **variable size**: word가 부족해서 붙여서 사용
 * Typical instructions consist:
