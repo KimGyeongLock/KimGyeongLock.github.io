@@ -17,7 +17,7 @@ Instructions:
 이런 칩들마다 각기 다른 언어를 가짐
 
 # 1. Introduction to Instruction Set Architecture
-# Basics
+# - Basics
 
 ## Machine Instruction (macro instruction)
 * native language of processor
@@ -37,13 +37,13 @@ Instructions:
 * Types of Register
     * **General** purpose register: 어떤 목적이든지 사용 가능
     * **Special** purpose register
-        * **PC** (Program Counter): 다음 실행될 instruction 주소를 기록
+        * **PC(Program Counter)**: 다음 실행될 instruction 주소를 기록
             * instruction이 꼭 순서대로 실행X
             * EX) if문의 경우, false일 경우 다음 instruction을 뛰어넘고 그 다음 instruction을 실행
-        * **AC** (Accumulator): 계산결과를 잠시 보관(축적)
-              * ALU(Arithmetic Logic Unit): 사칙연산, 논리연산을 수행할 수 있는 unit(In CPU)<br/>
+        * **AC(Accumulator)**: 계산결과를 잠시 보관(축적)
+            * ALU(Arithmetic Logic Unit): 사칙연산, 논리연산을 수행할 수 있는 unit(In CPU)<br/>
                       ![image](https://user-images.githubusercontent.com/63464299/188318525-00673319-a2f0-4b72-ae2d-243a0fd0ed9f.png)
-        * **IR** (Instruction Register): 메모리부터 가져온(fetch) instruction을 보관
+        * **IR(Instruction Register)**: 메모리부터 가져온(fetch) instruction을 보관
         * **Not accessible to programmers(Assembly language)**
 
 ## Instruction Set Architecture
