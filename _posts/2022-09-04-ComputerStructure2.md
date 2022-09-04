@@ -27,7 +27,7 @@ Instructions:
 * IF) C(컴파일러) -> **instruction의 집합(Memory)** -> **실행(CPU)** -> **결과저장(Memory)**
 
 ## Registers
-* **CPU 안에 존재**
+* **CPU 안에 존재** 
 * 필요한 data와 instruction을 메모리에서 가져와서 보관하는 **일시적 보관**소 (In CPU)
     * cpu는 단독으로 먼가 일을 할 수 없고 메모리에서 instruction과 data를 가져다 씀
     * instruction과 instruction을 실행하기 위한 data
