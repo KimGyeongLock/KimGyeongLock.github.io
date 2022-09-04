@@ -80,16 +80,35 @@ published: true
 * High Level Language Program
     * [**Compiler**]
 * Assembly Language Program
+    * Mneumonic: 무엇인가를 연상하여 기억하기 위해 만들어진 짧은 코드
+    * Symbol 추가
+        * lw $15, 0($2) ← **instruction**<br/> 
+          lw $16, 4($2)<br/>
+          sw $16, 0($2)<br/>
+          sw $15, 4($2)<br/>
+          ↑**symbol**
     * [**Assembler**]
 * Machine Language Program
+    * 0과 1로 이루어짐
     * [**Machine Interpretation**]
 * Control Signal Specification
 
 ------------
 
+# Instruction Set Architecture (ISA)
+C + A + B; (High Level Language)<br/>
+-> ISA1 push A; push B; add; pop C;<br/>
+-> ISA2 load A; add B; store C;<br/>
+-> ISA3 ld R1, A; ld R2, B; add R3,R1,R2;, st C,R3;<br/>
+
+: Instruction을 표현하는 방법은 여러가지 -> 표현방법에 따라 하드웨어를 만드는 방법도 여러가지<br/>
+MIPS의 고유한 방법
+
+------------
+
 # Computer System Organization
 * **CPU**
-    * **Control**
+    * **Control** (어떤 Datapath를 가야하는지 결정)
     * **Datapath**
     * 수만개의 트랜지스터를 사용하여 구현
 * **I/O**
@@ -112,6 +131,7 @@ published: true
 # A Safe Place For Data
 * 휘발성 메인 메모리
     * 전원 종료시 명령과 데이터 손실
+    * DRAM(Dynamic random access memory)
 * 비휘발성 이차 메모리
     * Magnetic disk
     * Flash memory
