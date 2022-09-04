@@ -37,6 +37,7 @@ Instructions:
 * Types of Register
    * **General** purpose register: 어떤 목적이든지 사용 가능
    * **Special** purpose register
+   
          * **PC** (Program Counter): 다음 실행될 instruction 주소를 기록
                * instruction이 꼭 순서대로 실행X
                * EX) if문의 경우, false일 경우 다음 instruction을 뛰어넘고 그 다음 instruction을 실행
