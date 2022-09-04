@@ -41,7 +41,7 @@ Instructions:
             * instruction이 꼭 순서대로 실행X
             * EX) if문의 경우, false일 경우 다음 instruction을 뛰어넘고 그 다음 instruction을 실행
         * **AC(Accumulator)**: 계산결과를 잠시 보관(축적)
-            * ALU(Arithmetic Logic Unit): 사칙연산, 논리연산을 수행할 수 있는 unit(In CPU)<br/>
+            * **ALU(Arithmetic Logic Unit)**: 사칙연산, 논리연산을 수행할 수 있는 unit(In CPU)<br/>
                       ![image](https://user-images.githubusercontent.com/63464299/188318525-00673319-a2f0-4b72-ae2d-243a0fd0ed9f.png)
         * **IR(Instruction Register)**: 메모리부터 가져온(fetch) instruction을 보관
         * **Not accessible to programmers(Assembly language)**
@@ -79,11 +79,11 @@ same Instruction Set Architecture (I3, I5, I7)
 
 **Assembly Languages**
 * Machine Languge를 **기호화**시킨것 (mnemonic)
-* 각각의 프로세스는 고유의 assembly language를 가짐(Machine language가 다르기 때문)
+* 각각의 프로세서는 고유의 assembly language를 가짐(Machine language가 다르기 때문)
 * Assembly Languages 한줄(instruction)은 machine language 한줄(instruction)과 대응
 * 프로세서 안에 있는 components (register) 에 저장된 데이터를 직접 조종가능
 
-**Machine Languages**: Instruction(language of machine)
+**Machine Languages**: **Instruction**(Language of machine)
 * 프로세서에 Binary code(0/1)을 전달해야 특정한 operation을 수행
 * native language of processor
 * Machine **dependent**
