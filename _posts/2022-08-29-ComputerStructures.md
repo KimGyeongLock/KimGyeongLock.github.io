@@ -96,13 +96,12 @@ published: true
 ------------
 
 # Instruction Set Architecture (ISA)
-
 C + A + B; (High Level Language)<br/>
 -> ISA1 push A; push B; add; pop C;<br/>
 -> ISA2 load A; add B; store C;<br/>
 -> ISA3 ld R1, A; ld R2, B; add R3,R1,R2;, st C,R3;<br/>
 
-: Instruction을 표현하는 방법은 여러가지 -> 표현방법에 따라 하드웨어를 만드는 방법도 여러가지<br/>
+=> Instruction을 표현하는 방법은 여러가지 -> 표현방법에 따라 하드웨어를 만드는 방법도 여러가지<br/>
 MIPS의 고유한 방법
 
 ------------
