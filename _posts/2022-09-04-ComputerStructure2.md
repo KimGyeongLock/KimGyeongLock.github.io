@@ -70,3 +70,65 @@ same Instruction Set Architecture (I3, I5, I7)
 * A에서 돌아가는 프로그램은 B에서도 돌아간다
 * 두 마이크로프로세서 내부의 모든 registers는 같다.
 * performance와 design은 다르다
+
+
+## Levels of Programming Languages
+
+High Level Languages
+* 인간에게 더 가까운 (C, Python)
+* Machine **independent** (어떤 Machine이라도 관계없음 -> complier가 machine에 따라 번역)
+
+Assembly Languages
+* Machine Languge를 **기호화**시킨것 (mnemonic)
+* 각각의 프로세스는 고유의 assembly language를 가짐(Machine language가 다르기 때문)
+* Assembly Languages 한줄(instruction)은 machine language 한줄(instruction)과 대응
+* 프로세서 안에 있는 components (register) 에 저장된 데이터를 직접 조종가능
+
+Machine Languages: Instruction(language of machine)
+* 프로세서에 Binary code(0/1)을 전달해야 특정한 operation을 수행
+* native language of processor
+* Machine **dependent**
+* 프로세서는 논리회로로 구성
+
+
+## Compiling
+**Same** High-Level Language -> Run on **different processors**<br/>
+Ex)
+* Compiler for PC: gcc -> Pentium object code
+    * Other Pentium object files + Pentium object code -> Pentium linker
+    * -> Pentium Executable file(Machine Language) -> Pentium PC
+* Compiler for SPARC -> SPARC object code
+    * Other SPARC object files + SPARC object code -> SPARC linker
+    * -> SPARC Executable file(Machine Language) -> SPARC workstation
+* Compiler for microprocessor X
+    * ..
+
+
+## Assembling
+Ex)<br/>
+Assembly Language Program **for Pentium**(source code): **not same**
+* Pentium Assembler -> Pentium Object code
+    * Other Pentium Object files + Pentium Object code -> Pentium linker
+    * -> Pentium Executable file(Machine Language) -> Pentium PC
+
+Assembly Language Program **for SPARC**(source code)
+* SPARC Assembler -> SPARC Object code
+    * Other SPARC Object files + SPARC Object code -> SPARC linker
+    * -> SPARC Executable file(Machine Language) -> SPARC Workstation
+
+
+
+## Instruction Format
+
+* Assembly Language -> (convert) -> Machine code (0/1) : Specific format
+* Instruction length: 8, 16, **32(MIPS)**, **64bits**… (word size 기준)
+    * **fixed size**: 요즘엔 32, 64bits으로 충분
+    * **variable size**: word가 부족해서 붙여서 사용
+* Typical instructions consist:
+    * **Opcode**: **operation**(+, -, ×, ÷)
+        * opcode: k bits, 2^k instructions(+, -,…  if) 3bits -> 8개의 operation 사용가능)
+    * **Operands**: 데이터의 위치, 데이터를 표시하는 방법
+        * Operand의 개수
+        * operand 표시방법
+        * address part: m bits, 2^m different memory locations access
+
