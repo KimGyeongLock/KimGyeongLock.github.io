@@ -12,7 +12,7 @@ published: true
 * 입력영상의 픽셀값들을 사전에 정의한 매핑관계를 토대로 다른 값으로 매핑하는 것
 
 어떠한 매핑함수(그래프)를 사용했는지에 따라 결과 영상이 달라질 수 있음<br/>
-함수의 종류
+**함수의 종류**
 * Identity함수(기본)
 * **Negative 반전함수**
 * **Log함수**
@@ -53,10 +53,10 @@ published: true
 
 # Piecewise-linear transformation functions
 * 임의로 함수 정의
-* 특정한 영역에서 다른 기울기를 가지는 함수
+* 특정한 영역에서 다른 기울기를 가지는 함수<br/>
    <img width="335" alt="스크린샷 2022-09-05 오후 12 18 05" src="https://user-images.githubusercontent.com/63464299/188354319-eab753b6-0c42-4e54-8ad8-8d7b30129f27.png"><br/>
    <img width="304" alt="스크린샷 2022-09-05 오후 12 18 53" src="https://user-images.githubusercontent.com/63464299/188354350-98775a1e-9518-4021-903c-dab983b69234.png">
-
-* Thresholding 
+> Thresholding 
+   * Mat operator의 함수
    * 특수한 형태의 intensity transformation
    * 입력영상의 특정한 픽셀 값이 threshold 값 이상 혹은 이하의 경우, 해당 픽셀을 특정한 값으로 변환
