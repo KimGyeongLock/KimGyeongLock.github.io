@@ -26,7 +26,9 @@ value_B = image.at<Vec3b>(50, 100)[0];
 
 # pointer
 * 장점: at operator보다 빠름
-
+* **DATA_TYPE* p;**
+ <br/>**p = image.ptr&#60;DATA_TYPE&#62;(WANT_ROW);**
+ <br/>**p&#91;WANT_COL (* channels + BGR)&#93;;**
 ```
 uchar* p; 
 p = image.ptr<uchar>(50); 
@@ -43,7 +45,7 @@ value_B = p[100 * channels + 0];
 * Hard to figure out inappropriate access
 * Mat image(ROW, COL, CV_TYPE);
     * **DATA_TYPE* data = (DATA_TYPE*)image.data;**
-    * **data&#91;WANT_ROW * image.cols + WANT_COL&#93;**
+    * **data&#91;WANT_ROW * image.cols + WANT_COL (* channels + BGR)&#93;**
         * ROW: Number of Rows(Height)
         * COL: Number of Columns(Width)
         * CV_TYPE: Type type (ex: CV_8UC3 = 8 bit 3 channels)
