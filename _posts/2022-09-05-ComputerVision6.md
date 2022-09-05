@@ -39,6 +39,7 @@ published: true
     * **contrast**: 각각 인접한 픽셀들과의 차이, 높으면 높을 수록 선명
 * <span style="color: red">**어두운 영역의 디테일을 개선시킴과 동시에 밝은 영역의 디테일은 감소**</span>
     * 영상이 밝아진다(Brighten): 픽셀값에 특정한 상수 값 1이상의 값을 곱셈, 개념이 다르다.
+* To use log function, pixel type to input should be **floating point**
 
 --------------
 
