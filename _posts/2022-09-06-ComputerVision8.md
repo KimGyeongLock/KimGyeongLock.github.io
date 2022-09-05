@@ -36,12 +36,12 @@ published: true
 * 장점: **random noise 제거**
 * 단점: 영상자체가 흐릿(**bluring**)
 * filter mask<br/>
-   <img width="324" alt="스크린샷 2022-09-05 오후 11 40 42" src="https://user-images.githubusercontent.com/63464299/188484209-72e5e09f-8887-48e6-81c9-309ac14fd260.png">
+    <img width="327" alt="스크린샷 2022-09-05 오후 11 41 14" src="https://user-images.githubusercontent.com/63464299/188484232-d5257156-6086-4de5-9599-7f2188b5c6f6.png">
    > 계수값 = 1/9<br/>
    > 1/9*픽셀값들의 합 -> 9개 픽셀값의 평균<br/>
    > 특정한 픽셀에 가중치x<br/>
-
-   <img width="327" alt="스크린샷 2022-09-05 오후 11 41 14" src="https://user-images.githubusercontent.com/63464299/188484232-d5257156-6086-4de5-9599-7f2188b5c6f6.png">
+   
+<img width="324" alt="스크린샷 2022-09-05 오후 11 40 42" src="https://user-images.githubusercontent.com/63464299/188484209-72e5e09f-8887-48e6-81c9-309ac14fd260.png">
    > 가중치O<br/>
    > 가중치 평균을 구한다<br/>
 
