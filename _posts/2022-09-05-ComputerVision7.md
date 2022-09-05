@@ -8,7 +8,7 @@ published: true
 ---
 
 # at operator
-* **image.at <DATA_TYPE> (WANT_ROW, WANT_COL)**
+* **image.at &#60;DATA_TYPE&#62; (WANT_ROW, WANT_COL)**
     * **DATA_TYPE**: image를 구성하는 픽셀의 Data type
     * **WANT_ROW**: access 하고 싶은 y축
     * **WANT_COL**: access 하고 싶은 x축
