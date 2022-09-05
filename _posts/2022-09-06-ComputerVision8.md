@@ -52,20 +52,21 @@ published: true
 * 가장자리로 갈수록 가중치가 낮아진다
 
 ## Sharpening
-* 밝기값의 차이가 발생하는 부분들을 더 강조시킴으로써 우리가 보기에 보다 영상이 엣지있게 만듦 highlight transitions in intensity clear
-* 공간 도메인(spatial)에서의 미분을 수행(spatial differentiation) 
-* 값의 변화가 발생하는 부분을 더 강조시켜주는 것 
+* highlight transitions in intensity (more clear)
+* 밝기값의 차이(값의 변화)가 발생하는 부분들을 더 강조시킴으로써 보다 영상이 엣지있게 만듦 
+* 공간 도메인(spatial)에서의 미분을 수행(**spatial differentiation**) 
 
-* 2차미분활용
-    * 2차 미분을 활용하기 위한 마스크
-      <br/><img width="646" alt="스크린샷 2022-09-06 오전 12 11 49" src="https://user-images.githubusercontent.com/63464299/188485030-eaf5387b-2512-4cbd-b72c-23099344ae57.png">
-    * 입력영상에서 마스크를 활용하여 모든 픽셀에 대한 2차 미분을 구함
-    * 2차 미분을 구한 영상을 원본 영상에 더함
-* unsharp masking
-    * Unsharp mask = Original signal - Blurred signal(둥글)
-        * 값의 변화가 없는 부분 = 0, 값의 변화가 발생하는 부분 = 음수 or 양수
-    * Sharpened signal = Unsharp mask + Original signal
-        * 값의 변화가 발생하는 부분이 더 강조
+### 2차미분(second derivative)
+* 2차 미분을 활용하기 위한 마스크
+ <br/><img width="646" alt="스크린샷 2022-09-06 오전 12 11 49" src="https://user-images.githubusercontent.com/63464299/188485030-eaf5387b-2512-4cbd-b72c-23099344ae57.png">
+* 입력영상에서 마스크를 활용하여 모든 픽셀에 대한 2차 미분을 구함
+* 2차 미분을 구한 영상을 원본 영상에 더함
+
+### unsharp masking
+* Unsharp mask = Original signal - Blurred signal(둥글)
+    * 값의 변화가 없는 부분 = 0, 값의 변화가 발생하는 부분 = 음수 or 양수
+* Sharpened signal = Unsharp mask + Original signal
+    * 값의 변화가 발생하는 부분이 더 강조
 
 ---------------
 
