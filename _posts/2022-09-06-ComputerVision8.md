@@ -27,26 +27,28 @@ published: true
 
 * **Mask size**
     * 중요한 역할
-    * 작으면 작을수록 작은 잡음들을 없앰
-    * 큰 물체들을 블러시키고 싶다 mask크기를 키운다 -> 계산량이 많아짐 -> 상황에 맞게 마스크 크기 설정
+    * 작으면 작을수록 작은 잡음을 제거
+    * 큰 물체들을 블러, mask크기를 증가 -> 계산량 증가 -> 상황에 맞게 마스크 크기 설정
 
 ## Averaging filter 
 * = low pass filters
 * 픽셀값을 필터 마스크 내부에 주변에 있는 이웃 값들의 평균으로 대치
-* 장점: random noise 제거
+* 장점: **random noise 제거**
 * 단점: 영상자체가 흐릿(**bluring**)
-* filter mask
-<img width="324" alt="스크린샷 2022-09-05 오후 11 40 42" src="https://user-images.githubusercontent.com/63464299/188484209-72e5e09f-8887-48e6-81c9-309ac14fd260.png">
-> 계수값 = 1/9<br/>
-> 1/9*픽셀값들의 합 -> 9개 픽셀값의 평균<br/>
-> 특정한 픽셀에 가중치x<br/>
-<img width="327" alt="스크린샷 2022-09-05 오후 11 41 14" src="https://user-images.githubusercontent.com/63464299/188484232-d5257156-6086-4de5-9599-7f2188b5c6f6.png">
-> 가중치O
-> 가중치 평균을 구한다
+* filter mask<br/>
+   <img width="324" alt="스크린샷 2022-09-05 오후 11 40 42" src="https://user-images.githubusercontent.com/63464299/188484209-72e5e09f-8887-48e6-81c9-309ac14fd260.png">
+   > 계수값 = 1/9<br/>
+   > 1/9*픽셀값들의 합 -> 9개 픽셀값의 평균<br/>
+   > 특정한 픽셀에 가중치x<br/>
+
+   <img width="327" alt="스크린샷 2022-09-05 오후 11 41 14" src="https://user-images.githubusercontent.com/63464299/188484232-d5257156-6086-4de5-9599-7f2188b5c6f6.png">
+   > 가중치O<br/>
+   > 가중치 평균을 구한다<br/>
 
 ## Gaussian filter
-* 가중치를 Gaussian Function을 활용해서 averaging filter
-  * <img width="332" alt="스크린샷 2022-09-05 오후 11 48 03" src="https://user-images.githubusercontent.com/63464299/188484316-67c6612b-dd4b-4ce5-ab4b-a165742496db.png">  
+* 가중치를 **Gaussian Function**을 활용해서 averaging filter
+  * Gaussian Function<br/> 
+      <img width="332" alt="스크린샷 2022-09-05 오후 11 48 03" src="https://user-images.githubusercontent.com/63464299/188484316-67c6612b-dd4b-4ce5-ab4b-a165742496db.png">  
 * 가장자리로 갈수록 가중치가 낮아진다
 
 ## Sharpening
@@ -56,7 +58,7 @@ published: true
 
 * 2차미분활용
     * 2차 미분을 활용하기 위한 마스크
-        * <img width="646" alt="스크린샷 2022-09-06 오전 12 11 49" src="https://user-images.githubusercontent.com/63464299/188485030-eaf5387b-2512-4cbd-b72c-23099344ae57.png">
+      <br/><img width="646" alt="스크린샷 2022-09-06 오전 12 11 49" src="https://user-images.githubusercontent.com/63464299/188485030-eaf5387b-2512-4cbd-b72c-23099344ae57.png">
     * 입력영상에서 마스크를 활용하여 모든 픽셀에 대한 2차 미분을 구함
     * 2차 미분을 구한 영상을 원본 영상에 더함
 * unsharp masking
@@ -68,11 +70,10 @@ published: true
 ---------------
 
 # Other filter - Median filter
-* Median value 중간값
+* Median value(중간값)
     * 3x3 픽셀 -> median = 5th largest
-    * 5x5 -> 13th
-    * 5번째 큰 값을 취해서 그 값을 원래 픽셀값과 바꿔주는
+    * 5번째 큰 값을 취해서 그 값을 원래 픽셀값과 Transition
     * 랜덤한 노이즈들을 제거
-        * mxm 사이즈의 미디언 필터 사용시 크기가 m^2 / 2 이하인 잡음들을 제거
-        * salt-and-pepper noise or random noise 제거에 효과적
-        * 에버리지나 가오시안보다 연산량이 많음, 블러링 없음
+        * mXm 사이즈의 미디언 필터 사용시 크기가 m^2 / 2 이하인 잡음들을 제거
+        * **salt-and-pepper noise or random noise 제거**에 효과적
+        * Average나 Gaussian보다 연산량이 많음, 블러링 없음
