@@ -89,7 +89,7 @@ statement
 * If two propositions always the same truth value -> **Equivalent**
 * <span style="color: red">**≡**</span>
 * p → q ≡ ¬q → ¬p(contrapositive)
-* **p → q ≡ ¬p ∨ q** (truth table)
+* <span style="color: red">**p → q ≡ ¬p ∨ q**</span> (truth table)
 
 # Precedence of Logical Operators
 1. **¬**(Negation)
