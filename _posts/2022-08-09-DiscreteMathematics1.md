@@ -150,9 +150,9 @@ statement
     1. 모든 행은 최소 한개의 퀸을 포함<br/>
         <img width="170" alt="스크린샷 2022-09-06 오후 4 46 58" src="https://user-images.githubusercontent.com/63464299/188577388-4e89747d-c218-40f1-a99c-76de21640bf6.png">
     2. 각 행에 최대 한개의 퀸만 존재<br/>
-        <img width="300" alt="스크린샷 2022-09-06 오후 4 47 33" src="https://user-images.githubusercontent.com/63464299/188577414-ef496491-2aea-4647-a766-db6902cdd571.png">
+        <img width="287" alt="스크린샷 2022-09-06 오후 5 12 08" src="https://user-images.githubusercontent.com/63464299/188582507-4456fd51-9685-47ff-a354-a5e116a77ac3.png">
     3. 각 열에 최대 하나의 퀸만 존재<br/>
-        <img width="304" alt="스크린샷 2022-09-06 오후 4 47 46" src="https://user-images.githubusercontent.com/63464299/188577447-3c303d39-6002-4632-aff7-febf867b8c14.png">
+        <img width="304" alt="스크린샷 2022-09-06 오후 4 47 46" src="https://user-images.githubusercontent.com/63464299/188582400-69e2e826-89b6-419d-96b2-f58d94ec7eb5.png">
     4. top-right 방향 대각선에 2개 이상의 퀸이 존재X<br/>
         <img width="384" alt="스크린샷 2022-09-06 오후 4 48 00" src="https://user-images.githubusercontent.com/63464299/188577492-6b36795d-57ec-4309-8012-721a86e9a482.png">
     5. bottom- right 방향 대각선에 2개 이상의 퀸이 존재X<br/>
