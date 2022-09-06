@@ -59,8 +59,10 @@ published: true
    <br/>
    
    <img width="304" alt="스크린샷 2022-09-05 오후 12 18 53" src="https://user-images.githubusercontent.com/63464299/188354350-98775a1e-9518-4021-903c-dab983b69234.png">
+> **binary image**: 흰색(255)과 검은색(0) 두 가지 색으로만 이루어진 이미지
+> * grayscale img: 한 픽셀당 8비트 ≠ binary image: 한 픽셀당 1비트
 > **Thresholding** 
 > * Mat operator의 함수
 > * 특수한 형태의 intensity transformation
-> * 위 intensity transformation과 같은 기능
+> * 위 intensity transformation과 같은 기능, image segementation
 > * 입력영상의 특정한 픽셀 값이 threshold 값 이상 혹은 이하의 경우, 해당 픽셀을 특정한 값으로 변환
