@@ -115,8 +115,8 @@ De Morgan’s Laws for Quantifiers<br/>
 
 |Negation|Equivalent Statement|
 |:---:|:---:|
-|¬∃xP(x)|∀x¬P&#40;x&#42;|
-|¬∀xP(x)|∃x¬P&#40;x&#42;|
+|¬∃xP(x)|∀x¬P&#40;x&#41;|
+|¬∀xP(x)|∃x¬P&#40;x&#41;|
 
 -----------------
 
