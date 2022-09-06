@@ -58,6 +58,16 @@ P(**x**) → P(**y**)<br>
 * 논의 영역(U)에 속하는 **단 하나의 값**을 의미
 * 고유한 𝑥에 대한 명제 P(x): **∃!𝑥𝑃(𝑥)**
 
+
+## Quantifiers and Evaluating them as Looping
+* domain is finite
+* ∀𝑥𝑃(𝑥) loop
+   - every step P(x) is true -> ∀𝑥𝑃(𝑥) is true.
+   – a step P(x) is false ->  ∀𝑥𝑃(𝑥) is false and the loop terminates.
+* ∃𝑥𝑃(𝑥) loop
+   – some step P(x) is true -> ∃𝑥𝑃(𝑥) is true and the loop terminates.
+   – P(x) 결과값이 true가 없이 loop가 끝난다면 -> ∃𝑥𝑃(𝑥) is false.
+
 -----------------
 
 # Translating from english to logic
