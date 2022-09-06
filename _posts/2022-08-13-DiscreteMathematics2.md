@@ -101,7 +101,7 @@ if predicate statements  have the same truth value, they are logically equivalen
 * ∃x(P(x) ∨ Q(x)) ≡ ∃xP(x) ∨ ∃xQ(x)
 
 ## Negating Quantified Expressions
-De Morgan’s Laws for Quantifiers.
+De Morgan’s Laws for Quantifiers<br/>
 |Negation|Equivalent Statement|
 |:---:|:---:|
 |¬∃xP(x)|∀x¬P(x)|
