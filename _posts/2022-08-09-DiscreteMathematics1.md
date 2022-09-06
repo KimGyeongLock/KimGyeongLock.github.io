@@ -149,8 +149,20 @@ statement
  𝑄 = 𝑄1 ∧ 𝑄2 ∧ 𝑄3 ∧ 𝑄4 ∧ 𝑄5
     1. 모든 행은 최소 한개의 퀸을 포함<br/>
         <img width="170" alt="스크린샷 2022-09-06 오후 4 46 58" src="https://user-images.githubusercontent.com/63464299/188577388-4e89747d-c218-40f1-a99c-76de21640bf6.png">
+        * OR operator: 한 row에 어디든 하나만 존재(위치 상관x)<br/>
+          나머지 퀸이 없어도(F) 퀸이 하나라도 있으면(T) = True
+        * AND operator: 모든 row에 한개씩 존재<br/>
+          한줄이라도 퀸이 없다면(F) 모든 줄에 퀸이 있다면(T)
+        
     2. 각 행에 최대 한개의 퀸만 존재<br/>
-        <img width="287" alt="스크린샷 2022-09-06 오후 5 12 08" src="https://user-images.githubusercontent.com/63464299/188582507-4456fd51-9685-47ff-a354-a5e116a77ac3.png">
+        <img width="287" alt="스크린샷 2022-09-06 오후 5 12 08" src="https://user-images.githubusercontent.com/63464299/188582907-370f79f7-65d1-4dfb-a2db-8b01937cf291.png">
+        * pi1 ∧ pi2 = F<br/>
+           T     F  = F<br/>
+           F     T  = F<br/>
+           F     F  = F<br/>
+           T     T (X) 한줄에 최대 퀸 한개
+        * Why negation?
+        
     3. 각 열에 최대 하나의 퀸만 존재<br/>
         <img width="304" alt="스크린샷 2022-09-06 오후 4 47 46" src="https://user-images.githubusercontent.com/63464299/188582400-69e2e826-89b6-419d-96b2-f58d94ec7eb5.png">
     4. top-right 방향 대각선에 2개 이상의 퀸이 존재X<br/>
