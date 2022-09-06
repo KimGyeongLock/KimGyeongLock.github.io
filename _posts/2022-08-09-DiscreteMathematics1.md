@@ -11,6 +11,8 @@ published: true
 * **Syntax(구조)**: symbolic structure of the statements
 * **Semantics(의미)**: a mapping from symbolic structures to things that the logic system concerns
 
+------------
+
 # Propositional Logic
 Proposition(명제): declarative sentence **(Only True or False)**
 -  1+1=2 (T)
@@ -84,6 +86,8 @@ statement
       |F|F|T|
     
     - 필요 충분 조건
+ 
+------------ 
     
 # Equivalent Propositions
 * If two propositions always the same truth value -> **Equivalent**
@@ -91,12 +95,16 @@ statement
 * p → q ≡ ¬q → ¬p(contrapositive)
 * <span style="color: red">**p → q ≡ ¬p ∨ q**</span> (truth table)
 
+------------
+
 # Precedence of Logical Operators
 1. **¬**(Negation)
 2. **∧**(Conjunction)
 3. **∨**(Disjunction)
 4. **→**(Implication)
 5. **↔**(Biconditional)
+
+------------
 
 # Propositional Equivalences
 * **Tautology**(동어반복)
@@ -112,11 +120,23 @@ statement
 * Negation Laws: p ∨ ¬q ≡ T, p ∧ ¬p ≡ F
 * Absorption Laws: p ∨ (p ∧ q) ≡ p, p ∧ (p ∨ q) ≡ p
  
+------------ 
  
 # Propositional Satisfiability
 * **Satisfiable** Proposition: **적어도 하나**의 case가 True
 * **Unsatisfiable** Proposition: All case is False -> **Contradiction**(모순)
 * **Valid** Proposition: 모든 결과가 True -> **Tautology**
   
+------------  
+  
 # Notation
-∨^𝑛𝑗=1
+<img width="87" alt="스크린샷 2022-09-06 오후 2 25 58" src="https://user-images.githubusercontent.com/63464299/188553792-eaf4034b-9e63-4abb-86b7-493a6feaf3ab.png">
+> p1 ∨ p2 ∨ ... pn
+
+<img width="89" alt="스크린샷 2022-09-06 오후 2 26 37" src="https://user-images.githubusercontent.com/63464299/188553991-05f62f35-babb-4e98-bb68-d5d78858c4d6.png">
+> p1 ∧ p2 ∧ ... pn
+
+------------
+
+# N-Queen Problem
+
