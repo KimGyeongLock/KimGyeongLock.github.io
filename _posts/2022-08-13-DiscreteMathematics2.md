@@ -59,6 +59,31 @@ P(**x**) → P(**y**)<br>
 
 -----------------
 
+# Translating from english to logic
+Ex1) "Every student in this class has taken a course in C"<br/>
+Solution 1: **∀x C(x)**<br/>
+* domain U: all students in this class
+* C(x): "x has taken a course in C"
+
+Solution 2: **∀x (S(x) → C(x))**
+* domain U: all people
+* S(x): "x is a student in this class"
+* C(x): "x has taken a course in C"
+
+<br/>
+
+Ex2) "Some student(s) in this class has taken a course in C."<br/>
+Solution 1: **∃x C(x)**<br/>
+* domain U: all students in this class
+* C(x): "x has taken a course in C"
+
+Solution 2: **∃x (S(x) ∧ C(x))**
+* domain U: all people
+* S(x): "x is a student in this class"
+* C(x): "x has taken a course in C"
+
+-----------------
+
 # Equivalences in Predicate logic
 if predicate statements  have the same truth value, they are logically equivalent
 * ∀x(P(x) ∧ Q(x)) ≡ ∀xP(x) ∧ ∀xQ(x)
