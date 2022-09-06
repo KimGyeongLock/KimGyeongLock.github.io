@@ -98,11 +98,11 @@ statement
 ------------
 
 # Precedence of Logical Operators
-1. **¬**(Negation)
-2. **∧**(Conjunction)
-3. **∨**(Disjunction)
-4. **→**(Implication)
-5. **↔**(Biconditional)
+1. ¬ (Negation)
+2. ∧ (Conjunction)
+3. ∨ (Disjunction)
+4. → (Implication)
+5. ↔ (Biconditional)
 
 ------------
 
@@ -115,7 +115,7 @@ statement
   * Ex) p ∧ ¬p
 * **Contingency**(우연)
   * not tautology ∧ not contradiction
-* ![propositional+logic](https://user-images.githubusercontent.com/63464299/183473997-f5504f2a-f873-4377-bd89-c77699ad6086.jpg)
+* <br/>![propositional+logic](https://user-images.githubusercontent.com/63464299/183473997-f5504f2a-f873-4377-bd89-c77699ad6086.jpg)
 * **De Morgan's law**: ¬(p ∧ q) ≡ ¬p ∨ ¬q, ¬(p ∨ q) ≡ ¬p ∧ ¬q
 * Negation Laws: p ∨ ¬q ≡ T, p ∧ ¬p ≡ F
 * Absorption Laws: p ∨ (p ∧ q) ≡ p, p ∧ (p ∨ q) ≡ p
