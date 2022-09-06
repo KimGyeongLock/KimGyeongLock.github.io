@@ -118,3 +118,5 @@ statement
 * **Unsatisfiable** Proposition: All case is False -> **Contradiction**(모순)
 * **Valid** Proposition: 모든 결과가 True -> **Tautology**
   
+# Notation
+∨^𝑛𝑗=1
