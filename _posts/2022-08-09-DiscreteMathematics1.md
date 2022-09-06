@@ -29,14 +29,14 @@ statement
 **Compound Proposition**: one or more propositions + logical operators
 - **Logical Operator**
   - **Negation**(NOT)
-    - ¬p
+    - <span style="color: red">**¬**</span>p
     - |p|¬p|
       |:---:|:---:|
       |T|F|
       |F|T|
   
   - **Conjunction**(AND)
-    - p ∧ q
+    - p <span style="color: red">**∧**</span> q
     - |p|q|p ∧ q|
       |:---:|:---:||:---:|
       |T|T|T|
@@ -44,7 +44,7 @@ statement
       |F|T|F|
       |F|F|F|
   - **Disjunction**(OR)
-    - p ∨ q
+    - p <span style="color: red">**∨**</span> q
     - |p|q|p ∨ q|
       |:---:|:---:||:---:|
       |T|T|T|
@@ -52,7 +52,7 @@ statement
       |F|T|T|
       |F|F|F|
   - **Exclusive-Or**(XOR)
-    - p ⊕ q
+    - p <span style="color: red">**⊕**</span> q
     - |p|q|p ⊕ q|
       |:---:|:---:||:---:|
       |T|T|F|
@@ -61,21 +61,21 @@ statement
       |F|F|F|
   - **Implication**(IMPLIES)
     - (Conditional Statement) 
-    - p → q = ¬p ∨ q
+    - p <span style="color: red">**→**</span> q
     - |p|q|p → q|
       |:---:|:---:||:---:|
       |T|T|T|
       |T|F|F|
       |F|T|T|
       |F|F|T| 
-    - p(가설)가 거짓이면 q(결론)를 판단 할 수 없기 때문에 True
+    - p(약속, hypothesis), q(약속을 지키는 거, conclusion)
     - q는 p의 필요조건 
     - p는 q의 충분조건
     - **Converse**(역): q → p
     - **Inverse**(이): ¬p → ¬q
     - **Contrapositive**(대우): ¬q → ¬p
   - **Biconditional**(IFF)
-    - p ↔ q
+    - p <span style="color: red">**↔**</span> q
     - |p|q|p ↔ q|
       |:---:|:---:||:---:|
       |T|T|T|
@@ -84,10 +84,33 @@ statement
       |F|F|T|
     
     - 필요 충분 조건
-      
-* Equivalence<br/>
-![propositional+logic](https://user-images.githubusercontent.com/63464299/183473997-f5504f2a-f873-4377-bd89-c77699ad6086.jpg)<br/>
-De Morgan's law: ¬p ∧ q ↔ ¬p ∨ ¬q, ¬p ∨ q ↔ ¬p ∧ ¬q
+    
+# Equivalent Propositions
+* If two propositions always the same truth value -> **Equivalent**
+* <span style="color: red">**≡**</span>
+* p → q ≡ ¬q → ¬p(contrapositive)
+* **p → q ≡ ¬p ∨ q** (truth table)
+
+# Precedence of Logical Operators
+1. **¬**(Negation)
+2. **∧**(Conjunction)
+3. **∨**(Disjunction)
+4. **→**(Implication)
+5. **↔**(Biconditional)
+
+# Propositional Equivalences
+* **Tautology**(동어반복)
+  * always **True**
+  * Ex) p ∨ ¬p
+* **Contradiction**(모순)
+  * always **False**
+  * Ex) p ∧ ¬p
+* **Contingency**(우연)
+  * not tautology ∧ not contradiction
+* ![propositional+logic](https://user-images.githubusercontent.com/63464299/183473997-f5504f2a-f873-4377-bd89-c77699ad6086.jpg)
+* **De Morgan's law**: ¬(p ∧ q) ≡ ¬p ∨ ¬q, ¬(p ∨ q) ≡ ¬p ∧ ¬q
+* Negation Laws: p ∨ ¬q ≡ T, p ∧ ¬p ≡ F
+* Absorption Laws: p ∨ (p ∧ q) ≡ p, p ∧ (p ∨ q) ≡ p
  
  
 # Propositional Satisfiability
