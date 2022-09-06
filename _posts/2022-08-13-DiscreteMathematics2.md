@@ -42,7 +42,7 @@ P(**x**) → P(**y**)<br>
 * 모든 𝑥에 대한 명제 P(x): **∀𝑥𝑃(𝑥)** 
 * x > 0 and U is the integers, ∀𝑥𝑃(𝑥) is *false*
 * x > 0 and U is the positive integers, ∀𝑥𝑃(𝑥) is *true*
-
+* ∀𝑥𝑃(𝑥) ≡ P(1) ∧ P(2) ∧ ... ∧ P(N)
 
 ## Existential Quantification(존재 한정)
 * 기호: **∃**(existential quantifier)
@@ -50,6 +50,7 @@ P(**x**) → P(**y**)<br>
 * 어떤 𝑥에 대한 명제 P(x): **∃𝑥𝑃(𝑥)**
 * x > 0 and U is the integers, ∃𝑥𝑃(𝑥) is *true*
 * x is even and U is the integers, ∃𝑥𝑃(𝑥) is *true*
+* ∃𝑥𝑃(𝑥) ≡ P(1) ∨ P(2) ∨ ... ∨ P(N)
 
 
 ## Uniqueness Quantifier(유일 한정자)
@@ -82,14 +83,28 @@ Solution 2: **∃x (S(x) ∧ C(x))**
 * S(x): "x is a student in this class"
 * C(x): "x has taken a course in C"
 
+
+**∧와 →의 차이**<br/>
+∀y(y≠0→y^3≠0): True<br/>
+∀y(y≠0∧y^3≠0): False<br/>
+∀x(S(x) ∧ C(x)): **모든** 실수가 P(x)를 만족하지 않을 수도 있으므로 의도와 다르게 사용됨
+* 모든 학생들은 이  학생이고, 모든 학생들은 C 수업을 들었다.
+∃x(S(x) → C(x)): **어떤** 실수가 P(x)를 만족하지 않을 수도 있으므로 의도와 다르게 사용됨
+* 어떤 학생이 이 반의 학생이라면, C 수업을 들었을 것이다.
+
 -----------------
 
 # Equivalences in Predicate logic
 if predicate statements  have the same truth value, they are logically equivalent
 * ∀x(P(x) ∧ Q(x)) ≡ ∀xP(x) ∧ ∀xQ(x)
 * ∃x(P(x) ∨ Q(x)) ≡ ∃xP(x) ∨ ∃xQ(x)
-* ¬∀xP(x) ≡ ∃x¬P(x)
-* ¬∃xP(x) ≡ ∀x¬P(x)
+
+## Negating Quantified Expressions
+De Morgan’s Laws for Quantifiers.
+|Negation|Equivalent Statement|
+|:---:|:---:|
+|¬∃xP(x)|∀x¬P(x)|
+|¬∀xP(x)|∃x¬P(x)|
 
 -----------------
 
