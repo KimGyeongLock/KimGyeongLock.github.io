@@ -34,6 +34,7 @@ P(**x**) → P(**y**)<br>
 * 명제함수의 참, 거짓을 판별하기 위해 논의영역의 범위 정의
   * Like English words, **All** and **Some**
 * Quantifiers have <u>higher precedence</u> than all logical operators 
+  * ∀x P(x) ∨ Q(x) means (∀x P(x)) ∨ Q(x)
 
 ## Universal Quantification(전체 한정)
 * 기호: **∀**(universal quantifier)
