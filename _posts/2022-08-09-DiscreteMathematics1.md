@@ -161,7 +161,7 @@ statement
            F     T  = F<br/>
            F     F  = F<br/>
            T     T (X) 한줄에 최대 퀸 한개
-        * Why negation?
+        * <span style="color: red">Why negation?</span>
         
     3. 각 열에 최대 하나의 퀸만 존재<br/>
         <img width="304" alt="스크린샷 2022-09-06 오후 4 47 46" src="https://user-images.githubusercontent.com/63464299/188582400-69e2e826-89b6-419d-96b2-f58d94ec7eb5.png">
