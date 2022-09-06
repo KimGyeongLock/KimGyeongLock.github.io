@@ -114,7 +114,7 @@ statement
  
  
 # Propositional Satisfiability
-* **Satisfiable** Proposition: propositional variable에 하나라도 true를 넣었을때 결과로 True가 나오는 것
-* **Unsatisfiable** Proposition: Not Satisfiable -> **Contradiction**
+* **Satisfiable** Proposition: **적어도 하나**의 case가 True
+* **Unsatisfiable** Proposition: All case is False -> **Contradiction**(모순)
 * **Valid** Proposition: 모든 결과가 True -> **Tautology**
   
