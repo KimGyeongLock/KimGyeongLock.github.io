@@ -37,7 +37,7 @@ P(**x**) → P(**y**)<br>
 
 ## Universal Quantification(전체 한정)
 * 기호: **∀**(universal quantifier)
-* 논의 영역(U)에 속하는 **모든 값**을 의미
+* 논의 영역(U, domain)에 속하는 **모든 값**을 의미
 * 모든 𝑥에 대한 명제 P(x): **∀𝑥𝑃(𝑥)** 
 * x > 0 and U is the integers, ∀𝑥𝑃(𝑥) is *false*
 * x > 0 and U is the positive integers, ∀𝑥𝑃(𝑥) is *true*
