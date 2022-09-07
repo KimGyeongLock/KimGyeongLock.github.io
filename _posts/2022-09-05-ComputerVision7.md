@@ -66,7 +66,7 @@ value_B = data[(50 * image.cols + 100) * channels + 0];
    h-1-j에서 -1을 하는 이유<br/>
    0~5 -> h=5, 좌표의 갯수때문인가??<br/>
    
-=> Array, 0~h-1 -> 0, 1, 2,... h-1 -> h
+=> Array이기 때문에 배열의 갯수로 생각?, 0~h-1 -> 0, 1, 2,... h-1 -> h
 
 2\. at<uchar>() -> 결과값: character?
 
