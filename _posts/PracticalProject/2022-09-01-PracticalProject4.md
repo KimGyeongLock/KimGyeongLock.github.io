@@ -78,12 +78,15 @@ published: true
 
 
 ## 파일 저장/읽어오기
-* 함수생성 / 파일명(저장위치) / 파일포맷
+* 관리하는 데이터 파일로 저장
+   * 함수생성 / 파일명(저장위치) / 파일포맷
+* 데이터 저장 포맷 : Level | 영단어 | 뜻
 * WordManager class
     * loadFile() 파일 데이터 읽어오는 함수
     * saveFile() 파일저장 함수
 * **PrintWriter class** 파일 저장 class
     * FileWriter, OutputStream …
+    * FileWriter, FileWriter, .write()
 * **BufferedReader class** 파일 로드 class
     * Scanner, FileReader, InputStream …
     * BufferedReader, FileReader, .readLine(), .split()
