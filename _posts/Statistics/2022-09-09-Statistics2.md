@@ -53,7 +53,7 @@ published: true
 > 순서가 있는 데이터 -> **순서척도** 사용 -> 누적상대도수가 의미가 있음(순서대로 쌓임)
 
 ### 심슨의 역설(Simpsons’s Paradox)
-* 범주형 데이터의 경우 **변수를 더 나누지 않고** 합쳐서 표를 작성함으로써 사실이 왜곡되는 것
+* 범주형 데이터의 경우, **변수를 더 나누지 않고** 합쳐서 표를 작성하여 **사실이 왜곡**되는 것
 
 --------------
 
@@ -66,7 +66,7 @@ published: true
     * **막대를 중간에 잘라버리면 비율이 달라짐 (0점부터 시작해야함)**
 * **원 그림**(pie chart)
     * 변수 별 데이터의 비율
-    * 비율은 중심각에 비례
+    * 비율은 **중심각에 비례**
 
 --------------
 
@@ -86,12 +86,12 @@ published: true
 
 ## 도수분포표 작성 
 1. 계급의 수
-	: 자료의 수에 따라 사용자가 임의로 결정
+	* 자료의 수에 따라 사용자가 임의로 결정
 2. 계급 크기
-	: 모든 계급의 크기가 같아야 좋음
-	근사적 계급크기 = (가장큰값 - 가장 작은 값) / 계급의 수(편의상)
+	* 모든 계급의 크기가 같아야 좋음
+	* 근사적 계급크기 = (가장큰값 - 가장 작은 값) / 계급의 수(편의상)
 3. 첫 번째 계급의 하한값 혹은 시작점 
-	: 가장 작은 값 or 더 작은 값(0) = 첫 번째 계급의 하한값
+	* 가장 작은 값 or 더 작은 값(0) = 첫 번째 계급의 하한값
 
 
 ## 히스토그램(histogram)
@@ -99,7 +99,7 @@ published: true
 * 가로축: 계급 (반드시 숫자)
 * 세로축: 도수, 상대도수, 퍼센트, 백분위
 
-![page9image9555408](https://user-images.githubusercontent.com/63464299/189329991-88b418ec-1f04-4eb4-8d20-993dd5e11b26.png){: width="200" height="200"}
+![page9image9555408](https://user-images.githubusercontent.com/63464299/189329991-88b418ec-1f04-4eb4-8d20-993dd5e11b26.png){: width="300" height="300"}
 
 ### 히스토그램 그릴 때 주의 사항
 1. **구간/비율척도**로 측정한 데이터 사용
@@ -115,70 +115,73 @@ published: true
    * unimodal
    * bimodal
    
-![page19image9511664](https://user-images.githubusercontent.com/63464299/189334218-65fd3a23-071a-4ff3-b5ce-864a5e0788cc.jpg){: width="200" height="200"}
+![page19image9511664](https://user-images.githubusercontent.com/63464299/189334218-65fd3a23-071a-4ff3-b5ce-864a5e0788cc.jpg){: width="400" height="400"}
 
 * 한쪽으로 치우친 히스토그램(skewed histogram)
    * 오른쪽 꼬리 긴 히스토그램(skewed to the Right)
    * 왼쪽 꼬리 긴 히스토그램(skewed to the Left)
 
-![page19image9515200](https://user-images.githubusercontent.com/63464299/189334251-cea2e313-3abe-4e2f-842a-49bf1617fde4.jpg){: width="200" height="200"}
+![page19image9515200](https://user-images.githubusercontent.com/63464299/189334251-cea2e313-3abe-4e2f-842a-49bf1617fde4.jpg){: width="400" height="400"}
 
  
  
 ## 도수다각형(frequency polygon)
 * 히스토그램의 각 막대의 중앙을 직선으로 연결한 그래프
 
-![page10image10175920](https://user-images.githubusercontent.com/63464299/189330119-6d6d39d4-5480-4701-911f-9b2f06fbcdd2.jpg){: width="200" height="200"}
+![page10image10175920](https://user-images.githubusercontent.com/63464299/189330119-6d6d39d4-5480-4701-911f-9b2f06fbcdd2.jpg){: width="300" height="300"}
  > skewed to right
 
 ## 도수분포곡선(frequency distribution curve)
 * 자료의 수가 많아지고, 계급의 수가 증가하면 도수다각형이 부드러운 곡선이 됨
 
-![page10image10189856](https://user-images.githubusercontent.com/63464299/189330267-1887162f-e5b6-46e8-8ff4-4b5f3b687324.jpg){: width="200" height="200"}
+![page10image10189856](https://user-images.githubusercontent.com/63464299/189330267-1887162f-e5b6-46e8-8ff4-4b5f3b687324.jpg){: width="300" height="300"}
 
 ## 꺾은선 그래프(line chart)
 * 데이터의 **시간에 따른 변화**를 나타내는데 사용
 * 계절에 따른 변동
 * (장기적) 추세
-* 회전x -> 다른 느낌 반드시 시간: 
+* 회전x -> 다른 느낌 반드시 시간: 가로축
 * 꺾은 선 그래프의 오류
     * 가로축을 늘리고 세로축을 줄이면 매우 느리고 변동이 좁은 것처럼 보임(vice versa)
     * 시간의 축 간격 일정!
     * 축을 중간에 끊어 버리면 축 간격이 값의 변화를 과장하거나 과소하여 표현가능주의
     
-![10 - 120](https://user-images.githubusercontent.com/63464299/189330908-8f15e49e-455e-46b8-8929-1c2adfa75906.jpg){: width="200" height="200"}
+![10 - 120](https://user-images.githubusercontent.com/63464299/189330908-8f15e49e-455e-46b8-8929-1c2adfa75906.jpg){: width="500" height="300"}
 
  
 ## 인구피라미드
 * 히스토그램 두개를 좌우로 회전하여 합친 것
 * 두개를 한눈에 볼 수 있음
 
-![page13image10801008](https://user-images.githubusercontent.com/63464299/189331556-6aec9f10-95c0-4e42-9d88-7d64375b7ed7.jpg){: width="200" height="200"}
+![page13image10801008](https://user-images.githubusercontent.com/63464299/189331556-6aec9f10-95c0-4e42-9d88-7d64375b7ed7.jpg){: width="300" height="300"}
 
 ## 레이더 차트(또는 별그림(star plot)
 * 여러 부분에서 특성을 비교한 그림
 * ex) 품질관리 분임조활동, 제품의 특성 비교
 
-![MER IDD](https://user-images.githubusercontent.com/63464299/189331860-796bf38e-6555-4a85-8110-00ab49b63283.jpg){: width="200" height="200"}
+![MER IDD](https://user-images.githubusercontent.com/63464299/189331860-796bf38e-6555-4a85-8110-00ab49b63283.jpg){: width="300" height="300"}
 
 ## Face
 * Herman Chernoff
 * 다변량 데이터를 그림으로 나타냄
 * 너무 많은 변수가 포함되어 읽어내기 어려움(가독성, 판독성이 떨어짐)
 
-![Facial Plota On Four Standardired Social Impact Criteria](https://user-images.githubusercontent.com/63464299/189331892-ca9b71f4-1958-4c99-9415-a56a08ccfb7d.jpg){: width="200" height="200"}
+![Facial Plota On Four Standardired Social Impact Criteria](https://user-images.githubusercontent.com/63464299/189331892-ca9b71f4-1958-4c99-9415-a56a08ccfb7d.jpg){: width="300" height="300"}
 
  
 ## 줄기-잎 그림(stem-and-leaf displays)
 * 왼쪽: 줄기 10단위
 * 오르쪽: 잎 나머지 값을 일단 관찰된 순서대로 작성 -> 오름차순으로 재정렬
 
+<img width="403" alt="스크린샷 2022-09-10 오전 3 58 10" src="https://user-images.githubusercontent.com/63464299/189424345-4e574fa5-8b0b-4b5e-be01-40561dc9c213.png">{: width="300" height="300"}
+
+
 ## 누적도수분포곡선(Ogive)
 * 가로축: 각 계급의 상한값
 * 세로축: 대응하는 누적도수
 * 각 점들을 직선으로 연결하는 곡선
 
-![page21image10153968](https://user-images.githubusercontent.com/63464299/189334504-4b9a9074-13b9-43e0-94e9-8568f82a20ff.jpg){: width="200" height="200"}
+![page21image10153968](https://user-images.githubusercontent.com/63464299/189334504-4b9a9074-13b9-43e0-94e9-8568f82a20ff.jpg){: width="300" height="300"}
 
  
 ## 파레토 차트
@@ -186,7 +189,7 @@ published: true
 * 빈도가 높은 것 순
 * 명목 척도
 
-![Chart Title](https://user-images.githubusercontent.com/63464299/189334648-8ce031d2-fe83-4aed-8764-a11fb8ab053b.jpg){: width="200" height="200"}
+![Chart Title](https://user-images.githubusercontent.com/63464299/189334648-8ce031d2-fe83-4aed-8764-a11fb8ab053b.jpg){: width="300" height="300"}
 > 막대: 관찰 도수<br/>
 > 주황색 선: 누적된 상대돗수(%)<br/>
 > Price와 Packaging 항목이 70%를 차지
