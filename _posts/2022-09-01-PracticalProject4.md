@@ -52,7 +52,7 @@ published: true
 -----------
 
 # CRUD 작성 및 테스트
-* 데이터 추가
+## 데이터 추가
    * WordManager class
        * selectMenu 함수 
    * WordCRUD class
@@ -60,13 +60,31 @@ published: true
        * Read : Word 조회
    * Word class
        * toString() : overriding
-<br/>
-<br/>
 
-* 데이터 조회
-    * WordManager class
-        * 모든 단어 보기 메뉴 처리
-    * WordCRUD class
-        * listAll() 함수 생성
-    * Word class
-        * toString() : overriding
+## 데이터 조회
+* WordManager class
+    * 모든 단어 보기 메뉴 처리
+* WordCRUD class
+    * listAll() 함수 생성
+* Word class
+    * toString() : overriding
+        
+## 데이터 수정/삭제
+* WordManager class
+    * 수정/삭제 메뉴 처리
+* WordCRUD class
+    * updateItem() 함수 생성
+    * deleteItem() 함수 생성
+
+
+## 파일 저장/읽어오기
+* 함수생성 / 파일명(저장위치) / 파일포맷
+* WordManager class
+    * loadFile() 파일 데이터 읽어오는 함수
+    * saveFile() 파일저장 함수
+* **PrintWriter class** 파일 저장 class
+    * FileWriter, OutputStream …
+* **BufferedReader class** 파일 로드 class
+    * Scanner, FileReader, InputStream …
+    * BufferedReader, FileReader, .readLine(), .split()
+
