@@ -171,9 +171,9 @@ published: true
  
 ## 줄기-잎 그림(stem-and-leaf displays)
 * 왼쪽: 줄기 10단위
-* 오르쪽: 잎 나머지 값을 일단 관찰된 순서대로 작성 -> 오름차순으로 재정렬
+* 오르쪽: 잎 나머지 값을 일단 관찰된 순서대로 작성 -> 내림차순으로 재정렬
 
-<img width="403" alt="스크린샷 2022-09-10 오전 3 58 10" src="https://user-images.githubusercontent.com/63464299/189424345-4e574fa5-8b0b-4b5e-be01-40561dc9c213.png">{: width="300" height="300"}
+<img width="403" alt="스크린샷 2022-09-10 오전 3 58 10" src="https://user-images.githubusercontent.com/63464299/189424345-4e574fa5-8b0b-4b5e-be01-40561dc9c213.png">{: width="400" height="400"}
 
 
 ## 누적도수분포곡선(Ogive)
