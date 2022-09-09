@@ -80,7 +80,7 @@ published: true
 ## 파일 저장/읽어오기
 * 관리하는 데이터 파일로 저장
    * 함수생성 / 파일명(저장위치) / 파일포맷
-* 데이터 저장 포맷 : Level | 영단어 | 뜻
+* 데이터 저장 포맷 : Level &#124; 영단어 &#124; 뜻
 * WordManager class
     * loadFile() 파일 데이터 읽어오는 함수
     * saveFile() 파일저장 함수
