@@ -41,7 +41,7 @@ published: true
 * **상대도수(relative frequency)**
   * 도수 / 전체 데이터 수
 * **누적상대도수(Cumulative relative frequency)**
-* **도수분포(frequency table)**
+* **도수분포(frequency table)**<br/>
   |학위|도수|상대도수|누적 상대도수|
   |---|---|---|---|
   |학사|2000|0.80|0.80|
@@ -53,6 +53,7 @@ published: true
 ### 심슨의 역설(Simpsons’s Paradox)
 * 범주형 데이터의 경우 **변수를 더 나누지 않고** 합쳐서 표를 작성함으로써 사실이 왜곡되는 것
 
+--------------
 
 # 질적 데이터의 그래프 표현
 * **막대 그래프**(bar chart)
@@ -65,6 +66,7 @@ published: true
     * 변수 별 데이터의 비율
     * 비율은 중심각에 비례
 
+--------------
 
 # 양적 데이터의 정리
 * **계급 경계값**
