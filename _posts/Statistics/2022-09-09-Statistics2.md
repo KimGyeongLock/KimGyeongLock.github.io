@@ -42,6 +42,7 @@ published: true
   * 도수 / 전체 데이터 수
 * **누적상대도수(Cumulative relative frequency)**
 * **도수분포(frequency table)**<br/>
+
 |학위|도수|상대도수|누적 상대도수|
 |:---:|:---:|:---:|:---:|
 |학사|2000|0.80|0.80|
