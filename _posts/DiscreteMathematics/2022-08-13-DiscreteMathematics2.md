@@ -132,9 +132,9 @@ De Morgan’s Laws for Quantifiers<br/>
 |¬∃xP(x)|∀x¬P&#40;x&#41;|
 |¬∀xP(x)|∃x¬P&#40;x&#41;|
 
-“Every student in your class has taken a course in C.” – ∀xC(x)
-“It is not the case that every student in your class has taken C.” – ¬∀xC(x)
-“There is a student in your class who has not taken C.” – ∃x¬C(x)
+“Every student in your class has taken a course in C.” – ∀xC(x)<br/>
+“It is not the case that every student in your class has taken C.” – ¬∀xC(x)<br/>
+“There is a student in your class who has not taken C.” – ∃x¬C(x)<br/>
 
 -----------------
 
