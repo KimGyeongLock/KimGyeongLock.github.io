@@ -10,9 +10,12 @@ published: true
 # Predicate(술어)
 : 변수에 대한 **propositional function(명제함수)**
 * P(x): x(변수)에 대한 propositional function(P)의 값
+  * "P at x" or "P of x" 
 * 값은 **True** or **False**으로 평가
 * Ex) x + y = z : R(x, y, z)
-  * R(2, -1, 5) = **F**, R(3, 4, 7) = **T**, R(x, 3, z) = **Not a Propostion**
+  * R(2, -1, 5) = **F**
+  * R(3, 4, 7) = **T**
+  * R(x, 3, z) = **Not a Propostion**
 
 -----------------
 
@@ -26,6 +29,8 @@ P(3) **→** P(-1) Solution: F<br/>
 P(3) ∧ P(**y**)<br>
 P(**x**) → P(**y**)<br>
 
+*P(x)는 propositional function이지만 true/false를 갖지 않음<br/>
+그러나 **quantifier**를 이용하면 true/false라고 말할 수 있음* 
 -----------------
 
 # Quantification
@@ -40,6 +45,7 @@ P(**x**) → P(**y**)<br>
 * 기호: **∀**(universal quantifier)
 * 논의 영역(U, domain)에 속하는 **모든 값**을 의미
 * 모든 𝑥에 대한 명제 P(x): **∀𝑥𝑃(𝑥)** 
+  * "For all x, P(x)" or "For every x, P(x)"
 * x > 0 and U is the integers, ∀𝑥𝑃(𝑥) is *false*
 * x > 0 and U is the positive integers, ∀𝑥𝑃(𝑥) is *true*
 * ∀𝑥𝑃(𝑥) ≡ P(1) ∧ P(2) ∧ ... ∧ P(N)
@@ -48,6 +54,7 @@ P(**x**) → P(**y**)<br>
 * 기호: **∃**(existential quantifier)
 * 논의 영역(U)에 속하는 **어떤 값**을 의미
 * 어떤 𝑥에 대한 명제 P(x): **∃𝑥𝑃(𝑥)**
+  * "For some x, P(x)" or "For at least one x, P(x)"
 * x > 0 and U is the integers, ∃𝑥𝑃(𝑥) is *true*
 * x is even and U is the integers, ∃𝑥𝑃(𝑥) is *true*
 * ∃𝑥𝑃(𝑥) ≡ P(1) ∨ P(2) ∨ ... ∨ P(N)
@@ -64,9 +71,15 @@ P(**x**) → P(**y**)<br>
 * ∀𝑥𝑃(𝑥) loop
      * every step P(x) is true -> ∀𝑥𝑃(𝑥) is true.
      * a step P(x) is false ->  ∀𝑥𝑃(𝑥) is false and the loop terminates.
+     
+<img width="596" alt="스크린샷 2022-09-11 오전 2 21 20" src="https://user-images.githubusercontent.com/63464299/189497103-0ad99e38-ec31-433f-97a1-82bffe889355.png">
+
 * ∃𝑥𝑃(𝑥) loop
      * some step P(x) is true -> ∃𝑥𝑃(𝑥) is true and the loop terminates.
      * P(x) 결과값이 true가 없이 loop가 끝난다면 -> ∃𝑥𝑃(𝑥) is false.
+
+
+<img width="602" alt="스크린샷 2022-09-11 오전 2 20 42" src="https://user-images.githubusercontent.com/63464299/189497108-dd7b52a7-7baa-44d6-9d59-de0a4c580961.png">
 
 -----------------
 
@@ -117,6 +130,10 @@ De Morgan’s Laws for Quantifiers<br/>
 |:---:|:---:|
 |¬∃xP(x)|∀x¬P&#40;x&#41;|
 |¬∀xP(x)|∃x¬P&#40;x&#41;|
+
+“Every student in your class has taken a course in C.” – ∀xC(x)
+“It is not the case that every student in your class has taken C.” – ¬∀xC(x)
+“There is a student in your class who has not taken C.” – ∃x¬C(x)
 
 -----------------
 
