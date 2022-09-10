@@ -73,14 +73,14 @@ P(**x**) → P(**y**)<br>
      * every step P(x) is true -> ∀𝑥𝑃(𝑥) is true.
      * a step P(x) is false ->  ∀𝑥𝑃(𝑥) is false and the loop terminates.
      
-<img width="596" alt="스크린샷 2022-09-11 오전 2 21 20" src="https://user-images.githubusercontent.com/63464299/189497103-0ad99e38-ec31-433f-97a1-82bffe889355.png">{: width="300" height="300"}
+<img width="596" alt="스크린샷 2022-09-11 오전 2 21 20" src="https://user-images.githubusercontent.com/63464299/189497103-0ad99e38-ec31-433f-97a1-82bffe889355.png">{: width="450" height="300"}
 
 * ∃𝑥𝑃(𝑥) loop
      * some step P(x) is true -> ∃𝑥𝑃(𝑥) is true and the loop terminates.
      * P(x) 결과값이 true가 없이 loop가 끝난다면 -> ∃𝑥𝑃(𝑥) is false.
 
 
-<img width="602" alt="스크린샷 2022-09-11 오전 2 20 42" src="https://user-images.githubusercontent.com/63464299/189497108-dd7b52a7-7baa-44d6-9d59-de0a4c580961.png">{: width="300" height="300"}
+<img width="602" alt="스크린샷 2022-09-11 오전 2 20 42" src="https://user-images.githubusercontent.com/63464299/189497108-dd7b52a7-7baa-44d6-9d59-de0a4c580961.png">{: width="450" height="300"}
 
 -----------------
 
