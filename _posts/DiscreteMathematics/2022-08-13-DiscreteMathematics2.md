@@ -29,8 +29,9 @@ P(3) **→** P(-1) Solution: F<br/>
 P(3) ∧ P(**y**)<br>
 P(**x**) → P(**y**)<br>
 
-*P(x)는 propositional function이지만 true/false를 갖지 않음<br/>
-그러나 **quantifier**를 이용하면 true/false라고 말할 수 있음* 
+*P(x)는 propositional function이지만 true/false를 갖지 않음*<br/>
+*그러나 **quantifier**를 이용하면 true/false라고 말할 수 있음* 
+
 -----------------
 
 # Quantification
