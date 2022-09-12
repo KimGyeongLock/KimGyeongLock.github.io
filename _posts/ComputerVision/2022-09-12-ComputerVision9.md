@@ -36,7 +36,7 @@ published: true
         * 히스토그램에서 픽셀들이 상대적으로 골고루 분포
     * 항상 향상된 영상을 제공하는것x<br/>
       when a certain range of data is dominant(depending on capturing environment)
-
+      <br/>영상 내 픽셀들이 균등하게 분포하는 것이 타당한 경우에만 
 * Steps
 	1. Histogram computation(계산)
 	2. Find **mapping function** which distributes pixel values uniformly
