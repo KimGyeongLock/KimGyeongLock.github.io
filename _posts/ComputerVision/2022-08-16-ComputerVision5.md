@@ -46,11 +46,11 @@ published: true
 # Addition/Subtraction operation
 * void **add** (Mat src1, Mat src2, Mat dst, Mat mask=noArray(), int dtype = -1)
     * Mat **src1, src2**: operand
-    * Mat **mask**: 특정한 Roi 부분에서만 더할시 사용
+    * Mat **mask**: optional operation mask(특정한 Roi 부분에서만 더할시 사용)
     * int **dtype**: 결과영상의 depth(intensity level)
         * IF dtype = -1 )<br/>
           src1 = src2 = Intensity Level
-    * dst(l) = saturate(src1(l)+src2(l) if mask(l) != 0
+    * dst(l) = saturate(src1(l)+src2(l)) if mask(l) != 0
         * **saturate** 함수: 결과가 표현할 수 있는 범위에 오도록 설정
             * IF) src1, src2: 0-255 (8-bit single channel array)
              <br/>src1(255) + src2(255) = dst(255)
