@@ -158,6 +158,6 @@ int main() {
 		* It must have the same size as has been specified when opening the video writer
 
 	* void VideoWriter::**release**()
-        	* Closes the video writer
+		* Closes the video writer
 		* The method is **automatically** called by subsequent by VideoWriter destructor
 
