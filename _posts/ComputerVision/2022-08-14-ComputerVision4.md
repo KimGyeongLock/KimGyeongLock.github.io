@@ -129,3 +129,35 @@ int main() {
     * CAP_PROP_FPS: Frame rate(초당 존재하는 영상의 수)
     * …
 
+-------------
+
+# Write an image & a video
+
+## Write images
+
+* void **imwrite**(const String& filename, InputArray img,<br/>const std::vector<int>& params = std:vector<int>());
+	* filename: 파일 이름
+        * img: 저장될 영상(여러개 가능) (Mat or vector of Mat) 
+        * params: Format-specific parameters encoded as pairs (중요x)
+
+
+## VideoWriter Class
+
+* VideoWriter::**VideoWriter**(constr String& filename, int fourcc, double fps, Size frameSize,<br/>bool isColor = true)
+        * filename: 비디오 이름
+        * fourcc: 4-character code of codec used to compress the frames (영상 압축)
+        * fps: Frame rate of the created video stream
+        * frameSize: Size of the video frames
+        * isColor: Not zero - color frame, zero - gray scale frame
+
+
+* **Member functions**
+    	* void VideoWriter::**write**(const Mat& image)
+        	* image: The written frame
+		* 지정된 영상을 video file에 작성
+        	* It must have the same size as has been specified when opening the video writer
+
+    	* void VideoWriter::**release**()
+        	* Closes the video writer
+        	* The method is **automatically** called by subsequent by VideoWriter destructor
+
