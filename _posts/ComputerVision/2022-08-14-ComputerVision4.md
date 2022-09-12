@@ -152,12 +152,12 @@ int main() {
 
 
 * **Member functions**
-    	* void VideoWriter::**write**(const Mat& image)
+	* void VideoWriter::**write**(const Mat& image)
         	* image: The written frame
 		* 지정된 영상을 video file에 작성
         	* It must have the same size as has been specified when opening the video writer
 
-    	* void VideoWriter::**release**()
+	* void VideoWriter::**release**()
         	* Closes the video writer
         	* The method is **automatically** called by subsequent by VideoWriter destructor
 
