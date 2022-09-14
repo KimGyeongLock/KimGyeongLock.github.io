@@ -46,7 +46,7 @@ published: true
 * void fillPoly(Mat& img, const Point** pts, const int* npts, int ncontours,
                 <br/>const Scalar& color, int lineType = 8, int shift = 0, Point offset = Point())
     * **pts**: 각각의 꼭짓점들을 포함하는 array
-    * **npts**: 각각의 꼭짓점들이 개수
+    * **npts**: 각각의 꼭짓점들의 개수
     * **ncontours**: 윤곽선의 개수
     * **offset**: optional offset of all points of the contours(중요x)
 * 하나의 다각형만 그리는 것이 아니라 여러 개의 다각형을 동시에 그릴 수 있다
