@@ -123,12 +123,13 @@ Z = (A+B)/C<br/>
 1. **Implied** addressing mode 
 	* No explicit address
 	* 명령어 실행에 필요한 operand를 지정하지 않아도 묵시적으로 수행하는 방식
+	* Ex) PUSH A, ADD A, RTS 
 2. **Immediate** addressing mode(즉시 주소 지정 방식)
 	* Operand field contains the actual operand value 
 	* operand에 연산에 필요한 숫자 데이터를 직접 넣어주는 방식
 	* 명령어 자신이 데이터를 직접 포함하고 있어 명령어의 실행이 바로 이루어지는 방법
-	* ex) In ARM ADD r3, r3, #4
+	* ex) \[In ARM\] ADD r3, r3, #4
 	  * r3←r3+4
-	* ex) In MIPS  addi $s1, $s2, 4
+	* ex) \[In MIPS\] addi $s1, $s2, 4
 		* s1←s2+4
-		* addi(immediate address) address랑 다름
+		* **addi**(immediate address): address랑 다름
