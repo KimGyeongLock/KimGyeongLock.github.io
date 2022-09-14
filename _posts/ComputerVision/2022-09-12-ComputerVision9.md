@@ -13,7 +13,9 @@ published: true
   * <img width="66" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/189585460-00b3f037-530c-4d9d-8a0f-2910edddb87b.png">
   * <img width="12" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/189585486-acde2c5e-2e1d-475a-aedf-5993dc98c81d.png">: k번째 intensity value (bin)
   * <img width="16" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/189585539-5aa1c4e0-2748-48e4-9ea8-f1dca639717a.png">: intensity value에 해당하는 픽셀의 갯수
-
+  * IF) intensity levels = 256<br/>
+    number of bins = 8 → 1st bin: 0~31<br/>
+    number of bins = 2 → 1st bin: 0~127<br/>
 * **Histogram normalization**
     * 히스토그램은 있는 그대로 사용하지 않고 정교화를 실행
     * **각각의 bin에 있는 값 / 영상을 구성하고 있는 픽셀의 전체 갯수** (상대도수)
