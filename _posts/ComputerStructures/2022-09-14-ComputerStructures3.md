@@ -23,7 +23,7 @@ published: true
         * (A ← A + B)
 * **One Operand**
     * ADD A
-        * Destination: AC(Accumulator)
+        * Destination: **AC(Accumulator)**
         * Sources: A and AC
         * (AC ← AC + A)
     * LD(Load) A
@@ -33,7 +33,7 @@ published: true
 * **Zero Operand**
     * PUSH A (TOS(Top Of Stack) ← A)
     * PUSH B (TOS ← B)
-    * ADD (TOS ← A+B)
+    * **ADD** (TOS ← A+B)
         * do not need an address field -> Zero Operand
     * POP C (C ← TOS)
 
@@ -44,7 +44,7 @@ Ex) op code: 5 bits, each address fields: 12 bits<br/>
 → 2 addr. inst. mach. : 5 + 2x12 = 29bits<br/>
 → 1 addr. inst. mach. : 5 + 1x12 = 17bits<br/>
 
-=> address가 많아질수록 bus(Processor와 Memory간의 이동)가 넓어지고 instructions의 개수가 작아진다.<br/>
+=> address↑ bus(Processor와 Memory간의 이동) wider, instructions의 개수↓<br/>
 컴퓨터는 기본적으로 32bits (MIPS) → 버스는 한번에 32bits까지 옮길 수 있다.<br/>
 → 32bits보다 큰 경우 bits를 쪼개거나 더 큰 버스를 이용 -> 더 큰 Cost발생<br/>
 
@@ -86,10 +86,10 @@ Z = (A+B)/C<br/>
       MOV Z (Z←AC)<br/>
       => definition problem
 
-    * LOAD A<br/>
-      ADD B<br/>
-      DIV C<br/>
-      STORE Z
+    * LOAD A (AC←A)<br/>
+      ADD B (AC←AC+B)<br/>
+      DIV C (AC←AC/C)<br/>
+      STORE Z (Z←AC)
 
 * Zero operand
     * PUSH A (TOS←A)<br/>
@@ -110,11 +110,11 @@ Z = (A+B)/C<br/>
     * addressing field의 비트 수 감소
 * **Effective Address(E.A.)**
     * Actual address of the location containing the referenced operand
-    * ex) In ARM  LDR(Load cpu의 register) r1, [r2, #20]
+    * Ex) \[In ARM\]  LDR(Load cpu의 register) r1, [r2, #20]
         * <img width="592" alt="스크린샷 2022-09-14 오후 12 48 18" src="https://user-images.githubusercontent.com/63464299/190156153-f3ef6bc6-da03-4e74-968a-9c510f079f4e.png">
         * Effective Address: 120
         * #: 값 자체, 날 것 그대로의 데이터
-    * ex) In MIPS  lw(load word) $t1, 1000($s1)
+    * Ex) \[In MIPS\]  lw(load word) $t1, 1000($s1)
         * <img width="601" alt="스크린샷 2022-09-14 오후 8 16 28" src="https://user-images.githubusercontent.com/63464299/190156160-1e9df0c9-6359-408a-8a17-de849033c2b0.png">
         * Effective Address: 1100
         * $: register
