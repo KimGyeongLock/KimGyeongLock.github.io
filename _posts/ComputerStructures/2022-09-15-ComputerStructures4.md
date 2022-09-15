@@ -31,15 +31,15 @@ published: true
 1. **Implied** addressing mode 
 	* No explicit address
 	* 명령어 실행에 필요한 operand를 지정하지 않아도 묵시적으로 수행하는 방식
-	* Ex) PUSH A, ADD A, RTS 
+	* Ex) **PUSH A**, **ADD A**, RTS 
 	
 2. **Immediate** addressing mode(즉시 주소 지정 방식)
 	* Operand field contains the actual operand value 
 	* operand에 연산에 필요한 숫자 데이터를 직접 넣어주는 방식
-	* 명령어 자신이 데이터를 직접 포함하고 있어 명령어의 실행이 바로 이루어지는 방법
-	* ex) \[In ARM\] ADD r3, r3, #4
+	* instruction이 데이터(operand)를 직접 포함하고 있어 명령어의 실행이 바로 이루어지는 방법
+	* ex) \[In ARM\] ADD r3, r3, **#4**
 	  * r3←r3+4
-	* ex) \[In MIPS\] addi $s1, $s2, 4
+	* ex) \[In MIPS\] addi $s1, $s2, **4**
 		* s1←s2+4
 		* **addi**(immediate address): address랑 다름
 		
@@ -55,15 +55,17 @@ published: true
 		* IF) A1(address): 1000<br/>
 		 	Memory에서 1000번지를 찾아 a value를 D1(Data)에 Load
 5. **Direct** Addressing mode
-	* Effective address is equal to the address part of the instruction and operands reside in memory
-	* E.A. = Address Field of Instruction
-	* Ex) MOVE.W 10000, D1
+	* instruction의 address part는 Operand의 주소를 가짐
+	* operands는 memory에 위치
+	* **E.A. = Address Field of Instruction**
+	* Ex) MOVE.W 10000, D1 , (or ADD A)
 		* Memory에서 10000번지를 찾아 a value를 D1(Data)에 Load
 6. **Indirect** Addressing mode
+	* Instruction의 address field는 Operand의 주소값(E.A.)을 가지는 곳의 주소를 가진다
 	* The Address field gives the address where the effective address is stored
-	* E.A. = Memory[Address Field of Instruction]
+	* **E.A. = Memory[Address Field of Instruction]**
 	* Two Memory References (Slowest)
-	* Ex) ADD (1000)
+	* Ex) ADD (1000) , (or ADD (A))
 		* Memory에서 1000번지 주소로 감, 주소값이 들어있다면 다시 2000번지로 이동
 		   <br/> 2000번지 value를 add
 7. **(PC) Relative Address** mode
