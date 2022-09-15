@@ -104,7 +104,8 @@ published: true
 
 ### Direct vs. Indirect
 Indirect
-* 장점: address field can be extended to word length
+* 장점: address field can be extended to word length<br/> word길이가 n이면 2^n개의 주소 공간을 가진다.
+출처: https://skagh.tistory.com/8 [재수강은없다:티스토리]
 * 단점: slower
 
 ### Direct vs. Register
