@@ -42,32 +42,50 @@ published: true
 	* ex) \[In MIPS\] addi $s1, $s2, **4**
 		* s1←s2+4
 		* **addi**(immediate address): address랑 다름
-		
+	
+	![21310A36576092BF35](https://user-images.githubusercontent.com/63464299/190400084-d50080ac-a11a-4fd4-b874-99867b77ffac.jpeg)
+
 3. **Register** addressing mode
 	* Selected Register contains the operand
-	* E.A. = Selected Register
-	* Ex) \[In ARM\] ADD r0, r1, r2 ( r0←r1+r2)
+	* address part는 memory가 아닌 **Register**를 Point
+	* **operands는 register에 위치**
+	* **E.A. = Selected Register**
+	* Ex) \[In ARM\] ADD r0, r1, r2 (r0←r1+r2)
 		* r1, r2 register안에 operand가 포함
+		
+	![227E9136576092C204](https://user-images.githubusercontent.com/63464299/190403490-8f5b17b1-27e9-44b6-86ee-a77ea7f973d6.jpeg)
+	
 4. **Register Indirect** addressing mode
 	* Selected Register contains the address of operands
+	* address part는 **Register**를 Point
+	* Register는 메모리의 operand의 주소값을 가짐
 	* E.A. = Contents of Selected Register
 	* Ex) MOVE.W (A1), D1
 		* IF) A1(address): 1000<br/>
 		 	Memory에서 1000번지를 찾아 a value를 D1(Data)에 Load
+		
+	![233B4D36576092C232](https://user-images.githubusercontent.com/63464299/190403521-c54e9492-cb5e-49ea-9f82-464923f8a392.jpeg)	
+			
 5. **Direct** Addressing mode
-	* instruction의 address part는 Operand의 주소를 가짐
-	* operands는 memory에 위치
+	* instruction의 address part는 **Operand의 주소**를 가짐
+	* **operands는 memory에 위치**
 	* **E.A. = Address Field of Instruction**
 	* Ex) MOVE.W 10000, D1 , (or ADD A)
 		* Memory에서 10000번지를 찾아 a value를 D1(Data)에 Load
+		
+	![272C1D36576092C034](https://user-images.githubusercontent.com/63464299/190400343-e02ffbc0-d629-425d-88a2-8445a566cad5.jpeg)
+	
 6. **Indirect** Addressing mode
-	* Instruction의 address field는 Operand의 주소값(E.A.)을 가지는 곳의 주소를 가진다
+	* Instruction의 address field는 **Operand의 주소값(E.A.)을 가지는 곳의 주소**를 가짐
 	* The Address field gives the address where the effective address is stored
 	* **E.A. = Memory[Address Field of Instruction]**
-	* Two Memory References (Slowest)
+	* Two Memory References (**Slowest**)
 	* Ex) ADD (1000) , (or ADD (A))
 		* Memory에서 1000번지 주소로 감, 주소값이 들어있다면 다시 2000번지로 이동
 		   <br/> 2000번지 value를 add
+
+![26309636576092C135](https://user-images.githubusercontent.com/63464299/190401758-d28484db-5fcb-471d-9046-0c1d4a6885e4.jpeg)
+		   
 7. **(PC) Relative Address** mode
 	* PC(Program Counter): 다음에 실행될 instruction의 주소를 포함
 	* Value in PC is added to the address part of instruction to obtain the effective address (branch type instructions)
