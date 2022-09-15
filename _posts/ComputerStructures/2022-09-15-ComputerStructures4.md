@@ -37,6 +37,8 @@ published: true
 	* Operand field contains the actual operand value 
 	* operand에 연산에 필요한 숫자 데이터를 직접 넣어주는 방식
 	* instruction이 데이터(operand)를 직접 포함하고 있어 명령어의 실행이 바로 이루어지는 방법
+	* 장점: 빠르다
+	* 단점: 수의 크기에 제한
 	* ex) \[In ARM\] ADD r3, r3, **#4**
 	  * r3←r3+4
 	* ex) \[In MIPS\] addi $s1, $s2, **4**
@@ -50,6 +52,8 @@ published: true
 	* address part는 memory가 아닌 **Register**를 Point
 	* **operands는 register에 위치**
 	* **E.A. = Selected Register**
+	* 장점: 명령어의 주소필드가 작아도 됨. 메모리 접근x. 매우 빠르다
+	* 단점: register 개수 제한
 	* Ex) \[In ARM\] ADD r0, r1, r2 (r0←r1+r2)
 		* r1, r2 register안에 operand가 포함
 		
@@ -60,6 +64,7 @@ published: true
 	* address part는 **Register**를 Point
 	* Register는 메모리의 operand의 주소값을 가짐
 	* **E.A. = Contents of Selected Register**
+	* 장점: 넓은 주소 공간, 한번의 메모리 접근
 	* Ex) MOVE.W (A1), D1
 		* IF) A1(address): 1000<br/>
 		 	Memory에서 1000번지를 찾아 a value를 D1(Data)에 Load
@@ -70,6 +75,7 @@ published: true
 	* instruction의 address part는 **Operand의 주소**를 가짐
 	* **operands는 memory에 위치**
 	* **E.A. = Address Field of Instruction**
+	* 단점: 주소 공간 제한
 	* Ex) MOVE.W 10000, D1 , (or ADD A)
 		* Memory에서 10000번지를 찾아 a value를 D1(Data)에 Load
 		
@@ -80,6 +86,7 @@ published: true
 	* The Address field gives the address where the effective address is stored
 	* **E.A. = Memory[Address Field of Instruction]**
 	* Two Memory References (**Slowest**)
+	* 장점 : word길이가 n이면 2^n개의 주소 공간
 	* Ex) ADD (1000) , (or ADD (A))
 		* Memory에서 1000번지 주소로 감, 주소값이 들어있다면 다시 2000번지로 이동
 		   <br/> 2000번지 value를 add
