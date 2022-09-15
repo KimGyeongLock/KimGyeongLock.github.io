@@ -98,38 +98,3 @@ Z = (A+B)/C<br/>
       PUSH C (TOS←C)<br/>
       DIV (TOS←(A+B)/C)<br/>
       POP Z (Z←TOS)
-
-
-# - Addressing modes
-* operand가 메모리나 레지스터에 있는 장소를 지정하는 다양한 방법
-* Advantages
-    * 프로그래밍 다양성
-        * pointers to memory
-        * counters for loop control
-        * indexing of data
-    * addressing field의 비트 수 감소
-* **Effective Address(E.A.)**
-    * Actual address of the location containing the referenced operand
-    * Ex) \[In ARM\]  LDR(Load cpu의 register) r1, [r2, #20]
-        * <img width="592" alt="스크린샷 2022-09-14 오후 12 48 18" src="https://user-images.githubusercontent.com/63464299/190156153-f3ef6bc6-da03-4e74-968a-9c510f079f4e.png">{: width="350" height="350"}
-        * Effective Address: 120
-        * #: 값 자체, 날 것 그대로의 데이터
-    * Ex) \[In MIPS\]  lw(load word) $t1, 1000($s1)
-        * <img width="601" alt="스크린샷 2022-09-14 오후 8 16 28" src="https://user-images.githubusercontent.com/63464299/190156160-1e9df0c9-6359-408a-8a17-de849033c2b0.png">{: width="350" height="350"}
-        * Effective Address: 1100
-        * $: register
-
-
-1. **Implied** addressing mode 
-	* No explicit address
-	* 명령어 실행에 필요한 operand를 지정하지 않아도 묵시적으로 수행하는 방식
-	* Ex) PUSH A, ADD A, RTS 
-2. **Immediate** addressing mode(즉시 주소 지정 방식)
-	* Operand field contains the actual operand value 
-	* operand에 연산에 필요한 숫자 데이터를 직접 넣어주는 방식
-	* 명령어 자신이 데이터를 직접 포함하고 있어 명령어의 실행이 바로 이루어지는 방법
-	* ex) \[In ARM\] ADD r3, r3, #4
-	  * r3←r3+4
-	* ex) \[In MIPS\] addi $s1, $s2, 4
-		* s1←s2+4
-		* **addi**(immediate address): address랑 다름
