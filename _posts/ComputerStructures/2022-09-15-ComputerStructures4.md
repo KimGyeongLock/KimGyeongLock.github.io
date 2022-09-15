@@ -112,7 +112,6 @@ published: true
 ### Direct vs. Indirect
 Indirect
 * 장점: address field can be extended to word length<br/> word길이가 n이면 2^n개의 주소 공간을 가진다.
-출처: https://skagh.tistory.com/8 [재수강은없다:티스토리]
 * 단점: slower
 
 ### Direct vs. Register
@@ -120,5 +119,5 @@ Register
 * faster / cpu안에 register가 있어 메모리로 갈 필요가 없음<br/>
 
 Direct
-* addressing space of memory is larger / cpu 안의 register는 다소 제한
+* addressing space of memory is larger than register / cpu 안의 register는 다소 제한
 
