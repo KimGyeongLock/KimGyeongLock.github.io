@@ -59,7 +59,7 @@ published: true
 	* Selected Register contains the address of operands
 	* address part는 **Register**를 Point
 	* Register는 메모리의 operand의 주소값을 가짐
-	* E.A. = Contents of Selected Register
+	* **E.A. = Contents of Selected Register**
 	* Ex) MOVE.W (A1), D1
 		* IF) A1(address): 1000<br/>
 		 	Memory에서 1000번지를 찾아 a value를 D1(Data)에 Load
@@ -89,7 +89,7 @@ published: true
 7. **(PC) Relative Address** mode
 	* PC(Program Counter): 다음에 실행될 instruction의 주소를 포함
 	* Value in PC is added to the address part of instruction to obtain the effective address (branch type instructions)
-	* E.A. = PC + Offset in Address Field of Instruction(Operands)
+	* **E.A. = PC + Offset in Address Field of Instruction(Operands)**
 	* \[In MIPS\]<br/>
 		100     bne $s0, $s1, Exit // Code:Exit<br/>
     104     add . . .<br/>
