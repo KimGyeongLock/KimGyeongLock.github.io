@@ -84,7 +84,7 @@ published: true
 		* Memory에서 1000번지 주소로 감, 주소값이 들어있다면 다시 2000번지로 이동
 		   <br/> 2000번지 value를 add
 
-![26309636576092C135](https://user-images.githubusercontent.com/63464299/190401758-d28484db-5fcb-471d-9046-0c1d4a6885e4.jpeg)
+	![26309636576092C135](https://user-images.githubusercontent.com/63464299/190401758-d28484db-5fcb-471d-9046-0c1d4a6885e4.jpeg)
 		   
 7. **(PC) Relative Address** mode
 	* PC(Program Counter): 다음에 실행될 instruction의 주소를 포함
