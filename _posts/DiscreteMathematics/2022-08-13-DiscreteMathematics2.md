@@ -144,6 +144,14 @@ De Morgan’s Laws for Quantifiers<br/>
 * **∀x**(**∃y**(x + y = 0)): 모든 x에 대해 “x + y = 0”을 만족하는 y가 존재한다 -> **True**
 * **∃y**(**∀x**(x + y = 0)): 어떤 y에 대해 모든 x가 “x + y = 0”을 만족하는 y가 존재한다 -> **False**
 
+## Order of Quantifiers
+순서 중요!<br/>
+Ex) "x+y = y+x"<br/>
+∀x∀yP(x,y) ≡ ∀y∀xP(x,y)<br/>
+
+Ex) "x+y = 0"<br/>
+∀x∃yQ(x,y) is true<br/>
+∃y∀xQ(x,y) is false
 -----------------
 
 # Negating Nested Quantifiers
