@@ -147,20 +147,20 @@ De Morgan’s Laws for Quantifiers<br/>
 ## Order of Quantifiers
 순서 중요!<br/>
 Ex) "x+y = y+x"<br/>
-∀x∀yP(x,y) ≡ ∀y∀xP(x,y)<br/>
+→ ∀x∀yP(x,y) ≡ ∀y∀xP(x,y)<br/>
 
 Ex) "x+y = 0"<br/>
-∀x∃yQ(x,y) is true<br/>
-∃y∀xQ(x,y) is false
+→ ∀x∃yQ(x,y) is true<br/>
+→ ∃y∀xQ(x,y) is false
 
 <br/>
 L(x,y) = "x loves y"<br/>
 Ex) "Everybody loves somebody"<br/>
-∀x∃yL(x,y)<br/>
+→ ∀x∃yL(x,y)<br/>
 Ex) "There is someone who is loved by everyone"<br/>
-∃y∀xL(x,y)<br/>
+→ ∃y∀xL(x,y)<br/>
 Ex) "There is someone who loves everyone"<br/>
-∃y∀xL(y,x)<br/>
+→ ∃y∀xL(y,x)<br/>
 
 -----------------
 
