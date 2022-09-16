@@ -153,9 +153,8 @@ Ex) "x+y = 0"<br/>
 ∀x∃yQ(x,y) is true<br/>
 ∃y∀xQ(x,y) is false
 
-
 <br/>
-L(x,y) = "x loves y"
+L(x,y) = "x loves y"<br/>
 Ex) "Everybody loves somebody"<br/>
 ∀x∃yL(x,y)<br/>
 Ex) "There is someone who is loved by everyone"<br/>
