@@ -152,6 +152,17 @@ Ex) "x+y = y+x"<br/>
 Ex) "x+y = 0"<br/>
 ∀x∃yQ(x,y) is true<br/>
 ∃y∀xQ(x,y) is false
+
+
+<br/>
+L(x,y) = "x loves y"
+Ex) "Everybody loves somebody"<br/>
+∀x∃yL(x,y)<br/>
+Ex) "There is someone who is loved by everyone"<br/>
+∃y∀xL(x,y)<br/>
+Ex) "There is someone who loves everyone"<br/>
+∃y∀xL(y,x)<br/>
+
 -----------------
 
 # Negating Nested Quantifiers
