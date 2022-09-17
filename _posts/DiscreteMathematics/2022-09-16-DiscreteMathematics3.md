@@ -16,8 +16,8 @@ Prove: the Socrates Example is valid (using **the rules of inference**)
     * **conclusion(∴)** (last proposition)
 
 The argument is valid **if the premises imply the conclusion**<br/>
-Argument form with premises p1, p2, … pn and conclusion q is valid 
-<br/>when (p1 ∧ p2 ∧  … ∧ pn) -> q is a tautology
+Argument form with premises p1, p2, … pn and conclusion q is **valid** 
+<br/>when (p1 ∧ p2 ∧  … ∧ pn) -> q is a **tautology**
 
 ------------
 
@@ -38,6 +38,8 @@ Argument form with premises p1, p2, … pn and conclusion q is valid
 * (“만약 P라면, Q이다. 그런데 Q가 아니다.) 따라서 P가 아니다를 추론
 * (¬𝑞∧(𝑝→𝑞))→¬𝑝<br/>
 <img width="126" alt="스크린샷 2022-09-17 오후 2 15 47" src="https://user-images.githubusercontent.com/63464299/190841715-29aafd84-b88c-4105-be1c-1bf0d8e8ca91.png">
+* Contrapositive(대우)<br/>
+   (¬q∧(¬q→¬p)) → ¬p
 
 
 ## Hypothetical Syllogism(가언적 삼단 논법)
