@@ -105,7 +105,7 @@ t: we will be home by sunset<br/>
    |5. ¬r→s|Premise|
    |6. s|Modus ponens using (4) and (5)|
    |7. s→t|Premise|
-   |8. t(Conclusion)|Modus ponens using (6) and (7)|
+   |8. t(**Conclusion**)|Modus ponens using (6) and (7)|
 
 
 # Handling Quantified Statements
