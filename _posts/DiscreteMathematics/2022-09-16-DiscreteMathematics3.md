@@ -94,7 +94,8 @@ r: we will go swimming<br/>
 s: we will take a canoe trip<br/>
 t: we will be home by sunset<br/>
 
-* solution<br/>
+* Solution<br/>
+
    |Step|Reason|
    |:---:|:---:|
    |1. ¬p∧q|Premise|
