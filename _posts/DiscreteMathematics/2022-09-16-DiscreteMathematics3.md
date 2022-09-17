@@ -83,7 +83,7 @@ Argument form with premises p1, p2, … pn and conclusion q is **valid**
 # Valid Arguments
 
 “It is not sunny this afternoon and it is colder than yesterday.” (¬p ∧ q)<br/>
-“We will go swimming only if it is sunny.” => “If we go swimming then it is sunny.” (r → p)<br/>
+“If we go swimming then it is sunny.” (r → p)<br/>
 “If we do not go swimming, then we will take a canoe trip.” (¬r → s)<br/>
 “If we take a canoe trip, then we will be home by sunset.”  (s → t)<br/>
 <br/>
