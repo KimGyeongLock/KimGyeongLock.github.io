@@ -165,7 +165,7 @@ t: we will be home by sunset<br/>
   9. ∃x((P(x) ∧ ¬B(x)): EG
 
 
-### Socartes Example
+### #3.Socartes Example
 
 * Conclusion
   - Socrates is mortal
