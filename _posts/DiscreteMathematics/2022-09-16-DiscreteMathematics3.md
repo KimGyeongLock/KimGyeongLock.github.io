@@ -8,6 +8,7 @@ published: true
 ---
 
 Prove: the Socrates Example is valid (using **the rules of inference**)
+=====================================
 
 # Arguments in propositional logic
 * a sequence of propositions
