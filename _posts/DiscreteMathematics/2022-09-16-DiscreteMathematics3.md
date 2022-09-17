@@ -86,7 +86,7 @@ Argument form with premises p1, p2, … pn and conclusion q is **valid**
 “If we go swimming then it is sunny.” (r → p)<br/>
 “If we do not go swimming, then we will take a canoe trip.” (¬r → s)<br/>
 “If we take a canoe trip, then we will be home by sunset.”  (s → t)<br/>
-**Hypotheses**: ¬p ∧ q, r → p, ¬r → s, s → t
+**Hypotheses**: ¬p ∧ q, r → p, ¬r → s, s → t<br/>
 <br/>
 p: It is sunny this afternoon<br/>
 q: it is colder than yesterday<br/>
