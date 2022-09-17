@@ -94,17 +94,17 @@ r: we will go swimming<br/>
 s: we will take a canoe trip<br/>
 t: we will be home by sunset<br/>
 
-* solution 
-|Step|Reason|
-|:---:|:---:|
-|1. ¬p∧q|Premise|
-|2. ¬p|Simplification using (1)|
-|3. r→p|Premise|
-|4. ¬r|Modus tollens using (2) and (3)|
-|5. ¬r→s|Premise|
-|6. s|Modus ponens using (4) and (5)|
-|7. s→t|Premise|
-|8. t(Conclusion)|Modus ponens using (6) and (7)|
+* solution<br/>
+   |Step|Reason|
+   |:---:|:---:|
+   |1. ¬p∧q|Premise|
+   |2. ¬p|Simplification using (1)|
+   |3. r→p|Premise|
+   |4. ¬r|Modus tollens using (2) and (3)|
+   |5. ¬r→s|Premise|
+   |6. s|Modus ponens using (4) and (5)|
+   |7. s→t|Premise|
+   |8. t(Conclusion)|Modus ponens using (6) and (7)|
 
 
 # Handling Quantified Statements
