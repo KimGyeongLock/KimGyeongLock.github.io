@@ -121,8 +121,6 @@ t: we will be home by sunset<br/>
 * **Existential Generalization** (**EG**, 존재 일반화)
     * <img width="297" alt="스크린샷 2022-09-17 오후 3 56 37" src="https://user-images.githubusercontent.com/63464299/190844931-ea13c038-4997-4ae5-973a-202355375e65.png">
 
-* **Existential Generalization** (**EG**, 존재 일반화)
-
 ## Exercise
 
 ### #1.
