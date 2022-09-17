@@ -86,6 +86,7 @@ Argument form with premises p1, p2, … pn and conclusion q is **valid**
 “If we go swimming then it is sunny.” (r → p)<br/>
 “If we do not go swimming, then we will take a canoe trip.” (¬r → s)<br/>
 “If we take a canoe trip, then we will be home by sunset.”  (s → t)<br/>
+**Hypotheses**: ¬p ∧ q, r → p, ¬r → s, s → t
 <br/>
 p: It is sunny this afternoon<br/>
 q: it is colder than yesterday<br/>
@@ -93,30 +94,38 @@ r: we will go swimming<br/>
 s: we will take a canoe trip<br/>
 t: we will be home by sunset<br/>
 
-* Steps
-1. premise
-2. simplification ¬p ∧ q => (¬p)
-3. premise r → p
-4. Modus tollens (¬r)
-5. premise ¬r → s
-6. Modus Ponens (s)
-7. premise s → t 
-8. Modus Ponens (t)
-
+* solution 
+|Step|Reason|
+|:---:|:---:|
+|1. ¬p∧q|Premise|
+|2. ¬p|Simplification using (1)|
+|3. r→p|Premise|
+|4. ¬r|Modus tollens using (2) and (3)|
+|5. ¬r→s|Premise|
+|6. s|Modus ponens using (4) and (5)|
+|7. s→t|Premise|
+|8. t(Conclusion)|Modus ponens using (6) and (7)|
 
 
 # Handling Quantified Statements
 
 * **Universal Instantiation** (**UI**, 전칭 예시화)
+    * <img width="102" alt="스크린샷 2022-09-17 오후 3 58 51" src="https://user-images.githubusercontent.com/63464299/190844827-8ae3a7fd-37bc-4c79-a30d-90eb83609a0a.png">
     * 모든 x 에 대하여 P(x) 가 참이면, P(c) 는 참이다.
 * **Universal Generalization** (**UG**, 전칭 일반화)
+    * <img width="275" alt="스크린샷 2022-09-17 오후 3 56 11" src="https://user-images.githubusercontent.com/63464299/190844839-3146ca9d-f481-4781-89e5-305bb26798cc.png">
     * 임의의 c 에 대하여 P(c) 가 참이면, 모든 x 에 대해 P(x) 는 참이다.
 * **Existential Instantiation** (**EI**, 존재 예시화)
-    
+    * <img width="316" alt="스크린샷 2022-09-17 오후 3 56 24" src="https://user-images.githubusercontent.com/63464299/190844852-5a4ea0f5-d096-4f50-8b5e-0455f1855315.png">
+    * "There is someone who ~"
+* **Existential Generalization** (**EG**, 존재 일반화)
+    * <img width="297" alt="스크린샷 2022-09-17 오후 3 56 37" src="https://user-images.githubusercontent.com/63464299/190844931-ea13c038-4997-4ae5-973a-202355375e65.png">
+
 * **Existential Generalization** (**EG**, 존재 일반화)
 
 ## Exercise
 
+### #1.
 * Conclusion
   - John Smith has two legs
  
@@ -127,13 +136,13 @@ t: we will be home by sunset<br/>
 * Solution 
   * M(x): x is a man
   * L(x): x has two legs
+   <br/>
+  1. ∀x(M(x) -> L(x)): Premise 
+  2. M(John) -> L(John): UI
+  3. M(John): Premise
+  4. L(John): Modus Ponens
 
-  * Premise : ∀x(M(x) -> L(x)) 
-  * UI From : M(John) -> L(John)
-  * Premise: M(John)
-  * Modus Ponens: L(John)
-
-
+### #2.
 * Conclusion 
   - Someone who passed the first exam has not read the book
 
@@ -146,15 +155,15 @@ t: we will be home by sunset<br/>
   * B(x): x has read the book 
   * P(x): x passed the first exam
 
-  * Premise : ∃x((C(x) ∧ ¬B(x))
-  * EI : C(Someone) ∧ ¬B(Someone)
-  * Simplification: C(Someone)
-  * Premise : ∀x(C(x) → P(x))
-  * UI : C(Someone) -> P(Someone)
-  * MP: P(Someone)
-  * Simplification : ¬B(Someone)
-  * Conjunction : P(Someone) ∧ ¬B(Someone)
-  * EG : ∃x((P(x) ∧ ¬B(x))
+  1. ∃x((C(x) ∧ ¬B(x)): Premise
+  2. C(Someone) ∧ ¬B(Someone): EI
+  3. C(Someone): Simplification 
+  4. ∀x(C(x) → P(x)): Premise 
+  5. C(Someone) -> P(Someone): UI
+  6. P(Someone): MP
+  7. ¬B(Someone): Simplification (2)
+  8. P(Someone) ∧ ¬B(Someone): Conjunction
+  9. ∃x((P(x) ∧ ¬B(x)): EG
 
 
 ### Socartes Example
@@ -170,10 +179,10 @@ t: we will be home by sunset<br/>
   * Man(x): x is a man
   * Mortal(x): x is mortal
 
-  * Premise : ∀x(Man(x) → Mortal(x))
-  * UI : Man(Socrates) -> Mortal(Socrates)
-  * Premise : Man(Socrates)
-  * MP : Mortal(Socrates)
+  1. ∀x(Man(x) → Mortal(x)): Premise
+  2. Man(Socrates) -> Mortal(Socrates): UI
+  3. Man(Socrates): Premise
+  4. Mortal(Socrates): MP
 
 
 * **Universal Modus Ponens**
