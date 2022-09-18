@@ -58,7 +58,7 @@ published: true
 |Channel|Model|Range|OpenCV|
 |:---:|:---:|:---:|:---:|
 |Hue|원의 각도|0<H<360|0<H<180|
-|Saturation|원의 중심에 가까운 정도|0<S<1|0<S<255|
+|Saturation|원의 중심과의 거리|0<S<1|0<S<255|
 |Intensity|도형의 높이|0<V<1|0<V<255|
 
 
