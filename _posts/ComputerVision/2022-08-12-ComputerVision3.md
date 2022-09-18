@@ -67,6 +67,8 @@ published: true
 * **Cb**: Difference between blue value and brightness (B-Y)
 * **Cr**: Difference between red value and brightness(R-Y)
 
+![image](https://user-images.githubusercontent.com/63464299/190894291-c8282d16-3b98-4595-80c0-fbeda410ed74.png)
+
 Ex) B → Y ≒ B<br/>
     → B - Y > 0 (Normally) Y(Brightness) → (R+G+B)/3)
 
