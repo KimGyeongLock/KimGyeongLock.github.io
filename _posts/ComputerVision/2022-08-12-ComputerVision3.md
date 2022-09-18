@@ -67,6 +67,9 @@ published: true
 * **Cb**: Difference between blue value and brightness (B-Y)
 * **Cr**: Difference between red value and brightness(R-Y)
 
+Ex) B → Y ≒ B<br/>
+    → B - Y > 0 (Normally) Y(Brightness) → (R+G+B)/3)
+
 ## Grayscale image(흑백 사진)
 * Hue, Saturation = 0
 * The lightness(or brightness) is the only parameter 
