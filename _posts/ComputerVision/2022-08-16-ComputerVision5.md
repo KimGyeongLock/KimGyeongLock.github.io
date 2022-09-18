@@ -14,6 +14,7 @@ published: true
     * HSV
     * YCbCr
 * void **cvtColor**(Mat src, Mat dst, int code, int dstCn =0)
+    * Convert an image frame one color space to another
     * Mat **src**: 입력 matrix
     * Mat **dst**: 결과 matrix
     * int **code**: 변환할 Color space code
