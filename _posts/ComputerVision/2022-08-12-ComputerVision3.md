@@ -62,8 +62,8 @@ published: true
 |Intensity|도형의 높이|0<V<1|0<V<255|
 
 
-## YCbCr
-* **Y**: Brightness
+## YCbCr (or YUV)
+* **Y**: Brightness (intensity level)
 * **Cb**: Difference between blue value and brightness (B-Y)
 * **Cr**: Difference between red value and brightness(R-Y)
 
