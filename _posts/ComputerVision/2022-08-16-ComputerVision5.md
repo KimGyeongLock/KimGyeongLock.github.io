@@ -22,7 +22,7 @@ published: true
         * **CV_BGR2HSV**: RGB -> HSV
         * **CV_BGR2YCrCb**: RGB -> YCbCr
         * **CV_BGR2Lab**: RGB -> Lab
-    * int **dstCn**: 결과 mat의 채널 설정 if 0) src=dst (default =0)
+    * int **dstCn**: 결과 channel number, IF(=0) src와 dst에의해 자동으로 
 
 * void **split**(Mat src, Mat* mv)
     * multi-channel을 single-channel로 분리
