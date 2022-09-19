@@ -11,8 +11,12 @@ published: true
 
 ## 평균(mean)
 * 산술평균
-* 양적자료의 중심위치의 측도로 가장 많이 사용
-* 모평균 : 상수
+* **양적자료**의 중심위치의 측도로 가장 많이 사용
+* 모평균 :<br/>
+<img width="23" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190956364-9f699585-6fda-4eee-9413-5564734d2f60.png">
+* 표본평균:<br/>
+<img width="23" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190956512-9af7a4eb-ecad-4c36-a3ca-57eae936db7e.png">
+
 * 표본평균: 변수
 
 ## 가중평균(weighted mean)
