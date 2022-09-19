@@ -12,12 +12,11 @@ published: true
 ## 평균(mean)
 * 산술평균
 * **양적자료**의 중심위치의 측도로 가장 많이 사용
-* 모평균 :<br/>
-<img width="23" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190956364-9f699585-6fda-4eee-9413-5564734d2f60.png">
-* 표본평균:<br/>
-<img width="23" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190956512-9af7a4eb-ecad-4c36-a3ca-57eae936db7e.png">
-
-* 표본평균: 변수
+* 이상치에 민감
+* 모평균: 상수<br/>
+<img width="23" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190956364-9f699585-6fda-4eee-9413-5564734d2f60.png">{: width="108" height="108"}
+* 표본평균: 변수<br/>
+<img width="23" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190956979-9672909d-f9d9-4e20-915a-61194af83700.png">{: width="108" height="108"}
 
 ## 가중평균(weighted mean)
 * 평균(측정값 x 가중치)
@@ -36,20 +35,23 @@ published: true
 ## 최빈값(mode)
 * 빈도(도수)가 가장 많은 값
 * 최빈값이 없거나 하나 이상의 최빈값을 가짐
-* 평균, 중앙값: 하나의 값, 양적자료에만 사용
-* 최빈값: 질적 자료, 양적 자료 모두 사용
-* 양적자료: 가장 도수가 높은 계급의 중간값
+* 평균, 중앙값: 하나의 값, **양적자료에만** 사용
+* 최빈값: **질적 자료, 양적 자료 모두** 사용
+	* 양적자료 - 가장 도수가 높은 계급의 중간값
 
 ## 평균, 중앙값과 최빈값의 관계
 1. Unimodal, Symmetry Histogram or 도수분포곡선
 	* 평균 = 중앙값 = 최빈값 = 분포의 중간
 2. skewed to the right Histogram or 도수분포곡선
 	* 평균 > 중앙값 > 최빈값
+	* Ex) 소득분포
+	
 3. skewed to the left Histogram or 도수분포곡선
 	* 평균 < 중앙값 < 최빈값
+	* Ex) 수능시험성적
 
 ## 절사평균(trimmed mean)
-* 가장 작은 값과 가장 큰 값을 제한 나머지의 평균
+* 평균(전체 - (가장 큰값, 가장 작은값))
 
 ## 산포(dispersion)
 * 자료의 흩어짐에 대한 측도
@@ -57,16 +59,16 @@ published: true
 
 ## 범위(range)
 * 최대값 - 최소값
-* 이상치에 민감 (범위가 커지면 이상치도 커짐) -> 정확한 정보 확신x
+* 이상치에 민감 (범위가 커지면 이상치도 커짐) -> 정확한 정보가 아닐 수 있음
 
 
 ## 분산과 표준편차(variance and standard deviation)
 * 자료의 값들이 평균을 중심으로 얼마나 퍼져 있는가를 나타내는 측도
-* 편차(deviation)
-* 관찰값 - 평균
+* **편차(deviation)**
+	* 관찰값 - 평균
 * 분산, 표준편차 >= 0
-* 변동이 1도 없을경우 0
-* 분산의 측도단위는 원자료의 측도단위의 제곱
+* 변동이 1도 없을경우 분산, 표준편차 = 0
+* 분산의 측도단위는 원자료의 측도단위의 <u>제곱</u>
 * 표준편차의 측도단위는 원자료의 측도단위
 
 -------------
@@ -75,37 +77,40 @@ published: true
 
 ## 모분산과 표본분산
 * 모분산:<br/>
-    <img width="68" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910664-e37cbbab-65d8-4d44-962f-43eb2d8c6434.png">
+    <img width="68" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910664-e37cbbab-65d8-4d44-962f-43eb2d8c6434.png">{: width="108" height="108"}
 
 	* 분산의 간편식:<br/>
-	    <img width="70" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910674-09c082be-9011-4d61-bcd1-80d613523089.png">
+	    <img width="70" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910674-09c082be-9011-4d61-bcd1-80d613523089.png">{: width="108" height="108"}
 
 * 표본분산:<br/>
-    <img width="80" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910690-da5c6146-634e-4d93-a4e9-f8a72d590251.png">
+    <img width="80" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910690-da5c6146-634e-4d93-a4e9-f8a72d590251.png">{: width="108" height="108"}
 
 	* 분산의 간편식:<br/>
-    	    <img width="68" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910700-9a09f8d6-7fce-42a4-b48a-36ddf0af8fa8.png">
-	* n 대신 n-1
+    	    <img width="68" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910700-9a09f8d6-7fce-42a4-b48a-36ddf0af8fa8.png">{: width="108" height="108"}
+	* n 대신 **n-1**로 나눔
     
 * 모표준편차:<br/>
-    <img width="31" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910712-496fdc48-a948-46c1-8c32-45412d4c7f65.png">
+    <img width="31" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910712-496fdc48-a948-46c1-8c32-45412d4c7f65.png">{: width="108" height="108"}
 
 * 표본표준편차:<br/>
-    <img width="28" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910736-c3bdeb6e-8cec-4176-8d28-85fec62e3adb.png">
+    <img width="28" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910736-c3bdeb6e-8cec-4176-8d28-85fec62e3adb.png">{: width="108" height="108"}
 
 * 모수 (population parameter): 모집단에서 계산된 <u>측도</u>(평균, 중앙값, 최빈값, 범위, 분산, 표준편차)
 	* 𝜇, 𝝈
 * 통계량 (statistic): 표본자료에서 계산된 측도
-      * <img width="5" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910767-a542cc82-18b8-4a08-9bf2-62de4d67d31c.png">, s
+      * <img width="5" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910767-a542cc82-18b8-4a08-9bf2-62de4d67d31c.png">{: width="50" height="50"}, s
 
 ## 변동계수(coefficient of variation, CV)
-* 자료 간에 자료값의 차이가 큰 경우(주별↔︎월별), 측정 단위가 다른 경우 산포를 비교할 때 사용
-* multiple 100%
+특정상황에서 산포를 비교할 때 사용
+* 자료 간에 자료값의 차이가 큰 경우(어른의 몸무게, 신생아의 몸무게)
+* 측정 단위가 다른 경우(키와 몸무게, 주별,)
+<br/>
+* x 100%
 * 변동계수(모집단):<br/>
-      <img width="55" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910802-e07d94e4-753f-4937-bd4c-c49d565cec7f.png">
+      <img width="55" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910802-e07d94e4-753f-4937-bd4c-c49d565cec7f.png">{: width="108" height="108"}
       
 * 변동계수(표본집단):<br/>
-      <img width="55" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910810-dddeef92-fcad-4e7c-816c-4f6b9d7953e3.png">
+      <img width="55" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910810-dddeef92-fcad-4e7c-816c-4f6b9d7953e3.png">{: width="108" height="108"}
 
 -------------
 
