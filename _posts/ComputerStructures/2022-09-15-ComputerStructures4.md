@@ -112,7 +112,7 @@ published: true
 	* E.A. = (PC) + Exit = 104 + **3***4 = 116
 		* Exit = 3 으로 Translate // Exit(Label)과 PC가 포인터하는 곳 사이에 3개의 instruction
 		
-*<br/>
+* <br/>
 ```
       slt $t0, $s0, $s1 #t0 = 1 if $s0 < $s1
       beq $t0, $zero, Less
