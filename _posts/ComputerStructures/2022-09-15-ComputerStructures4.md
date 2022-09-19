@@ -107,11 +107,33 @@ published: true
    116   Exit: . . . // Label:Exit
 ```   
 	* bne: Branch(jump) (if)Not Equal → if($s0≠$s1) Exit // beq(Branch (if)E Qual)
-	* PC ←104 // bne instruction 전에 다음 실행될 instruction의 주소가 미리 들어가있음
+	* PC ←104 // bne instruction이 실행될 때 PC는 다음 실행될 instruction의 주소를 가짐
 	* Exit(Label)’s address: 116
 	* E.A. = (PC) + Exit = 104 + **3***4 = 116
-		* Exit = 3 으로 Translate // Exit(Code)와 Exit(Label) 사이에 3개의 instruction
-
+		* Exit = 3 으로 Translate // Exit(Label)과 PC가 포인터하는 곳 사이에 3개의 instruction
+		
+*<br/>
+```
+      slt $t0, $s0, $s1 #t0 = 1 if $s0 < $s1
+      beq $t0, $zero, Less
+      add $s2, $s0, $s1
+      j Exit
+Less: sub $s2, $s0, $s1
+Exit:
+```
+	* Convert to machine code
+```
+000000 10001 10010 01000 00000 101010 /* slt
+000100 01000 00000 00000 00000 000010 /* beq
+000000 .............................. /* add
+000010 .............................. /* j
+000000 .............................. /* sub
+```
+	* Less = 2
+	* PC = 208
+	* Address of next instruction = PC + 2*4 = 216
+	
+	
 #### Memory Structure of ARM and MIPS
 * Main Memory(random access memory)
     * 일차원 배열
