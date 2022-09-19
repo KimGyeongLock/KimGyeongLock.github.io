@@ -123,23 +123,23 @@ published: true
 * m: 각 계급의 중앙값
 * f: 각 계급의 빈도(도수)
 * 모평균:<br/>
-      <img width="34" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910839-c6e4b6b5-f093-4e4e-8e19-8bec3f856d54.png">
+      <img width="59" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190962744-db87d059-7643-4394-9a7b-fd72a9645c39.png">
 
 * 표본평균:<br/>
-      <img width="34" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910851-c7a6fb4a-1dd5-40ff-9979-3eec3e66bd76.png">
+      <img width="59" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190962761-102b7891-e159-4d3c-b064-b76b10b7e38b.png">
 
 ## grouped data의 분산과 표준편차
 * 모분산:<br/>
-      <img width="66" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910866-17e5d678-ee29-4046-8316-904a7420a1f5.png">
+      <img width="115" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190962772-d37dfaeb-31f5-4ce1-a4e2-d9b64c44ef64.png">
 
 	* 분산의 간편식:<br/>
-      		<img width="84" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910876-a5ce6558-a9e7-4157-960c-9979a53704e0.png">
+      		<img width="145" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190962784-8772764a-3c95-47d3-b5b9-9e29b8b48201.png">
 
 * 표본분산:<br/>
-      <img width="65" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910886-578e15f8-db8f-43e8-a18f-7a6d16ae473a.png">
+      <img width="113" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190962801-4550f78e-1fdb-4f10-ab55-0feab2f1dcdc.png">
 	
 	* 분산의 간편식:<br/>
-      		<img width="82" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910898-aebb67ee-add3-40d1-ab96-69b749cfa949.png">
+      		<img width="143" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190962815-5c32310f-4034-4fec-b1c2-44e014f498a1.png">
 
 -----------
 
