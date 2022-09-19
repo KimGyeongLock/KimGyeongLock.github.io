@@ -132,8 +132,19 @@ Convert to machine code<br/>
 > Less = 2<br/>
 > PC = 208<br/>
 > Address of next instruction = PC + 2*4 = 216<br/>
-	
-			   
+		
+#### Memory Structure of ARM and MIPS
+* Main Memory(random access memory)
+    * 일차원 배열
+    * 주소는 배열의 index , 주소를 통해 메모리에 access
+* 1 byte 단위마다 메모리 주소를 가짐(bit X)
+* 1 word = 4 bytes access
+    * ARM, MIPS: 32bits -> 4 bytes
+        * 2^32 bytes = 2^30 words(bytes/4) 주소를 표현
+    * A[i] = A+i*4 byte address
+    	* word0의 대표주소: 0 , word1의 대표주소: 4
+
+
 ### 8. Base Register Addressing mode
 * lw instruction에서 사용하는 address mode
 * **E.A. = Base Register + Offset in the Address Field of Instruction**
@@ -152,19 +163,6 @@ E.A. = (s1) + 1000
 LDR r5, [r3, #32]
 E.A. = (r3) + 32
 ```
-
-	
-#### Memory Structure of ARM and MIPS
-* Main Memory(random access memory)
-    * 일차원 배열
-    * 주소는 배열의 index , 주소를 통해 메모리에 access
-* 1 byte 단위마다 메모리 주소를 가짐(bit X)
-* 1 word = 4 bytes access
-    * ARM, MIPS: 32bits -> 4 bytes
-        * 2^32 bytes = 2^30 words(bytes/4) 주소를 표현
-    * A[i] = A+i*4 byte address
-    	* word0의 대표주소: 0 , word1의 대표주소: 4
-
 
 ----------
 
