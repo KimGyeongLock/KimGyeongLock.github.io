@@ -110,15 +110,28 @@ published: true
 	* E.A. = (PC) + Exit = 104 + **3***4 = 116
 		* Exit = 3 으로 Translate // Exit(Code)와 Exit(Label) 사이에 3개의 instruction
 
+#### Memory Structure of ARM and MIPS
+
+* Memory is just a large 1-dimension. Array, with address acting as index to the array
+* 메인 메모리(random access memory)
+    * 일차원 배열
+    * 주소는 배열의 index , 주소를 통해 메모리에 access
+* 1 byte 마다 메모리 주소를 가짐(bit X)
+* 1 word = 4 bytes access
+    * ARM, MIPS: 32bits -> 4 bytes
+        * 2^32 bytes = 2^30 words(bytes/4) 주소를 표현
+    * A[i] = A+i*4 byte address
+    * word0의 대표주소: 0 , word1의 대표주소: 4
+
 
 ----------
 
-### Direct vs. Indirect
+## Direct vs. Indirect
 Indirect
 * 장점: address field can be extended to word length<br/> word길이가 n이면 2^n개의 주소 공간을 가진다.
 * 단점: slower
 
-### Direct vs. Register
+## Direct vs. Register
 Register
 * faster / cpu안에 register가 있어 메모리로 갈 필요가 없음<br/>
 
