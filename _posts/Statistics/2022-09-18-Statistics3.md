@@ -14,9 +14,9 @@ published: true
 * **양적자료**의 중심위치의 측도로 가장 많이 사용
 * 이상치에 민감
 * 모평균: 상수<br/>
-<img width="23" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190956364-9f699585-6fda-4eee-9413-5564734d2f60.png">{: width="108" height="108"}
+<img width="64" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190959297-0bc9d593-7ef0-4869-a772-6e6248de56a3.png">
 * 표본평균: 변수<br/>
-<img width="23" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190956979-9672909d-f9d9-4e20-915a-61194af83700.png">{: width="108" height="108"}
+<img width="64" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190959349-22224212-33d6-4348-ab34-b3bfee5fddb4.png">
 
 ## 가중평균(weighted mean)
 * 평균(측정값 x 가중치)
@@ -77,28 +77,28 @@ published: true
 
 ## 모분산과 표본분산
 * 모분산:<br/>
-    <img width="68" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910664-e37cbbab-65d8-4d44-962f-43eb2d8c6434.png">{: width="108" height="108"}
+    <img width="120" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960304-687d4526-2491-4c03-8e98-7cb2173faac8.png">
 
 	* 분산의 간편식:<br/>
-	    <img width="70" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910674-09c082be-9011-4d61-bcd1-80d613523089.png">{: width="108" height="108"}
+	    <img width="115" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960322-2b5885f3-6b86-4729-98ea-e178776ee41a.png">
 
 * 표본분산:<br/>
-    <img width="80" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910690-da5c6146-634e-4d93-a4e9-f8a72d590251.png">{: width="108" height="108"}
+    <img width="139" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960328-78ec457f-3006-463a-a81a-51d840db4adb.png">
 
 	* 분산의 간편식:<br/>
-    	    <img width="68" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910700-9a09f8d6-7fce-42a4-b48a-36ddf0af8fa8.png">{: width="108" height="108"}
+    	    <img width="113" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960340-b5ab21d4-0b12-49da-a564-1c7db07ea31d.png">
 	* n 대신 **n-1**로 나눔
     
 * 모표준편차:<br/>
-    <img width="31" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910712-496fdc48-a948-46c1-8c32-45412d4c7f65.png">{: width="108" height="108"}
+    <img width="53" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960354-5a5484b7-39fd-4c45-a842-250e59ab63ce.png">
 
 * 표본표준편차:<br/>
-    <img width="28" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910736-c3bdeb6e-8cec-4176-8d28-85fec62e3adb.png">{: width="108" height="108"}
+    <img width="49" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960370-9acde87c-2232-4bc7-aea7-64fc916e5eaa.png">
 
 * 모수 (population parameter): 모집단에서 계산된 <u>측도</u>(평균, 중앙값, 최빈값, 범위, 분산, 표준편차)
 	* 𝜇, 𝝈
 * 통계량 (statistic): 표본자료에서 계산된 측도
-      * <img width="5" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910767-a542cc82-18b8-4a08-9bf2-62de4d67d31c.png">{: width="50" height="50"}, s
+	* <img width="5" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910767-a542cc82-18b8-4a08-9bf2-62de4d67d31c.png">{: width="5" height="5"}, s
 
 ## 변동계수(coefficient of variation, CV)
 특정상황에서 산포를 비교할 때 사용
@@ -107,10 +107,10 @@ published: true
 <br/>
 * x 100%
 * 변동계수(모집단):<br/>
-      <img width="55" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910802-e07d94e4-753f-4937-bd4c-c49d565cec7f.png">{: width="108" height="108"}
+      <img width="97" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960611-f04cc86a-0ee9-426e-bfa9-a9bf5a1daf66.png">
       
 * 변동계수(표본집단):<br/>
-      <img width="55" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910810-dddeef92-fcad-4e7c-816c-4f6b9d7953e3.png">{: width="108" height="108"}
+      <img width="96" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960632-0d055614-da1e-449b-af4f-dff5d441dc3f.png">
 
 -------------
 
