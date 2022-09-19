@@ -100,10 +100,10 @@ published: true
 * **E.A. = PC + Offset in Address Field of Instruction(Operands)**
 * \[In MIPS\]<br/>
 ```
-   100     bne $s0, $s1, Exit // Code:Exit
-   104     add . . .<br/>
-   108     sub . . .<br/>
-   112     lw  . . .<br/>
+   100         bne $s0, $s1, Exit // Code:Exit
+   104         add . . .<br/>
+   108         sub . . .<br/>
+   112         lw  . . .<br/>
    116   Exit: . . . // Label:Exit
 ```   
 	* bne: Branch(jump) (if)Not Equal → if($s0≠$s1) Exit // beq(Branch (if)E Qual)
