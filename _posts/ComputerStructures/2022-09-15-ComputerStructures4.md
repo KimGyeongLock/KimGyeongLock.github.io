@@ -129,9 +129,9 @@ Convert to machine code<br/>
 000010 .............................. /* j
 000000 .............................. /* sub
 ```
-	* Less = 2
-	* PC = 208
-	* Address of next instruction = PC + 2*4 = 216
+> Less = 2<br/>
+> PC = 208<br/>
+> Address of next instruction = PC + 2*4 = 216<br/>
 	
 	
 #### Memory Structure of ARM and MIPS
