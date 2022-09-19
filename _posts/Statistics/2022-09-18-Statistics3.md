@@ -13,13 +13,13 @@ published: true
 * 산술평균
 * **양적자료**의 중심위치의 측도로 가장 많이 사용
 * 이상치에 민감
-* 모평균: 상수<br/>
+* **모평균**: 상수<br/>
 <img width="64" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190959297-0bc9d593-7ef0-4869-a772-6e6248de56a3.png">
-* 표본평균: 변수<br/>
+* **표본평균**: 변수<br/>
 <img width="64" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190959349-22224212-33d6-4348-ab34-b3bfee5fddb4.png">
 
 ## 가중평균(weighted mean)
-* 평균(측정값 x 가중치)
+* **평균(측정값 x 가중치)**
 * 성적평점평균 or 물가지수
 * <img width="108" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910653-8d5da838-e8f1-4e7b-9ecd-c856a2d41d8b.png">
 
@@ -28,8 +28,8 @@ published: true
 
 ## 중앙값(median)
 * 양적자료를 나열했을 때 가운데 위치하는 값
-* n: 홀수 => (n+1)/2
-* n: 짝수 => Avg(n/2, n/2+1)
+* n: 홀수 => **(n+1)/2**
+* n: 짝수 => **Avg(n/2, n/2+1)**
 * 이상치에 민감x(가운데값은 일정)
 
 ## 최빈값(mode)
@@ -40,32 +40,32 @@ published: true
 	* 양적자료 - 가장 도수가 높은 계급의 중간값
 
 ## 평균, 중앙값과 최빈값의 관계
-1. Unimodal, Symmetry Histogram or 도수분포곡선
+1. **Unimodal, Symmetry** Histogram or 도수분포곡선
 	* 평균 = 중앙값 = 최빈값 = 분포의 중간
-2. skewed to the right Histogram or 도수분포곡선
+2. **skewed to the right** Histogram or 도수분포곡선
 	* 평균 > 중앙값 > 최빈값
 	* Ex) 소득분포
 	
-3. skewed to the left Histogram or 도수분포곡선
+3. **skewed to the left** Histogram or 도수분포곡선
 	* 평균 < 중앙값 < 최빈값
 	* Ex) 수능시험성적
 
 ## 절사평균(trimmed mean)
-* 평균(전체 - (가장 큰값, 가장 작은값))
+* **평균(전체 - (가장 큰값, 가장 작은값))**
 
 ## 산포(dispersion)
 * 자료의 흩어짐에 대한 측도
 * 평균은 같지만 산포가 다를 수 있다!
 
 ## 범위(range)
-* 최대값 - 최소값
+* **최대값 - 최소값**
 * 이상치에 민감 (범위가 커지면 이상치도 커짐) -> 정확한 정보가 아닐 수 있음
 
 
 ## 분산과 표준편차(variance and standard deviation)
 * 자료의 값들이 평균을 중심으로 얼마나 퍼져 있는가를 나타내는 측도
 * **편차(deviation)**
-	* 관찰값 - 평균
+	* **관찰값 - 평균**
 * 분산, 표준편차 >= 0
 * 변동이 1도 없을경우 분산, 표준편차 = 0
 * 분산의 측도단위는 원자료의 측도단위의 <u>제곱</u>
@@ -76,29 +76,31 @@ published: true
 # 자료의 산포도
 
 ## 모분산과 표본분산
-* 모분산:<br/>
+* **모분산**:<br/>
     <img width="120" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960304-687d4526-2491-4c03-8e98-7cb2173faac8.png">
 
 	* 분산의 간편식:<br/>
 	    <img width="115" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960322-2b5885f3-6b86-4729-98ea-e178776ee41a.png">
 
-* 표본분산:<br/>
+* **표본분산**:<br/>
     <img width="139" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960328-78ec457f-3006-463a-a81a-51d840db4adb.png">
 
 	* 분산의 간편식:<br/>
     	    <img width="113" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960340-b5ab21d4-0b12-49da-a564-1c7db07ea31d.png">
 	* n 대신 **n-1**로 나눔
     
-* 모표준편차:<br/>
+* **모표준편차**:<br/>
     <img width="53" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960354-5a5484b7-39fd-4c45-a842-250e59ab63ce.png">
 
-* 표본표준편차:<br/>
+* **표본표준편차**:<br/>
     <img width="49" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960370-9acde87c-2232-4bc7-aea7-64fc916e5eaa.png">
 
-* 모수 (population parameter): 모집단에서 계산된 <u>측도</u>(평균, 중앙값, 최빈값, 범위, 분산, 표준편차)
+* **모수(population parameter)**
+	* 모집단에서 계산된 <u>측도</u>(평균, 중앙값, 최빈값, 범위, 분산, 표준편차)
 	* 𝜇, 𝝈
-* 통계량 (statistic): 표본자료에서 계산된 측도
-	* <img width="5" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910767-a542cc82-18b8-4a08-9bf2-62de4d67d31c.png">{: width="5" height="5"}, s
+* **통계량(statistic)**
+	* 표본자료에서 계산된 측도
+	* <img width="5" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910767-a542cc82-18b8-4a08-9bf2-62de4d67d31c.png">{: width="10" height="10"}, s
 
 ## 변동계수(coefficient of variation, CV)
 특정상황에서 산포를 비교할 때 사용
@@ -106,10 +108,10 @@ published: true
 * 측정 단위가 다른 경우(키와 몸무게, 주별,)
 <br/>
 * x 100%
-* 변동계수(모집단):<br/>
+* **변동계수(모집단)**:<br/>
       <img width="97" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960611-f04cc86a-0ee9-426e-bfa9-a9bf5a1daf66.png">
       
-* 변동계수(표본집단):<br/>
+* **변동계수(표본집단)**:<br/>
       <img width="96" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190960632-0d055614-da1e-449b-af4f-dff5d441dc3f.png">
 
 -------------
