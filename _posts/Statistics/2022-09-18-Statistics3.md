@@ -19,7 +19,7 @@ published: true
 <img width="64" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190959349-22224212-33d6-4348-ab34-b3bfee5fddb4.png">
 
 ## 가중평균(weighted mean)
-* **평균(측정값 x 가중치)**
+* **총합(각값x가중치)/가중치의합**
 * 성적평점평균 or 물가지수
 * <img width="108" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910653-8d5da838-e8f1-4e7b-9ecd-c856a2d41d8b.png">
 
@@ -53,6 +53,7 @@ published: true
 
 ## 절사평균(trimmed mean)
 * **평균(전체 - (가장 큰값, 가장 작은값))**
+* 아이스 댄싱, 체조, 수영, 피겨스케이팅 경기에서 사용
 
 ## 산포(dispersion)
 * 자료의 흩어짐에 대한 측도
