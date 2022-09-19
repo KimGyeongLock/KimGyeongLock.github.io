@@ -26,14 +26,15 @@ published: true
         * Effective Address: 1100
         * $: register
 
+
 ## Type 
 
-1. **Implied** addressing mode 
+### 1. **Implied** addressing mode 
 	* No explicit address
 	* 명령어 실행에 필요한 operand를 지정하지 않아도 묵시적으로 수행하는 방식
 	* Ex) **PUSH A**, **ADD A**, RTS 
 	
-2. **Immediate** addressing mode(즉시 주소 지정 방식)
+### 2. **Immediate** addressing mode(즉시 주소 지정 방식)
 	* Operand field contains the actual operand value 
 	* operand에 연산에 필요한 숫자 데이터를 직접 넣어주는 방식
 	* instruction이 데이터(operand)를 직접 포함하고 있어 명령어의 실행이 바로 이루어지는 방법
@@ -47,7 +48,7 @@ published: true
 	
 	![21310A36576092BF35](https://user-images.githubusercontent.com/63464299/190400084-d50080ac-a11a-4fd4-b874-99867b77ffac.jpeg)
 
-3. **Register** addressing mode
+### 3. **Register** addressing mode
 	* Selected Register contains the operand
 	* address part는 memory가 아닌 **Register**를 Point
 	* **operands는 register에 위치**
@@ -59,7 +60,7 @@ published: true
 		
 	![227E9136576092C204](https://user-images.githubusercontent.com/63464299/190403490-8f5b17b1-27e9-44b6-86ee-a77ea7f973d6.jpeg)
 	
-4. **Register Indirect** addressing mode
+### 4. **Register Indirect** addressing mode
 	* Selected Register contains the address of operands
 	* address part는 **Register**를 Point
 	* Register는 메모리의 operand의 주소값을 가짐
@@ -71,7 +72,7 @@ published: true
 		
 	![233B4D36576092C232](https://user-images.githubusercontent.com/63464299/190403521-c54e9492-cb5e-49ea-9f82-464923f8a392.jpeg)	
 			
-5. **Direct** Addressing mode
+### 5. **Direct** Addressing mode
 	* instruction의 address part는 **Operand의 주소**를 가짐
 	* **operands는 memory에 위치**
 	* **E.A. = Address Field of Instruction**
@@ -81,7 +82,7 @@ published: true
 		
 	![272C1D36576092C034](https://user-images.githubusercontent.com/63464299/190400343-e02ffbc0-d629-425d-88a2-8445a566cad5.jpeg)
 	
-6. **Indirect** Addressing mode
+### 6. **Indirect** Addressing mode
 	* Instruction의 address field는 **Operand의 주소값(E.A.)을 가지는 곳의 주소**를 가짐
 	* The Address field gives the address where the effective address is stored
 	* **E.A. = Memory[Address Field of Instruction]**
@@ -93,7 +94,7 @@ published: true
 
 	![26309636576092C135](https://user-images.githubusercontent.com/63464299/190401758-d28484db-5fcb-471d-9046-0c1d4a6885e4.jpeg)
 		   
-7. **(PC) Relative Address** mode
+### 7. **(PC) Relative Address** mode
 	* PC(Program Counter): 다음에 실행될 instruction의 주소를 포함
 	* Value in PC is added to the address part of instruction to obtain the effective address (branch type instructions)
 	* **E.A. = PC + Offset in Address Field of Instruction(Operands)**
@@ -108,6 +109,9 @@ published: true
 		* Exit(Label)’s address: 116
 		* E.A. = (PC) + Exit = 104 + **3***4 = 116
 			* Exit = 3 으로 Translate // Exit(Code)와 Exit(Label) 사이에 3개의 instruction
+
+
+----------
 
 ### Direct vs. Indirect
 Indirect
