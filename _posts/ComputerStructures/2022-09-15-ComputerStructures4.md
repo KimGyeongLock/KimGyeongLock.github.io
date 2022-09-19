@@ -99,11 +99,13 @@ published: true
 * Value in PC is added to the address part of instruction to obtain the effective address (branch type instructions)
 * **E.A. = PC + Offset in Address Field of Instruction(Operands)**
 * \[In MIPS\]<br/>
-   100     bne $s0, $s1, Exit // Code:Exit<br/>
+```
+   100     bne $s0, $s1, Exit // Code:Exit
    104     add . . .<br/>
    108     sub . . .<br/>
    112     lw  . . .<br/>
-   116   Exit: . . . // Label:Exit<br/>
+   116   Exit: . . . // Label:Exit
+```   
 	* bne: Branch(jump) (if)Not Equal → if($s0≠$s1) Exit // beq(Branch (if)E Qual)
 	* PC ←104 // bne instruction 전에 다음 실행될 instruction의 주소가 미리 들어가있음
 	* Exit(Label)’s address: 116
@@ -111,17 +113,15 @@ published: true
 		* Exit = 3 으로 Translate // Exit(Code)와 Exit(Label) 사이에 3개의 instruction
 
 #### Memory Structure of ARM and MIPS
-
-* Memory is just a large 1-dimension. Array, with address acting as index to the array
-* 메인 메모리(random access memory)
+* Main Memory(random access memory)
     * 일차원 배열
     * 주소는 배열의 index , 주소를 통해 메모리에 access
-* 1 byte 마다 메모리 주소를 가짐(bit X)
+* 1 byte 단위마다 메모리 주소를 가짐(bit X)
 * 1 word = 4 bytes access
     * ARM, MIPS: 32bits -> 4 bytes
         * 2^32 bytes = 2^30 words(bytes/4) 주소를 표현
     * A[i] = A+i*4 byte address
-    * word0의 대표주소: 0 , word1의 대표주소: 4
+    	* word0의 대표주소: 0 , word1의 대표주소: 4
 
 
 ----------
