@@ -30,85 +30,85 @@ published: true
 ## Type 
 
 ### 1. **Implied** addressing mode 
-	* No explicit address
-	* 명령어 실행에 필요한 operand를 지정하지 않아도 묵시적으로 수행하는 방식
-	* Ex) **PUSH A**, **ADD A**, RTS 
+* No explicit address
+* 명령어 실행에 필요한 operand를 지정하지 않아도 묵시적으로 수행하는 방식
+* Ex) **PUSH A**, **ADD A**, RTS 
 	
 ### 2. **Immediate** addressing mode(즉시 주소 지정 방식)
-	* Operand field contains the actual operand value 
-	* operand에 연산에 필요한 숫자 데이터를 직접 넣어주는 방식
-	* instruction이 데이터(operand)를 직접 포함하고 있어 명령어의 실행이 바로 이루어지는 방법
-	* 장점: 빠르다
-	* 단점: 수의 크기에 제한
-	* ex) \[In ARM\] ADD r3, r3, **#4**
-	  * r3←r3+4
-	* ex) \[In MIPS\] addi $s1, $s2, **4**
-		* s1←s2+4
-		* **addi**(immediate address): address랑 다름
+* Operand field contains the actual operand value 
+* operand에 연산에 필요한 숫자 데이터를 직접 넣어주는 방식
+* instruction이 데이터(operand)를 직접 포함하고 있어 명령어의 실행이 바로 이루어지는 방법
+* 장점: 빠르다
+* 단점: 수의 크기에 제한
+* ex) \[In ARM\] ADD r3, r3, **#4**
+  	* r3←r3+4
+* ex) \[In MIPS\] addi $s1, $s2, **4**
+	* s1←s2+4
+	* **addi**(immediate address): address랑 다름
 	
-	![21310A36576092BF35](https://user-images.githubusercontent.com/63464299/190400084-d50080ac-a11a-4fd4-b874-99867b77ffac.jpeg)
+![21310A36576092BF35](https://user-images.githubusercontent.com/63464299/190400084-d50080ac-a11a-4fd4-b874-99867b77ffac.jpeg)
 
 ### 3. **Register** addressing mode
-	* Selected Register contains the operand
-	* address part는 memory가 아닌 **Register**를 Point
-	* **operands는 register에 위치**
-	* **E.A. = Selected Register**
-	* 장점: 명령어의 주소필드가 작아도 됨. 메모리 접근x. 매우 빠르다
-	* 단점: register 개수 제한
-	* Ex) \[In ARM\] ADD r0, r1, r2 (r0←r1+r2)
-		* r1, r2 register안에 operand가 포함
+* Selected Register contains the operand
+* address part는 memory가 아닌 **Register**를 Point
+* **operands는 register에 위치**
+* **E.A. = Selected Register**
+* 장점: 명령어의 주소필드가 작아도 됨. 메모리 접근x. 매우 빠르다
+* 단점: register 개수 제한
+* Ex) \[In ARM\] ADD r0, r1, r2 (r0←r1+r2)
+	* r1, r2 register안에 operand가 포함
 		
-	![227E9136576092C204](https://user-images.githubusercontent.com/63464299/190403490-8f5b17b1-27e9-44b6-86ee-a77ea7f973d6.jpeg)
+![227E9136576092C204](https://user-images.githubusercontent.com/63464299/190403490-8f5b17b1-27e9-44b6-86ee-a77ea7f973d6.jpeg)
 	
 ### 4. **Register Indirect** addressing mode
-	* Selected Register contains the address of operands
-	* address part는 **Register**를 Point
-	* Register는 메모리의 operand의 주소값을 가짐
-	* **E.A. = Contents of Selected Register**
-	* 장점: 넓은 주소 공간, 한번의 메모리 접근
-	* Ex) MOVE.W (A1), D1
-		* IF) A1(address): 1000<br/>
-		 	Memory에서 1000번지를 찾아 a value를 D1(Data)에 Load
+* Selected Register contains the address of operands
+* address part는 **Register**를 Point
+* Register는 메모리의 operand의 주소값을 가짐
+* **E.A. = Contents of Selected Register**
+* 장점: 넓은 주소 공간, 한번의 메모리 접근
+* Ex) MOVE.W (A1), D1
+	* IF) A1(address): 1000<br/>
+	 	Memory에서 1000번지를 찾아 a value를 D1(Data)에 Load
 		
-	![233B4D36576092C232](https://user-images.githubusercontent.com/63464299/190403521-c54e9492-cb5e-49ea-9f82-464923f8a392.jpeg)	
+![233B4D36576092C232](https://user-images.githubusercontent.com/63464299/190403521-c54e9492-cb5e-49ea-9f82-464923f8a392.jpeg)	
 			
 ### 5. **Direct** Addressing mode
-	* instruction의 address part는 **Operand의 주소**를 가짐
-	* **operands는 memory에 위치**
-	* **E.A. = Address Field of Instruction**
-	* 단점: 주소 공간 제한
-	* Ex) MOVE.W 10000, D1 , (or ADD A)
-		* Memory에서 10000번지를 찾아 a value를 D1(Data)에 Load
+* instruction의 address part는 **Operand의 주소**를 가짐
+* **operands는 memory에 위치**
+* **E.A. = Address Field of Instruction**
+* 단점: 주소 공간 제한
+* Ex) MOVE.W 10000, D1 , (or ADD A)
+	* Memory에서 10000번지를 찾아 a value를 D1(Data)에 Load
 		
-	![272C1D36576092C034](https://user-images.githubusercontent.com/63464299/190400343-e02ffbc0-d629-425d-88a2-8445a566cad5.jpeg)
+![272C1D36576092C034](https://user-images.githubusercontent.com/63464299/190400343-e02ffbc0-d629-425d-88a2-8445a566cad5.jpeg)
 	
 ### 6. **Indirect** Addressing mode
-	* Instruction의 address field는 **Operand의 주소값(E.A.)을 가지는 곳의 주소**를 가짐
-	* The Address field gives the address where the effective address is stored
-	* **E.A. = Memory[Address Field of Instruction]**
-	* Two Memory References (**Slowest**)
-	* 장점 : word길이가 n이면 2^n개의 주소 공간
-	* Ex) ADD (1000) , (or ADD (A))
-		* Memory에서 1000번지 주소로 감, 주소값이 들어있다면 다시 2000번지로 이동
-		   <br/> 2000번지 value를 add
+* Instruction의 address field는 **Operand의 주소값(E.A.)을 가지는 곳의 주소**를 가짐
+* The Address field gives the address where the effective address is stored
+* **E.A. = Memory[Address Field of Instruction]**
+* Two Memory References (**Slowest**)
+* 장점 : word길이가 n이면 2^n개의 주소 공간
+* Ex) ADD (1000) , (or ADD (A))
+	* Memory에서 1000번지 주소로 감, 주소값이 들어있다면 다시 2000번지로 이동
+	   <br/> 2000번지 value를 add
 
-	![26309636576092C135](https://user-images.githubusercontent.com/63464299/190401758-d28484db-5fcb-471d-9046-0c1d4a6885e4.jpeg)
+![26309636576092C135](https://user-images.githubusercontent.com/63464299/190401758-d28484db-5fcb-471d-9046-0c1d4a6885e4.jpeg)
 		   
 ### 7. **(PC) Relative Address** mode
-	* PC(Program Counter): 다음에 실행될 instruction의 주소를 포함
-	* Value in PC is added to the address part of instruction to obtain the effective address (branch type instructions)
-	* **E.A. = PC + Offset in Address Field of Instruction(Operands)**
-	* \[In MIPS\]<br/>
-		100     bne $s0, $s1, Exit // Code:Exit<br/>
-    104     add . . .<br/>
-		108     sub . . .<br/>
-		112     lw  . . .<br/>
-		116   Exit: . . . // Label:Exit<br/>
-		* bne: Branch(jump) (if)Not Equal → if($s0≠$s1) Exit // beq(Branch (if)E Qual)
-		* PC ←104 // bne instruction 전에 다음 실행될 instruction의 주소가 미리 들어가있음
-		* Exit(Label)’s address: 116
-		* E.A. = (PC) + Exit = 104 + **3***4 = 116
-			* Exit = 3 으로 Translate // Exit(Code)와 Exit(Label) 사이에 3개의 instruction
+* PC(Program Counter): 다음에 실행될 instruction의 주소를 포함
+* Value in PC is added to the address part of instruction to obtain the effective address (branch type instructions)
+* **E.A. = PC + Offset in Address Field of Instruction(Operands)**
+* \[In MIPS\]<br/>
+   100     bne $s0, $s1, Exit // Code:Exit<br/>
+   104     add . . .<br/>
+   108     sub . . .<br/>
+   112     lw  . . .<br/>
+   116   Exit: . . . // Label:Exit<br/>
+	* bne: Branch(jump) (if)Not Equal → if($s0≠$s1) Exit // beq(Branch (if)E Qual)
+	* PC ←104 // bne instruction 전에 다음 실행될 instruction의 주소가 미리 들어가있음
+	* Exit(Label)’s address: 116
+	* E.A. = (PC) + Exit = 104 + **3***4 = 116
+		* Exit = 3 으로 Translate // Exit(Code)와 Exit(Label) 사이에 3개의 instruction
 
 
 ----------
