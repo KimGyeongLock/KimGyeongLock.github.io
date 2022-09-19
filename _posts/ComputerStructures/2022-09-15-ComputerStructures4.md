@@ -133,6 +133,26 @@ Convert to machine code<br/>
 > PC = 208<br/>
 > Address of next instruction = PC + 2*4 = 216<br/>
 	
+			   
+### 8. Base Register Addressing mode
+* lw instruction에서 사용하는 address mode
+* **E.A. = Base Register + Offset in the Address Field of Instruction**
+	* offset: 얼마나 떨어져 있는가
+* \[In MIPS\]<br/>
+```
+lw $t1, 1000($s1)
+E.A. = (s1) + 1000
+```
+> memory에서 processor로 값을 load(word size)<br/>
+> processor안의 t1 register에 저장<br/>
+> 메모리 주소값 계산: processor의 s1 register안에 있는 값+1000
+
+* \[In ARM\]<br/>
+```
+LDR r5, [r3, #32]
+E.A. = (r3) + 32
+```
+
 	
 #### Memory Structure of ARM and MIPS
 * Main Memory(random access memory)
