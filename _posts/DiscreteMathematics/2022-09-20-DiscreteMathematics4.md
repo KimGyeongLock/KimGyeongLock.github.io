@@ -74,13 +74,36 @@ published: true
 ----------
 
 # Proof Methods and Strategy
-## Proof by Cases
+## Proof by Cases (사례에 의한 증명)
+* 각각의 (pi → q)를 증명함으로써 전체를 증명하는 방법<br/>
+<img width="138" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191174579-6cddefda-086c-4145-9d00-85e5c09ac60a.png"><br/>
+위 conditional statement를 증명하기 위해 아래 tautology를 사용<br/>
+<img width="142" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191174600-273868d4-b04a-4685-90be-035804b9b632.png"><br/>
+<img width="193" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191174623-43a5bf6b-6c28-420f-a3ad-d040ff98a06e.png">
 
-## Existence Proofs
-* Constructive
-* Nonconstructive
+
+## Existence Proofs (존재 증명)
+* ∃xP(x) 형태의 theorems 증명
+* Constructive(생산적 존재 증명)
+    * P(c)를 true로 하는 하나 이상의 c를 찾아 증명하는 방법 (Existential Generalization(EG))
+    * Ex)<br/>
+	<img width="132" alt="- b3 = c3 + d3" src="https://user-images.githubusercontent.com/63464299/191174641-ed48e7a5-67bf-4957-9f1a-014399388c95.png">
+<br/>
+	one example 1729 = 10^3 + 9^3 = 12^3 + 1^3
+* Nonconstructive(비생산적 존재 증명)
+    * P(c)를 true로 하는 값이 존재하지 않는다고 가정하고 모순을 도출하여 존재를 증명하는 방법
+    * Ex)<br/>
+    * There exist irrational numbers x and y such that x^y is rational<br/>
+      ¬p: There is no irrational numbers x and y such that x^y is rational -> x^y must be irrational<br/>
+      x^y, x are irrational -> <img width="32" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191174774-0a7c458b-6442-47d6-8be2-a2d70d7f0259.png"> must be irrational<br/>
+      one counter example <img width="235" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191174855-0c79b27c-409d-491c-bcc8-cee4a9dacce7.png"><br/>
+	∴ ¬p is wrong, p is proved
 
 ## Counterexamples
+* ∃x¬P(x) ≡ ¬∀xP(x) 
+* ¬P(c) is true or P(c) is false -> ¬∀xP(x) is true
+* ‘c’: **counterexample**
+
 
 ## Uniqueness Proofs
 
