@@ -63,7 +63,8 @@ published: true
   <img width="146" alt="2b2 = a = (2c)2 = 4c2" src="https://user-images.githubusercontent.com/63464299/191150177-5bda1aff-cc56-451a-adbc-b288c060769c.png"><br/>
   <img width="56" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191150199-ecc1c7a5-64e6-4124-bb41-9cf3e4f2714e.png"><br/>
   b^2: even → b: even<br/>
-  **This contradicts our assumption that a and b have no common factors.(even 2)**
+  **This contradicts our assumption that a and b have no common factors.(even 2)**<br/>
+  ¬p → F => T → p
 
 ## Theorems that are Biconditional Statements
 * p → q and q →p are both true임을 증명
