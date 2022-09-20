@@ -49,6 +49,7 @@ published: true
   * 색을 표현할 때 '연하다', '진하다', '탁하다' 등과 같은 정도를 나타냄
   * 흰색과 순수색의 혼합 비율(0 ~ 100%)
   * S가 클수록 -> clear color
+  * Saturation = 0 = **achromatic color**
 * **Intensity-channel**(Brightness)
   * achromatic notion of intensity (명도)
   * I가 클수록 -> bright color
