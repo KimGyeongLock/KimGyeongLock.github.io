@@ -93,7 +93,7 @@ published: true
 * Nonconstructive(비생산적 존재 증명)
     * P(c)를 true로 하는 값이 존재하지 않는다고 가정하고 모순을 도출하여 존재를 증명하는 방법
     * Ex)<br/>
-    * There exist irrational numbers x and y such that x^y is rational<br/>
+      There exist irrational numbers x and y such that x^y is rational<br/>
       ¬p: There is no irrational numbers x and y such that x^y is rational -> x^y must be irrational<br/>
       x^y, x are irrational -> <img width="32" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191174774-0a7c458b-6442-47d6-8be2-a2d70d7f0259.png"> must be irrational<br/>
       **one counter example** <img width="235" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191174855-0c79b27c-409d-491c-bcc8-cee4a9dacce7.png"><br/>
