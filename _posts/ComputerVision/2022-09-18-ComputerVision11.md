@@ -61,4 +61,4 @@ On Color Images
 2. Estimate white color in an image
     * Gray world assumption
         * Normally, 사진을 찍으면 그 사진의 픽셀값들의 평균은 회색(128,128,128)에 가까움
-        * 촬영한 사진의 모든 픽셀값의 평균이 (128,128,128)이 아니라면<br/> -> matrix를 구성해서 픽셀값 conversion
+        * 촬영한 사진의 모든 픽셀값의 평균이 (128,128,128)이 아니라면<br/> -> matrix를 구성해서 픽셀값 conversion (x128/픽셀값)
