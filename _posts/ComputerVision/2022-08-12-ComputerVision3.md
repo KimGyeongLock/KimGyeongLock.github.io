@@ -43,12 +43,14 @@ published: true
 
 ## HSI
 * **Hue-channel**
-  * the dominant wavelength in a mixture of light waves (색조)   
+  * the dominant wavelength in a mixture of light waves (색상)   
 * **Saturation-channel**
-  * the relative purity or the amount of white light mixed (선명도)
+  * the relative purity or the amount of white light mixed (채도)
+  * 색을 표현할 때 '연하다', '진하다', '탁하다' 등과 같은 정도를 나타냄
+  * 흰색과 순수색의 혼합 비율(0 ~ 100%)
   * S가 클수록 -> clear color
 * **Intensity-channel**(Brightness)
-  * achromatic notion of intensity (밝기)
+  * achromatic notion of intensity (명도)
   * I가 클수록 -> bright color
   * HSI ≅ HSV (Value) Similar or Same
 
@@ -58,7 +60,7 @@ published: true
 |Channel|Model|Range|OpenCV|
 |:---:|:---:|:---:|:---:|
 |Hue|원의 각도|0<H<360|0<H<180|
-|Saturation|원의 중심과의 거리|0<S<1|0<S<255|
+|Saturation|원의 반지름|0<S<1|0<S<255|
 |Intensity|도형의 높이|0<V<1|0<V<255|
 
 
