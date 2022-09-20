@@ -69,7 +69,7 @@ published: true
 ## Theorems that are Biconditional Statements
 * p → q and q →p are both true임을 증명
 * Ex)<br/>
-    “n is odd iff n^2 is odd when n is an integer.”
+    “n is odd **iff** n^2 is odd when n is an integer.”
 
 ----------
 
