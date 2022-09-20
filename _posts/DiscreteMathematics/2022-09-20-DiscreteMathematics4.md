@@ -110,8 +110,12 @@ published: true
 * 증명과정
     * **Existence**(존재): 특성을 가진 element x의 존재를 증명
     * **Uniqueness**(유일성): y≠x이면 y는 특성을 갖지 않음을 증명
-* Ex)<br/> “If a and b are real numbers and a≠0, there is a unique real number r such that ar+b=0”<br/> **Existence**: r=-b/a <- a(-b/a) + b = -b + b =0<br/> **Uniqueness**: s is a real number such that as + b = 0(**s≠r**) ar+b = 0 = as + b -> r =s (**contradiction**) 
-	**∴-b/a is the only real number for r such that ar + b =0**
+* Ex)<br/>
+  “If a and b are real numbers and a≠0, there is a unique real number r such that ar+b=0”<br/>
+  **Existence**: r=-b/a <- a(-b/a) + b = -b + b =0<br/>
+  **Uniqueness**: s is a real number such that as + b = 0(**s≠r**)<br/>
+  ar+b = 0 = as + b -> r =s (**contradiction**)<br/>
+  **∴-b/a is the only real number for r such that ar + b =0**
 
 ## Proof Strategies
 * Choose a method
@@ -125,7 +129,13 @@ published: true
 ## Universally Quantified Assertions
 * ∀xP(x) 형태의 theorems 증명
 * x is an arbitrary member of the domain -> P(x) must be true(Universal Generalization(UG))
-* Ex)<br/> “An integer x is even if and only if x^2 is even”<br/> p ↔︎ q ≡ (p→q)∧(q→p)<br/> case 1: (p→q) If x is even x=2k, x^2 = 4k^2 = 2(2k^2) : even<br/> case 2: (q→p)=>(¬p→¬q)\<contraposition\><br/> Assume x is not even then x^2 is not even -> x is odd and x^2 is odd<br/> x = 2k+1, x^2 = (2k+1)^2 = 4k^2+4k+1 = 2(2k^2+2k)+1 : odd
+* Ex)<br/>
+  “An integer x is even if and only if x^2 is even”<br/>
+  p ↔︎ q ≡ (p→q)∧(q→p)<br/>
+  case 1: (p→q) If x is even x=2k, x^2 = 4k^2 = 2(2k^2) : even<br/>
+  case 2: (q→p)=>(¬p→¬q)\<contraposition\><br/>
+  Assume x is not even then x^2 is not even -> x is odd and x^2 is odd<br/>
+  x = 2k+1, x^2 = (2k+1)^2 = 4k^2+4k+1 = 2(2k^2+2k)+1 : odd
 
 
 
