@@ -43,7 +43,7 @@ published: true
     ¬q: n is even, n = 2k<br/>
     3n+2 = 3(2k) + 2 = 6k + 2 = 2(3k+1) : even,  ∴¬q → ¬p<br/>
     => p → q 
-	•	Ex2)<br/>
+* Ex2)<br/>
     “If n^2 is odd, the n is odd(n: integer)”<br/>
     ¬q: n is even, n = 2k<br/>
     n^2 = 4k^2 = 2(2k^2) : even,  ∴¬q → ¬p<br/>
