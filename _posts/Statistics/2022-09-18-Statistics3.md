@@ -58,8 +58,8 @@ published: true
 ## 절사평균(trimmed mean)
 * **평균(전체 - (가장 큰값, 가장 작은값))**
 * 아이스 댄싱, 체조, 수영, 피겨스케이팅 경기에서 사용
-* Ex) 8 - 2 => 1/8-trimmed mean<br/>
-	12 - 2 => 1/12-trimmed mean
+* Ex) 8 - 2 => (1/8)trimmed mean<br/>
+	12 - 2 => (1/12)trimmed mean
 
 ## 산포(dispersion)
 * 자료의 흩어짐에 대한 측도
