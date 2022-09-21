@@ -19,7 +19,8 @@ published: true
 <img width="64" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190959349-22224212-33d6-4348-ab34-b3bfee5fddb4.png">
 
 ## 가중평균(weighted mean)
-* **총합(각값x가중치)/가중치의합**
+* **총합(각값x가중치) / 가중치의합**
+* 질량이 다른 것들에 대한 가중치를 매겨 평균을 구함(금, 물)
 * 성적평점평균 or 물가지수
 * <img width="108" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/190910653-8d5da838-e8f1-4e7b-9ecd-c856a2d41d8b.png">
 
