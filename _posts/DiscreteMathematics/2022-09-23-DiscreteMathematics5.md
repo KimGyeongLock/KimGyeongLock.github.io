@@ -17,50 +17,52 @@ published: true
 # Describing a Set
 * S={a,b,c,d}
     * 순서는 중요하지 않음
-        * S = {a,b,c,d} = {b,c,a,d}
+        * S = \{a,b,c,d\} = \{b,c,a,d\}
     * 같은 원소를 한번이상 나열해도 집합은 변하지 않음
-        * S = {a,b,c,d} = {a,b,c,b,c,d}
+        * S = \{a,b,c,d\} = \{a,b,c,b,c,d\}
     * Elipses (…): 생략
-        * S = {a,b,c,d,…..,z}
+        * S = \{a,b,c,d,…..,z\}
 * Some Important Sets
-    * N = natural numbers = {0,1,2,3,…}
-    * Z = integers = {…, -3, -2, -1, 0, 1, 2, 3...}
-    * Z+ = positive integers = { 1, 2, 3…}
+    * N = natural numbers = \{0,1,2,3,…\}
+    * Z = integers = \{…, -3, -2, -1, 0, 1, 2, 3...\}
+    * Z+ = positive integers = \{ 1, 2, 3…\}
     * R = set of real numbers
     * R+ = set of positive real numbers
     * C = set of complex numbers
     * Q = set of rational numbers 
 * Set-Builder Notation
     * Specify the property(ies) (description)
-        * S = { x | x is a positive integer less than 100}
-        * O = { x | x is an odd positive integer less than 10}
-        * O = { x∈Z+ | x is odd and x<10}
+        * S = \{ x | x is a positive integer less than 100\}
+        * O = \{ x | x is an odd positive integer less than 10\}
+        * O = \{ x∈Z+ | x is odd and x<10\}
 * Interval Notation
     * closed interval [a,b]
     * open interval (a, b)
-        * [a,b] = { x | a ≤ x ≤ b }
-        * [a,b) = { x | a ≤ x < b }
-        * (a,b] = { x | a < x ≤ b }
-        * (a,b) = { x | a < x < b }
+        * [a,b] = \{ x | a ≤ x ≤ b \}
+        * [a,b) = \{ x | a ≤ x < b \}
+        * (a,b] = \{ x | a < x ≤ b \}
+        * (a,b) = \{ x | a < x < b \}
 
 
 # Universal Set and Empty Set
 * **Universal Set (U)**
     * the set containing everything 
-* **Empty Set (∅ or {})**
+* **Empty Set (∅ or \{\})**
     * the set with no elements
 
 # Some Things To Remember
 * Sets can be elements of sets
-    * {{1,2,3}, a, {b/c}}
+    * \{\{1,2,3\}, a, \{b/c\}\}
     * {N,Z,Q,R}
 * **The empty set is different from a set containing the empty set**
-    * ∅(empty set) ≠ {∅}(a set containing the empty set)
+    * ∅(empty set) ≠ \{∅\}(a set containing the empty set)
 
 # Set Equality
 * Two sets are equal **iff** they have the same elements
     * A, B: Sets, A=B ↔︎ ∀(x∈A ↔︎ x∈B)
-    * Ex)<br/> {1,3,5} = {3,5,1} {1,5,5,5,3,3,1} = {1,3,5}
+    * Ex)<br/>
+      {1,3,5} = {3,5,1}<br/>
+      {1,5,5,5,3,3,1} = {1,3,5}
 
 
 # Subsets(부분집합)
