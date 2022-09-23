@@ -195,7 +195,12 @@ The **truth set** of P
 => A=B iff A⊆B and B⊆A
 
 1. <img width="88" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191895889-e3bae247-da2b-4109-b54e-a28f2c9a73d7.png">
-<br/>
+   <br/>
+   <img width="532" alt="스크린샷 2022-09-23 오후 1 59 58" src="https://user-images.githubusercontent.com/63464299/191895956-8c9b2810-99e8-439d-ac57-3e0896cd5de2.png">
+
+
 2. <img width="88" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191895912-abf0733b-333d-4cb0-812a-37a641bf680a.png">
-<br/> 
+   <br/> 
+   <img width="592" alt="스크린샷 2022-09-23 오후 2 02 59" src="https://user-images.githubusercontent.com/63464299/191895969-56463ae2-3ac3-45a4-8143-d05e8b7adb87.png">
+
 
