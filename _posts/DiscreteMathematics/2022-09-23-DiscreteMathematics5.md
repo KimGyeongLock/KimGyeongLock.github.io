@@ -109,9 +109,9 @@ published: true
 The Cardinality of a finite set A
 * the number of (distinct) elements in a set (**|A|**)
 * Ex)
-    * |∅| = 0
-    * |{(∅}| = 1
-    * |{1,2,3}| = 3
+    * \|∅\| = 0
+    * \|{(∅}\| = 1
+    * \|{1,2,3}\| = 3
 
 
 # Tuples
@@ -121,12 +121,12 @@ The Cardinality of a finite set A
 
 
 # Cartesian Product(곱집합)
-* A × B = {(a,b) | a∈A ∧ b∈B}
+* A × B = {(a,b) \| a∈A ∧ b∈B}
 * Ex)<br/>
     * A = {a,b} B = {1,2,3} C = {c, d}
     * A × B = {(a,1),(a,2),(a,3),(b,1),(b,2),(b,3)}
     * A × B × C = {(a, 1, c), (a, 1, d), (a, 2, c), … , (b,3,c), (b,3,d)}
-        * |A × B × C| = 12
+        * \|A × B × C\| = 12
 
 # Relation
 * A subset R of the Cartesian Product(A × B)
@@ -137,7 +137,7 @@ The Cardinality of a finite set A
 # Truth Sets of Quantifiers
 The **truth set** of P
 * the set of elements in D for which P(x) is true. 
-* {x ∈ D | P(x)}
+* {x ∈ D \| P(x)}
 * Ex)
     * domain: integers and P(x) = “|x|=1”
     * truth set of P(x) = {-1,1}
@@ -146,20 +146,20 @@ The **truth set** of P
 # Set Operations
 * **Union**
     * A ∪ B
-    * {x | x∈A ∨ x∈B}
+    * {x \| x∈A ∨ x∈B}
 * **Intersection**
     * A ∩ B
-    * {x | x∈A ∧ x∈B}
+    * {x \| x∈A ∧ x∈B}
     * intersection is empty(∅) -> **disjoint**
         * is not independent (컨셉이 다름)
 * **Complement**
     * Ā  or A^c
-    * {x∈U | x∉A}  : U-A
+    * {x∈U \| x∉A}  : U-A
 * **Difference**
     * A - B 
-    * {x | x∈A ∧ x∉B}
+    * {x \| x∈A ∧ x∉B}
 * The Cardinality(||) of the Union of Two Sets
-    * |A ∪ B| = |A| + |B| - |A ∩ B|
+    * \|A ∪ B\| = \|A| + |B| - |A ∩ B|
 
 
 # Set Identities
