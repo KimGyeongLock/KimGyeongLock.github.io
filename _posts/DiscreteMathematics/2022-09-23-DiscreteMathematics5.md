@@ -213,7 +213,7 @@ The **truth set** of P
 3. Membership Tables
 
 
-## Proof of Second De Morgan Law
+## Step1. Proof of Second De Morgan Law
 <img width="85" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191895873-6c52b502-0c2d-43f9-9cc6-4a11fe47198e.png"><br/>
 => A=B iff A⊆B and B⊆A
 
@@ -226,4 +226,7 @@ The **truth set** of P
    <br/> 
    <img width="592" alt="스크린샷 2022-09-23 오후 2 02 59" src="https://user-images.githubusercontent.com/63464299/191895969-56463ae2-3ac3-45a4-8143-d05e8b7adb87.png">
 
+## Step 2. Set-Builder Notation: Second De Morgan Law
+
+<img width="519" alt="스크린샷 2022-09-24 오후 11 57 32" src="https://user-images.githubusercontent.com/63464299/192104807-634aa31b-37ff-45a2-9379-b671017d09b2.png">
 
