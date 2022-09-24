@@ -79,6 +79,7 @@ published: true
     * **A⊆B** ↔︎ ∀x(x∈A → x∈B)
     * IF) ∀x(x∈A ∧ x∉B), A cannot be a subset of B
 
+-----------
 
 # Showing a Set is or is not a subset of another set
 * Showing that A is a Subset of B
@@ -89,6 +90,7 @@ published: true
       The set of integers with squares less than 100 is not a subset of the set of nonnegative integers<br/>
       counterexample: -1, -4 …
 
+-----------
 
 # Another Look at Equality of Sets
 * A=B ↔︎ ∀x(x∈A ↔︎ x∈B)
@@ -98,27 +100,31 @@ published: true
     * ≡ A⊆B and B⊆A
 * ∴A=B iff A⊆B and B⊆A
 
+-----------
 
 #  Proper Subsets(진부분집합)
 * A is a subset of B & A에 속하지 않는 B의 원소가 적어도 하나 존재하는 경우
 * A⊆B **but A≠B => A⊂B
 * ∀x(x∈A → x∈B) ∧ ∃x(x∈B ∧ x∉A)
 
+-----------
 
 # Set Cardinality
 The Cardinality of a finite set A
-* the number of (distinct) elements in a set (**|A|**)
+* the number of (distinct) elements in a set (**\|A\|**)
 * Ex)
     * \|∅\| = 0
     * \|{(∅}\| = 1
     * \|{1,2,3}\| = 3
 
+-----------
 
 # Tuples
 * The ordered elements n-tuple (a1,a2…an)
 * 2-tuples: **ordered pairs**
 * (a,b) = (c,d) ↔︎ a=c, b=d
 
+-----------
 
 # Cartesian Product(곱집합)
 * A × B = {(a,b) \| a∈A ∧ b∈B}
@@ -128,11 +134,14 @@ The Cardinality of a finite set A
     * A × B × C = {(a, 1, c), (a, 1, d), (a, 2, c), … , (b,3,c), (b,3,d)}
         * \|A × B × C\| = 12
 
+-----------
+
 # Relation
 * A subset R of the Cartesian Product(A × B)
 * R⊆(AxB)
     * R = {(a,3),(b,1),(b,2)}
 
+-----------
 
 # Truth Sets of Quantifiers
 The **truth set** of P
@@ -142,6 +151,7 @@ The **truth set** of P
     * domain: integers and P(x) = “|x|=1”
     * truth set of P(x) = {-1,1}
 
+-----------
 
 # Set Operations
 * **Union**
@@ -161,6 +171,7 @@ The **truth set** of P
 * The Cardinality(||) of the Union of Two Sets
     * \|A ∪ B\| = \|A| + |B| - |A ∩ B|
 
+-----------
 
 # Set Identities
 * Identity laws
@@ -193,6 +204,7 @@ The **truth set** of P
   <img width="85" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191895849-784b7c71-acf0-4a05-b6da-ea7fc5df9d2f.png"><br/>
   <img width="85" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191895857-51c92435-a20c-4cd7-a76c-9a2c68cd651a.png">
 
+-----------
 
 # Proving Set Identities
 3 ways to prove set identities
