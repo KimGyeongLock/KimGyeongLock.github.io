@@ -148,7 +148,7 @@ The **truth set** of P
 * the set of elements in D for which P(x) is true. 
 * {x ∈ D \| P(x)}
 * Ex)
-    * domain: integers and P(x) = “|x|=1”
+    * domain: integers and P(x) = “\|x\|=1”
     * truth set of P(x) = {-1,1}
 
 -----------
