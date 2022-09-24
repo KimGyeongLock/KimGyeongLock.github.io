@@ -14,6 +14,8 @@ published: true
 * **a∈A**: a is an element of the set A
 * **a∉A**: a is not a member of A 
 
+--------
+
 # Describing a Set
 * S={a,b,c,d}
     * 순서는 중요하지 않음
@@ -32,23 +34,26 @@ published: true
     * Q = set of rational numbers 
 * Set-Builder Notation
     * Specify the property(ies) (description)
-        * S = \{ x | x is a positive integer less than 100\}
-        * O = \{ x | x is an odd positive integer less than 10\}
-        * O = \{ x∈Z+ | x is odd and x<10\}
+        * S = \{ x \| x is a positive integer less than 100\}
+        * O = \{ x \| x is an odd positive integer less than 10\}
+        * O = \{ x∈Z+ \| x is odd and x<10\}
 * Interval Notation
-    * closed interval [a,b]
+    * closed interval \[a,b\]
     * open interval (a, b)
-        * [a,b] = \{ x | a ≤ x ≤ b \}
-        * [a,b) = \{ x | a ≤ x < b \}
-        * (a,b] = \{ x | a < x ≤ b \}
-        * (a,b) = \{ x | a < x < b \}
+        * [a,b] = \{ x \| a ≤ x ≤ b \}
+        * [a,b) = \{ x \| a ≤ x < b \}
+        * (a,b] = \{ x \| a < x ≤ b \}
+        * (a,b) = \{ x \| a < x < b \}
 
+-----------
 
 # Universal Set and Empty Set
 * **Universal Set (U)**
     * the set containing everything 
 * **Empty Set (∅ or \{\})**
     * the set with no elements
+
+-----------
 
 # Some Things To Remember
 * Sets can be elements of sets
@@ -57,12 +62,16 @@ published: true
 * **The empty set is different from a set containing the empty set**
     * ∅(empty set) ≠ \{∅\}(a set containing the empty set)
 
+-----------
+
 # Set Equality
 * Two sets are equal **iff** they have the same elements
     * A, B: Sets, A=B ↔︎ ∀(x∈A ↔︎ x∈B)
     * Ex)<br/>
       {1,3,5} = {3,5,1}<br/>
       {1,5,5,5,3,3,1} = {1,3,5}
+
+-----------
 
 
 # Subsets(부분집합)
