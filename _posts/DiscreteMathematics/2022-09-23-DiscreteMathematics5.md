@@ -168,8 +168,8 @@ The **truth set** of P
 * **Difference**
     * A - B 
     * {x \| x∈A ∧ x∉B}
-* The Cardinality(||) of the Union of Two Sets
-    * \|A ∪ B\| = \|A| + |B| - |A ∩ B|
+* The Cardinality(\|\|) of the Union of Two Sets
+    * \|A ∪ B\| = \|A\| + \|B\| - \|A ∩ B\|
 
 -----------
 
