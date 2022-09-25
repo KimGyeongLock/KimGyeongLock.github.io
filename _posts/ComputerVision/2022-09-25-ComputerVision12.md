@@ -55,8 +55,8 @@ published: true
 		* 선택한 픽셀의 gradient 크기가 인접한 픽셀의 gradient 크기보다 작으면 선택한 픽셀 제거
 		* 주변 픽셀들 중에 최대치만 남기고 non maxima한 픽셀들은 제거
 	4. **double thresholding** 수행
-		* M(x,y) >= T1 <- edge
-		* M(x,y) < T2 <- non-edge
+		* M(x,y) >= TH <- edge
+		* M(x,y) < TL <- non-edge
 		* Otherwise <- Edge 라고 판별된 픽셀(T1보다 큰 픽셀)과 연결되어있으면 edge라고 간주
 
 --------------
