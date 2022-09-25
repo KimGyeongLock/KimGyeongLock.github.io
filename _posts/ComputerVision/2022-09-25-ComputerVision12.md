@@ -39,10 +39,12 @@ published: true
 	> x축 방향의 미분: 나의 픽셀과 x축 방향으로의 주변 픽셀과의 차이를 구하는 것
 	
 * Mat pixel에 대해서 sobel 마스크를 활용을 해서 spatial filtering 실행
-	* x축 미분 sobel 마스크
+	* x축 미분 sobel 마스크<br/>
 		<img width="111" alt="스크린샷 2022-09-25 오전 4 11 34" src="https://user-images.githubusercontent.com/63464299/192157676-9b06427e-df89-455f-b381-3ca8e5a14a65.png">
-	* y축 미분 sobel 마스크
+	* y축 미분 sobel 마스크<br/>
 		<img width="110" alt="스크린샷 2022-09-25 오전 4 11 34 2" src="https://user-images.githubusercontent.com/63464299/192157684-58ffc443-8523-453e-bc91-e4e90c318c9a.png">
+	* → 미분값 계산<br/>
+		![image](https://user-images.githubusercontent.com/63464299/192157939-6b9cd881-5680-45de-a522-1fd40c9d5078.png)
 
 
 
