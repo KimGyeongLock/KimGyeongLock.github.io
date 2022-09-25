@@ -9,17 +9,17 @@ published: true
 # Edge Detection
 
 ## Introduction
-* Edge pixels
+* **Edge pixels**
     * image intensity가 갑자기 변하는 픽셀
-* Edges
+* **Edges**
     * edge pixels의 연속된 집합
 * How to detect edges? 
     * in case of 1D
-        * 1차 미분의 크기
-    * in case of 2D
-        * image gradient<br/>
+        * 1차 미분의 magnitude(크기)
+    * in case of **2D**
+        * Image **Gradient**<br/>
 	  <img width="367" alt="스크린샷 2022-09-25 오전 3 56 36" src="https://user-images.githubusercontent.com/63464299/192156760-26b4c19f-ba4d-4a27-b103-6a34407f2ebe.png"><br/>
-	  > 2차원 데이터 f의 gradient: x축 방향으로의 미분값과 y축 방향으로의 미분값으로 구성<br/>
+	  > 2차원 데이터 f의 **gradient**: **x축 방향으로의 미분값**과 **y축 방향으로의 미분값**으로 구성<br/>
 	  > M(x,y) : gradient의 크기<br/>
 	  > a(x,y) : gradient의 각도
 	  
@@ -28,7 +28,7 @@ published: true
 	* gradient의 방향을 활용해서 edge의 방향을 구할 수 있음 
 
 * Effect of noise on edge detection
-    * nosie reduction should be performed(Blur)
+    * **nosie reduction** should be performed(**Blur**)
 
 
 ## Edge를 구하는 방법
