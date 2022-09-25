@@ -58,7 +58,7 @@ published: true
 		* T(thresholding)H(high), TL(low) : 사용자 지정
 		* M(x,y) >= TH <- edge
 		* M(x,y) < TL <- non-edge
-		* Otherwise <- Edge 라고 판별된 픽셀(T1보다 큰 픽셀)과 연결되어있으면 edge라고 간주
+		* Otherwise <- Edge 라고 판별된 픽셀(TH보다 큰 픽셀)과 연결되어있으면 edge라고 간주
 
 --------------
 
