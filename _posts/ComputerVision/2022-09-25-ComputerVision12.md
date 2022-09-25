@@ -51,13 +51,13 @@ published: true
 	1. **Gaussian filter**를 활용해서 영상 내 잡음 제거
 	2. **Sobel edge** mask를 활용해서 gradient 크기와 각도 계산
 	3. gradient 크기에 해당하는 영상에 대해서 **non maxima suppression** 수행
-        	* gradient 방향으로 인접한 픽셀들을 찾음
-        	* 선택한 픽셀의 gradient 크기가 인접한 픽셀의 gradient 크기보다 작으면 선택한 픽셀 제거
-        	* 주변 픽셀들 중에 최대치만 남기고 non maxima한 픽셀들은 제거
+		* gradient 방향으로 인접한 픽셀들을 찾음
+		* 선택한 픽셀의 gradient 크기가 인접한 픽셀의 gradient 크기보다 작으면 선택한 픽셀 제거
+		* 주변 픽셀들 중에 최대치만 남기고 non maxima한 픽셀들은 제거
 	4. **double thresholding** 수행
-        	* M(x,y) >= T1 <- edge
-        	* M(x,y) < T2 <- non-edge
-        	* Otherwise <- Edge 라고 판별된 픽셀(T1보다 큰 픽셀)과 연결되어있으면 edge라고 간주
+		* M(x,y) >= T1 <- edge
+		* M(x,y) < T2 <- non-edge
+		* Otherwise <- Edge 라고 판별된 픽셀(T1보다 큰 픽셀)과 연결되어있으면 edge라고 간주
 
 --------------
 
