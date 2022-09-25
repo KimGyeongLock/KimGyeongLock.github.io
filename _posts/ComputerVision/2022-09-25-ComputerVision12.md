@@ -17,7 +17,16 @@ published: true
     * in case of 1D
         * 1차 미분의 크기
     * in case of 2D
-        * image gradient
+        * image gradient<br/>
+	  <img width="367" alt="스크린샷 2022-09-25 오전 3 56 36" src="https://user-images.githubusercontent.com/63464299/192156760-26b4c19f-ba4d-4a27-b103-6a34407f2ebe.png">
+	  > 2차원 데이터 f의 gradient: x축 방향으로의 미분값과 y축 방향으로의 미분값으로 구성 
+	  > M(x,y) : gradient의 크기<br/>
+	  > a(x,y) : gradient의 각도
+	  
+	* Gradient Vector의 방향: 픽셀 위치에서 변화량이 가장 급격한 방향을 가리킴
+	* Edge direction: gradient 방향과 90도의 수직관계
+	* gradient의 방향을 활용해서 edge의 방향을 구할 수 있음 
+
 * Effect of noise on edge detection
     * nosie reduction should be performed(Blur)
 
