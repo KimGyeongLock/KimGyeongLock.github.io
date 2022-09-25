@@ -34,19 +34,17 @@ published: true
 ## Edge를 구하는 방법
 1. **Sobel operators**<br/>
 	Edge를 구하기 위해 gradient를 계산<br/>
-* gadient: x축 방향의 미분과 y축 방향의 미분으로 구성
-	<img width="366" alt="스크린샷 2022-09-25 오전 4 06 37 1" src="https://user-images.githubusercontent.com/63464299/192157456-93623600-dc76-48fe-9b05-587427adc582.png"><br/>
-	> x축 방향의 미분: 나의 픽셀과 x축 방향으로의 주변 픽셀과의 차이를 구하는 것
+	* gadient: x축 방향의 미분과 y축 방향의 미분으로 구성
+		<img width="366" alt="스크린샷 2022-09-25 오전 4 06 37 1" src="https://user-images.githubusercontent.com/63464299/192157456-93623600-dc76-48fe-9b05-587427adc582.png"><br/>
+		> x축 방향의 미분: 나의 픽셀과 x축 방향으로의 주변 픽셀과의 차이를 구하는 것
 	
-* Mat pixel에 대해서 sobel 마스크를 활용을 해서 spatial filtering 실행
-	* x축 미분 sobel 마스크<br/>
-		<img width="111" alt="스크린샷 2022-09-25 오전 4 11 34" src="https://user-images.githubusercontent.com/63464299/192157676-9b06427e-df89-455f-b381-3ca8e5a14a65.png">
-	* y축 미분 sobel 마스크<br/>
-		<img width="110" alt="스크린샷 2022-09-25 오전 4 11 34 2" src="https://user-images.githubusercontent.com/63464299/192157684-58ffc443-8523-453e-bc91-e4e90c318c9a.png">
-	* → 미분값 계산<br/>
-		![image](https://user-images.githubusercontent.com/63464299/192157939-6b9cd881-5680-45de-a522-1fd40c9d5078.png)
-
-
+	* Mat pixel에 대해서 sobel 마스크를 활용을 해서 spatial filtering 실행
+		* x축 미분 sobel 마스크<br/>
+			<img width="111" alt="스크린샷 2022-09-25 오전 4 11 34" src="https://user-images.githubusercontent.com/63464299/192157676-9b06427e-df89-455f-b381-3ca8e5a14a65.png">
+		* y축 미분 sobel 마스크<br/>
+			<img width="110" alt="스크린샷 2022-09-25 오전 4 11 34 2" src="https://user-images.githubusercontent.com/63464299/192157684-58ffc443-8523-453e-bc91-e4e90c318c9a.png">
+		* → 미분값 계산<br/>
+			![image](https://user-images.githubusercontent.com/63464299/192157939-6b9cd881-5680-45de-a522-1fd40c9d5078.png)
 
 2. **Canny Edge Detector**
 * Algorithm
