@@ -18,8 +18,8 @@ published: true
         * 1차 미분의 크기
     * in case of 2D
         * image gradient<br/>
-	  <img width="367" alt="스크린샷 2022-09-25 오전 3 56 36" src="https://user-images.githubusercontent.com/63464299/192156760-26b4c19f-ba4d-4a27-b103-6a34407f2ebe.png">
-	  > 2차원 데이터 f의 gradient: x축 방향으로의 미분값과 y축 방향으로의 미분값으로 구성 
+	  <img width="367" alt="스크린샷 2022-09-25 오전 3 56 36" src="https://user-images.githubusercontent.com/63464299/192156760-26b4c19f-ba4d-4a27-b103-6a34407f2ebe.png"><br/>
+	  > 2차원 데이터 f의 gradient: x축 방향으로의 미분값과 y축 방향으로의 미분값으로 구성<br/>
 	  > M(x,y) : gradient의 크기<br/>
 	  > a(x,y) : gradient의 각도
 	  
