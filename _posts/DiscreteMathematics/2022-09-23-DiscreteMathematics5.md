@@ -91,7 +91,7 @@ published: true
 
 #  Proper Subsets(진부분집합)
 * (A is a subset of B) & (A에 속하지 않는 B의 원소가 적어도 하나 존재하는 경우)
-* A⊆B **but A≠B => A⊂B
+* **A⊆B** but **A≠B** => A⊂B
 * ∀x(x∈A → x∈B) ∧ ∃x(x∈B ∧ x∉A)
 
 -----------
