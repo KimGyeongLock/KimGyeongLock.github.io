@@ -34,7 +34,7 @@ published: true
     * Not Injective<br/>
       f(a) = z<br/>
       f(c) = z<br/>
-      f(a) = f(c)<br/
+      f(a) = f(c)<br/>
       a ≠ c
 
 ----------
@@ -86,6 +86,7 @@ published: true
 * The **ceiling** function (올림)
     * f(x) = **⎡x⎤**
     * x보다 크거나 같은 integer 중 가장 작은 integer
+    
 ## Exercise
 x is a real number → ⎣2x⎦ = ⎣x⎦ + ⎣x + 1/2⎦
 * Sol)<br/>
@@ -105,6 +106,6 @@ x is a real number → ⎣2x⎦ = ⎣x⎦ + ⎣x + 1/2⎦
 * f(n) = n!
 * 1부터 n까지 양의 정수의 곱 (n: nonnegative number)
 * f(n) = 1•2 ••• (n-1) • n, f(0) = 0! = 1
-* Stirling’s Formula
-  * <img width="300" alt="스크린샷 2022-09-26 오후 8 24 24" src="https://user-images.githubusercontent.com/63464299/192265357-303a61c4-387f-4324-b857-7f9f7d8ff02d.png">
+* Stirling’s Formula<br/>
+  <img width="300" alt="스크린샷 2022-09-26 오후 8 24 24" src="https://user-images.githubusercontent.com/63464299/192265357-303a61c4-387f-4324-b857-7f9f7d8ff02d.png">
   
