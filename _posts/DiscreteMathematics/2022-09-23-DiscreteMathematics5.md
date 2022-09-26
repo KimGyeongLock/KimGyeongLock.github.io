@@ -60,16 +60,6 @@ published: true
        
 -----------
 
-# Set Equality
-* Two sets are equal **iff** they have the same elements
-    * A, B: Sets, A=B ↔︎ ∀(x∈A ↔︎ x∈B)
-    * Ex)<br/>
-      {1,3,5} = {3,5,1}<br/>
-      {1,5,5,5,3,3,1} = {1,3,5}
-
------------
-
-
 # Subsets(부분집합)
 * **The set A is a subset of B**, **iff** every element of A is also an element of B
     * **A⊆B** ↔︎ ∀x(x∈A → x∈B)
@@ -84,8 +74,13 @@ published: true
 
 -----------
 
-# Another Look at Equality of Sets
-* A=B ↔︎ ∀x(x∈A ↔︎ x∈B)
+# Set Equality
+* Two sets are equal **iff** they have the same elements
+    * A, B: Sets, A=B ↔︎ ∀(x∈A ↔︎ x∈B)
+    * Ex)<br/>
+      {1,3,5} = {3,5,1}<br/>
+      {1,5,5,5,3,3,1} = {1,3,5}
+
 * Logical equivalences
     * A↔︎B ≡ (A→B) ∧ (B→A)
     * ∀x[(x∈A → x∈B) ∧ (x∈B → x∈A)]
