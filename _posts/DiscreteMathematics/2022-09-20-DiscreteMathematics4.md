@@ -83,14 +83,14 @@ published: true
 
 
 ## Existence Proofs (존재 증명)
-* ∃xP(x) 형태의 theorems 증명
-* Constructive(생산적 존재 증명)
+* **∃xP(x)** 형태의 theorems 증명
+* **Constructive**(생산적 존재 증명)
     * P(c)를 true로 하는 하나 이상의 c를 찾아 증명하는 방법 (Existential Generalization(EG))
     * Ex)<br/>
 	<img width="132" alt="- b3 = c3 + d3" src="https://user-images.githubusercontent.com/63464299/191174641-ed48e7a5-67bf-4957-9f1a-014399388c95.png">
 <br/>
 	**\<one example\>** 1729 = 10^3 + 9^3 = 12^3 + 1^3
-* Nonconstructive(비생산적 존재 증명)
+* **Nonconstructive**(비생산적 존재 증명)
     * P(c)를 true로 하는 값이 존재하지 않는다고 가정하고 모순을 도출하여 존재를 증명하는 방법
     * Ex)<br/>
       There exist irrational numbers x and y such that x^y is rational<br/>
