@@ -21,6 +21,7 @@ published: true
 
 # Compound Expressions
 
+P(x) denotes “x > 0"<br/>
 P(3) **∨** P(-1) Solution: T<br/>
 P(3) **∧** P(-1) Solution: F<br/>
 P(3) **→** P(-1) Solution: F<br/>
