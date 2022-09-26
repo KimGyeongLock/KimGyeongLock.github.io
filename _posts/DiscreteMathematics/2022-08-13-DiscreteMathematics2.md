@@ -26,7 +26,7 @@ P(3) **∨** P(-1) Solution: T<br/>
 P(3) **∧** P(-1) Solution: F<br/>
 P(3) **→** P(-1) Solution: F<br/>
 <br/>
-변수가 있는 표현식은 명제x -> No Value<br/>
+변수가 있는 표현식은 명제x -> Do not have truth values<br/>
 P(3) ∧ P(**y**)<br>
 P(**x**) → P(**y**)<br>
 
