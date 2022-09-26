@@ -17,7 +17,7 @@ published: true
 --------
 
 # Describing a Set
-* S={a,b,c,d}
+* **S={a,b,c,d}**
     * 순서는 중요하지 않음
         * S = \{a,b,c,d\} = \{b,c,a,d\}
     * 같은 원소를 한번이상 나열해도 집합은 변하지 않음
@@ -25,13 +25,13 @@ published: true
     * Elipses (…): 생략
         * S = \{a,b,c,d,…..,z\}
 * Some Important Sets
-    * N = natural numbers = \{0,1,2,3,…\}
-    * Z = integers = \{…, -3, -2, -1, 0, 1, 2, 3...\}
-    * Z+ = positive integers = \{ 1, 2, 3…\}
-    * R = set of real numbers
-    * R+ = set of positive real numbers
-    * C = set of complex numbers
-    * Q = set of rational numbers 
+    * **N** = natural numbers = \{0,1,2,3,…\}
+    * **Z** = integers = \{…, -3, -2, -1, 0, 1, 2, 3...\}
+    * **Z+** = positive integers = \{ 1, 2, 3…\}
+    * **R** = set of real numbers
+    * **R+** = set of positive real numbers
+    * **C** = set of complex numbers
+    * **Q** = set of rational numbers 
 * Set-Builder Notation
     * Specify the property(ies) (description)
         * S = \{ x \| x is a positive integer less than 100\}
