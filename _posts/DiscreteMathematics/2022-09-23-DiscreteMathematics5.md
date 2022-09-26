@@ -9,7 +9,7 @@ published: true
 
  
 # Introduction
-* **Set**: unordered collection of objects
+* **Set**: **unordered** collection of objects
 * The objects in a set: **elements** or **members**
 * **a∈A**: a is an element of the set A
 * **a∉A**: a is not a member of A 
