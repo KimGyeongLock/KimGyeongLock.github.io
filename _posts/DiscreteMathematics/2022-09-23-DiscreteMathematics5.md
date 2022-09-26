@@ -44,6 +44,9 @@ published: true
         * [a,b) = \{ x \| a ≤ x < b \}
         * (a,b] = \{ x \| a < x ≤ b \}
         * (a,b) = \{ x \| a < x < b \}
+* Sets can be elements of sets
+    * \{\{1,2,3\}, a, \{b/c\}\}
+    * {N,Z,Q,R}
 
 -----------
 
@@ -52,16 +55,8 @@ published: true
     * the set containing everything 
 * **Empty Set (∅ or \{\})**
     * the set with no elements
-
------------
-
-# Some Things To Remember
-* Sets can be elements of sets
-    * \{\{1,2,3\}, a, \{b/c\}\}
-    * {N,Z,Q,R}
-* **The empty set is different from a set containing the empty set**
-    * ∅(empty set) ≠ \{∅\}(a set containing the empty set)
-
+    * **The empty set is different from a set containing the empty set**
+        * ∅(empty set) ≠ \{∅\}(a set containing the empty set)
 -----------
 
 # Set Equality
