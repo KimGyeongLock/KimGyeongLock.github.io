@@ -114,7 +114,7 @@ The Cardinality of a finite set A
 -----------
 
 # Cartesian Product(곱집합)
-* A × B = {(a,b) \| a∈A ∧ b∈B}
+* **A × B** = {(a,b) \| a∈A ∧ b∈B}
 * Ex)<br/>
     * A = {a,b} B = {1,2,3} C = {c, d}
     * A × B = {(a,1),(a,2),(a,3),(b,1),(b,2),(b,3)}
@@ -122,7 +122,7 @@ The Cardinality of a finite set A
         * \|A × B × C\| = 12
 
 ## Relation
-* A subset R of the Cartesian Product(A × B)
+* A **subset** R of the Cartesian Product(A × B)
 * R⊆(AxB)
     * R = {(a,3),(b,1),(b,2)}
 
