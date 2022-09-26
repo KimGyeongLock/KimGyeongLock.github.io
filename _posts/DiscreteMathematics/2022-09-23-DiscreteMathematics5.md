@@ -196,6 +196,7 @@ The **truth set** of P
 1. 각각의 set가 다른 set의 subset(⊆)임을 증명 
 2. set builder notation, propositional logic 사용
 3. Membership Tables
+   * truth table: T/F -> Membership Table: 1/0
 
 
 ## Step1. Proof of Second De Morgan Law
