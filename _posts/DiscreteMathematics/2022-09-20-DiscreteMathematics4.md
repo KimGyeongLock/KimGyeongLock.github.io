@@ -51,7 +51,7 @@ published: true
 
 ## Proof by Contradiction (모순에 의한 증명)
 * 주어진 가정(p)을 부정(false)했을 때(¬p)<br/>
-  항상 False가 되는 명제 q가 있음을 보이면(¬p→F)<br/>
+  항상 False가 되는 명제가 있음을 보이면(¬p→F)<br/>
   p의 가정이 잘못되었으므로 p는 True가 됨(T→p)
 * Ex)<br/>
   “<img width="20" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191149959-698152c7-d217-4459-93a9-61a645955167.png">is irrational”<br/>
