@@ -81,7 +81,7 @@ published: true
       {1,3,5} = {3,5,1}<br/>
       {1,5,5,5,3,3,1} = {1,3,5}
 
-* Logical equivalences
+* **Logical equivalences**
     * A↔︎B ≡ (A→B) ∧ (B→A)
     * ∀x[(x∈A → x∈B) ∧ (x∈B → x∈A)]
     * ≡ A⊆B and B⊆A
