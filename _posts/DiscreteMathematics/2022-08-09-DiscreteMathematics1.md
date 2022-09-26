@@ -61,6 +61,7 @@ statement
       |T|F|T|
       |F|T|T|
       |F|F|F|
+    - T가 하나만
   - **Implication**(IMPLIES)
     - (Conditional Statement) 
     - p <span style="color: red">**→**</span> q
@@ -71,6 +72,7 @@ statement
       |F|T|T|
       |F|F|T| 
     - p(약속, hypothesis), q(약속을 지키는 거, conclusion)
+    - "if p, then q", "p implies q", "p only if q" "q when p", "q if p"
     - q는 p의 필요조건 
     - p는 q의 충분조건
     - **Converse**(역): q → p
