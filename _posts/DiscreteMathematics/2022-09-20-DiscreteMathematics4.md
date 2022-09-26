@@ -13,21 +13,21 @@ published: true
 * q = True
 * p→q = True
 * “If it is raining the 1=1.”
-* 결론이 항시 True임을 증명
+* **결론이 항시 True**임을 증명
 
 ## Vacuous Proof (무의미한 증명)
 * p = False
 * p→q = True
 * “If n is both odd and even, then 2 + 2 = 5”
-* 가정이 False임을 증명
+* **가정이 False**임을 증명
 
 ## Direct Proof (직접 증명)
-* p가 True라고 가정할 때 q가 True임을 증명
+* **p가 True**라고 가정할 때 **q가 True**임을 증명
 * using rules of inference, axioms, logical equivalences
 * Ex1)<br/>
     “If n is an odd integer, the n^2 is odd”<br/>
     Assume that n is odd. n = 2k+1 (k: integer)<br/>
-    n^2 = (2k+1)^2 = 4k^2+4k+1 = 2(2k^2+2k)+1 = 2r+1 (r = 2k^2+2k)
+    n^2 = (2k+1)^2 = 4k^2+4k+1 = 2(2k^2+2k)+1 = 2r+1 (r = 2k^2+2k) : odd
 * Ex2)<br/>
     the sum of two rational numbers is rational<br/>
     Assume r and s are two rational numbers.<br/>
