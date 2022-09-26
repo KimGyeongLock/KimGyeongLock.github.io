@@ -121,9 +121,7 @@ The Cardinality of a finite set A
     * A × B × C = {(a, 1, c), (a, 1, d), (a, 2, c), … , (b,3,c), (b,3,d)}
         * \|A × B × C\| = 12
 
------------
-
-# Relation
+## Relation
 * A subset R of the Cartesian Product(A × B)
 * R⊆(AxB)
     * R = {(a,3),(b,1),(b,2)}
