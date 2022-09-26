@@ -36,7 +36,7 @@ published: true
     the sum is rational
 
 ## Proof by Contraposition (대우에 의한 증명)
-* Assume ¬q and ¬p가 true임을 증명
+* **¬q가 True**라고 가정할 때 **¬p가 True**임을 증명
 * **Indirect proof** (간접 증명)
 * Ex1)<br/>
     “If n is an integer and 3n+2 is odd, then n is odd.”<br/>
