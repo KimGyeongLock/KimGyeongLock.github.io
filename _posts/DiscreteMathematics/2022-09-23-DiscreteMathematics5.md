@@ -32,12 +32,12 @@ published: true
     * **R+** = set of positive real numbers
     * **C** = set of complex numbers
     * **Q** = set of rational numbers 
-* Set-Builder Notation
+* **Set-Builder Notation**
     * Specify the property(ies) (description)
         * S = \{ x \| x is a positive integer less than 100\}
         * O = \{ x \| x is an odd positive integer less than 10\}
         * O = \{ x∈Z+ \| x is odd and x<10\}
-* Interval Notation
+* **Interval Notation**
     * closed interval \[a,b\]
     * open interval (a, b)
         * [a,b] = \{ x \| a ≤ x ≤ b \}
