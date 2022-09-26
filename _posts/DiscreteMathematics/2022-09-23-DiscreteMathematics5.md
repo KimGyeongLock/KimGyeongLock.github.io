@@ -85,7 +85,7 @@ published: true
     * A↔︎B ≡ (A→B) ∧ (B→A)
     * ∀x[(x∈A → x∈B) ∧ (x∈B → x∈A)]
     * ≡ A⊆B and B⊆A
-* ∴A=B iff A⊆B and B⊆A
+* ∴A=B iff **A⊆B and B⊆A**
 
 -----------
 
