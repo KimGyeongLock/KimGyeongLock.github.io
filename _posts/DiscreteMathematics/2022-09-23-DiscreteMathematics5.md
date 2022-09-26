@@ -185,9 +185,9 @@ The **truth set** of P
 * Complement laws
     * A ∪ Ā = U
     * A ∩ Ā = ∅
-* De Morgan’s laws
-  <img width="85" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191895849-784b7c71-acf0-4a05-b6da-ea7fc5df9d2f.png"><br/>
-  <img width="85" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191895857-51c92435-a20c-4cd7-a76c-9a2c68cd651a.png">
+* **De Morgan’s laws**
+    * <img width="85" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191895849-784b7c71-acf0-4a05-b6da-ea7fc5df9d2f.png">
+    * <img width="85" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191895857-51c92435-a20c-4cd7-a76c-9a2c68cd651a.png">
 
 -----------
 
