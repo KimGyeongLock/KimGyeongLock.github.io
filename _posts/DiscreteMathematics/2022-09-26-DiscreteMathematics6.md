@@ -26,9 +26,8 @@ published: true
     * same codomain
     * f(a)=f(b)=x
 
-----------
 
-# Injections (단사함수, 일대일 함수)
+## Injections (단사함수, 일대일 함수)
 * **one-to-one** or **injective** ↔︎
 * f(a) = f(b) → a = b
     * Not Injective<br/>
@@ -37,18 +36,14 @@ published: true
       f(a) = f(c)<br/>
       a ≠ c
 
-----------
-
-# Surjections (전사 함수)
+## Surjections (전사 함수)
 * **onto** or **surjective** ↔︎
 * ∀b(∃a(f(a)=b)) (b∈B, a∈A)
 * 모두 짝이 맞을 때
     * Not surjective<br/>
       f(?) = v
 
-----------
-
-# Bijections (전단사 함수, 일대일 대응)
+## Bijections (전단사 함수, 일대일 대응)
 * **one-to-one correspondence** or **bijection**
 * both one-to-one and onto (injective and surjective)
 
