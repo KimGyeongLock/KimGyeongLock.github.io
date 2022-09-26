@@ -16,7 +16,7 @@ published: true
     * b: **image** of a
     * a: **preimage** of b
 * AxB(cartesian product)의 subset(relation)으로 정의 가능
-    * But! 같은 첫번째 element를 가질 수 없음!
+    * But! 첫번째 element가 같으면 안돼!
         * (a, b), (a, d) (X)
 * A: **domain**
 * B: **codomain**
