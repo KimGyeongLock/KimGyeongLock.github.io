@@ -75,7 +75,7 @@ published: true
 
 # Proof Methods and Strategy
 ## Proof by Cases (사례에 의한 증명)
-* 각각의 (pi → q)를 증명함으로써 전체를 증명하는 방법<br/>
+* **각각의 (pi → q)를 증명**함으로써 전체를 증명하는 방법<br/>
 <img width="138" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191174579-6cddefda-086c-4145-9d00-85e5c09ac60a.png"><br/>
 위 conditional statement를 증명하기 위해 아래 tautology를 사용<br/>
 <img width="142" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191174600-273868d4-b04a-4685-90be-035804b9b632.png"><br/>
