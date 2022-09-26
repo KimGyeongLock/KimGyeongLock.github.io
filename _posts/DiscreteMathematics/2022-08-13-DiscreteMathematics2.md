@@ -121,7 +121,7 @@ Solution 2: **∃x (S(x) ∧ C(x))**
 -----------------
 
 # Equivalences in Predicate logic
-if predicate statements  have the same truth value, they are logically equivalent
+if predicate statements  have the **same truth value**, they are **logically equivalent**
 * ∀x(P(x) ∧ Q(x)) ≡ ∀xP(x) ∧ ∀xQ(x)
 * ∃x(P(x) ∨ Q(x)) ≡ ∃xP(x) ∨ ∃xQ(x)
 
