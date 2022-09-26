@@ -28,10 +28,10 @@ published: true
     “If n is an odd integer, the n^2 is odd”<br/>
     Assume that n is odd. n = 2k+1 (k: integer)<br/>
     n^2 = (2k+1)^2 = 4k^2+4k+1 = 2(2k^2+2k)+1 = 2r+1 (r = 2k^2+2k)
-	•	Ex2)<br/>
+* Ex2)<br/>
     the sum of two rational numbers is rational<br/>
     Assume r and s are two rational numbers.<br/>
-    <img width="179" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191149842-248f15c6-307a-4f69-913b-4bf70593fcc5.png"><br/>
+    <img width="179" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/191149842-248f15c6-307a-4f69-913b-4bf70593fcc5.png"><br/><br/>
     <img width="146" alt="pu + qt" src="https://user-images.githubusercontent.com/63464299/191149865-e863b272-b10c-4f11-8762-e9b386ec9b43.png"><br/>
     the sum is rational
 
