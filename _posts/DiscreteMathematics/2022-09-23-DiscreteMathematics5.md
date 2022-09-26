@@ -74,10 +74,6 @@ published: true
 * **The set A is a subset of B**, **iff** every element of A is also an element of B
     * **A⊆B** ↔︎ ∀x(x∈A → x∈B)
     * IF) ∀x(x∈A ∧ x∉B), A cannot be a subset of B
-
------------
-
-# Showing a Set is or is not a subset of another set
 * Showing that A is a Subset of B
     * if x belongs to A, then x also belongs to B
 * Showing that A is not a Subset of B
