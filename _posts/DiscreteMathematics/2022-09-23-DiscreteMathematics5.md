@@ -56,7 +56,7 @@ published: true
 * **Empty Set (∅ or \{\})**
     * the set with no elements
     * **The empty set is different from a set containing the empty set**
-        * ∅(empty set) ≠ \{∅\}(a set containing the empty set)
+       * ∅(empty set) ≠ \{∅\}(a set containing the empty set)
 -----------
 
 # Set Equality
