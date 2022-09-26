@@ -34,8 +34,8 @@ Argument form with premises p1, p2, … pn and conclusion q is **valid**
 
 ## Modus Tollens(MT, 부정논법)
 = denying the consequent(후건부정)<br/>
-* 가언 명제와 그 결론의 부정으로부터 그 **전제의 부정**을 유도하는 추론 규칙
-* (“만약 P라면, Q이다. 그런데 Q가 아니다.) 따라서 P가 아니다를 추론
+* **가언 명제**와 그 **결론의 부정**으로부터 그 **전제의 부정**을 유도하는 추론 규칙
+* (“만약 P라면, Q이다". 그런데 "Q가 아니다".) 따라서 "P가 아니다"를 추론
 * (¬𝑞∧(𝑝→𝑞))→¬𝑝<br/>
 <img width="126" alt="스크린샷 2022-09-17 오후 2 15 47" src="https://user-images.githubusercontent.com/63464299/190841715-29aafd84-b88c-4105-be1c-1bf0d8e8ca91.png">
 * Contrapositive(대우)<br/>
@@ -43,14 +43,14 @@ Argument form with premises p1, p2, … pn and conclusion q is **valid**
 
 
 ## Hypothetical Syllogism(가언적 삼단 논법)
-* 두 개의 가언 명제로부터 추이성을 통해 새로운 **가언 명제**를 유도하는 삼단 논법
+* 두 개의 *가언 명제*로부터 *추이성*을 통해 새로운 **가언 명제**를 유도하는 삼단 논법
 * “만약 P라면, Q이다. 만약 Q라면, R이다. 따라서, 만약 P라면, R이다.”
 * ((𝑝→𝑞)∧(𝑞→𝑟)) →(𝑝→𝑟 )<br/>
 <img width="139" alt="스크린샷 2022-09-17 오후 2 16 06" src="https://user-images.githubusercontent.com/63464299/190841717-34fbb122-c599-4eff-b315-150234714ea7.png">
 
 
 ## Disjunctive Syllogism(선언적 삼단 논법)
-* 선언 명제(또는or)와 이를 이루는 두 명제 가운데 하나에 대한 부정으로부터 다른 한 명제를 유도하는 삼단 논법
+* **선언 명제**(또는or)와 이를 이루는 두 명제 가운데 **하나에 대한 부정**으로부터 **다른 한 명제**를 유도하는 삼단 논법
 * “P가 참이거나 Q가 참이다. 그런데 P는 참이 아니다. 따라서 Q가 참이다.”
 * (¬𝑝∧(𝑝∨𝑞)) →𝑞<br/>
 <img width="74" alt="스크린샷 2022-09-17 오후 2 16 22" src="https://user-images.githubusercontent.com/63464299/190841720-ac6756a2-3340-4b0f-a856-30a12ab0da6a.png">
