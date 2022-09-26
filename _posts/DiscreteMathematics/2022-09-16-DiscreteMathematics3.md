@@ -26,7 +26,7 @@ Argument form with premises p1, p2, … pn and conclusion q is **valid**
 ## Modus Ponens(MP, 긍정논법)
 = implication elimination(함의소거)<br/>
 = affirming the antecedent(전건긍정)<br/>
-* 가언 명제(만약if,”→”)와 그 전제로부터 그 **결론**을 유도해내는 추론 규칙
+* **가언 명제**(만약if,”→”)와 그 **전제**로부터 그 **결론**을 유도해내는 추론 규칙
 * (“만약 P이면, Q이다”와 “P이다”)에서 “Q이다”를 추론
 * (𝑝∧(𝑝→𝑞))→𝑞<br/>
 <img width="94" alt="스크린샷 2022-09-17 오후 2 15 20" src="https://user-images.githubusercontent.com/63464299/190841710-ad350068-d600-45a6-bc80-a73b00ea6f36.png">
