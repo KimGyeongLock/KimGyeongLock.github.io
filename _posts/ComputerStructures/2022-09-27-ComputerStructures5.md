@@ -47,9 +47,10 @@ published: true
         * 00110(6)-> 01100(12), 00110(6) -> 00011(3)
     * Rotate(Circular Shift) (빠진 자리를 빠진 숫자로 채움)
         * 1100 -> 1001
-* **Floating point arithmetic operations*8
+* **Floating point arithmetic operations**
 
 #### CISC vs RISC
+* 공통 Goal: 성능이 좋은 컴퓨터를 만드는 것
 * **CISC**(Complex Instruction Set Computer)
     * instruction set을 복잡하게
     * Increasing functionality 다양한 instruction을 가짐으로 성능을 높임
@@ -58,7 +59,7 @@ published: true
 * **RISC**(Reduced Instruction Set Computer)
     * cisc의 문제점을 줄임
     * instruction set을 간단히 함으로서 성능을 높임
-공통 goal: 성능이 좋은 컴퓨터를 만드는 것
+
 
 
 ---------
