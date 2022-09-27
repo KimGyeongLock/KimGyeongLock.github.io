@@ -65,7 +65,7 @@ published: true
 * Ex)
     * MIPS: add $s0, $s1, $s2
 * **MIPS: only 32 registers (limited)**
-    * register의 개수가 늘어남 -> hardware가 복잡 -> propagation delay ↑ -> clock cycle time ↑
+    * register의 개수가 늘어남 -> hardware가 복잡 -> propagation delay ↑<br/> -> clock cycle time ↑
 
 ### 3. Make common case fast
 * Constants는 꽤 자주 operands로 쓰인다.
