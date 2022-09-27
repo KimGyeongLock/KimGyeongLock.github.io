@@ -7,6 +7,7 @@ categories: Structure
 published: true
 ---
 
+# 1. Introduction to Instruction Set Architecture
 # - Addressing modes
 * operand가 메모리나 레지스터에 있는 장소를 지정하는 다양한 방법
 * Advantages
