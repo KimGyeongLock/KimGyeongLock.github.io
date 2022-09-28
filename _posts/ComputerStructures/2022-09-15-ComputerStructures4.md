@@ -18,7 +18,7 @@ published: true
     * addressing field의 비트 수 감소
 * **Effective Address(E.A.)**
     * Actual address of the location containing the referenced operand
-    * Ex) \[In ARM\]  LDR(Load cpu의 register) r1, [r2, #20]
+    * Ex) \[In ARM\]  LDR(Load Register: 메모리값을 레지스터로 복사) r1, [r2, #20]
         * <img width="592" alt="스크린샷 2022-09-14 오후 12 48 18" src="https://user-images.githubusercontent.com/63464299/190156153-f3ef6bc6-da03-4e74-968a-9c510f079f4e.png">{: width="350" height="350"}
         * Effective Address: 120
         * #: 값 자체, 날 것 그대로의 데이터
