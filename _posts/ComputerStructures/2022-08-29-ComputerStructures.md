@@ -66,7 +66,7 @@ published: true
 * **System software**
    * **Compiler**: 고급언어를 기계언어로 변환
    * **Operating System**: 서비스 코드
-        * 입력/출력 
+        * 입력/출력 처리 
         * 메모리 및  관리
         * 스케줄링 작업 및 자원 
 * **Hardware**
