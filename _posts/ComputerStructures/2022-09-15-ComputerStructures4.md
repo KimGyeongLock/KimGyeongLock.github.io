@@ -42,7 +42,7 @@ published: true
 * 장점: 빠르다
 * 단점: 수의 크기에 제한
 * ex) \[In ARM\] ADD r3, r3, **#4**
-  	* r3←r3+4
+	* r3←r3+4
 * ex) \[In MIPS\] addi $s1, $s2, **4**
 	* s1←s2+4
 	* **addi**(immediate address): address랑 다름
