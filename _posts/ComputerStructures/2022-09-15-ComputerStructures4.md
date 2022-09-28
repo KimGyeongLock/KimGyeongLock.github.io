@@ -142,7 +142,7 @@ Convert to machine code<br/>
 * 1 word = 4 bytes access
     * ARM, MIPS: 32bits -> 4 bytes
         * 2^32 bytes = 2^30 words(bytes/4) 주소를 표현
-    * A\[i\] = A+i*4 byte address
+    * A\[i\] = A+i\*4 byte address
     	 * word0의 대표주소: 0 , word1의 대표주소: 4
 
 
