@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Functions and Sequances
+title: Functions
 toc: true
 toc_sticky: true
 categories: Discrete
