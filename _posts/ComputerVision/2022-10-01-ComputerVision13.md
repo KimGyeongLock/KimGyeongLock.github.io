@@ -57,33 +57,33 @@ published: true
 ## Basic method
 Assumption: 영상이 하나의 물체와 배경으로 구성
 1. 임의로 하나의 Threshold T1를 정함
-2. T를 이용해서 segmentation을 수행 -> 하나의 영상이 두개의 그룹으로 분할
-3. 각각의 그룹에 대해 평균을 구함 각 그룹에 해당하는 픽셀들 값들의 평균을 구함 (m1, m2)
+2. T1를 이용해서 segmentation을 수행 -> 하나의 영상이 두개의 그룹으로 분할
+3. 각 그룹에 해당하는 픽셀들 값들의 평균을 구함 (m1, m2)
 4. m1, m2의 평균으로 Threshold를 다시 정함 (T2=(m1+m2)/2)
-5. 두 개의 Threshold가 유사하다면 종료, 차이가 크다면 step 2~4까지 다시 반복 Threshold = T2를 이용
+5. 두 개의 Threshold가 유사하다면 종료, 차이가 크다면 step 2~4까지 Threshold = T2를 이용하여 다시 반복
 
 ## Otsu’s method
 * Concept
-    * 다양한 threshold를 적용해 threshold를 통해서 얻어진 두 영역의 픽셀값의 밝기값의 차이 계산  가장 크다면 좋은 threshold
-    * thresholding이 잘 되었는지 판단하기 위해 histogram을 활용
+    * 다양한 threshold를 적용해 threshold를 통해서 얻어진 **두 영역의 픽셀값의 밝기값의 차이**가 가장 큰 threshold를 찾음
+    * thresholding이 잘 되었는지 판단하기 위해 **histogram**을 활용
 1. 영상에 대해서 normalized histogram
-    * histogram을 계산한 다음 픽셀 수로 각각의 bin을 나눈 것
-2. threshold k값으로 thresholding을 수행 -> between-class variance 계산
-    * 두 그룹의 밝기값이 크다면 between-class variance 크고 밝기값이 작다면 between-class variance 작다
+    * Normalized: each_bin / total_pixel
+2. threshold k값으로 thresholding을 수행 -> **between-class variance** 계산
+    * 두 그룹의 밝기값이 크다면 between-class variance가 크고 밝기값이 작다면 between-class variance가 작다
 3. between-class variance가 가장 큰  Otsu threshold k를 구함
 
 ----------
 
 # Local(Adaptive) Thresholding
-* 각각의 픽셀값에 대한 threshold를 정할 때 주변에 있는 픽셀값들의 분포를 토대로 threshold를 정하는 방법
+* 각각의 픽셀값에 대한 threshold를 정할 때 **주변에 있는 픽셀값**들의 분포를 토대로 threshold를 정하는 방법
 * Opencv 함수
-* ADAPTIVE_THRESH_MEAN_C
-    * 주변픽셀들의 평균값을 토대로 threshold를 정함
-    * 어떤 특정한 블럭 내에 픽셀들의 평균을 취하고 특정한 상수값을 빼서 Threshold 값으로 정함
-    * T(x, y) = mean of the blocksize × blocksize neighborhood of (x, y) - C 
-* ADAPTIVE_THRESH_GAUSSIAN_C
-    * 가오시안 함수를 활용해서 가중치 평균을 구한 뒤에 특정한 상수값을 뺀 값을 Threshold 값으로 정함
-    * T(x, y) = a weighted sum(cross - correlation with a Gaussian window) of the blocksize × blocksize neighborhood of (x, y) - C 
+   * ADAPTIVE_THRESH_MEAN_C
+      * 주변픽셀들의 평균값을 토대로 threshold를 정함
+      * 어떤 특정한 블럭 내에 픽셀들의 평균을 취하고 특정한 상수값을 빼서 Threshold 값으로 정함
+      * T(x, y) = mean of the blocksize × blocksize neighborhood of (x, y) - C 
+   * ADAPTIVE_THRESH_GAUSSIAN_C
+      * 가오시안 함수를 활용해서 가중치 평균을 구한 뒤에 특정한 상수값을 뺀 값을 Threshold 값으로 정함
+      * T(x, y) = a weighted sum(cross - correlation with a Gaussian window) of the blocksize × blocksize neighborhood of (x, y) - C 
 * Global Thresholding시 배경 부분이 object로 판단되는 경우가 있는데 Local Thresholding은 일부 해결 가능
 
 * 필요하다면 임의로 Local thresholding을 수행 할 수 있다.
