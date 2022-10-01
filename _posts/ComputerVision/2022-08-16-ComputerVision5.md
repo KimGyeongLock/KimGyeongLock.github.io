@@ -87,6 +87,7 @@ published: true
         * **binary image**: 각각의 픽셀 값이 0 혹은 1(0 혹은 255) 두 가지 값만 가질 수 있는 영상
 
 * void **adaptiveThreshold** (Mat src, Mat dst, double maxval, int adaptiveMethod, int thresholdType, int blockSize, double C)
+    * Local Thresholding
     * **adaptiveMethod**
         * **ADAPTIVE_THRESH_MEAN_C** : 주변 픽셀의 평균으로 threshold를 결정 
         * **ADAPTIVE_THRESH_GAUSSIAN_C** : 주변 픽셀의 가중치 평균으로 threshold를 결정
