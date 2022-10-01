@@ -101,6 +101,7 @@ published: true
 * void **inRange**(cv::InputArray src, cv::InputArray lowerb, cv::InputArray upperb, cv::OutputArray dst)
     * **Lowerb**: lower boundary
     * **Upperb**: upper boundary
+    * Between loweb, upperb: 255, Otherwise: 0
 ```
 cvtColor(image, image, CV_BGR2YCrCb);
 inRange(image, Scalar(0, 133,77), Scalar(255, 173, 127), image);
