@@ -66,10 +66,13 @@ Assumption: 영상이 하나의 물체와 배경으로 구성
 * Concept
     * 다양한 threshold를 적용해 threshold를 통해서 얻어진 **두 영역의 픽셀값의 밝기값의 차이**가 가장 큰 threshold를 찾음
     * thresholding이 잘 되었는지 판단하기 위해 **histogram**을 활용
+    
 1. 영상에 대해서 normalized histogram
     * Normalized: each_bin / total_pixel
+    
 2. threshold k값으로 thresholding을 수행 -> **between-class variance** 계산
     * 두 그룹의 밝기값이 크다면 between-class variance가 크고 밝기값이 작다면 between-class variance가 작다
+    
 3. between-class variance가 가장 큰  Otsu threshold k를 구함
 
 ----------
