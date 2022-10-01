@@ -8,15 +8,15 @@ published: true
 ---
 
 # Introduction
-image/video segmentation
+**image/video segmentation**
 * 디지털 영상을 여러개의 영역으로 분할
-* Application
-    * Object classification 
+* 응용
+    * **Object classification** 
         * 눈으로는 구별할 수 없지만 밝기값 측면에서 유사한 값들을 0/255 두개의 값으로 만 표현
 
 * Input: **gray-scale image**
 * Output: **binary image**(0/255 or 0/1)
-    * for two-class problems (foreground and background)
+    * for two-class problems (foreground(object) and background)
 
 -----------
 
@@ -24,29 +24,32 @@ image/video segmentation
 ## Basic concepts
 * Assumption
     * background와 object의 밝기값이 다름
-    * 배경영역 내에서 물체영역 내에서는 밝기값이 차이가 별로 없다 (homogenous)
+    * 배경영역 내에서, 물체영역 내에서는 밝기값이 유사 (homogenous)
     * Images with one object and one background
         * two modals histogram
         * T: Thresholding은 modal의 사이
-        * g(x,y) = 1 (f(x,y)>T)<br/> =0 (otherwise)
-        * binary image
+        * g(x,y) = 1 ( f(x,y)>T )
+           <br/>   =0 (otherwise)
+        * **binary image**
     * Images with one object and two backgrounds (or two objects and one background)
         * three modals histogram
-        * g(x,y) = a (f(x,y) > T2)<br/> = b (T1 < f(x,y) <= T2)<br/> = c (otherwise)
-        * Not binary image
+        * g(x,y) = a (f(x,y) > T2)<br/>
+            = b (T1 < f(x,y) <= T2)<br/>
+            = c (otherwise)
+        * **Not binary image**
 
-## Challenges 고려해야할 문제
+## Challenges
 * Noise(잡음)
 * Illumination and reflectance
-* Histogram이 이상하게 됨
-* Thresholding after applying smoothing
-* 더 좋은 결과를 얻을 수 있다. 
+* -> Histogram이 이상하게 됨
+* Thresholding after applying **smoothing(Blur)**
+* -> 더 좋은 결과를 얻을 수 있다. 
 
 ## Types
 * **Global thresholding**
-    * 동일한 threshold를 모든 픽셀에 적용
+    * **동일한** threshold를 **모든 픽셀**에 적용
 * **Local (adaptive) thresholding**
-    * 다른 threshold를 각 픽셀에 적용
+    * **다른** threshold를 **각 픽셀**에 적용
 
 -----------
 
