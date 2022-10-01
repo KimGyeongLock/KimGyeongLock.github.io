@@ -71,9 +71,11 @@ published: true
 # Threshold operation
 * double **threshold** (Mat src, Mat dst, double thresh, double maxval, int type)
     * 입력영상의 특정한 픽셀 값이 threshold 값 이상 혹은 이하의 경우, 해당 픽셀을 특정한 값으로 변환
-        * **Maxval**: IF) src(l) > thresh dst(l) = maximal,<br/>
-                      IF NOT) 0<br/>
-                      When type = THRESH_BINARY
+        * **Maxval**: Maximum value
+	    * Type = **THRESH_BINARY**<br/>
+	   	dst(l) = maximal (IF, src(l) > thresh)<br/>
+                     = 0 (Otherwise)
+                     
         * **Type**: 
             * **THRESH_BINARY**
             * **THRESH_BINARY_INV** :  THRESH_BINARY 반대
@@ -81,7 +83,7 @@ published: true
             * **THRESH_TOZERO** : Threshold 이하의 값 -> 0
             * **THRESH_TOZERO_INV** : Threshold 이상의 값 -> 0
     * 입력(src)은 grayscale 영상(one-channel)만 가능
-    * grayscale 영상으로부터 binary image를 생성
+    * 전형적으로 grayscale 영상으로부터 binary image를 생성
         * **binary image**: 각각의 픽셀 값이 0 혹은 1(0 혹은 255) 두 가지 값만 가질 수 있는 영상
 
 * void **adaptiveThreshold** (Mat src, Mat dst, double maxval, int adaptiveMethod, int thresholdType, int blockSize, double C)
