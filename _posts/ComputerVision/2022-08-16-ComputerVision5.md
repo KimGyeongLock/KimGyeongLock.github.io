@@ -96,6 +96,7 @@ published: true
         * **THRESH_BINARY_INV**
     * **blockSize**: 인접을 결정하는 파라미터 (3, 5, 7) 
     * **C** : 평균이나 가중치 평균을 구한 값에서 특정한 상수 C 값을 뺀 값이 결과값(dst)
+    * dst(x,y) = Mean(blocksize x blocksize) - C or GAUSSIAN(blocksize x blocksize) - C
 
 * void **inRange**(cv::InputArray src, cv::InputArray lowerb, cv::InputArray upperb, cv::OutputArray dst)
     * **Lowerb**: lower boundary
