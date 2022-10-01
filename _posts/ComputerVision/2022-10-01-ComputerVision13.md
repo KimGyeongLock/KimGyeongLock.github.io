@@ -80,16 +80,17 @@ Assumption: 영상이 하나의 물체와 배경으로 구성
 # Local(Adaptive) Thresholding
 * 각각의 픽셀값에 대한 threshold를 정할 때 **주변에 있는 픽셀값**들의 분포를 토대로 threshold를 정하는 방법
 * Opencv 함수
-   * ADAPTIVE_THRESH_MEAN_C
-      * 주변픽셀들의 평균값을 토대로 threshold를 정함
+   * **ADAPTIVE_THRESH_MEAN_C**
+      * 주변 픽셀들의 평균값을 토대로 threshold를 정함
       * 어떤 특정한 블럭 내에 픽셀들의 평균을 취하고 특정한 상수값을 빼서 Threshold 값으로 정함
       * T(x, y) = mean of the blocksize × blocksize neighborhood of (x, y) - C 
-   * ADAPTIVE_THRESH_GAUSSIAN_C
-      * 가오시안 함수를 활용해서 가중치 평균을 구한 뒤에 특정한 상수값을 뺀 값을 Threshold 값으로 정함
+   * **ADAPTIVE_THRESH_GAUSSIAN_C**
+      * Gaussian function을 활용해서 가중치 평균을 구한 뒤에 특정한 상수값을 뺀 값을 Threshold 값으로 정함
       * T(x, y) = a weighted sum(cross - correlation with a Gaussian window) of the blocksize × blocksize neighborhood of (x, y) - C 
 * Global Thresholding시 배경 부분이 object로 판단되는 경우가 있는데 Local Thresholding은 일부 해결 가능
 
-* 필요하다면 임의로 Local thresholding을 수행 할 수 있다.
+* 함수 외 임의로 Local thresholding을 수행가능(Custom)
     * Image partitioning
-        * 조명이 다양한 영상을 임의로 영상을 분할한 다음 각 분할 된 영역별(가로가 됐든 세로가 됐든)로 thresholding을 수행, 각 분할 된 영역별로 동일한 threshold값을 가지게 thresholding을 수행
+        * 조명이 다양한 영상을 임의로 영상을 분할한 다음 각 분할 된 영역별로 thresholding을 수행
+        * 각 분할 된 영역별로 동일한 threshold값을 가지게 thresholding을 수행
         * 영상이 어떠한 형태로 획득 되었는지 확인하고 다양한 형태로 적용이 가능
