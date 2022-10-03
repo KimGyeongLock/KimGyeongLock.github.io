@@ -49,3 +49,21 @@ Machine Language Structure (MIPS)
 <br/>
 ![page55image443255ee](https://user-images.githubusercontent.com/63464299/193523018-61faced0-c7df-465d-9376-326a232b338b.jpeg)
 
+## Stored Program Concept
+* 폰 노이만 아키텍쳐
+* Two Principles
+    * Instructions are represented as numbers(0/1)
+    * Programs(Instruction sets) are stored in memory
+* Memory에서 숫자(0/1)로 되어 있는 Instructions를 한 문장씩 Processor에 가져가 실행
+
+### Fetch & Execute Cycle
+* **Fetch**: Memory에서 Processor로 instructions의 이동
+    * 정확히는 Processor 안의 Instruction Register(IR)로 이동
+* Register 안에 있는 Content에 따라 다음 액션을 control
+* 다시 다음 instruction을 fetch (Cycle)
+* Control Transfer Instructions
+    * control flow 바꿈
+    * 실행해야 할 다음 instruction 변경
+    * → **PC register** 
+        * 다음 instruction이 있는 메모리 위치를 point
+
