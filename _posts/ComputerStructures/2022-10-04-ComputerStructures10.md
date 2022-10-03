@@ -18,27 +18,27 @@ published: true
 6. 원래 지점으로 control return
 
 ## MIPS Registers for Procedure Call
-* $a0 ~ $a3 : 파라미터를 전달하기 위한 인수
-* $v0 ~ $v1 : 반환 값
-* $ra: 반환 주소
+* **$a0 ~ $a3** : 파라미터를 전달하기 위한 인수
+* **$v0 ~ $v1** : 반환 값
+* **$ra**: 반환 주소
 
 ## MIPS Instruction Pair for Procedures
-* Procedure Call
-    * JAL ProcedureAddr(Label)
+* **Procedure Call**
+    * **JAL** ProcedureAddr(Label)
         * main에서 function을 call할 때
         * PC ← ProcedureAddr
         * $ra ← next instruction address (PC)
-    * JR $ra
+    * **JR** $ra
         * function에서 return 할 때
         * PC ← $ra
 
 ## Procedures use More Registers by Stack
 * more registers → reserved & restored → Stack
-* Stack Pointer($SP register in MIPS)
+* **Stack Pointer($SP register in MIPS)**
     * 스택에서 가장 최근에 할당된 장소를 point
 * PUSH: put data in stack
 * POP: get data in stack
-* Ex
+* Ex)
 	```
 	int leaf_example(int g, int h, int i, int j) {
 		int f;
