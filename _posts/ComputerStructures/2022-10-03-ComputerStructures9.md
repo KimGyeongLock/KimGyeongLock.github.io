@@ -67,3 +67,51 @@ Machine Language Structure (MIPS)
     * → **PC register** 
         * 다음 instruction이 있는 메모리 위치를 point
 
+## LUI
+* LUI (Load Upper immediate instruction)
+    * Breaking large constants into pieces and then reassemble them into a register
+    * 사진
+    * Ex) 32-bit constant “0x003D 0900”
+        * LUI $t0, 0x003D -> t0: 003D 0000
+        * ORI $s0, $t0, 0x0900 -> s0: 003D 0900
+        * 재조립시 upper part 16bits 판단 방법 (???? 0900)
+* Sign Extension
+    * Arithmetic
+    * addi $s1, $t0, 0x000f -> sign bit = 0, 16bits 모두 0
+    * addi $s, $t0, -4 -> sign bit = 1, 16bits 모두 1
+* Zero Extension
+    * Logic
+    * 16bits 모두 0
+
+## Pseudo Instruction
+* Pseudo instruction
+    * 원래  MIPS instruction set 안에는 없는데 assembly language로 쓰면은 마치 있는 것처럼 취급을 해서 action
+* Copy 
+    * Move $t0, $t1
+        * = add $t0, $t1, $zero
+* Branch if Less Than
+    * BLT $t0, $t1, L
+    * if ($t0 < $t1) goto L
+        * = slt $at, $t0, $t1<br/>bne $at, $zero, L
+* Branch if Greater Than
+    * BGT $t0, $t1, L
+    * if ($t0 > $t1) goto L
+* Branch if Greater (Less) Than or Equal to
+    * BGE $t0, $t1, L
+    * if ($t0 >= $t1) goto L
+
+
+## MIPS Addressing Modes
+1. Immediate addressing
+    * addi, andi, slti
+    * I-Type
+2. Register addressing
+    * add, mud, and, slt, sll
+    * R-Type
+3. Base addressing
+    * lw, sw
+4. PC-Relative addressing
+    * beq, bne
+5. Pseudo-direct addressing
+    * j, jal
+    * direct addressing mode와 비슷하지만 똑같지X
