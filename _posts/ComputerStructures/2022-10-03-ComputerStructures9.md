@@ -73,10 +73,10 @@ Machine Language Structure (MIPS)
 
 <img width="540" alt="스크린샷 2022-10-03 오후 6 50 59" src="https://user-images.githubusercontent.com/63464299/193609119-057f35c2-8221-49c3-a6f3-99483407f587.png">
 
-    * Ex) 32-bit constant “0x003D 0900”
-        * LUI $t0, 0x003D -> t0: 003D 0000
-        * ORI $s0, $t0, 0x0900 -> s0: 003D 0900
-        * 재조립시 upper part 16bits 판단 방법 (???? 0900)
+* Ex) 32-bit constant “0x003D 0900”
+    * LUI $t0, 0x003D -> t0: 003D 0000
+    * ORI $s0, $t0, 0x0900 -> s0: 003D 0900
+    * 재조립시 upper part 16bits 판단 방법 (???? 0900)
 * Sign Extension
     * Arithmetic
     * addi $s1, $t0, 0x000f -> sign bit = 0, 16bits 모두 0
