@@ -57,3 +57,45 @@ published: true
     * Base Register Addressing (\[R\] + Offset)
         * Base Register: $s3
         * Offset: 32
+
+## Control Instructions
+* **Conditional** branch instructions
+    * **BEQ (Branch if EQual)**
+        * BEQ $s1, $s2, label 
+        * if ($s1 == $s2) PC(TargetAddress)
+        * I Type
+    * **BNE (Branch if Not Equal)**
+        * BNE $s1, $s2, label 
+        * if ($s1 ≠ $s2) PC(TargetAddress)
+        * I Type
+    * **SLT (Set Less Than)**
+        * SLT $t0, $s1, $s2
+        * if ($s1 < $s2) then $t0 = 1 else $t0 = 0
+        * R Type
+    * **SLTI (Set Less Than Immediate)**
+        * SLTI $s1, $s2, 100
+        * if ($s2 < 100) then $s1 = 1 else $s1 =0
+        * I Type
+* **Unconditional** branch instructions
+    * **J (Jump)**
+        * target address로 jump
+        * PC는 새로운 값을 설정
+        * J 1000 
+        * PC ← 1000
+        * J Type : High order bits of PC
+    * **JR (Jump Register)**
+        * JR $ra 
+        * PC ← $ra
+        * R Type
+    * **JAL (Jump And Link)**
+        * JAL 1000 
+        * $ra ← PC
+        * PC ← 1000
+* Control Instruction
+    * Beq / Bne $t0, $t1, 16 bit Offset
+        * PC (Target Address) ← PC + Offsetx4
+    * J / Jal 26 bit address
+        * PC (Target Address) ← PC(31:28)(4bits) && (address << 2)
+        * shift left 2 (<<2)
+    * Jr $t0
+        * PC (Target Address) ← $t0
