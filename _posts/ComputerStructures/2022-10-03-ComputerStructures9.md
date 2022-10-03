@@ -115,3 +115,21 @@ Machine Language Structure (MIPS)
 5. Pseudo-direct addressing
     * j, jal
     * direct addressing mode와 비슷하지만 똑같지X
+
+
+## Spim
+**Pseudo Assembly Instruction**
+* **li** $rs, immediatamente: Load immediate value(immed) to $rs
+* **la** $rs, addr: Load address(addr) to $rs
+
+**System call (syscall)**
+* consol window에 **출력**을 하거나 **입력**을 받을 때 사용
+* 하고 싶은 action을 $v0 register에 load
+    * li $v0, 4
+    * li $v0, 1
+        * 4: print String 
+        * 1: print Integer
+* $a0 ~ $a3: load argument (floating-point: $f12)
+    * la $a0, str
+    * la $a0, 5
+
