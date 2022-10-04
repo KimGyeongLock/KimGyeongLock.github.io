@@ -94,15 +94,15 @@ placeholder=‘이름을 입력’><br>
 		* **reset**
 			* 폼안에 있는 엘리먼트의 값을 초기화
 			* ```<input type= ‘reset’ value=‘취소’>``` 
-    	* name: 엘리먼트 이름
-    	* id: 엘리먼트 id
-    	* readonly: 읽기 전용
-    	* maxlength=10: 입력 글자수 개수 지정
-    	* html5에 추가된 속성
-        	* **required**(필수입력)
-        	* **autofocus**(첫 포커스)
-        	* **placeholder**(입력 엘리먼트 힌트)
-        	* **pattern**(정규표현식 사용)
+	* name: 엘리먼트 이름
+	* id: 엘리먼트 id
+	* readonly: 읽기 전용
+	* maxlength=10: 입력 글자수 개수 지정
+	* html5에 추가된 속성
+		* **required**(필수입력)
+		* **autofocus**(첫 포커스)
+		* **placeholder**(입력 엘리먼트 힌트)
+		* **pattern**(정규표현식 사용)
 * **&#60;select&#62;, &#60;optgroup&#62;, &#60;option&#62;** tag
     * 목록 중의 항목을 선택
     * **multiple(다중선택)**, **selected(선택된 항목)** 속성 제공
