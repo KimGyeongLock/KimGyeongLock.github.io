@@ -66,7 +66,7 @@ published: true
 # MATRICES
 
 ## Illustration of Matrix Multiplication
-<img width="222" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805050-4ea26ffe-e6c3-43d1-bcbc-f48c6811c9ee.png">
+<img width="222" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805050-4ea26ffe-e6c3-43d1-bcbc-f48c6811c9ee.png"><br/>
 <img width="184" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805116-afdcb7a0-f352-484b-a407-0037af68d0f2.png">
 
 ## Identity Matrix and Powers of Matrices
@@ -92,7 +92,7 @@ published: true
 * <img width="200" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805600-9ff9bb97-1f5b-41a4-8613-a384bc05b6e1.png">	
 	* for i and j with 1≤i≤n and 1≤j≤n
 	
-<img width="200" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805600-9ff9bb97-1f5b-41a4-8613-a384bc05b6e1.png">
+![Pasted Graphic 12](https://user-images.githubusercontent.com/63464299/193809135-115869bc-94fe-44d9-9579-4674cd10d711.png)
 
 ## Zero-One Matrices
 * zero-one matrix
