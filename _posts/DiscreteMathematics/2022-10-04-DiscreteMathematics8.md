@@ -82,8 +82,7 @@ published: true
 	* <img width="13" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805330-66928372-88f0-4422-b942-51be1e91083f.png">: n x m matrix
 * <img width="126" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805372-ec6c9eab-219d-49ff-8bdf-f5a009135d0d.png">
 
-	* <img width="13" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805330-66928372-88f0-4422-b942-51be1e91083f.png">
-		* for i = 1, 2, … , n and j = 1, 2, …, m
+	* for i = 1, 2, … , n and j = 1, 2, …, m
 
 <img width="257" alt="스크린샷 2022-10-04 오후 7 45 38" src="https://user-images.githubusercontent.com/63464299/193805461-b91ce437-f917-4ade-88b3-a8bb93102a7c.png">
 
