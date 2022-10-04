@@ -83,17 +83,17 @@ placeholder=‘이름을 입력’><br>
 * **&#60;input&#62;** tag
     * 폼 태그 내에 다양한 모양으로 입력할 수 있는 엘리먼트 제공
     * type 속성
-        * **text, password, button, hidden, file**
-        * **radio**
-            * <u>한 그룹으로 묶이는 엘리먼트들에 한해 name을 동일</u>, value는 다르게    
-	  * **checkbox**
+    	* **text, password, button, hidden, file**
+	* **radio**
+		* <u>한 그룹으로 묶이는 엘리먼트들에 한해 name을 동일</u>, value는 다르게
+	* **checkbox**
 		* <u>php의 경우, name을 다르게</u>. 같게할 수 있지만 jsp나 spring의 가공 필요
-        * **submit**
-            * 폼에 입력한 데이터를 서버로 전송
-            * ```<input type= ‘submit’ value=‘저장’>```
-        * **reset**
-            * 폼안에 있는 엘리먼트의 값을 초기화
-            * ```<input type= ‘reset’ value=‘취소’>``` 
+	* **submit**
+		* 폼에 입력한 데이터를 서버로 전송
+		* ```<input type= ‘submit’ value=‘저장’>```
+	* **reset**
+		* 폼안에 있는 엘리먼트의 값을 초기화
+		* ```<input type= ‘reset’ value=‘취소’>``` 
     * name: 엘리먼트 이름
     * id: 엘리먼트 id
     * readonly: 읽기 전용
