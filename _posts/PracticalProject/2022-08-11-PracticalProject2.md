@@ -86,7 +86,7 @@ placeholder=‘이름을 입력’><br>
         * **text, password, button, hidden, file**
         * **radio**
             * <u>한 그룹으로 묶이는 엘리먼트들에 한해 name을 동일</u>, value는 다르게    
-	* **checkbox**
+	  * **checkbox**
 		* <u>php의 경우, name을 다르게</u>. 같게할 수 있지만 jsp나 spring의 가공 필요
         * **submit**
             * 폼에 입력한 데이터를 서버로 전송
