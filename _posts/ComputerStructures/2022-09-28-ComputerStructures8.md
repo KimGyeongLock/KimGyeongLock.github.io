@@ -80,7 +80,7 @@ published: true
     * **J (Jump)**
         * target address로 jump
         * PC는 새로운 값을 설정
-        * J 1000 
+        * J 1000(label)
         * PC ← 1000
         * J Type : High order bits of PC
     * **JR (Jump Register)**
