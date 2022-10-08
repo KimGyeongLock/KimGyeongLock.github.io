@@ -59,3 +59,63 @@ published: true
     4. Restore register values
         * Restores $s0, $t0, $t1 from stack(POP)
     5. Return control to caller by JR $ra
+
+## MIPS Software Convention on Registers
+
+* Reducing the Register Spiling 
+    * **Register Spiling**: register 값을 메모리에 save 
+    * **$t0 ~ $t9**
+        * function 이후 사용하지 않을 register -> save할 필요없음
+        * ~~sw $t0, 8($sp)~~
+    * **$s0 ~ $s7**
+        * function 이후에도 사용할 register -> save 필요
+        * sw $s0, 4($sp)
+    * => save time
+
+
+## Nested Procedure Call
+= recursion
+* C language<br/>
+  ```
+  int fact (int n) { 
+	if (n < 1) 
+		return 1; 
+	else 
+		return (n * fact (n-1)); 
+	} 
+
+       ```
+* MIPS<br/>
+  ```
+  fact : 
+	addi $sp,$sp,-8 # adjust stack for 2 items($ra, $a0) 
+	sw $ra, 4($sp) # saves return address 
+	sw $a0, 0($sp) # saves argument n
+	slti $t0, $a0,1 # if n < 1, $t0= 1, otherwise $t0 =0
+	beq $t0,$zero, L1 # if n >= 1 goto L1 
+	addi $v0,$zero,1 # if n < 1, return 1
+	addi $sp,$sp,8 # pop 2 items($ra, $a0)
+	jr $ra # return to after jal
+  L1:   addi $a0,$a0, -1 # n=n-1
+	jal fact # recursive call with (n-1) 
+	lw $a0, 0 ($sp) # return from jal : restore n 
+	lw $ra, 4 ($sp) # restore address
+	addi $sp,$sp,8 # adjust stack for 2 items 
+	mul $v0, $a0,$v0 # return n * fact(n-1) 
+	jr $ra # return to the caller
+  ```
+
+## Allocating Space for New Data on the Stack
+* **Procedure frame**(Active record)
+    * function이 call할 때마다 생성
+    * 함수에 저장된 registers와 local variables을 포함하는 stack을 위한 segment
+    * **$fp register(Frame Pointer)**
+        * Procedure frame의 첫번째 word를 가르킴
+        * 지역 변수에 대한 안정적인 참조를 위한 기반을 제공
+
+
+## Memory Layout
+* Text: program code
+* Static data: global variables
+* Dynamic data: heap
+* Stack: automatic storage
