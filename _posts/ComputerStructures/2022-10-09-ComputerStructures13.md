@@ -7,7 +7,7 @@ categories: Structure
 published: true
 ---
 
-# Division
+# 3. Division
 
 * Division = **‘adder’ (subtracter)** + **‘shifter’** registers
 * Positive Integer에 대해서만 고려
