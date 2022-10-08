@@ -96,7 +96,7 @@ published: true
 	addi $v0,$zero,1 # if n < 1, return 1
 	addi $sp,$sp,8 # pop 2 items($ra, $a0)
 	jr $ra # return to after jal
-  L1:   
+  L1:
   	addi $a0,$a0, -1 # n=n-1
 	jal fact # recursive call with (n-1) 
 	lw $a0, 0 ($sp) # return from jal : restore n 
