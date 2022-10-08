@@ -26,7 +26,7 @@ published: true
     * **Negative Operand - Positive Operand** = Result(**Sign = 1**)
         * sign = 1(Negative)
 
-## Detecting Overflow
+## Dealing with Overflow
 1. Some languages (C)
     * **overflow 무시**
     * MIPS
