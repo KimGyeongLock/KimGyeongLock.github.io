@@ -64,24 +64,24 @@ published: true
         * BEQ $s1, $s2, label 
         * if ($s1 == $s2) PC = TargetAddress
         * I Type
-         * op = 4 
-         * 16bits = offset(word count)
+            * op = 4 
+            * 16bits = offset(word count)
     * **BNE (Branch if Not Equal)**
         * BNE $s1, $s2, label 
         * if ($s1 ≠ $s2) PC = TargetAddress
         * I Type  
-         * op = 5 
-         * 16bits = offset(word count)
+            * op = 5 
+            * 16bits = offset(word count)
     * **SLT (Set Less Than)**
         * SLT $t0, $s1, $s2
         * if ($s1 < $s2) then $t0 = 1 else $t0 = 0
         * R Type
-         * op = 0, func = 42
+            * op = 0, func = 42
     * **SLTI (Set Less Than Immediate)**
         * SLTI $s1, $s2, 100
         * if ($s2 < 100) then $s1 = 1 else $s1 =0
         * I Type
-         * constant = 100
+            * constant = 100
 * **Unconditional** branch instructions
     * **J (Jump)**
         * target address로 jump
