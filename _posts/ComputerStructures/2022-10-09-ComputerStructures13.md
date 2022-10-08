@@ -33,8 +33,8 @@ published: true
 * Final Version을 활용
 * Dividend
     * 64bits
-    * Shift Right
-    * Shift Left
+    * **Shift Right**
+    * **Shift Left**
     * register **Hi**
         * **Remainder** 저장
         * **mfhi** $t0
@@ -48,11 +48,11 @@ published: true
 
 
 ## Division of signed number
-* Quotient
+* **Quotient**
     * **Dividend와 Divisor의 sign**
         * 같으면 positive
         * 다르면 negative
-* Remainder
+* **Remainder**
     * **Dividend와 같은 sign**을 가짐
 * Ex)
     * +7 / 2 = 3(Q) 1(R)
