@@ -7,7 +7,7 @@ categories: Structure
 published: true
 ---
 
-# Multiplication
+# 2. Multiplication
 
 * Multiplying = ‘add’ + ‘shift’ operation
     * with binary numbers
