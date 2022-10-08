@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Ch 3. Arithmetic for computers
+title: Ch 3. Arithmetic for computers - (2)
 toc: true
 toc_sticky: true
 categories: Structure
