@@ -12,12 +12,14 @@ published: true
 * Division = **‘adder’ (subtracter)** + **‘shifter’** registers
 * Positive Integer에 대해서만 고려
 * Algorithm
+	```
 	If (partial remainder ≥ divisor) then
 		quotient bit = 1;
 		remainder = remainder - divisor;
 	else
 		quotient bit = 0;
 	shift down next dividend bit
+	```
 * Ex)<br/>
 <img width="203" alt="스크린샷 2022-10-09 오전 1 03 14" src="https://user-images.githubusercontent.com/63464299/194717238-1780d77a-a5a4-46d8-b517-fc8570455b43.png">
     * 1000 (divisor)
