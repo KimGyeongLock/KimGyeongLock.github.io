@@ -83,25 +83,33 @@ published: true
         * I Type
             * constant = 100
 * **Unconditional** branch instructions
+    * Jump시 PC는 새로운 값을 설정
     * **J (Jump)**
         * target address로 jump
-        * PC는 새로운 값을 설정
         * J 1000(label)
         * PC ← 1000
-        * J Type : High order bits of PC
+        * J Type
+            * op = 2 (6bits)
+            * traget address (26bits)
     * **JR (Jump Register)**
         * JR $ra 
         * PC ← $ra
         * R Type
+            * op = 0, func = 8
+            * rs = 31 ($r1: 31번 Reg)
     * **JAL (Jump And Link)**
         * JAL 1000 
         * $ra ← PC
         * PC ← 1000
+        * J Type
+            * op = 3
 * Control Instruction
-    * Beq / Bne $t0, $t1, 16 bit Offset
+    * Beq / Bne $t0, $t1, **16 bit Offset**
         * PC (Target Address) ← PC + Offsetx4
-    * J / Jal 26 bit address
+    * J / Jal **26 bit address**
         * PC (Target Address) ← PC(31:28)(4bits) && (address << 2)
         * shift left 2 (<<2)
-    * Jr $t0
+    * Jr $t0 **(reg: 32bits)**
         * PC (Target Address) ← $t0
+    * bits가 클수록 더 멀리 Jump
+        * Out of range인 경우 더 멀리 jump할 수 있는 Instruction을 사용
