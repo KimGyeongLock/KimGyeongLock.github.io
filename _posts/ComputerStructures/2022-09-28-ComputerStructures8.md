@@ -62,11 +62,11 @@ published: true
 * **Conditional** branch instructions
     * **BEQ (Branch if EQual)**
         * BEQ $s1, $s2, label 
-        * if ($s1 == $s2) PC(TargetAddress)
+        * if ($s1 == $s2) PC = TargetAddress
         * I Type
     * **BNE (Branch if Not Equal)**
         * BNE $s1, $s2, label 
-        * if ($s1 ≠ $s2) PC(TargetAddress)
+        * if ($s1 ≠ $s2) PC = TargetAddress
         * I Type
     * **SLT (Set Less Than)**
         * SLT $t0, $s1, $s2
