@@ -56,13 +56,13 @@ published: true
 * **GMM(Gaussian Mixtual Model)**
   * 여러개의 Gaussian function를 활용해서 어떠한 데이터에 특정한 값이 존재할 확률을 모델링
   * histogram -> normalized -> GMM Modeling -> 특정한 값이 배경일 확률을 보여줌
-  1. Gaussian function의 개수 결정
-  2. 배경영상이 주어져 있을 때, 각각의 Gaussian의 평균과 표준편차를 구하는 과정을 토대로 p(A\|B)를 구함
+1. Gaussian function의 개수 결정
+2. 배경영상이 주어져 있을 때, 각각의 Gaussian의 평균과 표준편차를 구하는 과정을 토대로 p(A\|B)를 구함
       * p(A\|B): background 영상일 때에 특정한 픽셀값이 존재할 확률
       * Background image is totally white
       * P(255\|Background) = 1
       * P(0\|Background) = 0
-  3. p(B\|A)를 계산해서 각각으 픽셀을 background와 foreground로 구분(베이지 룰)
+3. p(B\|A)를 계산해서 각각으 픽셀을 background와 foreground로 구분(베이지 룰)
       * p(B\|A): 현재 영상의 각각의 픽셀의 값이 A일 때 그 픽셀이 background일 확률
           * ≥ 0.5 : background
           * ≤ 0.5 : foreground
