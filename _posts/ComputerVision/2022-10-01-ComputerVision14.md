@@ -78,18 +78,19 @@ published: true
      * p(A\|B)를 알아낼 수 있다면, p(B\|A)를 계산할 수 있음 
      * -> 특정 픽셀 값이 foreground인지 background인지 알아낼 수 있음
  * Background estimation using GMM
-     * Determine the number of mode of GMM
-     * At the training stage, estimate mean and variance of each Gaussian model with the training data
-          * ->estimate p(A\|B)
-          * Ex)<br/>
-            Background image is totally white<br/>
-            P(255\|Background) = 1<br/>
-            P(0\|Background) = 0
-     * Each pixel is classified into background/foreground by calculating p(B\|A)
-          * P(background\|255) = high
-          * P(background\|0) = low
-          * P(background\|128) = half
-          
+   1. Gaussian function의 개수 결정
+   2. 배경영상이 주어져 있을 때, 각각의 Gaussian의 평균과 표준편차를 구하는 과정을 토대로 p(A\|B)를 구함
+      * p(A\|B): background 영상일 때에 특정한 픽셀값이 존재할 확률
+      * Background image is totally white
+      * P(255\|Background) = 1
+      * P(0\|Background) = 0
+   3. p(B\|A)를 계산해서 각각으 픽셀을 background와 foreground로 구분(베이지 룰)
+      * p(B\|A): 현재 영상의 각각의 픽셀의 값이 A일 때 그 픽셀이 background일 확률
+          * ≥ 0.5 : background
+          * ≤ 0.5 : foreground
+      * P(background\|255) = high
+      * P(background\|0) = low
+      * P(background\|128) = half
 ---------
 
 # GrabCut operation
