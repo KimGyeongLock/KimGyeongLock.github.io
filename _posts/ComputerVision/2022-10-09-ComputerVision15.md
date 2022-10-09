@@ -13,6 +13,8 @@ published: true
     * Chroma-keying(크로마키)
     * Surveillance camera(감시 카메라)
 
+-----------
+
 # Background Subtraction
 * type of video segmentation
 * foreground object 검출
@@ -57,7 +59,7 @@ published: true
   * histogram을 normalized해서 가오시안 믹스처 모델로 모델링하면 가오시안 믹스처 모델은 특정한 값이 배경일 확률을 나타내줌
   * Determine the number of mode of GMM
       * 몇 개의 가오시안을 쓸 지 결정
-  * At the training stage, estimate mean and variance of each Gaussian model with the training data -> estimate p(A|B)
+  * At the training stage, estimate mean and variance of each Gaussian model with the training data-> estimate p(A|B)
       * 배경영상이 주어져 있을 때 각각의 가오시안의 평균과 표준편차를 구하는 과정을 토대로 p(A|B)를 구함
       * background 영상 일 때에 특정한 픽셀값이 존재할 확률
       * Background image is totally white
