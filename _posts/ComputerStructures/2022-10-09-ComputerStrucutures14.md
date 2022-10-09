@@ -10,9 +10,9 @@ published: true
 # 4. Floating point number arithmetic
 
 ## Normalized Scientific Notation
-* **Scientific notation**
-	<br/> **coefficient** X (**base number**)^**exponent**
-    * **coefficient**: 0~9까지의 한 자리 숫자
+* Scientific notation
+	<br/> coefficient X (base number)^exponent
+    * coefficient: 0~9까지의 한 자리 숫자
         * Ex) 7.15576 x 10^4, 0.314 x 10^1
 * **Normalized scientific notation**
 	<br/> **1 ≤ coefficient ≤ 10**
