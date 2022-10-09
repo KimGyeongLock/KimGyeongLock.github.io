@@ -91,6 +91,7 @@ published: true
       * P(background\|255) = high
       * P(background\|0) = low
       * P(background\|128) = half
+      
 ---------
 
 # GrabCut operation
