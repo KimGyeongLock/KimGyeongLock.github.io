@@ -13,18 +13,20 @@ published: true
 * Assumption
     * input: Binary image
 
+----------
+
 # Erosion and Dilation
 * **Erosion(침식)**
     * ⊖
-    * Erosion of A by B:
-        * B라는 물체를 계속 이동시키면서 B라는 물체가 A라는 물체에 완전하게 포함이되는 영역만을 추리는 것
-    * binary image안의 물체를 축소시키거나 얇게 만드는 효과
+    * Erosion of A by B
+        * B물체를 계속 이동시키면서 B물체가 A물체에 **완전하게 포함**이되는 영역만을 찾는 것
+    * binary image안의 물체를 **축소**시키거나 **얇게** 만드는 효과
     * 교집합
 * **Dilation(팽창)**
     * ⊕
-    * Dilation of A by B:
-        * B 물체의 일부분이라도 A 물체에 포함이 되는 영역을 찾는 것
-    * 물체의 크기를 키우거나 두껍게 만드는 효과
+    * Dilation of A by B
+        * B물체의 **일부분이라도** A물체에 포함이 되는 영역을 찾는 것
+    * 물체의 **크기를 키우거나** **두껍게** 만드는 효과
     * 합칩합
     
 --------
@@ -32,14 +34,19 @@ published: true
 # Opening and Closing
 * **Opening**
     * **Erosion -> Dilation**
-    * Smoothens contours 전체적으로 물체의 윤곽선이 부드러워지고, 
-    * break narrow isthmuses binary object의 두께가 얇은 부분들이 쪼개짐
-    * eliminate small island 조그마한 점들이 제거
+    * Smoothens contours 
+         * 전체적으로 물체의 윤곽선을 부드럽게
+    * break narrow isthmuses 
+         * binary object의 두께가 얇은 부분들이 쪼개짐
+    * eliminate small island 
+         * 조그마한 점들이 제거
     * sharp peak
-    * 원래 분리되어야 되는 물체인데 붙어서 검출이 되는 경우 이를 잘라내기 위해서 사용, 조그마한 잡티 제거
+    * 원래 분리되어야 되는 물체가 붙어서 검출이 되는 경우 잘라내기 위해서 사용, 조그마한 잡티 제거
 * **Closing**
     * **Dilation -> Erosion**
     * Smoothens contours
-    * fuses narrow breaks and long thin gulfs 얇게 존재하는 영역들이 더 두꺼워지면서 붙는 경우
-    * eliminates small holes 조그마한 구멍 제거
+    * fuses narrow breaks and long thin gulfs 
+         * 얇게 존재하는 영역들이 더 두꺼워지면서 붙는 경우
+    * eliminates small holes 
+         * 조그마한 구멍 제거
     * 원래 하나의 물첸데 간당간당하게 연결되어 있는 물체를 보완, 구멍이 너무 나 있는 경우
