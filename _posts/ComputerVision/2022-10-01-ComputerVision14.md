@@ -75,7 +75,8 @@ published: true
   ![Pasted Graphic 2](https://user-images.githubusercontent.com/63464299/193404378-51dd0482-8d8f-4e2f-aac8-a8e85788c8ec.png)
 
  * Assume A is pixel value, and B is background
-     * p(A\|B)를 알아낼 수 있다면, 특정 픽셀 값이 배경일 확률을 알 수 있습니다 -> p(B\|A)
+     * p(A\|B)를 알아낼 수 있다면, p(B\|A)를 계산할 수 있음 
+     * -> 특정 픽셀 값이 foreground인지 background인지 알아낼 수 있음
  * Background estimation using GMM
      * Determine the number of mode of GMM
      * At the training stage, estimate mean and variance of each Gaussian model with the training data
