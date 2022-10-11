@@ -17,7 +17,7 @@ published: true
 	  <img width="115" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/195079180-fc73803d-e0fa-4b46-bed3-2eb0a47b6bea.png">
     * variable j: **index of summation**
     * m: **lower limit**
-    * n: **upper limit n** 
+    * n: **upper limit** 
   * for a set S<br/>
     <img width="47" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193804111-aec9374b-37e1-430a-bf5b-e2c93c455510.png">
 
