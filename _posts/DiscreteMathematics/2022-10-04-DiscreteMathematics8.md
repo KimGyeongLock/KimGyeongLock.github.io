@@ -35,9 +35,9 @@ published: true
 # Cardinality
 
 ## Cardinality of Sets
-* Cardinality
+* **Cardinality**
 	* \|A\| = \|B\| ↔︎ one-to-one correspondence(bijection)
-* Countable
+* **Countable**
 	* finite set
 	* infinite set (**Countably infinite**)
 		* 양의 정수(Z+) 집합과 같은 cardinality를 갖는 무한 집합
