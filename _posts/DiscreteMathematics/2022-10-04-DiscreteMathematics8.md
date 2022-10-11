@@ -43,7 +43,7 @@ published: true
 		* 양의 정수(Z+) 집합과 같은 cardinality를 갖는 무한 집합
 		* ↔︎ 무한 집합 중에서 자신의 원소들을 양의 정수로 index를 달면서 순서대로 나열할 수 있는 경우
 		* ℵ0 (aleph): countably infinite’s cardinality
-		* |\S\| = ℵ0 : aleph null
+		* \|S\| = ℵ0 : aleph null
 
 ## Showing that a Set is Countable
 * 집합이 countable임을 증명
