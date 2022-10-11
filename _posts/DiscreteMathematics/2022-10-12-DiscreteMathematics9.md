@@ -1,4 +1,12 @@
-Induction
+---
+layout: single
+title: Induction
+toc: true
+toc_sticky: true
+categories: Discrete
+published: true
+---
+
 
 # Principle of Mathematical Induction
 * **P(n) is true for all positive integers n** 증명
@@ -25,7 +33,8 @@ Induction
 * ∑i = n(n+1) / 2
 * Basis Step : P(1) = 1(1+1)/2 = 1 (true)
 * Inductive Step: P(k) -> P(k+1)
-    * P(k+1) = 1+2+…+k+(k+1) = k(k+1)/2 + (k+1) = k(k+1) + 2(k+1) / 2 = (k+1)(k+2)/2
+    * P(k+1) = 1+2+…+k+(k+1) = k(k+1)/2 + (k+1)<br/>
+      = k(k+1) + 2(k+1) / 2 = (k+1)(k+2)/2
 
 # Conjecturing a formula
 
@@ -35,7 +44,8 @@ Induction
 * Basis Step: P(1) = 1^2 = 1 (true)
 * Inductive Step: P(k) -> P(k+1)
     * Inductive Hypothesis: P(k) = 1+3+5+…+(2k-1) = k^2
-    * P(k+1) = 1+3+5+…+(2k-1)+(2k+1) = k^2 + (2k+1)  = k^2 + 2k + 1 = (k+1)^2
+    * P(k+1) = 1+3+5+…+(2k-1)+(2k+1) = k^2 + (2k+1)<br/>
+      = k^2 + 2k + 1 = (k+1)^2
 
 # Proving Inequalities
 * P(n): n < 2^n
