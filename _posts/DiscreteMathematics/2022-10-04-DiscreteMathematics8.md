@@ -14,7 +14,7 @@ published: true
   * Notation<br/>
     <img width="226" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193803861-6d7f8d3e-2673-490f-8bba-c95e69acb5ee.png">
 	* Represent<br/>
-	  <img width="96" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193803957-2b1c9f9a-8b29-4bc4-9a11-b81d13e34b5a.png">
+	  <img width="115" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/195079180-fc73803d-e0fa-4b46-bed3-2eb0a47b6bea.png">
     * variable j: **index of summation**
     * m: **lower limit**
     * n: **upper limit n** 
