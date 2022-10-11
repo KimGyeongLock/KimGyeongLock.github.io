@@ -91,7 +91,7 @@ published: true
 * square matrix A<br/>
 <img width="40" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805524-f23d087c-700c-461e-bf0b-783c84d9feb8.png"> → symmetric
 * <img width="200" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805600-9ff9bb97-1f5b-41a4-8613-a384bc05b6e1.png">	
-	* for i and j with 1≤i≤n and 1≤j≤n
+	* for i and j with 1≤i≤n and 1≤j≤n<br/>
 	 ![Pasted Graphic 12](https://user-images.githubusercontent.com/63464299/193809135-115869bc-94fe-44d9-9579-4674cd10d711.png)
 
 ## Zero-One Matrices
