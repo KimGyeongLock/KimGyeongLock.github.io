@@ -60,7 +60,7 @@ published: true
 	* set of all Java programs
 	* the positive rational numbers(유리수)
 * Uncountable sets
-	* the real numbers(실수) (R)
+	* the **real numbers(실수)** (R)
 
 --------------
 
