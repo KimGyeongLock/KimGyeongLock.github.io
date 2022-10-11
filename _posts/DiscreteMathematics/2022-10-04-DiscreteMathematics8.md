@@ -47,11 +47,11 @@ published: true
 		* \|S\| = ℵ0 : aleph null
 
 ## Showing that a Set is Countable
-* 집합이 countable임을 증명
-	* f is a one-to-one correspondence(bijection) from N to a set S
-		* show that it is one-to-one
+* 집합이 **countable**임을 증명
+	* f is a **one-to-one correspondence(bijection)** from N to a set S
+		* show that it is **one-to-one**
 			* f(n) = f(m) -> n = m
-		* show that it is onto
+		* show that it is **onto**
 			* f(x) = y
 
 ## Countable Sets and Uncountable sets
