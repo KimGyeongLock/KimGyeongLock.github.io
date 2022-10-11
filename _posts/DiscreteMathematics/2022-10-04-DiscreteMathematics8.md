@@ -21,8 +21,8 @@ published: true
   * for a set S<br/>
     <img width="47" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193804111-aec9374b-37e1-430a-bf5b-e2c93c455510.png">
 
-	  * If S = {2, 5, 7, 10}
-	  * ≠ 2 + 5 + 7 +10
+	  * If S = {2, 5, 7, 10} 
+	  * a2 + a5 + a7+ a10 ≠ 2 + 5 + 7 +10
 	  * S: a set of indices
  
 ## Geometric Series
