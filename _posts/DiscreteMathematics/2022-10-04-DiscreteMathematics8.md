@@ -71,8 +71,9 @@ published: true
 <img width="184" alt="알 수 없음" src="https://user-images.githubusercontent.com/63464299/193805116-afdcb7a0-f352-484b-a407-0037af68d0f2.png">
 
 ## Identity Matrix and Powers of Matrices
-* Identity Matrix (항등 행렬)
+* Identity Matrix (항등 행렬) In
 	* 주대각선의 원소가 모두 1이며 나머지 원소는 모두 0인 정사각 행렬
+	* AIn = ImA = A (결과 = A matrix로 같다)
 * Powers of square matrices
 	* A^0 = In
 	* A^r = A*A*A…A (r times)
