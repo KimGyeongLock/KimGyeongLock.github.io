@@ -7,9 +7,8 @@ categories: Practical
 published: true
 ---
 
-
 # Insert CSS
-* Inline CSS
+* **Inline CSS**
     * 하나의 특정 element에만 스타일을 적용
     * style 속성 사용
 * Internal CSS
