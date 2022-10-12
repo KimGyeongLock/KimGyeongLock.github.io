@@ -7,7 +7,7 @@ categories: Practical
 published: true
 ---
 
-**Responsive(반응형)**
+# Responsive(반응형)
 * 다양한 디바이스에서 보기 좋은 페이지 만들기(Phone, Tablet, Desktop)
 * HTML과 CSS 사용 (JS 불필요)
 * 웹 페이지를 디바이스 화면 크기에 맞춰 적합한 정보만을 표시할 수 있도록 스타일 설정
