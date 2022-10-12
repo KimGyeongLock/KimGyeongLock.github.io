@@ -11,25 +11,25 @@ published: true
 * **Inline CSS**
     * 하나의 특정 element에만 스타일을 적용
     * style 속성 사용
-* Internal CSS
+* **Internal CSS**
     * 한 페이지 내 여러 elements에 같은 스타일 적용
-    * <style> 태그 사용
-* External CSS
+    * **\<style\>** 태그 사용
+* **External CSS**
     * 여러 페이지에서 사용하는 스타일을 하나의 파일로 생성
-    * <link>로 참조하여 사용
+    * **\<link\>**로 참조하여 사용
 
 ----------
 
 # Insert JS
-* Inline JS
+* **Inline JS**
     * 하나의 특정 element에 이벤트 추가
     * 직접 코딩으로 사용
-* Internal Js
-    * 한 페이지 내 <script> 태그를 사용
+* **Internal Js**
+    * 한 페이지 내 **\<script\>** 태그를 사용
     * 여러 elements에서 사용 가능
-* External JS
+* **External JS**
     * 여러 페이지에서 사용하는 JS를 하나의 파일로 생성
-    * <script> 태그 참조
+    * **\<script\>** 태그 참조
 
 ----------
   
