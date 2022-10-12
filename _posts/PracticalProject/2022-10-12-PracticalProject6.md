@@ -1,6 +1,6 @@
 ---
 layout: single
-title: \[예습] CSS Framework 실습
+title: CSS Framework 실습
 toc: true
 toc_sticky: true
 categories: Practical
