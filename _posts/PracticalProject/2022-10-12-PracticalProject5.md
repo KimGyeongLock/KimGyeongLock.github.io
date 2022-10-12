@@ -1,6 +1,6 @@
 ---
 layout: single
-title: \[예습] 반응형 웹 개발
+title: 반응형 웹 개발
 toc: true
 toc_sticky: true
 categories: Practical
