@@ -78,7 +78,7 @@ published: true
     * Basis Step: r(single vertex) = rooted tree
     * Recursive Step: 
         * Suppose that T1, T2 are disjoint full binary trees.
-        * 왼쪽 subtree T1과 오른쪽 subtree T2의 각 roots에 루트 r을 연결하는 edge + 루트 r -> full binary tree
+        * 왼쪽 subtree T1과 오른쪽 subtree T2의 각 roots에 루트 r을 연결하는 edge + 루트 r<br>-> a new full binary tree
 
 * **Induction and Recursively Defined Sets**
     * mathematical induction 사용하여 recursively defined sets에 대하 결과를 증명
