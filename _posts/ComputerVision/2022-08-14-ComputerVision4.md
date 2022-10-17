@@ -26,7 +26,7 @@ published: true
         	* CV_8UC3: 3 channel, 8-bit unsigned 	
         	* Sclar(0,255,0): green
         	* **namespace를 쓰면 cv를 생략 가능** if not) cv::Mat, std:cout..
-        * multi-channel image: Scalar(255,0,0) **(B,G,R)**
+      	* multi-channel image: Scalar(255,0,0) **(B,G,R)**
 
 ## Pixel **type**
 * **CV_8U: 8-bit unsigned integer: uchar ( 0~255 )**
