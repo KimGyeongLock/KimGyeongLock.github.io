@@ -20,8 +20,8 @@ published: true
     	* copy matrix
     * Mat (Size size, int type, const Scalar& s)
     	* Scalar: 픽셀의 특정한 값
-        * Mat img(h, w, CV_8UC1, Scalar(255))  
-        * cv::Mat test(480 ,640, CV_8UC3, Sclar(0,255,0));
+    	* Mat img(h, w, CV_8UC1, Scalar(255))  
+    	* cv::Mat test(480 ,640, CV_8UC3, Sclar(0,255,0));
         	* 480, 640: VGA
         	* CV_8UC3: 3 channel, 8-bit unsigned 	
         	* Sclar(0,255,0): green
