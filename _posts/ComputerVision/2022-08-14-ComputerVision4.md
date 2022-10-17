@@ -22,11 +22,11 @@ published: true
     	* Scalar: 픽셀의 특정한 값
     	* Mat img(h, w, CV_8UC1, Scalar(255))  
     	* cv::Mat test(480 ,640, CV_8UC3, Sclar(0,255,0));
-        	* 480, 640: VGA
-        	* CV_8UC3: 3 channel, 8-bit unsigned 	
-        	* Sclar(0,255,0): green
-        	* **namespace를 쓰면 cv를 생략 가능** if not) cv::Mat, std:cout..
-      	* multi-channel image: Scalar(255,0,0) **(B,G,R)**
+    		* 480, 640: VGA
+    		* CV_8UC3: 3 channel, 8-bit unsigned 
+    		* Sclar(0,255,0): green
+    		* **namespace를 쓰면 cv를 생략 가능** if not) cv::Mat, std:cout..
+    	* multi-channel image: Scalar(255,0,0) **(B,G,R)**
 
 ## Pixel **type**
 * **CV_8U: 8-bit unsigned integer: uchar ( 0~255 )**
