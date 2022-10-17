@@ -11,9 +11,9 @@ published: true
 
 * recursively defined set의 elements 속성을 증명하기 위해 사용
 * Basic Step
-	– Show that the result holds for all elements specified in the basis step of the recursive definition. 
+	* Show that the result holds for all elements specified in the basis step of the recursive definition. 
 * Recursive Step
-    * Show that if the statement is true for each of the elements used to construct new elements in the recursive step of the definition, the result holds for these new elements. 
+    	* Show that if the statement is true for each of the elements used to construct new elements in the recursive step of the definition, the result holds for these new elements. 
 
 ## Full Binary Trees Examples
 * full binary tree T의 높이 h(T)
