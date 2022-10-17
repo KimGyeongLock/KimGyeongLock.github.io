@@ -150,7 +150,7 @@ int main() {
 	* frameSize: Size of the video frames
 	* isColor: Not zero - color frame, zero - gray scale frame
 
-
+ 
 * **Member functions**
 	* void VideoWriter::**write**(const Mat& image)
 		* image: The written frame
