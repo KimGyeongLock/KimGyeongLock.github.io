@@ -52,7 +52,10 @@ published: true
     * smaller input으로 문제의 instances를 줄여 문제 해결
     * instances는 initial case까지 줄임
 * Ex) factorial n
-    * procedure factorial(n: nonnegative integer) if n = 0 then return 1 else return n*factorial(n-1) {output is n!}
+    * procedure factorial(n: nonnegative integer)
+	if n = 0 then return 1
+	else return n\*factorial(n-1)
+	\{output is n!\}
 * recursive algorithm의 정확성 증명 방법
     * **mathematical induction**
     * **strong induction**
