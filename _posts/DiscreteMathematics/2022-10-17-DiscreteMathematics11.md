@@ -13,7 +13,7 @@ published: true
 * Basic Step
 	* Show that the result holds for all elements specified in the basis step of the recursive definition. 
 * Recursive Step
-    	* Show that if the statement is true for each of the elements used to construct new elements in the recursive step of the definition, the result holds for these new elements. 
+	* Show that if the statement is true for each of the elements used to construct new elements in the recursive step of the definition, the result holds for these new elements. 
 
 ## Full Binary Trees Examples
 * full binary tree T의 높이 h(T)
@@ -58,10 +58,10 @@ published: true
     * smaller input으로 문제의 instances를 줄여 문제 해결
     * instances는 initial case까지 줄임
 * Ex) factorial n
-    * procedure factorial(n: nonnegative integer)
-	if n = 0 then return 1
-	else return n\*factorial(n-1)
-	\{output is n!\}
+    * procedure factorial(n: nonnegative integer)<br/>
+	if n = 0 then return 1<br/>
+	else return n\*factorial(n-1)<br/>
+	\{output is n!\}<br/>
 * recursive algorithm의 정확성 증명 방법
     * **mathematical induction**
     * **strong induction**
