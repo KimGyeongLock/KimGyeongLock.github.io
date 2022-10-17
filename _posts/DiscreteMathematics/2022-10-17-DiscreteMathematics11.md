@@ -51,6 +51,7 @@ published: true
     * (x1, y1) ≤ (x2, y2) 
       * if either (x1 < x2) or (x1=x2 and y1 < y2)
 
+--------------
 
 # Recursive Algorithms
 * Recursive algorithm
