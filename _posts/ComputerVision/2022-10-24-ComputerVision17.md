@@ -9,14 +9,14 @@ published: true
 
 # Image Feature
 
-특징점
-특정한 어플리케이션을 위한 계산을 수행할 때 필요한 정보
-물체 검출, 물체 추적, 두 이미지 결합(파노라마)
-영상 내에 담겨있는 정보들을 추출해서 해당 문제를 품
-
-다양한 형태
-* points, edges, objects
-특정 픽셀의 이웃한 픽셀들의 관계를 활용하여서 생성
+## What is an image feature?
+* **image feature(특징점)**<br/>
+   * 특정한 application을 위한 계산을 수행할 때 필요한 정보
+   * 영상 내에 담겨있는 정보들을 추출해서 해당 문제를 품
+   * application<br/>물체 검출, 물체 추적, 두 이미지 결합(파노라마)
+* specific structures
+   * points, edges, objects
+* 특정 픽셀의 이웃한 픽셀들의 관계를 활용하여서 생성
 
 ## What is a good feature?
 * Illumination
