@@ -9,14 +9,16 @@ published: true
 
 # 2. Building Datapath
 
-배워볼 내용: single clock cycle datapath
+배워볼 내용: **single clock cycle datapath**
 * instuction이 one clock cycle에서 실행
 * datapath는 MIPS instruction set에 의해 결정
+
+-----------
 
 # MIPS
 * instructions
     * memory-reference instructions
-        * lw, św
+        * lw, sw
     * arithmetic-logical instructions
         * add, sub, and, or, slt
     * control flow instructions
@@ -38,7 +40,8 @@ published: true
 	PC ← PC + 4;
 	```
 	> Fetch instruction from memory<br/>
-	> **ADD operation**<br/> 	> Calculate next address
+	> **ADD operation**<br/>
+	> Calculate next address
 
 ## sub Operation
 * sub rd, rs, rt
@@ -49,7 +52,8 @@ published: true
 	PC ← PC + 4;
 	```
 	> Fetch instruction from memory<br/>
-	> **SUB operation** (**two’s complement**)<br/> 	> Calculate next address
+	> **SUB operation** (**two’s complement**)<br/>
+	> Calculate next address
 
 ## lw Operation
 * lw rt, rs, imm16
@@ -61,7 +65,8 @@ published: true
 	PC ← PC + 4;
 	```
 	> Fetch instruction from memory<br/>
-	> Compute memory address (**Sign Extension**)<br/> 	> **Load data into register**<br/>
+	> Compute memory address (**Sign Extension**)<br/>
+	> **Load data into register**<br/>
 	> Calculate next address
 
 ## sw Operation
@@ -74,7 +79,8 @@ published: true
 	PC ← PC + 4;
 	```
 	> Fetch instruction from memory<br/>
-	> Compute memory address (**Sign Extension**)<br/> 	> **Store data into memory**<br/>
+	> Compute memory address (**Sign Extension**)<br/>
+	> **Store data into memory**<br/>
 	> Calculate next address
 
 ## beq Operation
@@ -84,8 +90,9 @@ published: true
 	IR ← mem[PC];
 	Cond ← R[rs] + ~R[rt] + 1;
 	PC ← Cons ? PC + 4;
-				: PC + 4 + (SignExt(imm16) << 2)
+		     : PC + 4 + (SignExt(imm16) << 2)
 	```
 	> Fetch instruction from memory<br/>
-	> Compute conditional ‘Cond’ (**two’s complement**)<br/> 	> Fall through if non-zero ‘Cond’<br/>
-	> Branch if zero ‘Cond’  
+	> Compute conditional ‘Cond’ (**two’s complement**)<br/>
+	> Fall through if non-zero ‘Cond’<br/>
+	> **Branch if zero** ‘Cond’  
