@@ -33,7 +33,7 @@ published: true
 
 ## add Operation
 * add rd, rs, rt
-* RTL Description
+* RTL(Register Transfer Language) Description
 	```
 	IR ← mem[PC];
 	R[rd] ← R[rs] + R[rt];
