@@ -24,6 +24,8 @@ published: true
     * 내용에 의한 참조 (Content Reference)
         * 값에 의한 참조 
 
+-------------
+
 # Database
 
 * 데이터베이스(Database)
@@ -38,6 +40,7 @@ published: true
     * 데이터를 관리하기 위해 SQL (Structured Query Langauge) 사용
     * MySQL, MariaDB, PostgreSQL, Oracle, Informix(IBM), SQL Server(MS) 등
 
+-------------
 
 # SQL
 
@@ -56,6 +59,8 @@ published: true
         * 사용자 권한, 트랜잭션 등 처리
         * grant, revoke, truncate 문
 
+-------------
+
 # 데이터베이스 구조
 
 * 데이터베이스 설치
@@ -68,6 +73,8 @@ published: true
     * 데이터베이스 연결
     * SQL문 실행
 
+-------------
+
 # MySQL(MariaDB)
 
 * RDBMS (관계형 데이터베이스 관리시스템)
@@ -78,11 +85,15 @@ published: true
 * 다양한 프로그래밍 언어로 API 지원
     * Java, C++, C#, python, ruby 등
 
+-------------
+
 # DBeaver 
 
 * DB관리를 위한 GUI tool
 * Database 클라이언트 도구
 * 데이터베이스 접속 후 SQL 문 실행
+
+-------------
 
 # 데이터베이스 구성방법
 
@@ -90,6 +101,8 @@ published: true
 2. 데이터베이스 스키마(Tables)
 3. 테이블은 여러개의 필드로 구성
 4. 생성된 테이블을 이용하여 CRUD를 위한 SQL문 작성
+
+-------------
 
 # SQL문 - 테이블 생성
 * DDL(Data Definition Language) 이용
@@ -113,6 +126,8 @@ create table person (
 > auto increment: 1씩 증가<br/>
 > current_timestamp: 현재 시간을 default값으로 설정
 
+-------------
+
 # SQL문 - Read(List)
 * DMS(Data Manipulation Language) 이용
 * SELECT column1, column2, …
@@ -130,9 +145,22 @@ create table person (
 * Limit 0, 5
     * 0~5번까지만 가져오기
 
+-------------
+
 # SQL문 - Insert / Update / Delete
  
 * DML(Data Manipulation Language) 이용
-* 데이터 추가 ``` INSERT INT0 tablename (column1, column2, column3, …) VALUES (value1, value2, value3, …); ```
-* 데이터 수정 ``` UPDATE tablename SET column1 = value1, column2 = value2, … WHERE condition; ```
-* 데이터 삭제 ``` DELETE FROM tablename WHERE condition; ```
+* 데이터 추가
+  ```
+  INSERT INT0 tablename (column1, column2, column3, …) VALUES (value1, value2, value3, …);
+  ```
+* 데이터 수정
+  ```
+  UPDATE tablename
+  SET column1 = value1, column2 = value2, …
+  WHERE condition;
+  ```
+* 데이터 삭제
+  ```
+  DELETE FROM tablename WHERE condition;
+  ```
