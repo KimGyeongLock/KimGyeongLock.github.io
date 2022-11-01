@@ -12,7 +12,7 @@ published: true
 ## 컴퓨터의 물체 검출 방법
 * **Training stage**
     * 많은 양의 object images와 non-object images를 수집
-        * # of non-object images > # of object images
+        * \# of non-object images > # of object images
     * object를 적절하게 잘 표현하는 **features**를 찾음
     * feature에 기반하여 물체를 구분할 수 있는 **classifier**(or threshold)를 디자인
 * **Test stage**
