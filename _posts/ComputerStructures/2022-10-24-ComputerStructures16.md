@@ -111,20 +111,20 @@ published: true
 * Read & Write 동시에 가능
 
 ## Components for Simple Implementation
-1. Instruction fetch
+1. **Instruction fetch**
     * Instruction memory
     * Program Counter
     * Adder
-2. R-format ALU operations
+2. **R-format ALU operations**
     * Registers
     * ALU
     * add, sub, and, or, slt
-3. sw, lw, instuctions
+3. **sw, lw, instuctions**
     * Registers
     * ALU
     * Data memory unit
     * Sign-extension unit
-4. beq instruction
+4. **beq instruction**
     * Registers
     * ALU
     * Sign-extension unit
@@ -133,6 +133,7 @@ published: true
 * Use multiplexers to stitch them together
 
 ## ALU with 4 control signals
+
 |ALU control lines|Function|
 |:---:|:---:|
 |0000|AND|
