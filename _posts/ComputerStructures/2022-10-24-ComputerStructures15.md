@@ -11,17 +11,17 @@ published: true
 # Logic design review
 
 ## Two Types of Implementation Components
-    * **Combinational**
-        * Elements that operate on **data values**
-        * same input -> same output
-        * **output = f(input)**
-        * ALU, Adder, MUX
-            * AND, NAND, OR, NOR, XOR, NOT
-    * **Sequential**
-        * Elements that **contain state**
-        * same input -> possibly different output
-        * **output = f(input, current state)**
-        * **Memory, Register**
+* **Combinational**
+    * Elements that operate on **data values**
+    * same input -> same output
+    * **output = f(input)**
+    * ALU, Adder, MUX
+        * AND, NAND, OR, NOR, XOR, NOT
+* **Sequential**
+    * Elements that **contain state**
+    * same input -> possibly different output
+    * **output = f(input, current state)**
+    * **Memory, Register**
         
 ## State Elements
 * Unclocked vs Clocked (**Asynchronous** vs **Synchronous**)
