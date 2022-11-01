@@ -96,3 +96,63 @@ published: true
 	> Compute conditional ‘Cond’ (**two’s complement**)<br/>
 	> Fall through if non-zero ‘Cond’<br/>
 	> **Branch if zero** ‘Cond’  
+	
+## Abstract / Simplified View of Implementation
+* Separate memory
+    * instruction memory
+    * data memory
+
+## Register File
+* using D flip-flop
+* Register Read
+    * Multiplexer가 번호와 대응하는 Register를 골라 출력 (data selection)
+* Register Write
+    * Write가 enable이 되고 올바른 register 번호가 공급되면 대응하는 register만 enable
+* Read & Write 동시에 가능
+
+## Components for Simple Implementation
+1. Instruction fetch
+    * Instruction memory
+    * Program Counter
+    * Adder
+2. R-format ALU operations
+    * Registers
+    * ALU
+    * add, sub, and, or, slt
+3. sw, lw, instuctions
+    * Registers
+    * ALU
+    * Data memory unit
+    * Sign-extension unit
+4. beq instruction
+    * Registers
+    * ALU
+    * Sign-extension unit
+    * Program counter
+    * Adder
+* Use multiplexers to stitch them together
+
+## ALU with 4 control signals
+|ALU control lines|Function|
+|:---:|:---:|
+|0000|AND|
+|0001|OR|
+|0010|add|
+|0110|subtract|
+|0111|set on less than|
+|1100|NOR|
+
+## Status Bit
+1. Z : zero
+    * 1 (result = 0)
+    * 0 (result = non-zero)
+2. S : sign
+    * 0 (result = positive number)
+    * 1 (result = negative number)
+3. V : overflow
+    * 0 (overflow X)
+    * 1 (overflow O)
+4. C : carryout
+    * 0 (carryout O)
+    * 1 (carryout X)
+
