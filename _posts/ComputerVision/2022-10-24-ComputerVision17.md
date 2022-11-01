@@ -68,7 +68,7 @@ Process
 
 ## what is a good matching?
 * feature A와 B가 오직 이 경우에 대해서만 유사한 경우
-* NNDR(Nearest neighbor distance ratio)
+* **NNDR** (Nearest neighbor distance ratio)
     * = distance to best match / distance to second best match
     * NNDR값이 작을 수록 good matching에 가깝다
 
