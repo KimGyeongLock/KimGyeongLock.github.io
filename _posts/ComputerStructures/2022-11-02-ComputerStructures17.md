@@ -7,7 +7,7 @@ categories: Structure
 published: true
 ---
 
-3. A Simple Implementation Scheme
+# 3. A Simple Implementation Scheme
 
 # Operation/Instruction Format Summary
 * Add, sub, and, or
