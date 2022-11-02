@@ -140,7 +140,7 @@ published: true
 * register file access(50ps)
 
 <img width="675" alt="스크린샷 2022-11-02 오후 10 59 32" src="https://user-images.githubusercontent.com/63464299/199512704-009adac1-c2b1-4b04-93c4-2bac4378b323.png">
-* Clock Cycle time with single clock: longest instruction = 600ps
+* Clock Cycle time with single clock: **longest instruction** = 600ps
 	* clock period = 최소 600ps
 * CPI = 1
 	* Clock cycle Per Instruction = single clock cycle = 1
