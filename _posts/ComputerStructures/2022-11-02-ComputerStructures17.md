@@ -60,9 +60,9 @@ published: true
 ----------
 
 # A Single Clock Implementation
-= A simple Cycle Implementation
-= 모든 instructions는 one clock cycle에 실행
-= 한 instruction에 한 resource만 사용
+= A simple Cycle Implementation<br/>
+= 모든 instructions는 one clock cycle에 실행<br/>
+= 한 instruction에 한 resource만 사용<br/>
 = instruction Memory과 data Memory의 분리 & several adders 필요
 
 ----------
