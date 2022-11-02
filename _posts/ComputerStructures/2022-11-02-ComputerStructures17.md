@@ -47,7 +47,7 @@ published: true
 	* function code
 
 |Instruction<br/>opcode|Function<br/>field|Instruction<br/>Operation|ALUOp|Desired<br/>ALU action|ALU<br/>control<br/>Input|
-|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 |LW|XXXXXX|load word|00|add|0010
 |SW|XXXXXX|store word|00|add|0010
 |Branch equal|XXXXXX|branch equal|01|subtract|0110
