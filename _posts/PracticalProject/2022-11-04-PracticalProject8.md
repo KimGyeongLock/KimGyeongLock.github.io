@@ -84,3 +84,34 @@ published: true
 |page|Object|JSP 페이지 자신을 가리키는 객체|
 |config|ServletConfig|JSP 페이지에 대한 초기 설정 정보를 저장하는 객체|
 |exception|Throwable|JSP 페이지에서 예외 처리에 사용되는 객체|
+
+-----------
+
+# Form 데이터 처리 구조(localhost(PC))
+* PC안에 Client와 Server가 공존
+* Client: Browser
+* Server: Tomcat
+    * Web server + WAS
+    * form.html -> form_ok.jsp <-> DBMS
+
+-----------
+
+# Deployment(Heroku)
+
+## Deploy a web application
+* Local PC (Web browser + Web Server)
+    * 개발과 실행을 동시에 함 (Tomcat)
+* local pc에서 서비스를 실행한다해서 전체 인터넷에서 서비스가 되지 않음
+    * 반드시 로컬 서버에서 개발한 서비스들을 패키지로 만들어서 웹서버로 쓸 수 있는
+    * WAS 서버에 직접 올려야지만 url을 통해서 서비스를 제공받을 수 있다.
+    * WAS 서버 = heroku
+    * heroku를 사용하게 된다면 heroku에서 데이터베이스 서버에 접속해서 필요한 DB 작업을 하게끔 진행
+
+## Web Service 개발 및 배포
+* Project 생성 및 기획, 개발, 테스트
+    * Local PC
+* 협업 진행: VCS 사용 (Git, Github)
+* Deploy
+    * Tomcat hosting 신청
+    * 클라우드 컴퓨팅 서비스 신청(PaaS, Platform as a Service)
+        * Heroku(PaaS): 애플리케이션을 개발, 실행, 및 관리
