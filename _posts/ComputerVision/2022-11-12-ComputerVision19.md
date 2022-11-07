@@ -17,20 +17,21 @@ published: true
     * pre-trained deep learning model (C++, Python)
 * 사용법
     * YOLO (유명한 신경망)
-	1. 딥 러닝 모델 불러오기
-		
+	1. 딥 러닝 모델 불러오기<br/>
 			```
 			String modelConfiguration = “yolov2.cfg”;
 			String modelBinary = “yolov2.weight”;
 
 			Net net readNetFromDarknet(nodelConfiguration, modelBinary);
 			```
-	2. 딥 러닝 모델에 적합한 blob의 형태로 입력 이미지를 처리
+			
+	2. 딥 러닝 모델에 적합한 blob의 형태로 입력 이미지를 처리<br/>
 		```
 		//Convert Mat to batch of images
 		Mat inputBlob = blobFromImage(frame, 1 / 255.F, Size(416, 416), Scalar(), true, false);
 		```
-	3. blob을 딥 러닝 모델에 input함으로써 물체 검출 수행
+		
+	3. blob을 딥 러닝 모델에 input함으로써 물체 검출 수행<br/>
 		```
 		net.setInput(inputBlob, “data”); // blob input
 		Mat detectionMat = net.forward(“detection_out”); // 검출 수행
