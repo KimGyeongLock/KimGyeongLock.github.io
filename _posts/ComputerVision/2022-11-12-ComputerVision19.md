@@ -16,21 +16,19 @@ published: true
         * Torch/PyTorch
     * pre-trained deep learning model (C++, Python)
 * 사용법
-    * YOLO (유명한 신경망)
+    * **YOLO** (유명한 신경망 deep learning model)
 	1. 딥 러닝 모델 불러오기<br/>
-			```
-			String modelConfiguration = “yolov2.cfg”;
-			String modelBinary = “yolov2.weight”;
+		```
+		String modelConfiguration = “yolov2.cfg”;
+		String modelBinary = “yolov2.weight”;
 
-			Net net readNetFromDarknet(nodelConfiguration, modelBinary);
-			```
-			
+		Net net readNetFromDarknet(nodelConfiguration, modelBinary);
+		```
 	2. 딥 러닝 모델에 적합한 blob의 형태로 입력 이미지를 처리<br/>
 		```
 		//Convert Mat to batch of images
 		Mat inputBlob = blobFromImage(frame, 1 / 255.F, Size(416, 416), Scalar(), true, false);
 		```
-		
 	3. blob을 딥 러닝 모델에 input함으로써 물체 검출 수행<br/>
 		```
 		net.setInput(inputBlob, “data”); // blob input
@@ -47,7 +45,7 @@ published: true
         * 이미지를 13x13 그리드로 나누고, 각 그리드는 5개의 경계 상자를 예측
         * 13 x 13 x 5 = 845
     * 85 columns
-        * 각 bounding box의 4가지 위치값
+        * 각 bounding box의 4 가지 위치값
             * center_x, center_y, width, height
         * 1 box confidence 
         * 80 class confidence
