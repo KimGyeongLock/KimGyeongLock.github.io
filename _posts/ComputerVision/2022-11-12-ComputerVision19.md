@@ -17,6 +17,7 @@ published: true
     * pre-trained deep learning model (C++, Python)
 * 사용법
     * **YOLO** (유명한 신경망 deep learning model)
+    
 	1. 딥 러닝 모델 불러오기<br/>
 		```
 		String modelConfiguration = “yolov2.cfg”;
