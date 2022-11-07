@@ -26,7 +26,7 @@ published: true
 		Net net readNetFromDarknet(nodelConfiguration, modelBinary);
 		```
 		
-	2. 딥 러닝 모델에 적합한 blob의 형태로 입력 이미지를 처리<br/>
+	2. 딥 러닝 모델에 적합한 **blob**의 형태로 입력 이미지를 처리<br/>
 		```
 		//Convert Mat to batch of images
 		Mat inputBlob = blobFromImage(frame, 1 / 255.F, Size(416, 416),
