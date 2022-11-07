@@ -29,7 +29,8 @@ published: true
 	2. 딥 러닝 모델에 적합한 blob의 형태로 입력 이미지를 처리<br/>
 		```
 		//Convert Mat to batch of images
-		Mat inputBlob = blobFromImage(frame, 1 / 255.F, Size(416, 416), Scalar(), true, false);
+		Mat inputBlob = blobFromImage(frame, 1 / 255.F, Size(416, 416),
+								Scalar(), true, false);
 		```
 		
 	3. blob을 딥 러닝 모델에 input함으로써 물체 검출 수행<br/>
