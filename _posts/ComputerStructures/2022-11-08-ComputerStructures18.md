@@ -120,6 +120,7 @@ published: true
    Memory[ALUOut] <= B; // SW
    ```
    > ALUOut = 3단계에서 계산한 memory address
+   
 * **R-type instruction completion**: R-type - 4단계 끝<br/>
    ADD $t0, $t1, $t2<br/>
    ```
