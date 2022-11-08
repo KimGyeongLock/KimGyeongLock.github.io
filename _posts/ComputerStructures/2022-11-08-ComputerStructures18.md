@@ -87,7 +87,7 @@ published: true
 * 필요한 경우 rs, rt 레지스터를 읽음 (rs는 항상 필요, rt는 경우에 따라)
 * instruction이 branch일 경우를 대비하여 branch address를 미리 계산
     * branch가 아니어도 상관X
-* RTL
+* RTL<br/>
    beq $t0, $t1, exit<br/>
    ```
    A <= Reg[IR[25-21]];  // $t0
@@ -98,29 +98,29 @@ published: true
     * control signals이 결정되지 않음
 
 ## 3. Execution, Memory Address Computation, or Branch Completion
-* Execution: R-type instruction(ADD, SUB, AND, OR, SLT)
+* **Execution**: R-type instruction(ADD, SUB, AND, OR, SLT)
    ```
    ALUOut <= A op B;
    ```
-* Memory Address Computation: lw, sw
+* **Memory Address Computation**: lw, sw
    ```
    ALUOut <= A + sign-extend(IR[15-0]);
    ```
-* Branch Completion: Branch - 3단계 끝
+* **Branch Completion**: Branch - 3단계 끝
    ```
    if (A==B) Pc <= ALUOut;
    ```
    > ALUOut = 2단계에서 계산한 branch target address
 
 ## 4. Memory Access or R-type instruction completion
-* Memory Access: lw, sw  sw-4단계 끝 
+* **Memory Access**: lw, sw  sw-4단계 끝
    ```
    MDR <= Memory[ALUOut]; // LW
          or
    Memory[ALUOut] <= B; // SW
    ```
    > ALUOut = 3단계에서 계산한 memory address
-* R-type instruction completion: R-type - 4단계 끝
+* **R-type instruction completion**: R-type - 4단계 끝<br/>
    ADD $t0, $t1, $t2<br/>
    ```
    Reg[IR[15-11]] <= ALUOut; // $t0
