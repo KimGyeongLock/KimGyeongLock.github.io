@@ -126,6 +126,7 @@ published: true
    Reg[IR[15-11]] <= ALUOut; // $t0
    ```
  	> ALUOut = 3단계에서 계산한 A op B
+
 ## 5. Write-back step
 * lw - 5단계 끝
    ```
