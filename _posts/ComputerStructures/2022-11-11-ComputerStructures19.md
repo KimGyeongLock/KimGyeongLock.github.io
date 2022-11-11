@@ -18,7 +18,7 @@ published: true
 * Multiple tasks를 동시에 작업
 * **Potential speedup** = **pipe stages의 개수**
 * Pipeline rate는 가장 느린 pipeline stage에 의해 제한
-* Unbalanced lengths of pipe stages -> speedup을 감소
+* **Unbalanced** lengths of pipe stages -> speedup을 감소
 * pipeline을 채우고 빼는 시간 -> speedup을 감소
 * stall for Dependencies
 
