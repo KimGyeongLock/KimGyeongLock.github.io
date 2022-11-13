@@ -35,7 +35,7 @@ published: true
 
 ----------
 
-# Combinations
+# Combinations (조합)
 * **unordered** selection of r elements
 * **r-combination**: a subset of the set with r elements
 * **C(n,r)**: The number of r-combinations of a set with n distinct elements
