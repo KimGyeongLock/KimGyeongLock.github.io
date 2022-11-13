@@ -12,14 +12,14 @@ published: true
 # Major Hurdles of Pipelining : Hazard
 * **Hazard**
     * 다음 clock cycle에서 다음 instruction을 실행할 수 없는 상황
-	1. **Structural Hazard**
+      1. **Structural Hazard**<br/>
         * hardware 동시 지원불가 (instruction, data memory)
         * 한 resource를 두 instructions이 access를 하려고 함
-	2. **Data Hazard**
+      2. **Data Hazard**<br/>
         * 아직 pipeline에 남아있는 이전 instruction의 결과로 instruction이 결정
         * 첫번째 instruction이 끝나기전에 다음 instruction이 시작되는 문제
         * data dependency
-	3. **Control Hazard**
+      3. **Control Hazard**<br/>
         * instruction의 결과에 따라 제어가 다른 instruction으로 전송
         * branch하지 않을 것이라고 예측 -> wrong : **flushing** instructions
 
