@@ -21,6 +21,9 @@ published: true
 * Product Rule in Terms of Sets
     * element in the Cartesian product A1 ⨉ A2 ⨉ ∙∙∙ ⨉ Am
     * |𝐴1 ×𝐴2 ×⋯×𝐴m|=|𝐴1|∙|𝐴2|∙⋯∙|𝐴m|
+
+--------------
+
 # Sum Rule
 * **n1 + n2**
 * Sum Rule in terms of sets
@@ -28,9 +31,13 @@ published: true
 * Combining the sum and product rule 
     * sum rule + product rule
 
+--------------
+
 # Subtraction Rule
 * Principle of inclusion - exclusion
     * **|𝐴 ∪ 𝐵| = |𝐴| + |𝐵| − |𝐴 ∩ 𝐵| **
+
+--------------
 
 # Division Rule
 * **n / d**
