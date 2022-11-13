@@ -46,16 +46,16 @@ published: true
       SUB $4, $1, $5
       ```
     * **순서 재배열**<br/>
-        ```
-        ADD $1, $2, $3
-        lw $6, 100($7)
-        AND $8, $8, $10
-        SUB $4, $1, $5
-        ```
+      ```
+      ADD $1, $2, $3
+      lw $6, 100($7)
+      AND $8, $8, $10
+      SUB $4, $1, $5
+      ```
 
 ## Control Hazard
 * **Stall**
-    * branch 유무를 결정하는 Memory Access단계까지 stall 후에 다시 Instruction Fetch부터 시작
+    * branch 유무를 결정하는 Memory Access단계까지 stall<br/>후에 다시 Instruction Fetch부터 시작
 * **Optimized branch processing**
 	1. branch 유무를 빨리 알아내는 법
 	2. target address를 빨리 계산하는 법
