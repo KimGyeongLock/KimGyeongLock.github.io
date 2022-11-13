@@ -17,7 +17,7 @@ published: true
     * n(n−1) (n−2)∙∙∙(n−m +1)
     * = **n! / (n-m)!**
 * Counting Subsets of a Finite Set
-    * **2^|S|** 
+    * **2^\|S\|** 
 * Product Rule in Terms of Sets
     * element in the Cartesian product A1 ⨉ A2 ⨉ ∙∙∙ ⨉ Am
     * \|𝐴1 ×𝐴2 ×⋯×𝐴m\|=\|𝐴1\|∙\|𝐴2\|∙⋯∙\|𝐴m\|
