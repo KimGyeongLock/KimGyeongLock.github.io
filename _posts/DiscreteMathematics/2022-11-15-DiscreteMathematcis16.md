@@ -12,7 +12,7 @@ published: true
     * <img width="374" alt="스크린샷 2022-11-15 오전 2 53 40" src="https://user-images.githubusercontent.com/63464299/201731530-bc39b7d6-0b0d-4ba5-a646-3a811b1bc6d1.png">
     * p(E)≠ 0 and p(F) ≠ 0 
 * Generalized Bayes’ Theorem
-    * 𝑝(𝐹j\|𝐸)= 𝑝(𝐸|𝐹j)𝑝(𝐹j) / ∑𝑝(𝐸|𝐹i)𝑝(𝐹i)
+    * 𝑝(𝐹j\|𝐸)= 𝑝(𝐸\|𝐹j)𝑝(𝐹j) / ∑𝑝(𝐸\|𝐹i)𝑝(𝐹i)
     * p(E)≠ 0 for i = 1, 2, ..., n
 * Bayesian Spam Filters
     * B: set of spam messages
