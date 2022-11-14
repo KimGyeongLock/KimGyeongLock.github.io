@@ -69,4 +69,4 @@ published: true
     * q: probability of failure
     * p+q=1
 * **Binomial distribution**
-    * b(k:n, p) = C(n,k)p^k*q^(n-k)
+    * **b(k:n, p) = C(n,k)p^k*q^(n-k)**
