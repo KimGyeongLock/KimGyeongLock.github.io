@@ -44,7 +44,7 @@ published: true
     * 성능 향상
         * clock cycles의 개수 감소
         * clock rate 증가
-        * 둘 다 동시에 하는 것은 쉽지 않음 -> critical path가 짧아질수록 할 수 있는 일이 한계가 잇음 -> clock cycle이 늘어남
+        * 둘 다 동시에 하는 것은 쉽지 않음 -> critical path가 짧아질수록 할 수 있는 일이 한계가 있음 -> clock cycle이 늘어남
 
 ## Proportional to Instruction Count
 * **Seconds / Program ∝ Machine Instructions / Program**
@@ -54,6 +54,7 @@ published: true
         * instruction set을 어떻게 만드는 냐에 따라 프로그램을 실행하기 위한 instruction의 구성이 바뀜
     * Compiler writer, Application developer가 instruction count에 영향을 줌
     * Dynamic count
+
 ## Proportional to Clock Period
 * **Seconds / Program ∝ Seconds / One Clock Period**
     * 각 cycle의 period가 짧아짐으로써 execution time이 짧아짐
