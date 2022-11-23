@@ -46,7 +46,7 @@ published: true
     * partially ordered set or poset
         * a set together with a partial ordering R
         * (S, R)
-        * Ex) (Z+, ≥), (Z+, |)
+        * Ex) (Z+, ≥), (Z+, \|)
     * Members of S = elements of the poset
 * **Comparability**
     * either 𝑎≼𝑏 or 𝑏≼𝑎 → poset(𝑆,≼)의 elements a,b = **comparable** 
