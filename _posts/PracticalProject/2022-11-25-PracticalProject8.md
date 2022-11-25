@@ -39,7 +39,7 @@ published: true
           
    |구성|파일|특징|
    |:---:|:---:|:---:|
-   |Controller|Servlet Class||
+   |Controller|Servlet Class|입력정보 추출<br/>```<br/>String id = request.getParameter(“userid”)<br/>```|
    |View|JSP Page|UI(User Interface)담당|
    |Model|VO, DAO Class|DB 연동|
 
