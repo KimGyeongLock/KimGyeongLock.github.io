@@ -49,8 +49,7 @@ published: true
     * Servlet(JSP) Container
         * Servlet 변환 (helloServlet.java)
         * class 파일 생성 (helloServlet.class)
-        * 메모리에서 실행
-
+        * 메모리에서 실행<br/>
 3. 해당하는 JSP(Controller + View)파일과 Java Bean(Model) 실행
 4. dao를 이용해서 데이터 베이스에 접속
 5. 데이터베이스에서 조회한 데이터를 가지고 와서 Controller로 전송, 가져온 데이터를 View를 통해서 html로 만듦
