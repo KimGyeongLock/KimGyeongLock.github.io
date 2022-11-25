@@ -26,7 +26,7 @@ published: true
     * **∀𝑥∀𝑦 \[𝑥, 𝑦 ∈ 𝐴 → ((𝑥, 𝑦) ∈ 𝑅 ∧ (𝑦, 𝑥) ∈ 𝑅) → 𝑥 = 𝑦)\]**
     * ((𝑥, 𝑦) ∈ 𝑅 ∧ (𝑦, 𝑥) ∈ 𝑅) = True, (x=y) = True -> Antisymmetric
     * ((𝑥, 𝑦) ∈ 𝑅 ∧ (𝑦, 𝑥) ∈ 𝑅) = False, (x=y) = anything -> Antisymmetric
-        * Ex) 𝑅 = {(𝑎, 𝑏) | 𝑎 > 𝑏} (**trivially**)
+        * Ex) 𝑅 = {(𝑎, 𝑏) \| 𝑎 > 𝑏} (**trivially**)
     * ((𝑥, 𝑦) ∈ 𝑅 ∧ (𝑦, 𝑥) ∈ 𝑅) = True, (x=y) = False -> Not Antisymmetric
 * **Transitive Relations**
     * R is **transitive** → (a, b) ∈ 𝑅 and (b, c) ∈ 𝑅, then (a, c) ∈ 𝑅, for all 𝑎,𝑏,𝑐 ∈ 𝐴.
