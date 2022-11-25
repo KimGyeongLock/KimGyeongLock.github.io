@@ -9,23 +9,25 @@ published: true
 
 
 # Web Architecture
-* Controller
+* **Controller**
     * 사용자 요청 처리
     * 화면의 로직 처리
-* Model 
+* **Model** 
     * 알고리즘, DB와 상호작용(CRUD)
     * sql문 실행, 결과 데이터 처리
-* View
+* **View**
     * 사용자에게 보여줄 UI(User Interface)
-* JSP Model1 Architecture
+* **JSP Model1 Architecture**
     * 90~2000년 초까지 웹 개발 아키텍쳐
     * JSP와 Java Bean으로 구성
         * JSP = Controller + View
         * Java Bean = Model
     * 로직(Controller)와 화면(View)가 통합되어 유지보수 어려움
-* JSP Model2 Architecture (MVC Architecture)
+* **JSP Model2 Architecture (MVC Architecture)**
     * Model, View, Controller 의 분리
     * 대규모 MVC 어플리케이션의 문제로 다양한 패턴이 생김(MVVM, MVP…)
+
+------------
 
 # JSP Model1 Architecture
 * Model1 구성
@@ -35,11 +37,11 @@ published: true
     * Java Bean
         * Model
           
-|구성|파일|특징|
-|:---:|:---:|:---:|
-|Controller|Servlet Class||
-|View|JSP Page|UI(User Interface)담당|
-|Model|VO, DAO Class|DB 연동|
+   |구성|파일|특징|
+   |:---:|:---:|:---:|
+   |Controller|Servlet Class||
+   |View|JSP Page|UI(User Interface)담당|
+   |Model|VO, DAO Class|DB 연동|
 
 * 동작 원리
 1. 사용자가 웹 브라우저(Web clients)를 통해서 hello.jsp 파일 요청
