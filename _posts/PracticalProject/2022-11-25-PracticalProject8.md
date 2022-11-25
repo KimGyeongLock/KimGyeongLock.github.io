@@ -67,18 +67,19 @@ published: true
 |View|JSP Page|- UI(User Interface)담당<br/>- Request객체나 session 객체로 화면 출력|웹 디자이너|
 |Controller|Servlet Class|- 입력정보 추출<br/>- Model class의 DB 연동 함수 호출<br/>- 페이지 이동|자바 개발자<br/>MVC framework|
 
-    * 동작 원리
-1. 사용자가 웹 브라우저(Web clients)를 통해서 hello.jsp 파일 요청
-2. Web Server가 요청을 받아서 hello.jsp라는 파일에 대한 요청을 Web Container로 전송
-3. hello.jsp에 해당하는 Servlet(Controller)이 가장 먼저 응답
-    * Controller - class file
-4. 이에 필요한 Java Beans을 불러서 데이터를 가져옴
-5. 그 데이터를 이용해서 어떤 뷰와 연결해야될지 서로 작동
-    * View - JSP page
-6. Controller가 View와 Model을 합치는 작업
-7. 웹페이지가 생성이 완료되면 Web Server로 전송
-8. Web Server가 요청한 곳에다 Response
+* 동작 원리
+   1. 사용자가 웹 브라우저(Web clients)를 통해서 hello.jsp 파일 요청
+   2. Web Server가 요청을 받아서 hello.jsp라는 파일에 대한 요청을 Web Container로 전송
+   3. hello.jsp에 해당하는 Servlet(Controller)이 가장 먼저 응답
+       * Controller - class file
+   4. 이에 필요한 Java Beans을 불러서 데이터를 가져옴
+   5. 그 데이터를 이용해서 어떤 뷰와 연결해야될지 서로 작동
+       * View - JSP page
+   6. Controller가 View와 Model을 합치는 작업
+   7. 웹페이지가 생성이 완료되면 Web Server로 전송
+   8. Web Server가 요청한 곳에다 Response
 
+--------------
 
 # Spring framework
 * 자바를 위한 가장 인기있는 애플리케이션 개발 프레임워크
@@ -90,28 +91,32 @@ published: true
 * 전자정부프레임워크를 구성하는 프레임워크
 
 ## Spring framework 장점
-* POJO Based
+* **POJO Based**
     * POJO(Plain Old Java Object)를 사용한 엔터프라이즈급 애플리케이션 개발
-* Modular
+* **Modular**
     * 모듈화가 되어 있어 패키지와 클래스 수가 많아도 필요한 것만 코딩
-* Web MVC
+* **Web MVC**
     * 잘 설계된 웹 MVC framework
-* JDBC, Hibernate, JPA 등 기술을 위한 다양한 템플릿 제공
+* **JDBC, Hibernate, JPA 등 기술을 위한 다양한 템플릿 제공**
     * JdbcTemplate을 사용하면 JDBC 연결 생성, 예외 처리, transaction commit, 연결 닫기 등이 필요없으며 쿼리 실행부분 코드만 작성하면 됨
-* LightWeight
+* **LightWeight**
     * 메모리와 CPU 리소스가 제한된 컴퓨터에서 응용 프로그램을 개발, 배포에 유용
-* Loose Coupling
+* **Loose Coupling**
     * DI(Dependency Injection)으로 인해 느슨한 결합 지원
-* Easy to test
+* **Easy to test**
     * 종속성 주입(DI)를 사용하여 쉬운 테스트 가능
-* Transaction management
+* **Transaction management**
     * Spring은 축소와 확장할 수 있는 일관된 transaction 관리 인터페이스 제공
+
+--------------
 
 # IoC(Inversion of Control)
 * 제어의 역전
 * 객체의 생성부터 소멸까지 생명주기를 개발자가 아니라 컨테이너가 대신 관리
 * IoC Container = Bean Container + 의존 객체 자동 주입(DI)
 * Spring framework에서 IoC Container 사용
+
+--------------
 
 # Spring Container
 * Spring framework 핵심
