@@ -13,11 +13,11 @@ published: true
 * Large memory = Slow
 * Fast Memory = Small
 * Ideal Memory = Large and Fast memory
-* Memory Hierarchy 활용
+* **Memory Hierarchy** 활용
 <img width="791" alt="스크린샷 2022-11-25 오후 7 55 49" src="https://user-images.githubusercontent.com/63464299/203977532-c4fe69e1-5500-45af-bf16-e02864a85ba0.png">
 > CPU와 가장 가까운 Memory: Register(In CPU)<br/>
-> Level 1: Cache Memory($)
-> Level 2: Main Memory
+> Level 1: Cache Memory($)<br/>
+> Level 2: Main Memory<br/>
 > .. ssd .. optical disk .. tape
 
 ## Principle of locality
