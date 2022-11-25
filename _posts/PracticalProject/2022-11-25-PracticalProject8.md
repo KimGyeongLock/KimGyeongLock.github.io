@@ -45,8 +45,8 @@ published: true
 
 * 동작 원리
 1. 사용자가 웹 브라우저(Web clients)를 통해서 hello.jsp 파일 요청
-2. Web Server가 요청을 받아서 hello.jsp라는 파일에 대한 요청을 Servlet(JSP) Container로 전송 
-      * Servlet(JSP) Container
+2. Web Server가 요청을 받아서 hello.jsp 파일에 대한 요청을 Servlet(JSP) Container로 전송 
+      * **Servlet(JSP) Container**
         * Servlet 변환 (helloServlet.java)
         * class 파일 생성 (helloServlet.class)
         * 메모리에서 실행<br/>
@@ -56,8 +56,11 @@ published: true
 6. 만든 결과물을 Web Server로 전달
 7. Web Server가 요청한 곳에다 Response
 
+-------------
+
 # JSP Model2(MVC) Architecture
-* Model2 구성<br/>
+* Model2 구성
+
 |구성|파일|특징|개발|
 |:---:|:---:|:---:|
 |Model|Service class<br/>Java Beans|- DB 연동<br/>- 데이터 가공|자바개발자|
