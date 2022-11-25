@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Chapter 5 Large and Fast : Exploiting Memory Hierarchy - (1)
+title: Ch5 Large and Fast : Exploiting Memory Hierarchy - (1)
 toc: true
 toc_sticky: true
 categories: Structure
