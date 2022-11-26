@@ -49,8 +49,8 @@ published: true
     * instruction memory -> instruction cache
     * data memory -> memory cache
     * Read Miss
-        * for **instruction cache**
-			1. **Send PC - 4 to memory**
+        * for **instruction cache** 
+			1. **Send PC - 4 to memory** (data cache와 차이점)
 			2. Read block from memory & CPU stalls
 			3. cache entry(data, tag) 작성 & valid bit 설정
 			4. instruction execution restart (instruction refetch)
