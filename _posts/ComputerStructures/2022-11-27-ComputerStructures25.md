@@ -79,14 +79,14 @@ published: true
         * **Clean**: Dirty bit = 0
             * 메모리에서 cache로 load된 후 cache block이 update되지 않음
 * 장단점
-    * W-T
+    * **W-T**
         * miss 발생시 cache와 memory의 값이 일치하기 때문에 memory에 업데이트 하지 않아도 됨
         * **write buffers**
             * lower level memory write를 기다리지 않아도 됨
       <img width="509" alt="스크린샷 2022-11-27 오전 2 54 36" src="https://user-images.githubusercontent.com/63464299/204105173-a84cb32e-1e64-46ac-9c09-d07f29a1bbf3.png">
 			> Processor: cache와 write buffer로 data를 write<br/>
 			> Memory controller: buffer의 내용을 memory로 write
-    * W-B
+    * **W-B**
         * cache에 쓸 때마다 메모리에 작성필요 X
         * 일반적으로 W-T 보다 performance 낮음
 
