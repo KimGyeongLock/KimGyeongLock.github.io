@@ -103,6 +103,46 @@ published: true
     * 장점: miss ratio 감소 - hit ratio 증가
     * 단점: hit time 증가 (hardware complexity)
 
-## Replacement alg
+
+## Replacement algorithm
+* only fully or set associative cache
+1. **Random**
+    * 랜덤하게 block 대체
+2. **FIFO**(First In First Out)
+    * 가장 오래 cache 안에 있던 block 대체
+    * time stamp 필요 (block이 load된 시간 기록)
+    * 위험: 자주 사용하는 block이 대체 될 수 있음
+3. **Least Recently Used** (LRU)
+    * 가장 최근에 사용하지 않은 block 대체
+    * time stamp 필요 (cache가 reference되는 모든 시간을 업데이트)
+    * time stamp를 업데이트하는 상당한 오버헤드
+4. **Least Frequently Used** (LFU)
+    * 가장 적게 사용한 block 대체
+    * counter 필요
+    * 위험: cache에서 가장 최근에 load된 block이 대체 될 수 있음
+* **Optimum replacement algorithm** (최적조건)
+    * 미래에 가장 먼 시간 동안 다시 사용되지 않을 블록을 교체
+    * LRU가 가장 성능이 좋다고 알려짐
+* EX) Using the least recently used replacement strategy
+    * sequence of block addresses: 0, 8, 0, 6, 8
+    * 3 cashes with 4 one-word block
+        * direct-mapped cache block: 5 misses
+		<img width="935" alt="스크린샷 2022-11-29 오전 2 37 42" src="https://user-images.githubusercontent.com/63464299/204346394-77ef2717-f6ff-4771-b9a7-687b53f18bd0.png">
+        * 2-way set associative cache block: 4 misses
+		<img width="938" alt="스크린샷 2022-11-29 오전 2 38 05" src="https://user-images.githubusercontent.com/63464299/204346413-b209e1ea-8e1d-4cc4-abba-436c9dc68115.png">
+        * fully-associative: 3 misses -> best
+		<img width="933" alt="스크린샷 2022-11-29 오전 2 38 21" src="https://user-images.githubusercontent.com/63464299/204346436-b1f739fb-bee1-43af-88c0-97fd83900125.png">
 
 ## multi-level cache
+<img width="562" alt="스크린샷 2022-11-29 오전 2 44 28" src="https://user-images.githubusercontent.com/63464299/204346460-92c90b42-0d84-4134-8e84-96cc16d35148.png">
+* second level cache 추가
+    * primary cache는 프로세서와 같은 칩에 위치
+    * primary memory(DRAM) 위에 SRAM 추가
+    * 데이터가 2nd level cache 안에 있으면 miss penalty 감소
+* **Primary Cache**
+    * smaller
+    * faster
+    * smaller block size
+* **Second Cache**
+    * single level cache 보다 더 큰 block size
+
