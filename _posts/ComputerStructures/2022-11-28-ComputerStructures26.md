@@ -137,7 +137,7 @@ published: true
 
 ## multi-level cache
 <img width="562" alt="스크린샷 2022-11-29 오전 2 44 28" src="https://user-images.githubusercontent.com/63464299/204346460-92c90b42-0d84-4134-8e84-96cc16d35148.png">
-* second level cache 추가
+* **second level cache 추가**
     * primary cache는 프로세서와 같은 칩에 위치
     * primary memory(DRAM) 위에 SRAM 추가
     * 데이터가 2nd level cache 안에 있으면 miss penalty 감소
