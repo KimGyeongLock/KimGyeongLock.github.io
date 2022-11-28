@@ -107,19 +107,19 @@ published: true
 ## Replacement algorithm
 * only fully or set associative cache
 1. **Random**
-    * 랜덤하게 block 대체
+    * 랜덤하게 block 대체<br/>
 2. **FIFO**(First In First Out)
     * 가장 오래 cache 안에 있던 block 대체
     * time stamp 필요 (block이 load된 시간 기록)
-    * 위험: 자주 사용하는 block이 대체 될 수 있음
+    * 위험: 자주 사용하는 block이 대체 될 수 있음<br/>
 3. **Least Recently Used** (LRU)
     * 가장 최근에 사용하지 않은 block 대체
     * time stamp 필요 (cache가 reference되는 모든 시간을 업데이트)
     * time stamp를 업데이트하는 상당한 오버헤드
-4. **Least Frequently Used** (LFU)
+4. **Least Frequently Used** (LFU)<br/>
     * 가장 적게 사용한 block 대체
     * counter 필요
-    * 위험: cache에서 가장 최근에 load된 block이 대체 될 수 있음
+    * 위험: cache에서 가장 최근에 load된 block이 대체 될 수 있음<br/>
 * **Optimum replacement algorithm** (최적조건)
     * 미래에 가장 먼 시간 동안 다시 사용되지 않을 블록을 교체
     * LRU가 가장 성능이 좋다고 알려짐
