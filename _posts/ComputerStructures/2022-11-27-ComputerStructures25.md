@@ -26,7 +26,7 @@ published: true
     * **Valid bit = Y, Tag 같음** -> cache hit (원하는 word가 데이터에 있음)
 * MIPS
     * Cache = 1024 words = **index**: **10bits**(location in the cache)
-    * byte-addressable = 1 word(4 bytes): **2bits**
+    * 1 word(4 bytes) = **byte offset**: **2bits**
     * **Tag Size**: 32 - 10 -2 = **20bits**
     * **Valid bit**: **1bit**
     * cache의 총 bits = 1024 * (32 + 20 + 1) = 54,272
