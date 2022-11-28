@@ -33,13 +33,13 @@ published: true
         * 시간이 오래걸림
         * **miss penalty 증가**
     * Hit Ratio 상승 -> 성능 증가
-* Performance
+* **Performance**
     * Simplified model
         * **Execution time = (Execution Clock Cycles + stall clock cycles) × cycle time**
         * stall cycles = # of instructions × miss ratio × miss penalty
     * **Miss penalty**
         * cache안에 있는 block을 Memory에서 대응하는 block으로 대체하는 시간
-        * + 이 block을 processor로 보내는 시간
+        * \+ block을 processor로 보내는 시간
     * **Hit time << Miss Penalty**
     * Performance 향상 방법
         * **miss ratio** 줄이기
@@ -52,8 +52,56 @@ published: true
           3. data를 전달하는 시간 증가로 비용이 증가한다
 
 ## Interleaving
+* **Bank**
+    * 여러 words를 쉽게 읽기 위함
+    * Ex) 1 cycle: sending address<br/>
+         15 cycles: reading one word data<br/>
+         1 cycle: sending one word data
+	1. **One-word-wide memory organization**
+        * Bus: 32bits
+        * 1cycle(CPU->Cache) + 4words x 15cycles(Memory->Cache) + 4words x 1cycle(Cache->CPU) = 65
+	2. **Wide memory organization**
+        * CPU와 메모리 사이의 메모리와 버스 확장 -> bandwidth 증가
+        * 4 words를 한꺼번에 이동
+        * Bus: 128bits
+        * 1cycle(CPU->Cache) + 15cylces(Memory->Cache) + 1cycle(Cache->CPU) = 17
+        * 비용이 많이 필요
+	3. **Interleaved memory organization**
+        * 메모리 확장 -> bandwidth 증가
+        * 메모리를 4개의 bank로 분리, 각 메모리가 데이터를 준비해서 전송
+        * 1cycle(CPU->Cache) + 15cycles(Memory->Cache) + 4words x 1cycle(Cache->CPU) = 20
 
 ## Three placement policies
+* **Direct mapped**
+    * 자리가 정해져 있음
+    * Ex) 11100 = 100, 10100 = 100
+    * Tag 일치 & Valid bit = Y  => Hit (block안에 원하는 데이터가 존재)<br/>
+      -> Block offset을 사용해서 Mux를 통해 원하는 데이터 추출
+* **Fully associative**
+    * 빈 곳이 있으면 아무데나 들어갈 수 있음
+    * **Cache Index 무시**: 위치 상관 없음, Tag 확장
+    * 어느 위치든 block이 위치 가능
+    * 찾으려는 데이터의 Tag와 Cache의 Tag 모두를 비교(Parallel) => **Associative Memory** 사용(비쌈)
+    * Byte offset: 2bits
+    * Block offset: 2bits
+    * Cache Tag: 28bits
+* **Set associative**
+    * Set을 나누어 정해진 Set안에서 아무데나 들어갈 수 있음
+    * **1-way set associative = Direct mapped**
+        * 메모리 block의 위치 = block의 갯수 % cache blocks의 갯수
+    * **2-way set associative: 1set = 2blocks (4 sets)**
+        * 메모리 block의 위치 = block의 갯수 % cache set의 갯수
+        * Ex) 12 % 4 = 0
+    * **4-way set associative: 1set = 4 blocks (2 sets)**
+        * Ex) 12 % 2 = 0
+        * Byte offset: 2bits
+        * Block offset: 2bits
+        * set number: 6bits
+        * Cache Tag: 22bits
+    * **8-way set associative = Fully associative**
+* Degree of Associativity 증가
+    * 장점: miss ratio 감소 - hit ratio 증가
+    * 단점: hit time 증가 (hardware complexity)
 
 ## Replacement alg
 
