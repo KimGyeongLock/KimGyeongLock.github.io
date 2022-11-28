@@ -105,7 +105,7 @@ published: true
 
 
 ## Replacement algorithm
-* only fully or set associative cache
+* only fully or set associative cache<br/>
 1. **Random**
     * 랜덤하게 block 대체<br/>
 2. **FIFO**(First In First Out)
