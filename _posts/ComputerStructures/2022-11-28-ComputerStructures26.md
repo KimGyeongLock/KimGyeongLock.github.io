@@ -121,6 +121,7 @@ published: true
     * 가장 적게 사용한 block 대체
     * counter 필요
     * 위험: cache에서 가장 최근에 load된 block이 대체 될 수 있음<br/>
+    
 * **Optimum replacement algorithm** (최적조건)
     * 미래에 가장 먼 시간 동안 다시 사용되지 않을 블록을 교체
     * LRU가 가장 성능이 좋다고 알려짐
