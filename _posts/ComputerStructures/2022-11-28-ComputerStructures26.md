@@ -57,16 +57,16 @@ published: true
     * Ex) 1 cycle: sending address<br/>
          15 cycles: reading one word data<br/>
          1 cycle: sending one word data
-	1. **One-word-wide memory organization**
-        * Bus: 32bits
-        * 1cycle(CPU->Cache) + 4words x 15cycles(Memory->Cache) + 4words x 1cycle(Cache->CPU) = 65
-	2. **Wide memory organization**
+    1. **One-word-wide memory organization**
+    	* Bus: 32bits
+        * 1cycle(CPU->Cache) + 4words x 15cycles(Memory->Cache) + 4words x 1cycle(Cache->CPU) = 65<br/>
+    2. **Wide memory organization**
         * CPU와 메모리 사이의 메모리와 버스 확장 -> bandwidth 증가
         * 4 words를 한꺼번에 이동
         * Bus: 128bits
         * 1cycle(CPU->Cache) + 15cylces(Memory->Cache) + 1cycle(Cache->CPU) = 17
         * 비용이 많이 필요
-	3. **Interleaved memory organization**
+    3. **Interleaved memory organization**
         * 메모리 확장 -> bandwidth 증가
         * 메모리를 4개의 bank로 분리, 각 메모리가 데이터를 준비해서 전송
         * 1cycle(CPU->Cache) + 15cycles(Memory->Cache) + 4words x 1cycle(Cache->CPU) = 20
