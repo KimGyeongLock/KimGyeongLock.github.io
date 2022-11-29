@@ -8,7 +8,7 @@ published: true
 ---
 
 # Spring CRUD 개발
-* Spring MVC framework review
+## Spring MVC framework review
 1. 웹 브라우저 -> Dispatcher Servlet (request “/“(root directory))
     * Dispatcher Servlet: 모든 request를 처리하는데 가장 중심
     * servlet-context.xml: dispatcher servlet에 관련된 설정 내용 포함
