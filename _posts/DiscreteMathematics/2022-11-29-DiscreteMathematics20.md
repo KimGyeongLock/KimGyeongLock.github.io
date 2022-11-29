@@ -54,7 +54,7 @@ published: true
     * deg(𝑣)
 * Theorem 1(**Handshaking Theorem**)
     * 2m = ∑v∈V deg(v)
-    * m = |E|
+    * m = \|E\|
 * Theorem 2
     * undirected graph의 odd degree의 vertices의 갯수는 짝수
 * **In-degree**, **Out-degree**
@@ -64,7 +64,7 @@ published: true
         * 𝑣에서 시작하는 edge 개수
     * loop는 in-degree, out-degree 둘 다 카운트
 * Theorem 3
-    * |E| =  ∑v∈V deg-(v) =  ∑v∈V deg+(v)
+    * \|E\| =  ∑v∈V deg-(v) =  ∑v∈V deg+(v)
 
 ------------
 
