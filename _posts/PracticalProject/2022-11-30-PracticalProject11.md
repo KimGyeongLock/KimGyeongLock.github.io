@@ -69,17 +69,17 @@ published: true
         * Field Injection
 * EX) XML 설정
 1. Interface 생성: 결합도를 낮추기 위함<br/>
-    * Coffee Interface
+   * Coffee Interface
 2. Interface 구현한 클래스 생성<br/>
-    * Americano class
-    * CafeLatte class
+   * Americano class
+   * CafeLatte class
 3. 의존 객체를 사용하는 클래스 생성<br/>
-    * MyCafe class
+   * MyCafe class
 4. XML에 Bean 등록<br/>
-    * Americano, CafeLatter, MyCafe
+   * Americano, CafeLatter, MyCafe
 5. XML에 객체간 의존관계 설정<br/>
-    * Constructor
-    * Setter Method
+   * Constructor
+   * Setter Method
 6. Test<br/>
 
 ----------
