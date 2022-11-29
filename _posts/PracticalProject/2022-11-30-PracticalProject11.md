@@ -14,11 +14,11 @@ Spring MVC framework review
 1. 웹 브라우저 -> Dispatcher Servlet (request “/“(root directory))
     * Dispatcher Servlet: 모든 request를 처리하는데 가장 중심
     * servlet-context.xml: dispatcher servlet에 관련된 설정 내용 포함
-2-3. request에 해당되는 Handler Mapping을 통해서 root의 url의 해당되는 페이지 서비스를 어떤 Controller가 담당하는 지 찾아냄
+2. request에 해당되는 Handler Mapping을 통해서 root의 url의 해당되는 페이지 서비스를 어떤 Controller가 담당하는 지 찾아냄
 
-4. Controller에서 페이지를 만들어내기 위해 필요한 모델을 구성 
+3. Controller에서 페이지를 만들어내기 위해 필요한 모델을 구성 
     * HomeController.java: root라는 특정한 jsp페이지를 명시하지 않고 URL의 root라고 되어 있는 부분을 처리할 수 있도록 기본적으로 세팅
-5. Model: 어떤 모델에 어떤 data set가 처리되어야 하는지 Controller에 전송
+4. Model: 어떤 모델에 어떤 data set가 처리되어야 하는지 Controller에 전송
     * ???VO.java: database에 저장되어 있는 특정한 테이블의 레코드 타입을 그대로 하나의 객체로 담고 있음
     * ???Dao.java: 담겨진 객체들을 어떤 식으로 access 할 것인가라는 부분
         * 필요에 따라서 DB를 액세스 하는 부분 존재
