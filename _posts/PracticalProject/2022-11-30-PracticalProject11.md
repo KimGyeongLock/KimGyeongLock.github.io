@@ -67,7 +67,7 @@ published: true
         * Constructor Injection
         * Setter method Injection
         * Field Injection
-* EX) XML 설정
+* EX) XML 설정<br/>
 1. Interface 생성: 결합도를 낮추기 위함
    * Coffee Interface<br/>
 2. Interface 구현한 클래스 생성
