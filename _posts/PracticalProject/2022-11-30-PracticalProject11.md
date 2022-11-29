@@ -47,6 +47,7 @@ published: true
     * 객체간의 의존성, 결합도는 줄이고, 코드의 재활용성은 높이게 됨
     * 필요한 객체를 직접 생성하지 않고 외부에서 생성하여 주입되어 사용함
         * Spring framework에 의해 동적으로 주입
+
 ## Spring IoC(Inversion of Control)
 * Spring IoC(Inversion of Control)
     * 객체(Bean)의 생성, 의존관계를 Spring컨테이너가 자동 관리
