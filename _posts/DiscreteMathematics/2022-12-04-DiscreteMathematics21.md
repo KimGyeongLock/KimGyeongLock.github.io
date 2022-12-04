@@ -59,6 +59,8 @@ published: true
     * 한번 이상 같은 edge를 포함X
 * Counting Paths
     * adjacency matrix 사용
+
+
 ## Connectedness
 * Connectedness in **Undirected** Graphs
     * 모든 vertices의 짝 사이에 path가 존재
