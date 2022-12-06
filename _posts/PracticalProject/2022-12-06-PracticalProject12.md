@@ -27,12 +27,12 @@ Controller <- Service <- DAO <- MyBatis <-
 
 # MyBatis-Spring 연동
 
-* SqlSessionFactoryBean 클래스
+* **SqlSessionFactoryBean 클래스**
     * 설정파일에 빈으로 등록하여 SqlSessionFactory 객체 생성
     * dataSource 를 사용하여 데이터베이스에 연결
     * MyBatis 설정파일 위치 설정
     * Mapper 파일 위치 설정
-* SqlSessionTemplate 클래스
+* **SqlSessionTemplate 클래스**
     * public Object selectOne(String stmt, Object param)
     * public List selectList(String stmt, Object param)
     * public int insert(String stmt, Object param)
@@ -42,14 +42,14 @@ Controller <- Service <- DAO <- MyBatis <-
 -------------
 
 # MyBatis 구성
-* MyBatis configuration file(xml) : MyBatis가 JDBC 사용을 위해 필요한 설정
-    * <typeAlias>
-    * <environment> : DB 접속에 대한 설정
-    * <mapper> : Mapper 파일 위치 설정
-* Mapper files(xml) : SQL문 관련 설정
+* **MyBatis configuration file(xml)** : MyBatis가 JDBC 사용을 위해 필요한 설정
+    * \<typeAlias\>
+    * \<environment\> : DB 접속에 대한 설정
+    * \<mapper\> : Mapper 파일 위치 설정
+* **Mapper files(xml)** : SQL문 관련 설정
     * SQL문, parameter, result, resultMap(ResultSet)
     * Insert, delete, update, select
-    * <sql> 태그 사용
+    * \<sql\> 태그 사용
 
 -------------  
   
@@ -62,10 +62,10 @@ Controller <- Service <- DAO <- MyBatis <-
 ## Mapper xml : parameter, result type
 * 여러 데이터 사용을 위해 VO 객체 사용
 * 자바 클래스 전체 경로 포함
-* (패키지+)클래스 이름이 긴 경우 <typeAlias>를 이용하여 별칭으로 사용
+* (패키지+)클래스 이름이 긴 경우 \<typeAlias\>를 이용하여 별칭으로 사용
 
 ## Mapper xml : CDATA Section
-* SQL문에 특수기호 <,> 등의 기호를 사용할 때 xml에 의해서 연산자로 처리되는 것을 막기 위함
+* SQL문에 특수기호 \<,\> 등의 기호를 사용할 때 xml에 의해서 연산자로 처리되는 것을 막기 위함
 * CDATA Section 내의 구분은 XML parser가 해석하지 않음
 
 -------------
@@ -74,16 +74,17 @@ Controller <- Service <- DAO <- MyBatis <-
 
 # Fileter Interceptor, AOP
 * 프로그램 내에서 자주 사용되느 공통 기능을 따로 구현하여 처리하는 방법
-* Filter : DispatcherServldet이 실행되기 전과 후 수행되는 기능을 처리
+* **Filter** : DispatcherServldet이 실행되기 전과 후 수행되는 기능을 처리
     * Encoding, XSS방어
-* Interceptor : DispatcherServlet이 Controller를 호출하기 전과 수행되는 기능을 처리
+* **Interceptor** : DispatcherServlet이 Controller를 호출하기 전과 수행되는 기능을 처리
     * http 프로토콜에 존재하는 정보를 활용가능(로그인 여부 확인)
     * dispatcher servlet과 Controller 사이에서 공통된 기능을 넣고자 할 때 사용
-* AOP(Aspect Object Programming)
+* **AOP**(Aspect Object Programming)
     * Controller 처리 이후 비즈니스 로직에서 실행
     * 로깅, 트랜잭션, 에러 처리
-* 차이점: 실행되는 위치가 다름
-Request -> Filter -> Dispatcher Servlet -> Interceptor -> Controller -> AOP -> Service
+* 차이점: 실행되는 위치가 다름<
+
+Request -> Filter -> Dispatcher Servlet -> Interceptor -> Controller -> AOP -> Service<br/>
 Request <- Filter <- Dispatcher Servlet <- Interceptor <- Controller <- AOP <- 
 
 -------------  
@@ -98,12 +99,12 @@ Request <- Filter <- Dispatcher Servlet <- Interceptor <- Controller <- AOP <-
   
 # Interceptor 생성
 * HandlerInterceptorAdapter를 상속받는 Interceptor 생성
-    * boolean preHandle(request, response, handler)
+    * **boolean preHandle(request, response, handler)**
         * 전처리기, 클라이언트에서 요청 후 Controller 호출 전에 실행
         * Dispatcher servlet -> controller
-    * void postHandle(request, response, handler)
+    * **void postHandle(request, response, handler)**
         * 후처리기, Controller 호출 후 실행됨
         * controller -> Dispatcher servlet
-    * void afterCompletion(request, response, handler, modelAndView)
+    * **void afterCompletion(request, response, handler, modelAndView)**
         * Controller처리 및 화면처리 후 실행
         * view -> DispatcherServlet
