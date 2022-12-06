@@ -82,7 +82,7 @@ Controller <- Service <- DAO <- MyBatis <-
 * **AOP**(Aspect Object Programming)
     * Controller 처리 이후 비즈니스 로직에서 실행
     * 로깅, 트랜잭션, 에러 처리
-* 차이점: 실행되는 위치가 다름<
+* 차이점: 실행되는 위치가 다름
 
 Request -> Filter -> Dispatcher Servlet -> Interceptor -> Controller -> AOP -> Service<br/>
 Request <- Filter <- Dispatcher Servlet <- Interceptor <- Controller <- AOP <- 
