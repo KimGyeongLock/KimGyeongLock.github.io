@@ -106,16 +106,16 @@ published: true
 
 ## Synchronous vs Asynchronous Bus
 * **Synchronous Bus**
-    * control lines에 clock 포함
+    * control lines에 **clock** 포함
         * acknowledgment 필요 없음
     * a fixed protocol for communication that is relative to the clock
-    * 장점: run very fast
-    * 단점: 모든 device가 같은 clock rate, fast 한계(clock skew)
+    * 장점: **run very fast**
+    * 단점: 모든 device가 **같은 clock rate**, fast 한계(clock skew)
 * **Asynchronous Bus**
-    * not clocked
+    * **not clocked**
     * 다양한 장치 수용
     * clock skew 걱정없이 길게 할 수 있음
-    * handshaking protocol
+    * **handshaking** protocol
         * request, acknowledgment 필요<br/>
       1. ‘ReadReq’ (I/O -> Mem) : I/O sends address
       2. Mem acknowledges ‘ReadReq’ / I/O releases ‘ReadReq’, ‘data(address)’
@@ -156,8 +156,8 @@ published: true
         * **Data Register** : data를 포함
             * 1=>0 : load(input) or store(output) (Data register)
     * OS는 주기적으로 status register를 확인
-    * 장점: Simple, processor가 모두 control and work
-    * 단점: 많은 CPU 시간 낭비 : spin-waiting => Exception mechanism
+    * 장점: **Simple**, processor가 모두 control and work
+    * 단점: **많은 CPU 시간 낭비** : **spin-waiting** => Exception mechanism
 * **I/O Interrupt**
     * I/O Device에 어떤 변화가 일어나면 I/O Device가 CPU에게 알림
     * I/O device가 operation을 끝냈을 때, attention(error)이 필요할 때
@@ -165,16 +165,16 @@ published: true
 	2. Save PC
 	3. Jump to interrupt service routine
 	4. Perform transfer
-    * 장점: 사용자 프로그램 진행은 실제 전송 중에만 중단됨
-    * 단점: special hardware 필요
+    * 장점: 사용자 프로그램 진행은 **실제 전송 중에만 중단**됨
+    * 단점: **special hardware** 필요
         * interrupt 발생 (I/O device)
         * interrupt 감지 (processor)
         * interrupt 이후 재개할 적절한 state 저장 (processor)
 * **Exception**
-    * CPU 내에서 발생
+    * **CPU 내**에서 발생
     * undefined opcode, overflow, syscall…
 * **Interrupt**
-    * 외부 I/O controller로부터 발생
+    * **외부 I/O controller**로부터 발생
 * **Interrupt (including exception)**
     * 특별한 주의가 필요
     * control 이동: 현재 실행중인 프로그램 -> interrupt service routine
