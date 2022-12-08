@@ -7,23 +7,23 @@ categories: Structure
 published: true
 ---
 
-# 5 Components of Computer
-1. Control
-2. Datapath
-3. Memory
-4. Input
+# Intro
+## Five Components of Computer
+1. **Control**
+2. **Datapath**
+3. **Memory**
+4. **Input**
     * Keyboard
     * Mouse
-5. Output
+5. **Output**
     * Display
     * Printer
+
 * Disk, Network
     * 파일을 읽거나 내보내면 input device
     * 파일을 쓰거나 불러오면 output device
 
-----------
-
-# Motivation for I/O Systems
+## Motivation for I/O Systems
 * 사람과 컴퓨터가 상호작용하는 방법
 * 컴퓨터에게 Long-term memory 제공
 * 로봇, 드론, 무인자동차
