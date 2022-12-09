@@ -61,7 +61,7 @@ B^n = {(x1, x2, …, xn) | xi ∈ B for 1 ≤ i ≤ n}
     * 각 변수에 대해 하나의 literal을 가진 n literals의 곱
     * Boolean variables x1,x2,…,xn의  minterm<br/>= Boolean product y1y2⋯yn (yi=xi or yi=¯xi)
     * minterm y1y2⋯yn은 **value 1**을 가짐 ↔︎ 각 yi =1
-    * xi=1 (yi=xi) , xi=0 (yi=¯xi)
+    * xi=1 (yi=xi) , xi=0 (yi=¯xi)<br/>
       <img width="186" alt="스크린샷 2022-12-09 오후 10 49 15" src="https://user-images.githubusercontent.com/63464299/206716819-0c8b117c-6c3c-4504-abc9-0b2d04f8c7e7.png">
          > xyz¯ + xy¯z¯ + x¯yz¯
 
@@ -84,13 +84,13 @@ B^n = {(x1, x2, …, xn) | xi ∈ B for 1 ≤ i ≤ n}
 ## Logic Gates
 * circuit
     * gates
-        * OR gate<br/>
+        * **OR gate**<br/>
             <img width="232" alt="스크린샷 2022-12-10 오전 2 32 10" src="https://user-images.githubusercontent.com/63464299/206761249-c080754d-db72-4687-9052-eb1ac7482bb6.png">
-        * AND gate<br/>
+        * **AND gate**<br/>
             <img width="228" alt="스크린샷 2022-12-10 오전 2 32 21" src="https://user-images.githubusercontent.com/63464299/206761268-3b511134-7559-4bbd-8718-0db9aaee6a04.png">
-        * NAND gate<br/>
+        * **NAND gate**<br/>
             <img width="245" alt="스크린샷 2022-12-10 오전 2 32 59" src="https://user-images.githubusercontent.com/63464299/206761294-d4fd1659-c48b-47ea-b928-d0cfdf672b52.png">
-    * inverters<br/>
+    * **inverters**<br/>
         <img width="219" alt="스크린샷 2022-12-10 오전 2 31 58" src="https://user-images.githubusercontent.com/63464299/206761306-5f766623-08db-4b3d-affb-07c79745a03d.png">
 
 ## Combinations of Gates
@@ -99,10 +99,10 @@ B^n = {(x1, x2, …, xn) | xi ∈ B for 1 ≤ i ≤ n}
 * 하나 이상의 게이트의 출력은 다른 게이트에 입력가능
 
 ## Adders
-* half adder
+* **half adder**
     * 입력: x, y 
     * 출력: s(sum) , c(carry) => multiple output circuit
-* full adder
+* **full adder**
     * 입력: x, y, ci : 3bits
     * 출력: s, ci+1 : 2bits 
 * the sum of n bit integers
