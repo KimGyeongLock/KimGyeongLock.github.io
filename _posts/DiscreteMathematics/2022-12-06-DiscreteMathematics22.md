@@ -62,7 +62,9 @@ B^n = {(x1, x2, …, xn) | xi ∈ B for 1 ≤ i ≤ n}
     * Boolean variables x1,x2,…,xn의  minterm<br/>= Boolean product y1y2⋯yn (yi=xi or yi=¯xi)
     * minterm y1y2⋯yn은 **value 1**을 가짐 ↔︎ 각 yi =1
     * xi=1 (yi=xi) , xi=0 (yi=¯xi)
-      <img width="278" alt="스크린샷 2022-12-09 오후 10 46 04" src="https://user-images.githubusercontent.com/63464299/206716162-22ca1c2f-cef7-449c-9d55-973d8eed9b54.png">
+      <img width="186" alt="스크린샷 2022-12-09 오후 10 49 15" src="https://user-images.githubusercontent.com/63464299/206716819-0c8b117c-6c3c-4504-abc9-0b2d04f8c7e7.png">
+         > xyz¯ + xy¯z¯ + x¯yz¯
+
 
 * **Functional Completeness**
     * the set **{∙, + , ¯}**  = functionally complete
