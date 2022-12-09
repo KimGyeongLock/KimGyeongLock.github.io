@@ -26,7 +26,7 @@ B^n = {(x1, x2, …, xn) | xi ∈ B for 1 ≤ i ≤ n}
     * 0과 1만 가능한 변수 
 * **Boolean function of degree n** (B^n → B)
     * f(B^n) = B
-    * **degree n** = 변수의 갯수(?)
+    * **degree n** = 변수의 갯수
         * 2^n개의 0과 1의 조합을 가짐 = 열의 갯수
     * **Boolean function of degree n 갯수 = 2^(2^n)**
 * **Equivalent Functions**
@@ -42,6 +42,8 @@ B^n = {(x1, x2, …, xn) | xi ∈ B for 1 ≤ i ≤ n}
         * (𝐹𝐺)(𝑥1,𝑥2,…,𝑥n) = 𝐹(𝑥1,𝑥2,…,𝑥n)𝐺(𝑥1,𝑥2,…,𝑥n) 
 * **Identities** of Boolean Algebra
 <img width="509" alt="스크린샷 2022-12-06 오후 4 51 44" src="https://user-images.githubusercontent.com/63464299/205879617-e635297d-f59a-473c-aa37-148929e50426.png">
+> Each element of the pair is the dual of the other<br/>
+> Law of the double complement, Unit property, Zero property 제외<br/>
 
 
 -----------
@@ -60,6 +62,8 @@ B^n = {(x1, x2, …, xn) | xi ∈ B for 1 ≤ i ≤ n}
     * Boolean variables x1,x2,…,xn의  minterm<br/>= Boolean product y1y2⋯yn (yi=xi or yi=¯xi)
     * minterm y1y2⋯yn은 **value 1**을 가짐 ↔︎ 각 yi =1
     * xi=1 (yi=xi) , xi=0 (yi=¯xi)
+      <img width="278" alt="스크린샷 2022-12-09 오후 10 46 04" src="https://user-images.githubusercontent.com/63464299/206716162-22ca1c2f-cef7-449c-9d55-973d8eed9b54.png">
+
 * **Functional Completeness**
     * the set **{∙, + , ¯}**  = functionally complete
         * 모든 boolean function이 boolean operators를 사용해서 표현가능
