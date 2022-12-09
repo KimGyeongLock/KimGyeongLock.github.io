@@ -80,3 +80,30 @@ B^n = {(x1, x2, …, xn) | xi ∈ B for 1 ≤ i ≤ n}
 -----------
 
 # Logic Gates
+
+## Logic Gates
+* circuit
+    * gates
+        * OR gate<br/>
+            <img width="232" alt="스크린샷 2022-12-10 오전 2 32 10" src="https://user-images.githubusercontent.com/63464299/206761249-c080754d-db72-4687-9052-eb1ac7482bb6.png">
+        * AND gate<br/>
+            <img width="228" alt="스크린샷 2022-12-10 오전 2 32 21" src="https://user-images.githubusercontent.com/63464299/206761268-3b511134-7559-4bbd-8718-0db9aaee6a04.png">
+        * NAND gate<br/>
+            <img width="245" alt="스크린샷 2022-12-10 오전 2 32 59" src="https://user-images.githubusercontent.com/63464299/206761294-d4fd1659-c48b-47ea-b928-d0cfdf672b52.png">
+    * inverters<br/>
+        <img width="219" alt="스크린샷 2022-12-10 오전 2 31 58" src="https://user-images.githubusercontent.com/63464299/206761306-5f766623-08db-4b3d-affb-07c79745a03d.png">
+
+## Combinations of Gates
+* using a combination of inverters, OR gates, AND gates
+* 게이트는 입력을 공유가능
+* 하나 이상의 게이트의 출력은 다른 게이트에 입력가능
+
+## Adders
+* half adder
+    * 입력: x, y 
+    * 출력: s(sum) , c(carry) => multiple output circuit
+* full adder
+    * 입력: x, y, ci : 3bits
+    * 출력: s, ci+1 : 2bits 
+* the sum of n bit integers
+    * A Half adder + Multiple full adders
