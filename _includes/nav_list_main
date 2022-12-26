@@ -56,7 +56,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "1week" %}
-                        <li><a href="/categories/1week" class="">html,ss,javascript({{category[1].size}})</a></li>
+                        <li><a href="/categories/1week" class="">HTML,CSS,Javascript({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
