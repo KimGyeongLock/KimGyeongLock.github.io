@@ -52,6 +52,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+         <span class="nav__sub-title">23Web 동계 웹서비스프로젝트</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "1week" %}
+                        <li><a href="/categories/1week" class="">html,ss,javascript({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">2022-02 수업</span>
             <ul>
                 {% for category in site.categories %}
