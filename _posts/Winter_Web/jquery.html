@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+        .gogogo select {
+            width:120px;
+            padding:5px;
+        }
+        .cage { text-align:center; }
+        .cage div, .cage span {
+            display:inline-block;
+            text-align:center;
+            vertical-align:middle;
+        }
+        #selector {
+            text-align:center;
+            margin-top:10px;
+            font-size:14pt !important;
+            background:#efefef;
+            padding:10px;
+        }
+        .helloworld {
+            background-image:url('http://superkts.com/img/jjal/cat01.jpg');
+            background-repeat:no-repeat;
+            background-position:center;
+            height:300px;
+            position:relative;
+            width:400px;
+        }
+        .helloworld .text {
+            bottom:0;
+            color:yellow;
+            font-family:verdana !important;
+            font-size:40pt !important;
+            font-weight:bold;
+            position:absolute;
+            text-shadow:0 0 5px #000;
+        }
+        .helloworld2 {
+            line-height:normal !important;
+            padding:20px !important;
+            text-align:center;
+        }
+        .helloworld2 .helloworld2 span {
+            font-family:verdana !important;
+            font-size:50pt !important;
+            font-weight:bold;
+        }
+        .helloworld2 span { color:red; cursor:pointer; }
+        .helloworld2 .box {
+            background:#efefef;
+            display:inline-block;
+            height:400px;
+            margin-top:10px;
+            overflow:hidden;
+            width:500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gogogo">
+	<select onchange="gogogo(this)">
+		<option value="">- 카테고리 -</option>
+		<option value="">MicroSD메모리</option>
+		<option value="">SD메모리</option>
+		<option value="">CF메모리</option>
+		<option value="">메모리스틱</option>
+		<option value="">XQD메모리</option>
+	</select>
+	<select onchange="gogogo(this)">
+		<option value="">- 브랜드 -</option>
+		<option value="">싼디스크</option>
+		<option value="">삼숭전자</option>
+		<option value="">트랜싼드</option>
+		<option value="">소닉</option>
+
+	</select>
+	<select onchange="gogogo(this)">
+		<option value="">- 혜택 -</option>
+		<option value="">무료배송</option>
+		<option value="">카드할인</option>
+		<option value="">쿠폰</option>
+		<option value="">적립</option>
+	</select>
+    <br><br>
+    <hr />
+    <br>
+    <button type="button" onclick="gogo('div')">div새 키우기</button>
+    <button type="button" onclick="gogo('span')">span새 키우기</button>
+    <br><br>
+    <div class="cage">
+        <div><img src="./img/bird.gif" /><br>div</div>
+        <span><img src="./img/bird.gif" /><br>span</span>
+        <div><img src="./img/bird.gif" /><br>div</div>
+        <span><img src="./img/bird.gif" /><br>span</span>
+        <div><img src="./img/bird.gif" /><br>div</div>
+        <span><img src="./img/bird.gif" /><br>span</span>
+    </div>
+    <div id="selector"></div>
+    <hr>
+    <br>
+    </div>
+    <div class="helloworld">
+        <div class="text">Hello World</div>
+    </div>
+    <br><br>
+    <hr>
+    <br>
+    <div class="helloworld2">
+        Hell<span>o</span> World !?<br>
+        <div class="box">
+            <img src="http://superkts.com/img/jjal/future.jpg" />
+        </div>
+    </div>
+<script>
+    
+        function gogogo(o){
+            console.log("Ss");
+	        $('option:first', $('.gogogo select').not(o)).prop('selected', true);
+	    }
+        
+        function gogo(v){
+            var sel = '.cage ' + v + ' img:not(:animated)';
+            $(sel).animate({height:'+=20'}, 300, 'easeInOutBack', function(){  
+            var o = this;
+            setTimeout(function(){
+                $(o).animate({height:'-=20'}, 500, 'easeInOutBack');
+            }, 1000);
+         });
+            $('#selector').html('셀렉터 : $(\'' + sel + '\')');
+        }
+        function helloworld(){
+            var rnd  = Math.round(Math.random() * 20);
+            var rnd2 = Math.round(Math.random() * 40);
+            var rnd3 = Math.round(Math.random() * 3) + 100;
+            $('.helloworld .text').css({ 'bottom':rnd, left:rnd2 }); 
+            $('.helloworld').css({ 'background-size':rnd3 + '%' }); 
+        }
+        setInterval(helloworld, 10);
+
+        $('.helloworld2 span').draggable({
+            drag : function(e){
+                var a = Math.abs(parseInt($(this).css('top')));
+                var b = Math.abs(parseInt($(this).css('left')));
+
+                $('.box').scrollTop(Math.sqrt(a*a + b*b));
+            },
+            stop : function(){
+                $(this).animate({top:0, left:0 }, 500, 'easeOutElastic'); 
+                $('.box').animate({'scrollTop':0}, 500, 'easeOutBounce'); 
+            }
+        });
+    </script>
+</body>
+</html>
