@@ -52,11 +52,18 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-         <span class="nav__sub-title">23Web 동계 웹서비스프로젝트</span>
+         <span class="nav__sub-title">23Web 동계</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "1week" %}
-                        <li><a href="/categories/1week" class="">HTML,CSS,Javascript({{category[1].size}})</a></li>
+                        <li><a href="/categories/1week" class="">웹서비스프로젝트({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+             <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "algorithm" %}
+                        <li><a href="/categories/algorithm" class="">백준 스터디({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
