@@ -1,5 +1,5 @@
 ---
-title: "첫주차"
+title: "웹서비스프로젝트"
 layout: archive
 permalink: categories/1week
 author_profile: true
