@@ -7,7 +7,7 @@ categories: [iOS distribute]
 ---
 
 ## 굉장히 많은 도움을 받았다.
-<img width="268" alt="image" src="https://github.com/KimGyeongLock/KimGyeongLock.github.io/assets/63464299/d26d7f94-0922-48f4-92fc-88bcc255ba61"><\n>
+<img width="268" alt="image" src="https://github.com/KimGyeongLock/KimGyeongLock.github.io/assets/63464299/d26d7f94-0922-48f4-92fc-88bcc255ba61">     
 \[코딩파파] Flutter iOS 앱 배포 2023 | 애플 앱 스토어 : <https://www.youtube.com/watch?v=i9B7xd48QTY>
 
 ## 출시 전 에러 발견!
@@ -20,13 +20,13 @@ categories: [iOS distribute]
 
 ## 이메일을 확인해보자!
 <img width="1086" alt="image" src="https://github.com/KimGyeongLock/KimGyeongLock.github.io/assets/63464299/c86f3568-01d3-411c-a24d-d99c52559708">
-> 혹시나 해서 들어간 이메일에 연락이 와 있었다..<\n>
-*<span style="color: red">ITMS-90683: Missing purpose string in Info.plist</span>*<\n>
-*<span style="color: red">ITMS-90078: Missing Push Notification Entitlement</span>*<\n>
+> 혹시나 해서 들어간 이메일에 연락이 와 있었다..    
+*<span style="color: red">ITMS-90683: Missing purpose string in Info.plist</span>*     
+*<span style="color: red">ITMS-90078: Missing Push Notification Entitlement</span>*      
 > 이 링크를 통해 에러를 해결할 수 있었다! -> [https://velog.io/@bargoloft/TMS-90683-Missing-Purpose-String-in-Info.plist-ITMS-90078-Missing-Push-Notification-Entitlement-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0]
 
 ## Missing purpose string in Info.plist
-Info.plist에 필요한 태그에 대한 목적이 필요하다고 한다!<\n>
+Info.plist에 필요한 태그에 대한 목적이 필요하다고 한다!     
 iOS/Runner/Info.plist 파일에 다음 코드를 추가한다.
 ```
 <dict>
@@ -36,8 +36,8 @@ iOS/Runner/Info.plist 파일에 다음 코드를 추가한다.
 > \<key> 태그 안 필드는 메일에서 알려준 문제가 되는 필드를 입력해야 한다.
 
 ## Missing Push Notification Entitlement
-Push Notification을 사용할 경우 이 과정이 필요하다<\n>
-간단하게 Xcode > Targets > Runner > Signing & Capabilities > Capability > Push Notification 추가<\n>
+Push Notification을 사용할 경우 이 과정이 필요하다       
+간단하게 Xcode > Targets > Runner > Signing & Capabilities > Capability > Push Notification 추가     
 <https://mdpapa.tistory.com/143>
 
 ## 후.. 드디어 빌드 완료
