@@ -1,7 +1,7 @@
 ---
 title: "iOS 출시"
 layout: archive
-permalink: categories/\[iOS distribute\]
+permalink: categories/[iOS distribute]
 author_profile: true
 sidebar_main: true
 ---
