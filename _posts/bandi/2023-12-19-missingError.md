@@ -23,7 +23,7 @@ categories: [iOS distribute]
 > 혹시나 해서 들어간 이메일에 연락이 와 있었다..    
 *<span style="color: red">ITMS-90683: Missing purpose string in Info.plist</span>*     
 *<span style="color: red">ITMS-90078: Missing Push Notification Entitlement</span>*      
-> 이 링크를 통해 에러를 해결할 수 있었다! -> [https://velog.io/@bargoloft/TMS-90683-Missing-Purpose-String-in-Info.plist-ITMS-90078-Missing-Push-Notification-Entitlement-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0]
+> 이 블로그를 통해 에러를 해결할 수 있었다! -> <https://velog.io/@bargoloft/TMS-90683-Missing-Purpose-String-in-Info.plist-ITMS-90078-Missing-Push-Notification-Entitlement-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0>
 
 ## Missing purpose string in Info.plist
 Info.plist에 필요한 태그에 대한 목적이 필요하다고 한다!     
