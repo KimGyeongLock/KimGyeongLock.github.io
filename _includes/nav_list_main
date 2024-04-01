@@ -33,6 +33,8 @@
                         <li><a href="/categories/[phone auth]" class="">에러s({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+            </ul>
+            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "release" %}
                         <li><a href="/categories/release" class="">출시 에러({{category[1].size}})</a></li>
