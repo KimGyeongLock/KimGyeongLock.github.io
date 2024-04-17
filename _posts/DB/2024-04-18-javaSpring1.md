@@ -70,9 +70,11 @@ INSERT INTO `tbpost` VALUES ('1','안녕','안녕하세요!!','1');
 - ```ON DELETE CASCADE ON UPDATE CASCADE```     
 \: 외래 키 제약 조건에서 사용되는 옵션      
      참조하는 테이블의 행이 삭제되거나 업데이트될 때의 동작
-    - **```ON DELETE CASCADE```**: 이 옵션을 사용하면 외래 키가 참조하는 테이블의 행이 **삭제**될 때, **해당 행을 참조하는 모든 행도 자동으로 삭제**됩니다. 즉, 부모 테이블의 행이 삭제되면 자식 테이블의 관련된 모든 행도 함께 삭제됩니다. 이를 자식 행의 "CASCADE" 삭제라고 합니다.
-    - **```ON UPDATE CASCADE```**: 이 옵션을 사용하면 외래 키가 참조하는 테이블의 기본 키(primary key)가 **업데이트**될 때, 해당 키를 참조하는 모든 외래 키 열도 **자동으로 업데이트**됩니다. 즉, 부모 테이블의 기본 키가 업데이트되면 자식 테이블에서도 해당 열을 참조하는 모든 값이 함께 업데이트됩니다.
-- tbuser의 idx를 참고하여 tbuser_idx를 **FK**로 설정
+    - ```ON DELETE CASCADE```: 이 옵션을 사용하면 외래 키가 참조하는 테이블의 행이 **삭제**될 때, **해당 행을 참조하는 모든 행도 자동으로 삭제**됩니다.        
+       즉, 부모 테이블의 행이 삭제되면 자식 테이블의 관련된 모든 행도 함께 삭제됩니다. 이를 자식 행의 "CASCADE" 삭제라고 합니다.
+    - ```ON UPDATE CASCADE```: 이 옵션을 사용하면 외래 키가 참조하는 테이블의 기본 키(primary key)가 **업데이트**될 때, 해당 키를 참조하는 모든 외래 키 열도 **자동으로 업데이트**됩니다.       
+         즉, 부모 테이블의 기본 키가 업데이트되면 자식 테이블에서도 해당 열을 참조하는 모든 값이 함께 업데이트됩니다.
+- tbuser의 idx를 참고하여 tbuser_idx를 **<span style="color: blue">FK</span>**로 설정
     - tbuser : tbpost = 1 : ♾️
 
 ---
@@ -91,7 +93,7 @@ CREATE TABLE `tbpostpic` (
 );
 ```
 
-- tbpost의 idx를 참고하여 tbpost_idx를 **FK**로 설정
+- tbpost의 idx를 참고하여 tbpost_idx를 **<span style="color: blue">FK</span>**로 설정
     - tbpost : tbpostpic = 1 : ♾️
 
 ---
@@ -113,12 +115,12 @@ CREATE TABLE `tbpostlike` (
 );
 ```
 
-- tbpost의 idx를 참고하여 tbpost_idx를 **FK**로 설정
+- tbpost의 idx를 참고하여 tbpost_idx를 **<span style="color: blue">FK</span>**로 설정
     - tbpost : tbpostlike = 1 : ♾️
-- tbuser의 idx를 참고하여 tbuser_idx를 **FK**로 설정
+- tbuser의 idx를 참고하여 tbuser_idx를 **<span style="color: blue">FK</span>**로 설정
     - tbuser : tbpostlike = 1 : ♾️
 - ```UNIQUE KEY `uq_tbpostlike_tbuser_tbpost_idx` (`tbpost_idx`,`tbuser_idx`)```
-    - 한 포스트에 하나만 좋아요 하기 위해 FK 두개를 묶어서 Unique
+    - 한 포스트에 하나만 좋아요 하기 위해 <span style="color: blue">FK</span> 두개를 묶어서 Unique
 
 ---
 
@@ -139,9 +141,9 @@ CREATE TABLE `tbpostcmt` (
 );
 ```
 
-- tbpost의 idx를 참고하여 tbpost_idx를 **FK**로 설정
+- tbpost의 idx를 참고하여 tbpost_idx를 **<span style="color: blue">FK</span>**로 설정
     - tbpost : tbpostcmt = 1 : ♾️
-- tbuser의 idx를 참고하여 tbuser_idx를 **FK**로 설정
+- tbuser의 idx를 참고하여 tbuser_idx를 **<span style="color: blue">FK</span>**로 설정
     - tbuser : tbpostcmt = 1 : ♾️
 
 ---
@@ -164,9 +166,9 @@ CREATE TABLE `tbfollow` (
 INSERT INTO `tbfollow` VALUES ('1','1','2'),('2','2','1');
 ```
 
-- tbuser의 idx를 참고하여 from_tbuser_idx를 **FK**로 설정 (누가)
+- tbuser의 idx를 참고하여 from_tbuser_idx를 **<span style="color: blue">FK</span>**로 설정 (누가)
     - tbuser : tbfollow = 1 : ♾️
-- tbuser의 idx를 참고하여 to_tbuser_idx를 **FK**로 설정     (누구를 팔로우 할 것인가?)
+- tbuser의 idx를 참고하여 to_tbuser_idx를 **<span style="color: blue">FK</span>**로 설정     (누구를 팔로우 할 것인가?)
     - tbuser : tbfollow = 1 : ♾️
 
 ## Example
