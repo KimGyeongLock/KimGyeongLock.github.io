@@ -64,14 +64,14 @@ INSERT INTO `tbpost` VALUES ('1','안녕','안녕하세요!!','1');
 ```
 
 - **fk_tbpost_tbuser_idx** : index
-- **CONSTRAINT
-:** 제약조건(constraint)이란 데이터의 무결성을 지키기 위해, 데이터를 입력받을 때 실행되는 검사 규칙
-   index 활용
-- `ON DELETE CASCADE ON UPDATE CASCADE` 
-: 외래 키 제약 조건에서 사용되는 옵션
-  참조하는 테이블의 행이 삭제되거나 업데이트될 때의 동작
-    - **`ON DELETE CASCADE`**: 이 옵션을 사용하면 외래 키가 참조하는 테이블의 행이 **삭제**될 때, **해당 행을 참조하는 모든 행도 자동으로 삭제**됩니다. 즉, 부모 테이블의 행이 삭제되면 자식 테이블의 관련된 모든 행도 함께 삭제됩니다. 이를 자식 행의 "CASCADE" 삭제라고 합니다.
-    - **`ON UPDATE CASCADE`**: 이 옵션을 사용하면 외래 키가 참조하는 테이블의 기본 키(primary key)가 **업데이트**될 때, 해당 키를 참조하는 모든 외래 키 열도 **자동으로 업데이트**됩니다. 즉, 부모 테이블의 기본 키가 업데이트되면 자식 테이블에서도 해당 열을 참조하는 모든 값이 함께 업데이트됩니다.
+- **CONSTRAINT**        
+  \: 제약조건(constraint)이란 데이터의 무결성을 지키기 위해, 데이터를 입력받을 때 실행되는 검사 규칙
+       index 활용
+- ```ON DELETE CASCADE ON UPDATE CASCADE```     
+\: 외래 키 제약 조건에서 사용되는 옵션      
+     참조하는 테이블의 행이 삭제되거나 업데이트될 때의 동작
+    - **```ON DELETE CASCADE```**: 이 옵션을 사용하면 외래 키가 참조하는 테이블의 행이 **삭제**될 때, **해당 행을 참조하는 모든 행도 자동으로 삭제**됩니다. 즉, 부모 테이블의 행이 삭제되면 자식 테이블의 관련된 모든 행도 함께 삭제됩니다. 이를 자식 행의 "CASCADE" 삭제라고 합니다.
+    - **```ON UPDATE CASCADE```**: 이 옵션을 사용하면 외래 키가 참조하는 테이블의 기본 키(primary key)가 **업데이트**될 때, 해당 키를 참조하는 모든 외래 키 열도 **자동으로 업데이트**됩니다. 즉, 부모 테이블의 기본 키가 업데이트되면 자식 테이블에서도 해당 열을 참조하는 모든 값이 함께 업데이트됩니다.
 - tbuser의 idx를 참고하여 tbuser_idx를 **FK**로 설정
     - tbuser : tbpost = 1 : ♾️
 
@@ -117,7 +117,7 @@ CREATE TABLE `tbpostlike` (
     - tbpost : tbpostlike = 1 : ♾️
 - tbuser의 idx를 참고하여 tbuser_idx를 **FK**로 설정
     - tbuser : tbpostlike = 1 : ♾️
-- `UNIQUE KEY `uq_tbpostlike_tbuser_tbpost_idx` (`tbpost_idx`,`tbuser_idx`)`
+- ```UNIQUE KEY `uq_tbpostlike_tbuser_tbpost_idx` (`tbpost_idx`,`tbuser_idx`)```
     - 한 포스트에 하나만 좋아요 하기 위해 FK 두개를 묶어서 Unique
 
 ---
