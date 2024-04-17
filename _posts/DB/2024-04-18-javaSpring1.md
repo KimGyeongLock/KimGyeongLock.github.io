@@ -15,7 +15,7 @@ published: true
 
 ## SQL
 
-### <유저 테이블>
+### \<유저 테이블\>
 
 ```sql
 # tbuser CREATE
@@ -34,15 +34,15 @@ INSERT INTO `tbuser` VALUES ('1','test1','1','홍길동','010','female'),('2','t
 ```
 
 - **UNIQUE KEY unique_name (col1, col2)**
-    - `UNIQUE KEY `username_UNIQUE` (`username`)`
-    : `username` = unique target
+    - ```UNIQUE KEY `username_UNIQUE` (`username`)```
+    \: \`username\` = unique target      
         username_UNIQUE = 인덱스 이름, 해당 인덱스의 목적이나 유형을 나타내도록 지정
 - Primary Key와 달리, **UNIQUE KEY**는 NULL 값을 포함할 수 있음
-- `UNIQUE(username)` **<대체가능>**
+- ```UNIQUE(username)``` **<대체가능>**
 : 명시적인 이름이 없기 때문에 인덱스가 생성될 때 자동으로 생성된 이름이 사용됩니다. 이는 가독성과 유지보수 측면에서 제약 조건을 쉽게 식별하기 어려울 수 있습니다.
-- `UNIQUE KEY username_UNIQUE ('username')`
-****: 명시적인 이름을 사용하기 때문에 해당 인덱스가 어떤 제약 조건을 나타내는지 쉽게 이해할 수 있습니다.
-- `COLLATE utf8_unicode_ci` : 데이터 한글 인코딩 (안 써도 됨)
+- ```UNIQUE KEY username_UNIQUE ('username')```
+   \: 명시적인 이름을 사용하기 때문에 해당 인덱스가 어떤 제약 조건을 나타내는지 쉽게 이해할 수 있습니다.
+- ```COLLATE utf8_unicode_ci``` : 데이터 한글 인코딩 (안 써도 됨)
 
 ---
 
