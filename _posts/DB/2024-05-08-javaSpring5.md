@@ -53,7 +53,7 @@ public class Tbnotice {
 - Database에 테이블(Tbnotice)을 생성
 - 왜 ***of?***
 
-## JPA
+## Repository with JPA
 ### TbnoticeRepository
 
 ```java
