@@ -8,8 +8,10 @@ published: true
 ---
 
 Controller → page 이동
+ : 페이지를 띄우는 역할
 
 RestController → 데이터 송/수신
+ : 페이지에 데이터를 들고오는 역할
 
 - **ajax**
     - **비동기** 통신
