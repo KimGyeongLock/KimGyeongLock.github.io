@@ -1,12 +1,13 @@
 ---
 layout: single
-title: db연동 (jpa)
+title: DB 연동 (jpa)
 toc: true
 toc_sticky: true
 categories: javaSpring
 published: true
 ---
 
+## 테이블 생성
 ### Tbnotice
 
 ```java
@@ -52,6 +53,7 @@ public class Tbnotice {
 - Database에 테이블(Tbnotice)을 생성
 - 왜 ***of?***
 
+## JPA
 ### TbnoticeRepository
 
 ```java
@@ -62,6 +64,7 @@ public interface TbnoticeRepository extends JpaRepository<Tbnotice, String> { //
 - **JPA**
     - save, findById, findAll 같은 내장함수를 선언하지 않아도 jpa가 지원
 
+## Service
 ### TbnoticeService
 
 ```java
@@ -104,6 +107,7 @@ public class TbnoticeService {
     - **`.orElseThrow(() -> new RuntimeException(""))`**: **`findById`** 메서드의 반환 타입은 **`Optional`**입니다. 이것은 결과가 없을 수도 있다는 것을 의미합니다. 따라서 **`Optional`** 객체의 **`orElseThrow`** 메서드를 호출하여 해당 값이 존재하지 않을 경우 예외를 발생시킵니다. 여기서는 **`RuntimeException`**을 발생시키고 있습니다. 빈 문자열 **`""`**은 예외 메시지를 나타냅니다.
 - list
 
+## Controller
 ### TbnoticeRestController
 
 ```java
