@@ -74,8 +74,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "c++" %}
-                        <li><a href="/categories/c++" class="">c++ 상식({{category[1].size}})</a></li>
+                    {% if category[0] == "cpp" %}
+                        <li><a href="/categories/cpp" class="">c++ 상식({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
