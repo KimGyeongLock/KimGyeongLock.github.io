@@ -107,3 +107,6 @@ public List<TbuserDto.SelectResDto> list(TbuserDto.ListReqDto param) {
 ## 궁금증
 
 [http://localhost:8080/api/tbuser/list?username=”dd”](http://localhost:8080/api/tbuser/list?username=%E2%80%9Ddd%E2%80%9D) : 이거 왜 안되지
+
+<img width="1440" alt="image" src="https://github.com/KimGyeongLock/KimGyeongLock.github.io/assets/63464299/75370eb8-b9db-42a6-949d-5af99233de27">
+
