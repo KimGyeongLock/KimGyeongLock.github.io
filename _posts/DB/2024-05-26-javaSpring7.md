@@ -1,4 +1,11 @@
-# DTO / Mapper
+---
+layout: single
+title: DTO / Mapper
+toc: true
+toc_sticky: true
+categories: javaSpring
+published: true
+---
 
 map type 쓰던걸 → dto로 바꿔보자
 
@@ -157,10 +164,3 @@ public interface TbuserService {
 - 컨트롤러에서 서비스로 넘길 때도 DTO
 - 서비스에서 다시 컨트롤러로 데이터 넘길 때도 DTO
 
-- 다음 시간
-    - list 조회하기
-    - scroll, paging
-        - offset issue 해결 - cursor 방식
-    - file 첨부
-        - 강제 첨부
-        - s3 aws 써보기
