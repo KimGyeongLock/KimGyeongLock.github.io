@@ -35,22 +35,6 @@ Auditing은 Audit(감시하다)의 뜻 그대로 Entity를 보고있다가 DB에
 ```
 
 - handlebars를 통해 list가 보여주는 Front를 표현
-
-```
-<script id="list_info_tbpost" type="text/x-handlebars-template">
-    {{#resultData_tbpost}}
-    <div>
-        **{{createdAt}} / {{modifiedAt}}
-        {{title}} // {{cate}} // {{mpic}} // {{content}}**
-    </div>
-    {{/resultData_tbpost}}
-</script>
-<script type="text/javascript">
-    var list_info_tbpost = $("#list_info_tbpost").html();
-    var list_info_tbpost_template = Handlebars.compile(list_info_tbpost);
-</script>
-```
-
 - perpage: 한번에 볼 페이지 수 , callpage: 내가 보고 싶은 페이지
 - orderway: 검색 방향, orderby: 검색 기준
 
