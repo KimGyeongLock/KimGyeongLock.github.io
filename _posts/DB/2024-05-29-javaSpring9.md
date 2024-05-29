@@ -36,7 +36,7 @@ Auditing은 Audit(감시하다)의 뜻 그대로 Entity를 보고있다가 DB에
 
 - handlebars를 통해 list가 보여주는 Front를 표현
 
-```jsx
+```
 <script id="list_info_tbpost" type="text/x-handlebars-template">
     {{#resultData_tbpost}}
     <div>
