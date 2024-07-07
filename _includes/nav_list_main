@@ -45,7 +45,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "htmlcss" %}
-                        <li><a href="/categories/js" class="">HTML5 & CSS3({{category[1].size}})</a></li>
+                        <li><a href="/categories/htmlcss" class="">HTML5 & CSS3({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
