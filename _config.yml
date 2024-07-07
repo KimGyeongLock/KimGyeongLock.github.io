@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "iOS에서 개발하기 Blog"
+title                    : "Roki Tech Blog"
 title_separator          : "-"
 subtitle                 : "Today I Learn"# site tagline that appears below site title in masthead
 name                     : "김경록(Kim GyeongLock)"
@@ -26,7 +26,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/KimGyeongLock/KimGyeongLock.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "iOS에서 개발하기" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Roki Tech Blog" # overrides the website title displayed in the masthead, use " " for no title
 future                   : true
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -94,9 +94,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Kim GyeongLock"
+  name             : "김경록 (Roki Kim)"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**iOS 앱개발 연습~ing**<br>2022.03.01~"
+  bio              : "**개발의 가치를 전달하는 개발자**<br>2022.03.01~"
   location         : "Republic of Korea"
   email            :
   links:
