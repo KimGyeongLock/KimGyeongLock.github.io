@@ -40,12 +40,12 @@
                         <li><a href="/categories/release" class="">출시 에러({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-        <span class="nav__sub-title">DB</span>
+            </ul>     
+        <span class="nav__sub-title">웹 프론트</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "javaSpring" %}
-                        <li><a href="/categories/javaSpring" class="">자바스프링캠프({{category[1].size}})</a></li>
+                    {% if category[0] == "webfront" %}
+                        <li><a href="/categories/js" class="">HTML5, CSS3({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -54,6 +54,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "js" %}
                         <li><a href="/categories/js" class="">네이버 부스트캠프({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "javaSpring" %}
+                        <li><a href="/categories/javaSpring" class="">자바스프링캠프({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
