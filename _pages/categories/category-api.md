@@ -1,5 +1,5 @@
 ---
-title: "API 설정 및 적용"
+title: "여러 API 경험해보기"
 layout: archive
 permalink: categories/api
 author_profile: true
