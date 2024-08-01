@@ -14,7 +14,7 @@ published: true
 하나라도 없으면 index 템플릿을 찾습니다.     
 둘 중 하나라도 찾으면 자동으로 응용 프로그램 시작 페이지로 사용됩니다.     
 
-### 파일 경로
+## 파일 경로
 
 ```
 resources
@@ -44,7 +44,7 @@ EX) ${data}를 사용하여 서버로부터 data가 무엇인지에 따라 화�
 <https://www.inflearn.com/community/questions/1129544/resources-폴더의-static-폴더와-templates-폴더-차이>
 </span>
 
-### 학습 테스트
+## 학습 테스트
 
 welcome page 설정을 연습하는 학습 테스트 입니다.
 
@@ -78,7 +78,7 @@ Build Success를 확인
 </span>
 
 
-### 참고자료
+## 참고자료
 
 - [Spring Boot - Welcome Page](https://docs.spring.io/spring-boot/docs/3.1.2/reference/htmlsingle/#web.servlet.spring-mvc.welcome-page)
 
@@ -93,7 +93,7 @@ resources/static 아래의 경로에 위치한 파일은 접근이 가능합니�
 Spring Boot는 기본적으로 `src/main/resources/static` 디렉토리에서 정적 리소스를 서빙합니다. 
 </span>
 
-### 학습 테스트
+## 학습 테스트
 
 정적 페이지 설정을 연습하는 학습 테스트 입니다.
 
@@ -119,7 +119,7 @@ static 폴더로 파일을 이동시킨다.
 Build Success를 확인 
 </span>
 
-### 참고자료
+## 참고자료
 
 - [Spring - Static Resources](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title)
 
@@ -146,7 +146,7 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
 출처: [https://mooonstar.tistory.com/entry/SpringRequestBody와-RequestParam-비교하여-이해하기](https://mooonstar.tistory.com/entry/SpringRequestBody%EC%99%80-RequestParam-%EB%B9%84%EA%B5%90%ED%95%98%EC%97%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0) [MoonStar:티스토리]
 
 
-### 학습 테스트
+## 학습 테스트
 
 - 테스트 메서드: `cholog.ResponseTemplatesTest.responseTemplatesPage`
 - 수행 방법
@@ -171,7 +171,7 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
 <span style="color: green">    
 - return null 로 해도 된다?? - Spring MVC는 요청 URL을 사용하여 뷰 이름을 결정하려고 시도합니다</span>
 
-### 참고자료
+## 참고자료
 
 - [Spring - Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 - [Spring - @RequestParam](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/requestparam.html)
@@ -184,7 +184,7 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
 
 컨트롤러 메서드의 리턴타입을 그대로 body에 담아 응답을 하기 위해서는 `@ResponseBody`를 활용할 수 있습니다.
 
-### 학습 테스트
+## 학습 테스트
 
 - 테스트 메서드: `cholog.ResponseJsonTest.responseJson`
 - 수행 방법
@@ -201,7 +201,7 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
 - `return new Person("brown", 20);`  : 객체 필요</span>
 - <span style="color: green">   `@ResponseBody` : body를 응답</span>
 
-### 참고자료
+## 참고자료
 
 - [Spring - @ResponseBody](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/responsebody.html#page-title)
 - [Spring - Return Values > Other return values](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/return-types.html)
