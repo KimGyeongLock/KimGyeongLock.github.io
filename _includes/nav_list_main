@@ -96,7 +96,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "springlearningtest" %}
-                        <li><a href="/categories/javaSpring" class="">spring-learning-test({{category[1].size}})</a></li>
+                        <li><a href="/categories/springlearningtest" class="">spring-learning-test({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
