@@ -30,14 +30,17 @@ resources
 ```
 
 <span style="color: green">
-\[정적 페이지와 템플릿 시작 페이지 무슨 차이인가?\]
+\[정적 페이지와 템플릿 시작 페이지 무슨 차이인가?\]     
+
 <span style="color: green">
 `resources/static`는 **정적 리소스**를 저장하는 데 사용되며 정적 리소스에는 HTML, CSS, JavaScript, 이미지 파일 등이 포함된다.
+
 <span style="color: green">
 `resources/templates`의 경우 **동적 웹 페이지**를 저장하는 경로로 사용됩니다. 여기에 저장된 HTML 파일은 `Thymeleaf`와 같은 템플릿 엔진을 통해 처리되며, 이 과정에서 서버 측 데이터나 로직이 페이지에 반영되어 최종적인 HTML이 생성됩니다. 
+
 <span style="color: green">
 EX) ${data}를 사용하여 서버로부터 data가 무엇인지에 따라 화면에 데이터가 바뀔 수 있음
-<span style="color: green">
+
 <https://www.inflearn.com/community/questions/1129544/resources-폴더의-static-폴더와-templates-폴더-차이>
 </span>
 
@@ -79,6 +82,8 @@ Build Success를 확인
 
 - [Spring Boot - Welcome Page](https://docs.spring.io/spring-boot/docs/3.1.2/reference/htmlsingle/#web.servlet.spring-mvc.welcome-page)
 
+-----------
+
 # 2 Static Page
 
 resources/static 아래의 경로에 위치한 파일은 접근이 가능합니다.
@@ -118,6 +123,7 @@ Build Success를 확인
 
 - [Spring - Static Resources](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title)
 
+-----------
 
 # 3. Template Engine
 
@@ -131,11 +137,14 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
 \[`@RequestParam`과 `@RequestBody`의 차이\]
 
 <span style="color: green">
-@RequestParam은 URL에 요청 파라미터를 바인딩하지만 , @RequestBody는 Http Body에 있는 내용을 Java - Object로 반환합니다.
+@RequestParam은 URL에 요청 파라미터를 바인딩하지만 , 
+  
+<span style="color: green">
+@RequestBody는 Http Body에 있는 내용을 Java - Object로 반환합니다.
 
 <span style="color: green">
 출처: [https://mooonstar.tistory.com/entry/SpringRequestBody와-RequestParam-비교하여-이해하기](https://mooonstar.tistory.com/entry/SpringRequestBody%EC%99%80-RequestParam-%EB%B9%84%EA%B5%90%ED%95%98%EC%97%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0) [MoonStar:티스토리]
-</span>
+
 
 ### 학습 테스트
 
@@ -145,14 +154,14 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
     - `/hello` 요청 시 `resources/templates/hello.html` 페이지가 응답할 수 있도록 설정하세요.
 
 <span style="color: green">   
-1. TODO: /hello 요청 시 resources/templates/hello.html 페이지가 응답할 수 있도록 설정하세요.
-    - `/hello?name=Brie` 에서 name을 get (받아온다.)
-    - `@GetMapping("/hello")` // /hello 요청 시
-        - 자동으로 templates 폴더에서 찾는다?
+1. TODO: /hello 요청 시 resources/templates/hello.html 페이지가 응답할 수 있도록 설정하세요.</span>
+    - <span style="color: green">   `/hello?name=Brie` 에서 name을 get (받아온다.)</span>
+    - <span style="color: green">   `@GetMapping("/hello")` // /hello 요청 시</span>
+        - <span style="color: green">   자동으로 templates 폴더에서 찾는다?</span>
 <span style="color: green">
-2. TODO: 쿼리 파라미터로 name 요청이 들어왔을 때 해당 값을 hello.html에서 사용할 수 있도록 하세요.
-    - 컨트롤러 메서드 내에서 뷰로 값을 전달하기 위해서 `Model` 객체를 활용
-    - **addAttribute** 메서드를 통해 값을 전달
+2. TODO: 쿼리 파라미터로 name 요청이 들어왔을 때 해당 값을 hello.html에서 사용할 수 있도록 하세요.</span>
+    - <span style="color: green">   컨트롤러 메서드 내에서 뷰로 값을 전달하기 위해서 `Model` 객체를 활용</span>
+    - <span style="color: green">   **addAttribute** 메서드를 통해 값을 전달</span>
     
     ```java
     model.addAttribute("name", name);
@@ -160,8 +169,7 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
     ```
 
 <span style="color: green">    
-- return null 로 해도 된다?? - Spring MVC는 요청 URL을 사용하여 뷰 이름을 결정하려고 시도합니다
-</span>
+- return null 로 해도 된다?? - Spring MVC는 요청 URL을 사용하여 뷰 이름을 결정하려고 시도합니다</span>
 
 ### 참고자료
 
@@ -169,6 +177,8 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
 - [Spring - @RequestParam](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/requestparam.html)
 - [Spring - Method Arguments > Model](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/arguments.html)
 - [Baeldung - Introduction to Using Thymeleaf in Spring](https://www.baeldung.com/thymeleaf-in-spring-mvc)
+
+--------------------------
 
 # 4. Json 응답
 
@@ -188,9 +198,8 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
 `{"name": "brown", "age": 20}` 응답 
 
 <span style="color: green">
-- `return new Person("brown", 20);`  : 객체 필요
-- `@ResponseBody` : body를 응답
-</span>
+- `return new Person("brown", 20);`  : 객체 필요</span>
+- <span style="color: green">   `@ResponseBody` : body를 응답</span>
 
 ### 참고자료
 
