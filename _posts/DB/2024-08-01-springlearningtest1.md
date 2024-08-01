@@ -42,7 +42,7 @@ resources
 EX) ${data}를 사용하여 서버로부터 data가 무엇인지에 따라 화면에 데이터가 바뀔 수 있음
 
 <https://www.inflearn.com/community/questions/1129544/resources-폴더의-static-폴더와-templates-폴더-차이>
-</span>
+
 
 ## 학습 테스트
 
@@ -54,11 +54,12 @@ welcome page 설정을 연습하는 학습 테스트 입니다.
     - welcome page 설정을 위해 적절한 위치에 이동을 하거나 파일명을 변경해보세요.
 
 <span style="color: green">    
-`cholog.ResponseStaticTest.responseIndexPage` 실행시 404 Not Found 에러 발견
+cholog.ResponseStaticTest.responseIndexPage 실행시 404 Not Found 에러 발견
 
 <img width="1340" alt="Untitled" src="https://github.com/user-attachments/assets/f2d9df33-f44d-4514-9506-c17e8fbaa9ac">
 <span style="color: green">
 `/` == `/index.html`  기본 페이지와 같다!
+  
 <span style="color: green">
 responseIndexPage함수에서 hi.html을 작동하기 위해서는 hi.html의 이름을 index.html로 변경해야 한다.
 
@@ -75,22 +76,20 @@ Build Success를 확인
 </div>
 </details>
 
-</span>
-
 
 ## 참고자료
 
 - [Spring Boot - Welcome Page](https://docs.spring.io/spring-boot/docs/3.1.2/reference/htmlsingle/#web.servlet.spring-mvc.welcome-page)
 
------------
+
 
 # 2 Static Page
 
-resources/static 아래의 경로에 위치한 파일은 접근이 가능합니다.
-서비스에서 필요한 정적 자원들을 해당 경로에 위치시킨 후 활용할 수 있습니다.
+resources/static 아래의 경로에 위치한 파일은 접근이 가능합니다.       
+서비스에서 필요한 정적 자원들을 해당 경로에 위치시킨 후 활용할 수 있습니다.       
 
 <span style="color: green">   
-Spring Boot는 기본적으로 `src/main/resources/static` 디렉토리에서 정적 리소스를 서빙합니다. 
+Spring Boot는 기본적으로 src/main/resources/static 디렉토리에서 정적 리소스를 서빙합니다. 
 </span>
 
 ## 학습 테스트
@@ -103,7 +102,7 @@ Spring Boot는 기본적으로 `src/main/resources/static` 디렉토리에서 �
     - 정적 페이지 설정을 위해 적절한 위치에 이동을 하거나 파일명을 변경해보세요.
     
 <span style="color: green">   
-`cholog.ResponseStaticTest.responseStaticPage` 실행시 404 Not Found 에러 발견
+cholog.ResponseStaticTest.responseStaticPage 실행시 404 Not Found 에러 발견
 
 <img width="462" alt="Untitled 3" src="https://github.com/user-attachments/assets/1657d43e-b0ab-4867-87fb-286758d81ec6">
 
@@ -123,15 +122,14 @@ Build Success를 확인
 
 - [Spring - Static Resources](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title)
 
------------
 
 # 3. Template Engine
 
-동적으로 페이지 처리를 하기 위해서는 템플릿 엔진을 활용할 수 있습니다.
-이번 학습 테스트에서는 `Thymeleaf`를 활용하여 요청에 대한 동적 처리를 합니다.
-쿼리 스트링(?name=brown)으로 전달된 name 값을 `@RequestParam`을 활용하여 **컨트롤러 메서드의 파라미터로 주입** 받습니다.
-컨트롤러 메서드 내에서 뷰로 값을 전달하기 위해서 `Model` 객체를 활용합니다.
-Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 있고, **addAttribute** 메서드를 통해 값을 전달할 수 있습니다.
+동적으로 페이지 처리를 하기 위해서는 템플릿 엔진을 활용할 수 있습니다.     
+이번 학습 테스트에서는 `Thymeleaf`를 활용하여 요청에 대한 동적 처리를 합니다.       
+쿼리 스트링(?name=brown)으로 전달된 name 값을 `@RequestParam`을 활용하여 **컨트롤러 메서드의 파라미터로 주입** 받습니다.       
+컨트롤러 메서드 내에서 뷰로 값을 전달하기 위해서 `Model` 객체를 활용합니다.       
+Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 있고, **addAttribute** 메서드를 통해 값을 전달할 수 있습니다.      
 
 <span style="color: green">   
 \[`@RequestParam`과 `@RequestBody`의 차이\]
@@ -153,13 +151,12 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
     - `cholog.MemberController.world` 메서드를 작성하여 학습 테스트를 성공시키세요.
     - `/hello` 요청 시 `resources/templates/hello.html` 페이지가 응답할 수 있도록 설정하세요.
 
-<span style="color: green">   
-1. TODO: /hello 요청 시 resources/templates/hello.html 페이지가 응답할 수 있도록 설정하세요.</span>
+
+1. <span style="color: green">TODO: /hello 요청 시 resources/templates/hello.html 페이지가 응답할 수 있도록 설정하세요.</span>
     - <span style="color: green">   `/hello?name=Brie` 에서 name을 get (받아온다.)</span>
     - <span style="color: green">   `@GetMapping("/hello")` // /hello 요청 시</span>
         - <span style="color: green">   자동으로 templates 폴더에서 찾는다?</span>
-<span style="color: green">
-2. TODO: 쿼리 파라미터로 name 요청이 들어왔을 때 해당 값을 hello.html에서 사용할 수 있도록 하세요.</span>
+2. <span style="color: green">TODO: 쿼리 파라미터로 name 요청이 들어왔을 때 해당 값을 hello.html에서 사용할 수 있도록 하세요.</span>
     - <span style="color: green">   컨트롤러 메서드 내에서 뷰로 값을 전달하기 위해서 `Model` 객체를 활용</span>
     - <span style="color: green">   **addAttribute** 메서드를 통해 값을 전달</span>
     
@@ -168,8 +165,8 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
     return "hello"; //hello.html에서 사용
     ```
 
-<span style="color: green">    
-- return null 로 해도 된다?? - Spring MVC는 요청 URL을 사용하여 뷰 이름을 결정하려고 시도합니다</span>
+
+- <span style="color: green">return null 로 해도 된다?? - Spring MVC는 요청 URL을 사용하여 뷰 이름을 결정하려고 시도합니다</span>
 
 ## 참고자료
 
@@ -178,7 +175,6 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
 - [Spring - Method Arguments > Model](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/arguments.html)
 - [Baeldung - Introduction to Using Thymeleaf in Spring](https://www.baeldung.com/thymeleaf-in-spring-mvc)
 
---------------------------
 
 # 4. Json 응답
 
@@ -197,8 +193,8 @@ Model 객체는 **컨트롤러 메서드의 파라미터로 주입** 받을 수 
 <span style="color: green">
 `{"name": "brown", "age": 20}` 응답 
 
-<span style="color: green">
-- `return new Person("brown", 20);`  : 객체 필요</span>
+
+- <span style="color: green">`return new Person("brown", 20);`  : 객체 필요</span>
 - <span style="color: green">   `@ResponseBody` : body를 응답</span>
 
 ## 참고자료
