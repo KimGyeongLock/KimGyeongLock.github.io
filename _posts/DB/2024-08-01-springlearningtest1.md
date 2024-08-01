@@ -1,4 +1,4 @@
-<img width="1072" alt="Untitled 4" src="https://github.com/user-attachments/assets/986a0a00-7939-4371-8ea9-2f7cea57ba40">---
+---
 layout: single
 title: "[Spring-MVC-1] static과 templates, @RequestParam, @ResponseBody"
 toc: true
