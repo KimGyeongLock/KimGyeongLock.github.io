@@ -85,6 +85,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "server" %}
+                        <li><a href="/categories/server" class="">서버({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">Java Spring</span>
             <ul>
                 {% for category in site.categories %}
