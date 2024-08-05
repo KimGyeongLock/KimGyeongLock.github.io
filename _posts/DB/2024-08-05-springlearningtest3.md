@@ -52,6 +52,8 @@ public ResponseEntity<String> handleIllegalArgumentException(IllegalArgumentExce
 
 - [Spring - Exceptions](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-exceptionhandler.html)
 
+<br>
+
 # 3. @ControllerAdvice
 
 **@ControllerAdvice**는 **애플리케이션 전역**에서 발생하는 예외를 처리하기 위한 클래스에 적용되는 어노테이션입니다.      
@@ -93,6 +95,7 @@ public class GlobalExceptionHandler {
 ```
 
 > ChatGPT
+
 `@ControllerAdvice`를 사용하여 전역 예외 처리기를 통해 모든 예외를 처리하는 방법이 확실히 편리하고 코드 중복을 줄여줍니다.       
 그러나 클래스마다 `@ExceptionHandler`를 사용하는 이유도 있습니다. 아래는 클래스마다 `@ExceptionHandler`를 사용하는 주요 이유들입니다.     
 
