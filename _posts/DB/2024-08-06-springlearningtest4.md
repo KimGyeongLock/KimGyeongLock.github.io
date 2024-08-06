@@ -19,6 +19,8 @@ published: true
 - [Spring - MVC Config](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config.html)
 - [Be careful when using @Configuration classes with @EnableWebMvc in Spring Boot](https://dev.to/xterm/be-careful-when-using-configuration-classes-with-enablewebmvc-in-spring-boot-2n32)
 
+<br>
+
 # 2. View Controller
 
 `WebMvcConfigurer` 가 제공하는 `addViewControllers` 메서드를 통해 **특정 요청에 대해 뷰를 응답하도록 설정**할 수 있습니다.      
@@ -239,6 +241,7 @@ resolvers.add(new AuthenticationPrincipalArgumentResolver());
 </div>
 </details>
 
+<br>
 
 # 코드
 
