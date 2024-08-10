@@ -9,20 +9,14 @@ published: true
 
 # 1. JdbcTemplate
 
-스프링은 **데이터베이스와의 연동**을 쉽게 도와주는 여러 가지 도구와 방식을 제공합니다.
-
-**JDBC(Java Database Connectivity)**는 자바에서 데이터베이스에 접속할 수 있게 도와주는 API입니다.
-
-JdbcTemplate은 이러한 JDBC를 좀 더 편리하게 사용할 수 있도록 스프링에서 제공하는 템플릿 클래스입니다.
-
-이를 사용하면 데이터베이스 연동 코드를 좀 더 간결하고 안정적으로 작성할 수 있습니다.
-
-JdbcTemplate은 스프링 JDBC의 핵심이며 다른 고수준의 기능들도 결국 내부에서는 이 JdbcTemplate을 활용합니다.
-
+스프링은 **데이터베이스와의 연동**을 쉽게 도와주는 여러 가지 도구와 방식을 제공합니다.    
+**JDBC(Java Database Connectivity)**는 자바에서 데이터베이스에 접속할 수 있게 도와주는 API입니다.      
+JdbcTemplate은 이러한 JDBC를 좀 더 편리하게 사용할 수 있도록 스프링에서 제공하는 템플릿 클래스입니다.      
+이를 사용하면 데이터베이스 연동 코드를 좀 더 간결하고 안정적으로 작성할 수 있습니다.      
+JdbcTemplate은 스프링 JDBC의 핵심이며 다른 고수준의 기능들도 결국 내부에서는 이 JdbcTemplate을 활용합니다.      
 <br>
 
-JdbcTemplate은 핵심 JDBC 작업 흐름(예: 문장 생성 및 실행)의 기본적인 업무를 수행하며, 애플리케이션 코드는 SQL을 제공하고 결과를 추출하는 역할을 담당합니다.
-
+JdbcTemplate은 핵심 JDBC 작업 흐름(예: 문장 생성 및 실행)의 기본적인 업무를 수행하며, 애플리케이션 코드는 SQL을 제공하고 결과를 추출하는 역할을 담당합니다.       
 JdbcTemplate 클래스는 다음과 같은 기능을 제공합니다.
 
 - SQL 쿼리 실행
@@ -54,7 +48,6 @@ int rowCount = jdbcTemplate.queryForObject("select count(*) from customers", Int
 - 테스트 메서드: `cholog.QueryingDaoTest.count`
 - 수행 방법
     - `cholog.QueryingDAO.count` 을 이용하여 학습 테스트를 성공시키세요.
-
 <br>
 
 `runtimeOnly 'com.h2database:h2'` 의존성은 H2 데이터베이스를 런타임에 사용하도록 설정
@@ -137,13 +130,14 @@ Customer customer = jdbcTemplate.queryForObject(
 }
 ```
 
+<br>
+
 # 4. Querying for a List
 
 ## 4.1 List with RowMapper
 
-JdbcTemplate의 **query** 메서드를 이용하여 **여러 개의 객체를 조회**할 수 있습니다.
-
-두 번째 매개변수에 **RowMapper**를 전달하여 조회 결과를 매핑할 수 있습니다.
+JdbcTemplate의 **query** 메서드를 이용하여 **여러 개의 객체를 조회**할 수 있습니다.     
+두 번째 매개변수에 **RowMapper**를 전달하여 조회 결과를 매핑할 수 있습니다.    
 
 ```java
 List<Customer> customers = jdbcTemplate.query(
@@ -159,8 +153,7 @@ List<Customer> customers = jdbcTemplate.query(
 
 ```
 
-queryForObject와 마찬가지로 의 세 번째 매개변수를 이용하여 쿼리문에 바인딩할 파라미터를 전달할 수 있습니다.
-
+queryForObject와 마찬가지로 의 세 번째 매개변수를 이용하여 쿼리문에 바인딩할 파라미터를 전달할 수 있습니다.      
 RowMapper의 경우 별도로 선언하여 사용할 수 있습니다.
 
 ```java
@@ -201,10 +194,8 @@ RowMapper rowMapper = (resultSet, rowNum) -> {
 
 ### queryForList
 
-customers 내 모든 attributes가 무엇이 있는 지 궁금해서 h2 database를 열어봄.
-
-하지만 in-memory 방식으로 작동하여 테스트가 끝나면 데이터가 없어지는 것을 알게됨,,
-
+customers 내 모든 attributes가 무엇이 있는 지 궁금해서 h2 database를 열어봄.      
+하지만 in-memory 방식으로 작동하여 테스트가 끝나면 데이터가 없어지는 것을 알게됨,,      
 그래서 queryForList를 통해 test로 customers table을 출력해보았다.
 
 ```java
@@ -222,9 +213,8 @@ public void findAllCustomersWithAllAttributes() {
 
 # 5. Updating (INSERT, UPDATE, and DELETE)
 
-JdbcTemplate을 이용하여 INSERT, UPDATE, DELETE 쿼리를 실행하는 여러가지 방법을 제공합니다.
-
-**update**, **batchUpdate**, **execute** 메서드를 이용하여 쿼리를 실행할 수 있습니다.
+JdbcTemplate을 이용하여 INSERT, UPDATE, DELETE 쿼리를 실행하는 여러가지 방법을 제공합니다.       
+**update**, **batchUpdate**, **execute** 메서드를 이용하여 쿼리를 실행할 수 있습니다.      
 
 ## 5.1 Update (INSERT)
 
@@ -262,9 +252,8 @@ jdbcTemplate.update("delete from customers where id = ?", Long.valueOf(id));
 
 ## 5.3 KeyHolder
 
-JdbcTemplate을 사용하여 데이터베이스에 **새로운 정보를 추가**하고,
-
-그 때 생성된 **primary key (여기서는 id)를 가져오기** 위해서 **KeyHolder**를 사용할 수 있습니다.
+JdbcTemplate을 사용하여 데이터베이스에 **새로운 정보를 추가**하고,      
+그 때 생성된 **primary key (여기서는 id)를 가져오기** 위해서 **KeyHolder**를 사용할 수 있습니다.     
 
 ```java
 KeyHolder keyHolder = new GeneratedKeyHolder();
