@@ -22,6 +22,8 @@ Spring Data JPA를 사용하기 위해서는 spring-boot-starter-data-jpa를 활
 JPA 관련 학습 테스트를 처음 접하는 분들은 JPA와 Spring Data JPA을 구체적으로 구분하는 것과 같이 이론적인 부분에 많은 시간을 쓰기 보다는,     
 학습 테스트를 통해 기능을 먼저 동작하게 한 후 이론 적인 내용을 학습하는 것을 추천드립니다.     
 
+-----
+
 # 2. EntityMapping
 
 엔티티는 JPA에서 관리하는 객체입니다. 이 객체는 데이터베이스의 테이블과 매핑되어 있으며,     
@@ -52,6 +54,8 @@ public class Customer {
 - 수행 방법
     - `cholog.Customer` 을 이용하여 학습 테스트를 성공시키세요.
     - Customer 클래스에 @Entity, @Id 어노테이션을 활용하세요.
+
+------
 
 # 3. Repository
 
@@ -93,6 +97,8 @@ public interface CustomerRepository extends CrudRepository<Customer, Long> {
         - `saveAndFlush(S entity)`: 엔티티를 저장하고 즉시 데이터베이스에 반영합니다.
         - `deleteInBatch(Iterable<T> entities)`: 주어진 엔티티들을 일괄 삭제합니다.
 
+------
+
 # 4. Query Creation
 
 Spring Data JPA는 메서드 **이름을 분석**하여 **쿼리를 생성**하는 기능을 제공합니다.     
@@ -119,9 +125,16 @@ public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
 <img width="230" alt="image" src="https://github.com/user-attachments/assets/2855e46f-4242-4eb2-9baa-3caf39aebd58">
 
+------
+
 # 5. 참고자료
 
 - [Jakarta Persistence - 1. Introduction](https://jakarta.ee/specifications/persistence/3.2/jakarta-persistence-spec-3.2-m1#introduction)
 - [Spring Data JPA - Getting Started(Entity Mapping)](https://docs.spring.io/spring-data/jpa/reference/jpa/getting-started.html)
 - [Spring Data JPA - Core concepts(CrudRepository Interface)](https://docs.spring.io/spring-data/jpa/reference/repositories/core-concepts.html)
 - [Spring Data JPA - Defining Query Methods > Query Creation](https://docs.spring.io/spring-data/jpa/reference/repositories/definition.html)
+
+------
+
+# 6. 코드
+<https://github.com/KimGyeongLock/spring-learning-test/tree/roki/spring-data-jpa-1/spring-data-jpa-1/initial>
