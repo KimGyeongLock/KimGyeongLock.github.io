@@ -102,7 +102,7 @@ class Publisher {
 Book book; 
 ```
 
-> 'One To Many' attribute type should be a container 
+> 'One To Many' attribute type should be a container      
 ⇒  `Set<Book> books = new HashSet<>();`
 > 
 
