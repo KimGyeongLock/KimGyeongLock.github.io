@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Spring-HTTP-CLIENT-1] RestTemplate, RestClient"
+title: "[Spring-HTTP-CLIENT-1] RestTemplate, RestClient"
 toc: true
 toc_sticky: true
 categories: springlearningtest
