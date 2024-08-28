@@ -24,7 +24,7 @@ Headers: Authorization=Basic ZW1haWxAZW1haWwuY29tOjEyMzQ=
 
 "ZW1haWxAZW1haWwuY29tOjEyMzQ=" - **Base64**
 
-\{{userName}}:\{{password}} 가 인코딩되어 있다.
+\{\{userName\}\}:\{\{password\}\} 가 인코딩되어 있다.
 
 **RestAssured(테스트용)**를 사용해 Basic Auth를 적용하려면,    
 아래와 같이 테스트 코드에 인증 정보를 포함해 Authorization 헤더를 자동으로 설정하도록 작성합니다.    
