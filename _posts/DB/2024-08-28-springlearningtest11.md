@@ -20,9 +20,11 @@ published: true
 Headers: Authorization=Basic ZW1haWxAZW1haWwuY29tOjEyMzQ=
 ```
 
+정리    
+
 "ZW1haWxAZW1haWwuY29tOjEyMzQ=" - **Base64**
 
-`{{userName}}:{{password}}` 가 인코딩되어 있다.
+\{{userName}}:\{{password}} 가 인코딩되어 있다.
 
 **RestAssured(테스트용)**를 사용해 Basic Auth를 적용하려면,    
 아래와 같이 테스트 코드에 인증 정보를 포함해 Authorization 헤더를 자동으로 설정하도록 작성합니다.    
@@ -64,6 +66,8 @@ accept: application/json
 ## 참조
 
 - [`@RequestParam` or `HttpServletRequest`](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-ann-arguments)
+
+-------
 
 # 2. Session Login
 
@@ -133,6 +137,8 @@ accept: application/json
 
 - [HttpSession](https://www.baeldung.com/spring-security-session#2-injecting-the-raw-session-into-a-controller)
 
+-------
+
 # 3. Token Login
 
 <img width="508" alt="token" src="https://github.com/user-attachments/assets/c88171a8-154b-4cfc-9d2e-11b5aa7edbc0">
@@ -164,7 +170,7 @@ content-type: application/json; charset=UTF-8
 }
 ```
 
-- `*@RequestBody`* 를 통해 email, password 정보를 가져옴
+- `@RequestBody` 를 통해 email, password 정보를 가져옴
 - TokenRequest class를 사용해서 email과 password를 묶음
 - `@RequestBody TokenRequest tokenRequest`
 
@@ -178,6 +184,8 @@ accept: application/json
 
 - authorization 헤더에 포함되기 때문에 `authorizationExtractor` 를 사용
 - `String token = authorizationExtractor.extract(request);`
+
+-------
 
 # 각 로그인별 특징과 차이점
 
