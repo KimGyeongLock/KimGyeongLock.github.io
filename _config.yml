@@ -97,12 +97,15 @@ author:
   name             : "김경록 (Roki Kim)"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**개발의 가치를 전달하는 개발자**<br>2022.03.01~"
-  location         : "Republic of Korea"
+  # location         : "Republic of Korea"
   email            :
   links:
+    - label: "Portfolio"
+      icon: "fas fa-fw fa-id-card-o"
+      url: "https://drive.google.com/file/d/1R-KLAFaBXfylSkZfUmET0YLJq56SpzL_/view?usp=sharing"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:21900064@handong.ac.kr"
+      url: "21900064@handong.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
