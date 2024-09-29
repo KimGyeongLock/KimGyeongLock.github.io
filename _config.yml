@@ -101,7 +101,7 @@ author:
   email            :
   links:
     - label: "Portfolio"
-      icon: "fas fa-fw fa-id-card-o"
+      icon: "fas fa fa-id-card-o"
       url: "https://drive.google.com/file/d/1R-KLAFaBXfylSkZfUmET0YLJq56SpzL_/view?usp=sharing"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
