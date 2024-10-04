@@ -127,7 +127,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "kakao" %}
-                        <li><a href="/categories/kakao" class="">2023 KAKAO BLIND RECRUITMENT({{category[1].size}})</a></li>
+                        <li><a href="/categories/kakao" class="">프로그래머스x카카오({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
