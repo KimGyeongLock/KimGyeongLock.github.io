@@ -1,5 +1,5 @@
 ---
-title: "2023 KAKAO BLIND RECRUITMENT"
+title: "프로그래머스x카카오"
 layout: archive
 permalink: categories/kakao
 author_profile: true
