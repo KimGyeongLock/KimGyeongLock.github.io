@@ -103,6 +103,13 @@
         <span class="nav__sub-title">Java Spring</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "precourse" %}
+                        <li><a href="/categories/precourse" class="">우테코 프리코스({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "javaSpring" %}
                         <li><a href="/categories/javaSpring" class="">자바스프링캠프({{category[1].size}})</a></li>
                     {% endif %}
