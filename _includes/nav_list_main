@@ -15,23 +15,15 @@
         <span class="nav__sub-title">CS 공부</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "cs" %}
-                        <li><a href="/categories/cs" class="">CS 공부({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <span class="nav__sub-title">유튜브 영상 정리</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "redis" %}
-                        <li><a href="/categories/redis" class="">Redis({{category[1].size}})</a></li>
+                    {% if category[0] == "network" %}
+                        <li><a href="/categories/network" class="">Network({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "websocket" %}
-                        <li><a href="/categories/websocket" class="">WebSocket({{category[1].size}})</a></li>
+                    {% if category[0] == "database" %}
+                        <li><a href="/categories/database" class="">Database({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
