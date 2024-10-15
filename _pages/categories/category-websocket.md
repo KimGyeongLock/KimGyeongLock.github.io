@@ -1,11 +1,11 @@
 ---
-title: "웹소켓"
+title: "네트워크"
 layout: archive
-permalink: categories/websocket
+permalink: categories/network
 author_profile: true
 sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.websocket %}
+{% assign posts = site.categories.network %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
