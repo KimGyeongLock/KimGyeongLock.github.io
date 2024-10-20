@@ -3,7 +3,7 @@ layout: single
 title: "[SMS 인증 에러] Please register custom URL scheme 'com.googleusercontent.apps... (iOS)"
 toc: true
 toc_sticky: true
-categories: bandi
+categories: hanbab
 ---
 
 iOS에서는 되는 firebase SMS 인증방식이 안드로이드에서 말썽이다..    
