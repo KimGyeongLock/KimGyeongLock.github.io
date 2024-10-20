@@ -46,7 +46,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "tradeham" %}
-                        <li><a href="/categories/tradeham" class="">사물함을 이용한 중고 거래 중개 웹, 사물함({{category[1].size}})</a></li>
+                        <li><a href="/categories/tradeham" class="">사물함을 이용한 중고 거래 중개 웹, 거래함({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
