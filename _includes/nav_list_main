@@ -27,35 +27,29 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">반디</span>
+        <span class="nav__sub-title">프로젝트</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
-                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
-                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
-                    {% if category[0] == "iOS distribute" %}
-                        <li><a href="/categories/[iOS distribute]" class="">iOS 출시({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <span class="nav__sub-title">한밥</span>
-            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-            <ul>
-                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
-                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
-                {% for category in site.categories %}
-                    {% if category[0] == "phone auth" %}
-                        <li><a href="/categories/[phone auth]" class="">에러s({{category[1].size}})</a></li>
+                    {% if category[0] == "bandi" %}
+                        <li><a href="/categories/bandi" class="">데이터 기반 일상 감정 관리 앱, 반디({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "release" %}
-                        <li><a href="/categories/release" class="">출시 에러({{category[1].size}})</a></li>
+                    {% if category[0] == "hanbab" %}
+                        <li><a href="/categories/hanbab" class="">배달 음식 공동 구매 앱, 한밥({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>     
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "tradeham" %}
+                        <li><a href="/categories/hanbab" class="">사물함을 이용한 중고 거래 중개 웹, 사물함({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">웹 프론트엔드</span>
             <ul>
                 {% for category in site.categories %}
