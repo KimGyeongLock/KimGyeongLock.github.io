@@ -1,5 +1,5 @@
 ---
-title: "출시 에러"
+title: "한밥"
 layout: archive
 permalink: categories/hanbab
 author_profile: true
