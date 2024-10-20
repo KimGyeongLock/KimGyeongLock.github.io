@@ -1,9 +1,9 @@
 ---
 layout: single
-title: \[Error] Missing purpose string in Info.plist & Missing Push Notification Entitlement
+title: "[출시 에러] Missing purpose string in Info.plist & Missing Push Notification Entitlement"
 toc: true
 toc_sticky: true
-categories: [iOS distribute]
+categories: bandi
 ---
 
 ## 굉장히 많은 도움을 받았다.
