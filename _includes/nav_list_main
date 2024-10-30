@@ -50,6 +50,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "parrotalk" %}
+                        <li><a href="/categories/tradeham" class="">콜포비아를 위한 채팅형 전화 웹, 앵무말({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">웹 프론트엔드</span>
             <ul>
                 {% for category in site.categories %}
