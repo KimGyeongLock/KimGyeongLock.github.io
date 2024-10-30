@@ -53,7 +53,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "parrotalk" %}
-                        <li><a href="/categories/tradeham" class="">콜포비아를 위한 채팅형 전화 웹, 앵무말({{category[1].size}})</a></li>
+                        <li><a href="/categories/parrotalk" class="">콜포비아를 위한 채팅형 전화 웹, 앵무말({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
