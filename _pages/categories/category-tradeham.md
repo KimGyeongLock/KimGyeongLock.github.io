@@ -1,5 +1,5 @@
 ---
-title: "사물함"
+title: "거래함"
 layout: archive
 permalink: categories/tradeham
 author_profile: true
