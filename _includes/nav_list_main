@@ -39,7 +39,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "gradu" %}
-                        <li><a href="/categories/gradu" class="">🎓 졸업심사 요건 충족기({{category[1].size}})</a></li>
+                        <li><a href="/categories/gradu" class="">🎓 졸업 요건 진단 서비스, GRADU({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
