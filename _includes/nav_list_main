@@ -38,6 +38,13 @@
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "lab" %}
+                        <li><a href="/categories/lab" class="">대규모 시스템 설계, Backend System Design Lab({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "gradu" %}
                         <li><a href="/categories/gradu" class="">🎓 졸업 요건 진단 서비스, GRADU({{category[1].size}})</a></li>
                     {% endif %}
