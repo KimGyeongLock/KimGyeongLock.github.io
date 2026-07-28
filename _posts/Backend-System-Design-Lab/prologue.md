@@ -1,4 +1,11 @@
-# [System Design Lab] 대규모 시스템 설계를 직접 구현해보려는 이유
+---
+layout: single
+title: "[System Design Lab] 대규모 시스템 설계를 직접 구현해보려는 이유"
+toc: true
+toc_sticky: true
+categories: lab
+published: true
+---
 
 ## 시작하며
 
